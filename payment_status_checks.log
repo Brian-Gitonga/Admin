@@ -1,0 +1,19 @@
+[2025-04-09 09:20:57] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-04-09 09:20:57] Remote IP: ::1
+[2025-04-09 09:20:57] Request Method: POST
+[2025-04-09 09:20:57] Session ID: v89i1mjupkfksdsr2i9gr37r0b
+[2025-04-09 09:20:57] Checking payment status for checkout request ID: ws_CO_09042025102220189114669532
+[2025-04-09 09:20:57] Transaction found. Status: pending
+[2025-04-09 09:20:57] Payment not marked as completed in database, checking with M-Pesa API
+[2025-04-09 10:20:58] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"2203-464a-b6e1-0288223bfd3f7770",
+            "CheckoutRequestID":"ws_CO_09042025102220189114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-09 10:20:58] M-Pesa API confirms payment was successful!
+[2025-04-09 10:20:58] Updated transaction status to completed in database
+[2025-04-09 10:20:58] Vouchers table does not exist, using mock voucher code only

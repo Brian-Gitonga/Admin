@@ -1,0 +1,1728 @@
+[2025-04-05 11:19:56] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 11:19:56] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [package_id] => 12
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 11:19:56] Form data received: {"resellerId":6,"packageName":"Game Connect","packagePrice":"30.00","mpesaNumber":"254114669532","packageId":12}
+[2025-04-05 11:19:56] Formatted phone number: 254114669532
+[2025-04-05 11:19:56] Validated amount: 30
+[2025-04-05 11:19:56] Generating access token...
+[2025-04-05 11:19:57] Access token response: {
+            "access_token": "NnNfsINEwPhAasACbIYfR0iwZXbA",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:19:57] Access token generated successfully: NnNfsINEwP...
+[2025-04-05 12:19:57] Callback URL: http://localhost/Admin/mpesa_callback.php
+[2025-04-05 12:19:57] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIxOTU3",
+    "Timestamp": "20250405121957",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 30,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "http:\/\/localhost\/Admin\/mpesa_callback.php",
+    "AccountReference": "WiFi-1743844797",
+    "TransactionDesc": "Payment for Game Connect"
+}
+[2025-04-05 12:19:57] Sending STK Push request
+[2025-04-05 12:19:57] STK Push response: {
+                    "requestId":"b54f-471d-93d9-f7f3bf3f7c0e3919904",
+                    "errorCode": "400.002.02",
+                    "errorMessage": "Bad Request - Invalid CallBackURL"
+                }
+            
+[2025-04-05 12:19:57] HTTP status code: 400
+[2025-04-05 12:19:57] Request took 0.444305 seconds
+[2025-04-05 12:19:57] Response data: stdClass Object
+(
+    [requestId] => b54f-471d-93d9-f7f3bf3f7c0e3919904
+    [errorCode] => 400.002.02
+    [errorMessage] => Bad Request - Invalid CallBackURL
+)
+
+[2025-04-05 12:19:57] STK Push failed: Bad Request - Invalid CallBackURL
+[2025-04-05 11:20:05] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 11:20:05] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [package_id] => 12
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 11:20:05] Form data received: {"resellerId":6,"packageName":"Game Connect","packagePrice":"30.00","mpesaNumber":"254114669532","packageId":12}
+[2025-04-05 11:20:05] Formatted phone number: 254114669532
+[2025-04-05 11:20:05] Validated amount: 30
+[2025-04-05 11:20:05] Generating access token...
+[2025-04-05 11:20:06] Access token response: {
+            "access_token": "KraxLRBU5herftPMwMKJejWKyLSC",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:20:06] Access token generated successfully: KraxLRBU5h...
+[2025-04-05 12:20:06] Callback URL: http://localhost/Admin/mpesa_callback.php
+[2025-04-05 12:20:06] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIyMDA2",
+    "Timestamp": "20250405122006",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 30,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "http:\/\/localhost\/Admin\/mpesa_callback.php",
+    "AccountReference": "WiFi-1743844806",
+    "TransactionDesc": "Payment for Game Connect"
+}
+[2025-04-05 12:20:06] Sending STK Push request
+[2025-04-05 12:20:07] STK Push response: {
+                    "requestId":"b54f-471d-93d9-f7f3bf3f7c0e3919920",
+                    "errorCode": "500.003.02",
+                    "errorMessage": "System is busy. Please try again in few minutes."
+                }
+            
+[2025-04-05 12:20:07] HTTP status code: 500
+[2025-04-05 12:20:07] Request took 0.550168 seconds
+[2025-04-05 12:20:07] Response data: stdClass Object
+(
+    [requestId] => b54f-471d-93d9-f7f3bf3f7c0e3919920
+    [errorCode] => 500.003.02
+    [errorMessage] => System is busy. Please try again in few minutes.
+)
+
+[2025-04-05 12:20:07] STK Push failed: System is busy. Please try again in few minutes.
+[2025-04-05 11:21:21] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 11:21:21] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 10.00
+    [package_id] => 14
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 11:21:21] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"10.00","mpesaNumber":"254114669532","packageId":14}
+[2025-04-05 11:21:21] Formatted phone number: 254114669532
+[2025-04-05 11:21:21] Validated amount: 10
+[2025-04-05 11:21:21] Generating access token...
+[2025-04-05 11:21:21] Access token response: {
+            "access_token": "W9iQ3vhaGbAg5z0zzcZBxy0AqRV0",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:21:21] Access token generated successfully: W9iQ3vhaGb...
+[2025-04-05 12:21:21] Callback URL: http://localhost/Admin/mpesa_callback.php
+[2025-04-05 12:21:21] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIyMTIx",
+    "Timestamp": "20250405122121",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "http:\/\/localhost\/Admin\/mpesa_callback.php",
+    "AccountReference": "WiFi-1743844881",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-04-05 12:21:21] Sending STK Push request
+[2025-04-05 12:21:22] STK Push response: {
+                    "requestId":"8131-4f68-ab7a-5e68879d780e346667",
+                    "errorCode": "400.002.02",
+                    "errorMessage": "Bad Request - Invalid CallBackURL"
+                }
+            
+[2025-04-05 12:21:22] HTTP status code: 400
+[2025-04-05 12:21:22] Request took 1.010504 seconds
+[2025-04-05 12:21:22] Response data: stdClass Object
+(
+    [requestId] => 8131-4f68-ab7a-5e68879d780e346667
+    [errorCode] => 400.002.02
+    [errorMessage] => Bad Request - Invalid CallBackURL
+)
+
+[2025-04-05 12:21:22] STK Push failed: Bad Request - Invalid CallBackURL
+[2025-04-05 11:30:29] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 11:30:29] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [package_id] => 12
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 11:30:29] Form data received: {"resellerId":6,"packageName":"Game Connect","packagePrice":"30.00","mpesaNumber":"254114669532","packageId":12}
+[2025-04-05 11:30:29] Formatted phone number: 254114669532
+[2025-04-05 11:30:29] Validated amount: 30
+[2025-04-05 11:30:29] Generating access token...
+[2025-04-05 11:30:30] Access token response: {
+            "access_token": "DdqhlJn9qmPOiakHt55l3tt18P1z",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:30:30] Access token generated successfully: DdqhlJn9qm...
+[2025-04-05 12:30:30] Using placeholder callback URL: https://mydomain.com/path
+[2025-04-05 12:30:30] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzMDMw",
+    "Timestamp": "20250405123030",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 30,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/path",
+    "AccountReference": "WiFi-1743845430",
+    "TransactionDesc": "Payment for Game Connect"
+}
+[2025-04-05 12:30:30] Sending STK Push request
+[2025-04-05 12:30:31] STK Push response: {
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39148692",
+            "CheckoutRequestID":"ws_CO_05042025123030394114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-05 12:30:31] HTTP status code: 200
+[2025-04-05 12:30:31] Request took 0.95108 seconds
+[2025-04-05 12:30:31] Response data: stdClass Object
+(
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39148692
+    [CheckoutRequestID] => ws_CO_05042025123030394114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-05 12:30:31] STK Push successful! CheckoutRequestID: ws_CO_05042025123030394114669532
+[2025-04-05 12:30:31] MerchantRequestID: c20c-4eb8-8161-40af4f84ee39148692
+[2025-04-05 12:30:31] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-05 12:30:31] Sending successful response to client
+[2025-04-05 11:31:20] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 11:31:20] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Basic Montly plan
+    [package_price] => 1200.00
+    [package_id] => 13
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 11:31:20] Form data received: {"resellerId":6,"packageName":"Basic Montly plan","packagePrice":"1200.00","mpesaNumber":"254114669532","packageId":13}
+[2025-04-05 11:31:20] Formatted phone number: 254114669532
+[2025-04-05 11:31:20] Validated amount: 1200
+[2025-04-05 11:31:20] Generating access token...
+[2025-04-05 11:31:20] Access token response: {
+            "access_token": "XQMVABMSAezlv0HMUoxxSQ2GyDBE",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:31:20] Access token generated successfully: XQMVABMSAe...
+[2025-04-05 12:31:20] Using placeholder callback URL: https://mydomain.com/path
+[2025-04-05 12:31:20] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzMTIw",
+    "Timestamp": "20250405123120",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 1200,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/path",
+    "AccountReference": "WiFi-1743845480",
+    "TransactionDesc": "Payment for Basic Montly plan"
+}
+[2025-04-05 12:31:20] Sending STK Push request
+[2025-04-05 12:31:21] STK Push response: {
+            "MerchantRequestID":"9bdb-4b0d-afb4-9ed1534e873782971",
+            "CheckoutRequestID":"ws_CO_05042025123259476114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-05 12:31:21] HTTP status code: 200
+[2025-04-05 12:31:21] Request took 0.648903 seconds
+[2025-04-05 12:31:21] Response data: stdClass Object
+(
+    [MerchantRequestID] => 9bdb-4b0d-afb4-9ed1534e873782971
+    [CheckoutRequestID] => ws_CO_05042025123259476114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-05 12:31:21] STK Push successful! CheckoutRequestID: ws_CO_05042025123259476114669532
+[2025-04-05 12:31:21] MerchantRequestID: 9bdb-4b0d-afb4-9ed1534e873782971
+[2025-04-05 12:31:21] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-05 12:31:21] Sending successful response to client
+[2025-04-05 11:31:54] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 11:31:54] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Basic Montly plan
+    [package_price] => 1200.00
+    [package_id] => 13
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 11:31:54] Form data received: {"resellerId":6,"packageName":"Basic Montly plan","packagePrice":"1200.00","mpesaNumber":"254114669532","packageId":13}
+[2025-04-05 11:31:54] Formatted phone number: 254114669532
+[2025-04-05 11:31:54] Validated amount: 1200
+[2025-04-05 11:31:54] Generating access token...
+[2025-04-05 11:31:54] Access token response: {
+            "access_token": "Tbiu9EGpCzAxAGai1bEKIvPsi7BO",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:31:54] Access token generated successfully: Tbiu9EGpCz...
+[2025-04-05 12:31:54] Using placeholder callback URL: https://mydomain.com/path
+[2025-04-05 12:31:54] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzMTU0",
+    "Timestamp": "20250405123154",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 1200,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/path",
+    "AccountReference": "WiFi-1743845514",
+    "TransactionDesc": "Payment for Basic Montly plan"
+}
+[2025-04-05 12:31:54] Sending STK Push request
+[2025-04-05 12:31:56] STK Push response: {
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39148732",
+            "CheckoutRequestID":"ws_CO_05042025123333938114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-05 12:31:56] HTTP status code: 200
+[2025-04-05 12:31:56] Request took 1.255991 seconds
+[2025-04-05 12:31:56] Response data: stdClass Object
+(
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39148732
+    [CheckoutRequestID] => ws_CO_05042025123333938114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-05 12:31:56] STK Push successful! CheckoutRequestID: ws_CO_05042025123333938114669532
+[2025-04-05 12:31:56] MerchantRequestID: c20c-4eb8-8161-40af4f84ee39148732
+[2025-04-05 12:31:56] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-05 12:31:56] Sending successful response to client
+[2025-04-05 11:34:02] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 11:34:02] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 11:34:02] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15}
+[2025-04-05 11:34:02] Formatted phone number: 254114669532
+[2025-04-05 11:34:02] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-05 11:34:02] Validated amount: 10
+[2025-04-05 11:34:02] Generating access token...
+[2025-04-05 11:34:03] Access token response: {
+            "access_token": "YZRbdFxunOu2UIbXvHxKwdC8Xorn",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:34:03] Access token generated successfully: YZRbdFxunO...
+[2025-04-05 12:34:03] Using placeholder callback URL: https://mydomain.com/path
+[2025-04-05 12:34:03] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzNDAz",
+    "Timestamp": "20250405123403",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/path",
+    "AccountReference": "WiFi-1743845643",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-04-05 12:34:03] Sending STK Push request
+[2025-04-05 12:34:04] STK Push response: {
+            "MerchantRequestID":"aa10-4361-b7cd-2aa0e34ed7e4175319",
+            "CheckoutRequestID":"ws_CO_05042025123542618114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-05 12:34:04] HTTP status code: 200
+[2025-04-05 12:34:04] Request took 0.735514 seconds
+[2025-04-05 12:34:04] Response data: stdClass Object
+(
+    [MerchantRequestID] => aa10-4361-b7cd-2aa0e34ed7e4175319
+    [CheckoutRequestID] => ws_CO_05042025123542618114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-05 12:34:04] STK Push successful! CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 12:34:04] MerchantRequestID: aa10-4361-b7cd-2aa0e34ed7e4175319
+[2025-04-05 12:34:04] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-05 12:34:04] Sending successful response to client
+[2025-04-05 12:32:36] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 12:32:36] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 12:32:36] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15}
+[2025-04-05 12:32:36] Formatted phone number: 254114669532
+[2025-04-05 12:32:36] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-05 12:32:36] Validated amount: 10
+[2025-04-05 12:32:36] Generating access token...
+[2025-04-05 12:32:37] Access token response: {
+            "access_token": "JLMGu1TuJDwWihGfQHjEKduLwZUu",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 12:32:37] Access token generated successfully: JLMGu1TuJD...
+[2025-04-05 13:32:37] Using placeholder callback URL: https://mydomain.com/path
+[2025-04-05 13:32:37] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTMzMjM3",
+    "Timestamp": "20250405133237",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/path",
+    "AccountReference": "WiFi-1743849157",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-04-05 13:32:37] Sending STK Push request
+[2025-04-05 13:32:37] STK Push response: {
+            "MerchantRequestID":"b54f-471d-93d9-f7f3bf3f7c0e3921202",
+            "CheckoutRequestID":"ws_CO_05042025133236831114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-05 13:32:37] HTTP status code: 200
+[2025-04-05 13:32:37] Request took 0.857941 seconds
+[2025-04-05 13:32:37] Response data: stdClass Object
+(
+    [MerchantRequestID] => b54f-471d-93d9-f7f3bf3f7c0e3921202
+    [CheckoutRequestID] => ws_CO_05042025133236831114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-05 13:32:37] STK Push successful! CheckoutRequestID: ws_CO_05042025133236831114669532
+[2025-04-05 13:32:37] MerchantRequestID: b54f-471d-93d9-f7f3bf3f7c0e3921202
+[2025-04-05 13:32:37] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-05 13:32:37] Sending successful response to client
+[2025-04-05 15:47:11] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 15:47:11] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Basic Montly plan
+    [package_price] => 1200.00
+    [package_id] => 13
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 15:47:11] Form data received: {"resellerId":6,"packageName":"Basic Montly plan","packagePrice":"1200.00","mpesaNumber":"254114669532","packageId":13}
+[2025-04-05 15:47:11] Formatted phone number: 254114669532
+[2025-04-05 15:47:11] Validated amount: 1200
+[2025-04-05 15:47:11] Generating access token...
+[2025-04-05 15:47:12] Access token response: {
+            "access_token": "KvlNOrz47OQA6Su0nltvB4DodIO0",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 15:47:12] Access token generated successfully: KvlNOrz47O...
+[2025-04-05 16:47:12] Using placeholder callback URL: https://mydomain.com/path
+[2025-04-05 16:47:12] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTY0NzEy",
+    "Timestamp": "20250405164712",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 1200,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/path",
+    "AccountReference": "WiFi-1743860832",
+    "TransactionDesc": "Payment for Basic Montly plan"
+}
+[2025-04-05 16:47:12] Sending STK Push request
+[2025-04-05 16:47:13] STK Push response: {
+            "MerchantRequestID":"bbcd-4a89-bd1a-6ecdc639893b3921352",
+            "CheckoutRequestID":"ws_CO_05042025164711645114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-05 16:47:13] HTTP status code: 200
+[2025-04-05 16:47:13] Request took 0.728952 seconds
+[2025-04-05 16:47:13] Response data: stdClass Object
+(
+    [MerchantRequestID] => bbcd-4a89-bd1a-6ecdc639893b3921352
+    [CheckoutRequestID] => ws_CO_05042025164711645114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-05 16:47:13] STK Push successful! CheckoutRequestID: ws_CO_05042025164711645114669532
+[2025-04-05 16:47:13] MerchantRequestID: bbcd-4a89-bd1a-6ecdc639893b3921352
+[2025-04-05 16:47:13] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-05 16:47:13] Sending successful response to client
+[2025-04-05 15:47:52] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 15:47:52] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Basic Montly plan
+    [package_price] => 1200.00
+    [package_id] => 13
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 15:47:52] Form data received: {"resellerId":6,"packageName":"Basic Montly plan","packagePrice":"1200.00","mpesaNumber":"254114669532","packageId":13}
+[2025-04-05 15:47:52] Formatted phone number: 254114669532
+[2025-04-05 15:47:52] Validated amount: 1200
+[2025-04-05 15:47:52] Generating access token...
+[2025-04-05 15:47:52] Access token response: {
+            "access_token": "fSSOhyscFaiKy9xBoygGiYg451xL",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 15:47:52] Access token generated successfully: fSSOhyscFa...
+[2025-04-05 16:47:52] Using placeholder callback URL: https://mydomain.com/path
+[2025-04-05 16:47:52] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTY0NzUy",
+    "Timestamp": "20250405164752",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 1200,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/path",
+    "AccountReference": "WiFi-1743860872",
+    "TransactionDesc": "Payment for Basic Montly plan"
+}
+[2025-04-05 16:47:52] Sending STK Push request
+[2025-04-05 16:47:59] STK Push response: {
+            "MerchantRequestID":"b54f-471d-93d9-f7f3bf3f7c0e3924826",
+            "CheckoutRequestID":"ws_CO_05042025164751959114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-05 16:47:59] HTTP status code: 200
+[2025-04-05 16:47:59] Request took 6.997407 seconds
+[2025-04-05 16:47:59] Response data: stdClass Object
+(
+    [MerchantRequestID] => b54f-471d-93d9-f7f3bf3f7c0e3924826
+    [CheckoutRequestID] => ws_CO_05042025164751959114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-05 16:47:59] STK Push successful! CheckoutRequestID: ws_CO_05042025164751959114669532
+[2025-04-05 16:47:59] MerchantRequestID: b54f-471d-93d9-f7f3bf3f7c0e3924826
+[2025-04-05 16:47:59] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-05 16:47:59] Sending successful response to client
+[2025-04-05 15:49:51] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-05 15:49:51] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 200.00
+    [package_id] => 10
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-05 15:49:51] Form data received: {"resellerId":6,"packageName":"Konnect","packagePrice":"200.00","mpesaNumber":"254114669532","packageId":10}
+[2025-04-05 15:49:51] Formatted phone number: 254114669532
+[2025-04-05 15:49:51] Validated amount: 200
+[2025-04-05 15:49:51] Generating access token...
+[2025-04-05 15:49:52] Access token response: {
+            "access_token": "evd0ptGLs3jgX73friboPQjhrCCP",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 15:49:52] Access token generated successfully: evd0ptGLs3...
+[2025-04-05 16:49:52] Using placeholder callback URL: https://mydomain.com/path
+[2025-04-05 16:49:52] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTY0OTUy",
+    "Timestamp": "20250405164952",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 200,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/path",
+    "AccountReference": "WiFi-1743860992",
+    "TransactionDesc": "Payment for Konnect"
+}
+[2025-04-05 16:49:52] Sending STK Push request
+[2025-04-05 16:49:53] STK Push response: {
+            "MerchantRequestID":"bbcd-4a89-bd1a-6ecdc639893b3921383",
+            "CheckoutRequestID":"ws_CO_05042025165131289114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-05 16:49:53] HTTP status code: 200
+[2025-04-05 16:49:53] Request took 1.681487 seconds
+[2025-04-05 16:49:53] Response data: stdClass Object
+(
+    [MerchantRequestID] => bbcd-4a89-bd1a-6ecdc639893b3921383
+    [CheckoutRequestID] => ws_CO_05042025165131289114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-05 16:49:53] STK Push successful! CheckoutRequestID: ws_CO_05042025165131289114669532
+[2025-04-05 16:49:53] MerchantRequestID: bbcd-4a89-bd1a-6ecdc639893b3921383
+[2025-04-05 16:49:53] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-05 16:49:53] Sending successful response to client
+[2025-04-07 12:40:10] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-07 12:40:10] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [package_id] => 12
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-07 12:40:10] Form data received: {"resellerId":6,"packageName":"Game Connect","packagePrice":"30.00","mpesaNumber":"254114669532","packageId":12}
+[2025-04-07 12:40:10] Formatted phone number: 254114669532
+[2025-04-07 12:40:10] Validated amount: 30
+[2025-04-07 12:40:10] Generating access token...
+[2025-04-07 12:40:10] Access token response: {
+            "access_token": "JS73GqjN7riHRHqij4E43USQcEmY",
+            "expires_in": "3599"
+        }
+        
+[2025-04-07 12:40:10] Access token generated successfully: JS73GqjN7r...
+[2025-04-07 13:40:10] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-07 13:40:10] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA3MTM0MDEw",
+    "Timestamp": "20250407134010",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 30,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "WiFi-1744022410",
+    "TransactionDesc": "Payment for Game Connect"
+}
+[2025-04-07 13:40:10] Sending STK Push request
+[2025-04-07 13:40:11] STK Push response: {
+            "MerchantRequestID":"9bdb-4b0d-afb4-9ed1534e8737145400",
+            "CheckoutRequestID":"ws_CO_07042025134150383114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-07 13:40:11] HTTP status code: 200
+[2025-04-07 13:40:11] Request took 0.812565 seconds
+[2025-04-07 13:40:11] Response data: stdClass Object
+(
+    [MerchantRequestID] => 9bdb-4b0d-afb4-9ed1534e8737145400
+    [CheckoutRequestID] => ws_CO_07042025134150383114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-07 13:40:11] STK Push successful! CheckoutRequestID: ws_CO_07042025134150383114669532
+[2025-04-07 13:40:11] MerchantRequestID: 9bdb-4b0d-afb4-9ed1534e8737145400
+[2025-04-07 13:40:11] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-07 13:40:11] Sending successful response to client
+[2025-04-07 15:55:39] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-07 15:55:39] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 120.00
+    [package_id] => 16
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-07 15:55:39] Form data received: {"resellerId":6,"packageName":"Game Connect","packagePrice":"120.00","mpesaNumber":"254114669532","packageId":16}
+[2025-04-07 15:55:39] Formatted phone number: 254114669532
+[2025-04-07 15:55:39] Validated amount: 120
+[2025-04-07 15:55:39] Generating access token...
+[2025-04-07 15:55:40] Access token response: {
+            "access_token": "kKDNllSVMD1i7pSEFTRsa9wHNOAc",
+            "expires_in": "3599"
+        }
+        
+[2025-04-07 15:55:40] Access token generated successfully: kKDNllSVMD...
+[2025-04-07 16:55:40] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-07 16:55:40] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA3MTY1NTQw",
+    "Timestamp": "20250407165540",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 120,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "WiFi-1744034140",
+    "TransactionDesc": "Payment for Game Connect"
+}
+[2025-04-07 16:55:40] Sending STK Push request
+[2025-04-07 16:55:41] STK Push response: {
+            "MerchantRequestID":"aa10-4361-b7cd-2aa0e34ed7e4241907",
+            "CheckoutRequestID":"ws_CO_07042025165540158114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-07 16:55:41] HTTP status code: 200
+[2025-04-07 16:55:41] Request took 0.676636 seconds
+[2025-04-07 16:55:41] Response data: stdClass Object
+(
+    [MerchantRequestID] => aa10-4361-b7cd-2aa0e34ed7e4241907
+    [CheckoutRequestID] => ws_CO_07042025165540158114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-07 16:55:41] STK Push successful! CheckoutRequestID: ws_CO_07042025165540158114669532
+[2025-04-07 16:55:41] MerchantRequestID: aa10-4361-b7cd-2aa0e34ed7e4241907
+[2025-04-07 16:55:41] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-07 16:55:41] Sending successful response to client
+[2025-04-07 16:02:00] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-07 16:02:00] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Basic Montly plan
+    [package_price] => 1200.00
+    [package_id] => 13
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-07 16:02:00] Form data received: {"resellerId":6,"packageName":"Basic Montly plan","packagePrice":"1200.00","mpesaNumber":"254114669532","packageId":13}
+[2025-04-07 16:02:00] Formatted phone number: 254114669532
+[2025-04-07 16:02:00] Validated amount: 1200
+[2025-04-07 16:02:00] Generating access token...
+[2025-04-07 16:02:01] Access token response: {
+            "access_token": "4s5Sjrkhbj2ikZyG7wXlgGAgyIbX",
+            "expires_in": "3599"
+        }
+        
+[2025-04-07 16:02:01] Access token generated successfully: 4s5Sjrkhbj...
+[2025-04-07 17:02:01] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-07 17:02:01] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA3MTcwMjAx",
+    "Timestamp": "20250407170201",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 1200,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "WiFi-1744034521",
+    "TransactionDesc": "Payment for Basic Montly plan"
+}
+[2025-04-07 17:02:01] Sending STK Push request
+[2025-04-07 17:02:02] STK Push response: {
+            "MerchantRequestID":"b54f-471d-93d9-f7f3bf3f7c0e3969632",
+            "CheckoutRequestID":"ws_CO_07042025170200490114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-07 17:02:02] HTTP status code: 200
+[2025-04-07 17:02:02] Request took 0.77598 seconds
+[2025-04-07 17:02:02] Response data: stdClass Object
+(
+    [MerchantRequestID] => b54f-471d-93d9-f7f3bf3f7c0e3969632
+    [CheckoutRequestID] => ws_CO_07042025170200490114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-07 17:02:02] STK Push successful! CheckoutRequestID: ws_CO_07042025170200490114669532
+[2025-04-07 17:02:02] MerchantRequestID: b54f-471d-93d9-f7f3bf3f7c0e3969632
+[2025-04-07 17:02:02] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-07 17:02:02] Sending successful response to client
+[2025-04-09 08:49:40] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-09 08:49:40] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-09 08:49:40] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15}
+[2025-04-09 08:49:40] Formatted phone number: 254114669532
+[2025-04-09 08:49:40] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-09 08:49:40] Validated amount: 10
+[2025-04-09 08:49:40] Generating access token...
+[2025-04-09 08:49:41] Access token response: {
+            "access_token": "8w3CoM3hzAnQfgUqWbrrMmTP27ai",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:49:41] Access token generated successfully: 8w3CoM3hzA...
+[2025-04-09 09:49:41] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-09 09:49:41] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk0OTQx",
+    "Timestamp": "20250409094941",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "WiFi-1744181381",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-04-09 09:49:41] Sending STK Push request
+[2025-04-09 09:49:42] STK Push response: {
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39263974",
+            "CheckoutRequestID":"ws_CO_09042025094942156114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-09 09:49:42] HTTP status code: 200
+[2025-04-09 09:49:42] Request took 1.268409 seconds
+[2025-04-09 09:49:42] Response data: stdClass Object
+(
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39263974
+    [CheckoutRequestID] => ws_CO_09042025094942156114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-09 09:49:42] STK Push successful! CheckoutRequestID: ws_CO_09042025094942156114669532
+[2025-04-09 09:49:42] MerchantRequestID: c20c-4eb8-8161-40af4f84ee39263974
+[2025-04-09 09:49:42] Failed to prepare transaction statement: Table 'billing_system.mpesa_transactions' doesn't exist
+[2025-04-09 09:49:42] Sending successful response to client
+[2025-04-09 08:55:51] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-09 08:55:51] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-09 08:55:51] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15}
+[2025-04-09 08:55:51] Formatted phone number: 254114669532
+[2025-04-09 08:55:51] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-09 08:55:51] Validated amount: 10
+[2025-04-09 08:55:51] Generating access token...
+[2025-04-09 08:55:51] Access token response: {
+            "access_token": "5BTzLYaaFJsL2gXPdH2Wc9ibAyBG",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:55:51] Access token generated successfully: 5BTzLYaaFJ...
+[2025-04-09 09:55:51] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-09 09:55:51] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk1NTUx",
+    "Timestamp": "20250409095551",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "WiFi-1744181751",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-04-09 09:55:51] Sending STK Push request
+[2025-04-09 09:55:52] STK Push response: {
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39264111",
+            "CheckoutRequestID":"ws_CO_09042025095732720114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-09 09:55:52] HTTP status code: 200
+[2025-04-09 09:55:52] Request took 0.638986 seconds
+[2025-04-09 09:55:52] Response data: stdClass Object
+(
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39264111
+    [CheckoutRequestID] => ws_CO_09042025095732720114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-09 09:55:52] STK Push successful! CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 09:55:52] MerchantRequestID: c20c-4eb8-8161-40af4f84ee39264111
+[2025-04-09 09:55:52] Transaction details saved to database with ID: 1
+[2025-04-09 09:55:52] Sending successful response to client
+[2025-04-09 09:20:38] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-09 09:20:38] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-09 09:20:38] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15}
+[2025-04-09 09:20:38] Formatted phone number: 254114669532
+[2025-04-09 09:20:38] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-09 09:20:38] Validated amount: 10
+[2025-04-09 09:20:38] Generating access token...
+[2025-04-09 09:20:38] Access token response: {
+            "access_token": "5SydteXhdenjDVxjRFnSEVAMG5i4",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 09:20:38] Access token generated successfully: 5SydteXhde...
+[2025-04-09 10:20:38] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-09 10:20:38] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MTAyMDM4",
+    "Timestamp": "20250409102038",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "WiFi-1744183238",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-04-09 10:20:38] Sending STK Push request
+[2025-04-09 10:20:39] STK Push response: {
+            "MerchantRequestID":"2203-464a-b6e1-0288223bfd3f7770",
+            "CheckoutRequestID":"ws_CO_09042025102220189114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-09 10:20:39] HTTP status code: 200
+[2025-04-09 10:20:39] Request took 1.019655 seconds
+[2025-04-09 10:20:39] Response data: stdClass Object
+(
+    [MerchantRequestID] => 2203-464a-b6e1-0288223bfd3f7770
+    [CheckoutRequestID] => ws_CO_09042025102220189114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-09 10:20:39] STK Push successful! CheckoutRequestID: ws_CO_09042025102220189114669532
+[2025-04-09 10:20:39] MerchantRequestID: 2203-464a-b6e1-0288223bfd3f7770
+[2025-04-09 10:20:39] Transaction details saved to database with ID: 2
+[2025-04-09 10:20:39] Sending successful response to client
+[2025-04-09 13:32:33] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-09 13:32:33] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-09 13:32:33] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15}
+[2025-04-09 13:32:33] Formatted phone number: 254114669532
+[2025-04-09 13:32:33] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-09 13:32:33] Validated amount: 10
+[2025-04-09 13:32:33] Generating access token...
+[2025-04-09 13:32:45] Access token response: 
+[2025-04-09 13:32:45] Curl error: Could not resolve host: sandbox.safaricom.co.ke
+[2025-04-09 13:33:20] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-09 13:33:20] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-09 13:33:20] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15}
+[2025-04-09 13:33:20] Formatted phone number: 254114669532
+[2025-04-09 13:33:20] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-09 13:33:20] Validated amount: 10
+[2025-04-09 13:33:20] Generating access token...
+[2025-04-09 13:33:20] Access token response: 
+[2025-04-09 13:33:20] Curl error: Could not resolve host: sandbox.safaricom.co.ke
+[2025-04-14 12:09:20] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-14 12:09:20] POST data: Array
+(
+    [reseller_id] => 15
+    [package_name] => 2HR Qtro Konnect
+    [package_price] => 10.00
+    [package_id] => 18
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-14 12:09:20] Form data received: {"resellerId":15,"packageName":"2HR Qtro Konnect","packagePrice":"10.00","mpesaNumber":"254114669532","packageId":18}
+[2025-04-14 12:09:20] Formatted phone number: 254114669532
+[2025-04-14 12:09:20] Validated amount: 10
+[2025-04-14 12:09:20] Generating access token...
+[2025-04-14 12:09:21] Access token response: {
+            "access_token": "psdMDGyhKXmh5WkQSrFooLUE3xIG",
+            "expires_in": "3599"
+        }
+        
+[2025-04-14 12:09:21] Access token generated successfully: psdMDGyhKX...
+[2025-04-14 13:09:21] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-14 13:09:21] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDE0MTMwOTIx",
+    "Timestamp": "20250414130921",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for 2HR Qtro Konnect"
+}
+[2025-04-14 13:09:21] Sending STK Push request
+[2025-04-14 13:09:21] STK Push response: {
+            "MerchantRequestID":"5b3d-4c11-9598-abb6c87b02ec17987",
+            "CheckoutRequestID":"ws_CO_14042025130920578114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-14 13:09:21] HTTP status code: 200
+[2025-04-14 13:09:21] Request took 0.84533 seconds
+[2025-04-14 13:09:21] Response data: stdClass Object
+(
+    [MerchantRequestID] => 5b3d-4c11-9598-abb6c87b02ec17987
+    [CheckoutRequestID] => ws_CO_14042025130920578114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-14 13:09:21] STK Push successful! CheckoutRequestID: ws_CO_14042025130920578114669532
+[2025-04-14 13:09:21] MerchantRequestID: 5b3d-4c11-9598-abb6c87b02ec17987
+[2025-04-14 13:09:21] Transaction details saved to database with ID: 3
+[2025-04-14 13:09:21] Sending successful response to client
+[2025-04-14 12:09:49] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-14 12:09:49] POST data: Array
+(
+    [reseller_id] => 15
+    [package_name] => 2HR Qtro Konnect
+    [package_price] => 10.00
+    [package_id] => 18
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-14 12:09:49] Form data received: {"resellerId":15,"packageName":"2HR Qtro Konnect","packagePrice":"10.00","mpesaNumber":"254114669532","packageId":18}
+[2025-04-14 12:09:49] Formatted phone number: 254114669532
+[2025-04-14 12:09:49] Validated amount: 10
+[2025-04-14 12:09:49] Generating access token...
+[2025-04-14 12:09:49] Access token response: {
+            "access_token": "rG4dwxPcaOIOPEkA6BqYmQ3kMJS2",
+            "expires_in": "3599"
+        }
+        
+[2025-04-14 12:09:49] Access token generated successfully: rG4dwxPcaO...
+[2025-04-14 13:09:49] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-14 13:09:49] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDE0MTMwOTQ5",
+    "Timestamp": "20250414130949",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for 2HR Qtro Konnect"
+}
+[2025-04-14 13:09:49] Sending STK Push request
+[2025-04-14 13:09:50] STK Push response: {
+            "MerchantRequestID":"2203-464a-b6e1-0288223bfd3f146373",
+            "CheckoutRequestID":"ws_CO_14042025131134377114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-14 13:09:50] HTTP status code: 200
+[2025-04-14 13:09:50] Request took 1.025972 seconds
+[2025-04-14 13:09:50] Response data: stdClass Object
+(
+    [MerchantRequestID] => 2203-464a-b6e1-0288223bfd3f146373
+    [CheckoutRequestID] => ws_CO_14042025131134377114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-14 13:09:50] STK Push successful! CheckoutRequestID: ws_CO_14042025131134377114669532
+[2025-04-14 13:09:50] MerchantRequestID: 2203-464a-b6e1-0288223bfd3f146373
+[2025-04-14 13:09:50] Transaction details saved to database with ID: 4
+[2025-04-14 13:09:50] Sending successful response to client
+[2025-04-14 12:10:53] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-14 12:10:53] POST data: Array
+(
+    [reseller_id] => 15
+    [package_name] => 2HR Qtro Konnect
+    [package_price] => 10.00
+    [package_id] => 18
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-14 12:10:53] Form data received: {"resellerId":15,"packageName":"2HR Qtro Konnect","packagePrice":"10.00","mpesaNumber":"254114669532","packageId":18}
+[2025-04-14 12:10:53] Formatted phone number: 254114669532
+[2025-04-14 12:10:53] Validated amount: 10
+[2025-04-14 12:10:53] Generating access token...
+[2025-04-14 12:10:54] Access token response: {
+            "access_token": "EoeeqIhD26sBKy1Q4VvfGz66qOKh",
+            "expires_in": "3599"
+        }
+        
+[2025-04-14 12:10:54] Access token generated successfully: EoeeqIhD26...
+[2025-04-14 13:10:54] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-14 13:10:54] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDE0MTMxMDU0",
+    "Timestamp": "20250414131054",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for 2HR Qtro Konnect"
+}
+[2025-04-14 13:10:54] Sending STK Push request
+[2025-04-14 13:10:55] STK Push response: {
+            "MerchantRequestID":"5b3d-4c11-9598-abb6c87b02ec17997",
+            "CheckoutRequestID":"ws_CO_14042025131239273114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-14 13:10:55] HTTP status code: 200
+[2025-04-14 13:10:55] Request took 0.742569 seconds
+[2025-04-14 13:10:55] Response data: stdClass Object
+(
+    [MerchantRequestID] => 5b3d-4c11-9598-abb6c87b02ec17997
+    [CheckoutRequestID] => ws_CO_14042025131239273114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-14 13:10:55] STK Push successful! CheckoutRequestID: ws_CO_14042025131239273114669532
+[2025-04-14 13:10:55] MerchantRequestID: 5b3d-4c11-9598-abb6c87b02ec17997
+[2025-04-14 13:10:55] Transaction details saved to database with ID: 5
+[2025-04-14 13:10:55] Sending successful response to client
+[2025-04-14 12:13:15] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-14 12:13:15] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-14 12:13:15] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15}
+[2025-04-14 12:13:15] Formatted phone number: 254114669532
+[2025-04-14 12:13:15] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-14 12:13:15] Validated amount: 10
+[2025-04-14 12:13:15] Generating access token...
+[2025-04-14 12:13:17] Access token response: {
+            "access_token": "e85bQaiGv7fr2wuRmDOk5d6GMUUT",
+            "expires_in": "3599"
+        }
+        
+[2025-04-14 12:13:17] Access token generated successfully: e85bQaiGv7...
+[2025-04-14 13:13:17] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-14 13:13:17] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDE0MTMxMzE3",
+    "Timestamp": "20250414131317",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-04-14 13:13:17] Sending STK Push request
+[2025-04-14 13:13:17] STK Push response: {
+            "MerchantRequestID":"5fbd-4f1c-b3c1-b463d28d74d2147095",
+            "CheckoutRequestID":"ws_CO_14042025131316620114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-14 13:13:17] HTTP status code: 200
+[2025-04-14 13:13:17] Request took 0.61894 seconds
+[2025-04-14 13:13:17] Response data: stdClass Object
+(
+    [MerchantRequestID] => 5fbd-4f1c-b3c1-b463d28d74d2147095
+    [CheckoutRequestID] => ws_CO_14042025131316620114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-14 13:13:17] STK Push successful! CheckoutRequestID: ws_CO_14042025131316620114669532
+[2025-04-14 13:13:17] MerchantRequestID: 5fbd-4f1c-b3c1-b463d28d74d2147095
+[2025-04-14 13:13:17] Transaction details saved to database with ID: 6
+[2025-04-14 13:13:17] Sending successful response to client
+[2025-04-14 12:20:54] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-14 12:20:54] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-14 12:20:54] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15}
+[2025-04-14 12:20:54] Formatted phone number: 254114669532
+[2025-04-14 12:20:54] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-14 12:20:54] Validated amount: 10
+[2025-04-14 12:20:54] Generating access token...
+[2025-04-14 12:20:55] Access token response: {
+            "access_token": "i0Kc7anhmM3fZ6mKXG4ul2rBAIeq",
+            "expires_in": "3599"
+        }
+        
+[2025-04-14 12:20:55] Access token generated successfully: i0Kc7anhmM...
+[2025-04-14 13:20:55] Using callback URL: https://mydomain.com/mpesa_callback.php
+[2025-04-14 13:20:55] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDE0MTMyMDU1",
+    "Timestamp": "20250414132055",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/mydomain.com\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-04-14 13:20:55] Sending STK Push request
+[2025-04-14 13:20:56] STK Push response: {
+            "MerchantRequestID":"ec07-4524-9c53-db81c5aef3985599",
+            "CheckoutRequestID":"ws_CO_14042025132240303114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-14 13:20:56] HTTP status code: 200
+[2025-04-14 13:20:56] Request took 1.412882 seconds
+[2025-04-14 13:20:56] Response data: stdClass Object
+(
+    [MerchantRequestID] => ec07-4524-9c53-db81c5aef3985599
+    [CheckoutRequestID] => ws_CO_14042025132240303114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-14 13:20:56] STK Push successful! CheckoutRequestID: ws_CO_14042025132240303114669532
+[2025-04-14 13:20:56] MerchantRequestID: ec07-4524-9c53-db81c5aef3985599
+[2025-04-14 13:20:56] Transaction details saved to database with ID: 7
+[2025-04-14 13:20:56] Sending successful response to client
+[2025-04-25 03:10:23] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-25 03:10:23] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-25 03:10:23] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15}
+[2025-04-25 03:10:23] Formatted phone number: 254114669532
+[2025-04-25 03:10:23] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-25 03:10:23] Validated amount: 10
+[2025-04-25 03:10:23] Generating access token...
+[2025-04-25 03:10:24] Access token response: {
+            "access_token": "HFucQj39ZHnBQ6iYN06QHGKFOTrb",
+            "expires_in": "3599"
+        }
+        
+[2025-04-25 03:10:24] Access token generated successfully: HFucQj39ZH...
+[2025-04-25 04:10:24] Using callback URL: https://13a2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-25 04:10:24] NGROK detected in callback URL - ensure this matches your active ngrok tunnel
+[2025-04-25 04:10:24] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDI1MDQxMDI0",
+    "Timestamp": "20250425041024",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/13a2-197-136-202-10.ngrok-free.app\/Wifi%20Billiling%20system\/Admin\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-04-25 04:10:24] Sending STK Push request
+[2025-04-25 04:10:25] STK Push response: {
+            "MerchantRequestID":"75f4-4e91-aa3c-79e4611bbc5833591",
+            "CheckoutRequestID":"ws_CO_25042025041216243114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-25 04:10:25] HTTP status code: 200
+[2025-04-25 04:10:25] Request took 1.024078 seconds
+[2025-04-25 04:10:25] Response data: stdClass Object
+(
+    [MerchantRequestID] => 75f4-4e91-aa3c-79e4611bbc5833591
+    [CheckoutRequestID] => ws_CO_25042025041216243114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-25 04:10:25] STK Push successful! CheckoutRequestID: ws_CO_25042025041216243114669532
+[2025-04-25 04:10:25] MerchantRequestID: 75f4-4e91-aa3c-79e4611bbc5833591
+[2025-04-25 04:10:25] Transaction details saved to database with ID: 8
+[2025-04-25 04:10:25] Sending successful response to client
+[2025-04-26 02:06:51] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-26 02:06:51] POST data: Array
+(
+    [reseller_id] => 6
+    [router_id] => 15
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [package_id] => 12
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-26 02:06:51] Form data received: {"resellerId":6,"packageName":"Game Connect","packagePrice":"30.00","mpesaNumber":"254114669532","packageId":12}
+[2025-04-26 02:06:51] Formatted phone number: 254114669532
+[2025-04-26 02:06:51] Validated amount: 30
+[2025-04-26 02:06:51] Generating access token...
+[2025-04-26 02:06:52] Access token response: {
+            "access_token": "vW2rqVGSCOAeqLLbTyCQeD1tlC1t",
+            "expires_in": "3599"
+        }
+        
+[2025-04-26 02:06:52] Access token generated successfully: vW2rqVGSCO...
+[2025-04-26 03:06:52] Using callback URL: https://13a2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-26 03:06:52] NGROK detected in callback URL - ensure this matches your active ngrok tunnel
+[2025-04-26 03:06:52] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDI2MDMwNjUy",
+    "Timestamp": "20250426030652",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 30,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/13a2-197-136-202-10.ngrok-free.app\/Wifi%20Billiling%20system\/Admin\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for Game Connect"
+}
+[2025-04-26 03:06:52] Sending STK Push request
+[2025-04-26 03:06:53] STK Push response: {
+            "MerchantRequestID":"ce92-4c74-a396-4768a3ea93e4102298",
+            "CheckoutRequestID":"ws_CO_26042025030844768114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-26 03:06:53] HTTP status code: 200
+[2025-04-26 03:06:53] Request took 1.016342 seconds
+[2025-04-26 03:06:53] Response data: stdClass Object
+(
+    [MerchantRequestID] => ce92-4c74-a396-4768a3ea93e4102298
+    [CheckoutRequestID] => ws_CO_26042025030844768114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-26 03:06:53] STK Push successful! CheckoutRequestID: ws_CO_26042025030844768114669532
+[2025-04-26 03:06:53] MerchantRequestID: ce92-4c74-a396-4768a3ea93e4102298
+[2025-04-26 03:06:53] Transaction details saved to database with ID: 9
+[2025-04-26 03:06:53] Sending successful response to client
+[2025-04-27 00:10:30] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-04-27 00:10:30] POST data: Array
+(
+    [reseller_id] => 6
+    [router_id] => 17
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-04-27 00:10:30] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15,"routerId":17}
+[2025-04-27 00:10:30] Formatted phone number: 254114669532
+[2025-04-27 00:10:30] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-04-27 00:10:30] Validated amount: 10
+[2025-04-27 00:10:30] Generating access token...
+[2025-04-27 00:10:31] Access token response: {
+            "access_token": "M8fXp2IeVR9z0Ax5QAaWKd0M6AOe",
+            "expires_in": "3599"
+        }
+        
+[2025-04-27 00:10:31] Access token generated successfully: M8fXp2IeVR...
+[2025-04-27 01:10:31] Using callback URL: https://13a2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-27 01:10:31] NGROK detected in callback URL - ensure this matches your active ngrok tunnel
+[2025-04-27 01:10:31] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDI3MDExMDMx",
+    "Timestamp": "20250427011031",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/13a2-197-136-202-10.ngrok-free.app\/Wifi%20Billiling%20system\/Admin\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-04-27 01:10:31] Sending STK Push request
+[2025-04-27 01:10:33] STK Push response: {
+            "MerchantRequestID":"83d4-4f58-9d7b-8134bf68ae3085264",
+            "CheckoutRequestID":"ws_CO_27042025011034247114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-04-27 01:10:33] HTTP status code: 200
+[2025-04-27 01:10:33] Request took 1.751733 seconds
+[2025-04-27 01:10:33] Response data: stdClass Object
+(
+    [MerchantRequestID] => 83d4-4f58-9d7b-8134bf68ae3085264
+    [CheckoutRequestID] => ws_CO_27042025011034247114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-04-27 01:10:33] STK Push successful! CheckoutRequestID: ws_CO_27042025011034247114669532
+[2025-04-27 01:10:33] MerchantRequestID: 83d4-4f58-9d7b-8134bf68ae3085264
+[2025-04-27 01:10:33] Failed to prepare transaction statement: Unknown column 'router_id' in 'field list'
+[2025-04-27 01:10:33] Sending successful response to client
+[2025-05-04 08:30:25] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-05-04 08:30:25] POST data: Array
+(
+    [reseller_id] => 6
+    [router_id] => 15
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-05-04 08:30:25] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15,"routerId":15}
+[2025-05-04 08:30:25] Formatted phone number: 254114669532
+[2025-05-04 08:30:25] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-05-04 08:30:25] Validated amount: 10
+[2025-05-04 08:30:25] Generating access token...
+[2025-05-04 08:30:27] Access token response: 
+[2025-05-04 08:30:27] Failed to generate access token: Unknown error
+[2025-05-04 09:32:32] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-05-04 09:32:32] POST data: Array
+(
+    [reseller_id] => 6
+    [router_id] => 15
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-05-04 09:32:32] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15,"routerId":15}
+[2025-05-04 09:32:32] Formatted phone number: 254114669532
+[2025-05-04 09:32:32] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-05-04 09:32:32] Validated amount: 10
+[2025-05-04 09:32:32] Generating access token...
+[2025-05-04 09:32:33] Access token response: {
+            "access_token": "KTboRANMDZWUPVpYI49AdsdVH4df",
+            "expires_in": "3599"
+        }
+        
+[2025-05-04 09:32:33] Access token generated successfully: KTboRANMDZ...
+[2025-05-04 10:32:33] Using callback URL: https://13a2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-05-04 10:32:33] NGROK detected in callback URL - ensure this matches your active ngrok tunnel
+[2025-05-04 10:32:33] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNTA0MTAzMjMz",
+    "Timestamp": "20250504103233",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/13a2-197-136-202-10.ngrok-free.app\/Wifi%20Billiling%20system\/Admin\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-05-04 10:32:33] Sending STK Push request
+[2025-05-04 10:32:35] STK Push response: {
+            "MerchantRequestID":"5772-45ff-adb5-823779ddd1bc157393",
+            "CheckoutRequestID":"ws_CO_04052025103233193114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-05-04 10:32:35] HTTP status code: 200
+[2025-05-04 10:32:35] Request took 1.29333 seconds
+[2025-05-04 10:32:35] Response data: stdClass Object
+(
+    [MerchantRequestID] => 5772-45ff-adb5-823779ddd1bc157393
+    [CheckoutRequestID] => ws_CO_04052025103233193114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-05-04 10:32:35] STK Push successful! CheckoutRequestID: ws_CO_04052025103233193114669532
+[2025-05-04 10:32:35] MerchantRequestID: 5772-45ff-adb5-823779ddd1bc157393
+[2025-05-04 10:32:35] Failed to prepare transaction statement: Unknown column 'router_id' in 'field list'
+[2025-05-04 10:32:35] Sending successful response to client
+[2025-05-04 14:12:35] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-05-04 14:12:35] POST data: Array
+(
+    [reseller_id] => 6
+    [router_id] => 15
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [package_id] => 15
+    [mpesa_number] => 254114669532
+)
+
+[2025-05-04 14:12:35] Form data received: {"resellerId":6,"packageName":"1Hr Konnect","packagePrice":"1.00","mpesaNumber":"254114669532","packageId":15,"routerId":15}
+[2025-05-04 14:12:35] Formatted phone number: 254114669532
+[2025-05-04 14:12:35] WARNING: Amount less than 10 KES. Setting to minimum 10 KES for sandbox testing.
+[2025-05-04 14:12:35] Validated amount: 10
+[2025-05-04 14:12:35] Generating access token...
+[2025-05-04 14:12:36] Access token response: {
+            "access_token": "hAdT9P4E4RJKwNSXsSz68pD4dO4G",
+            "expires_in": "3599"
+        }
+        
+[2025-05-04 14:12:36] Access token generated successfully: hAdT9P4E4R...
+[2025-05-04 15:12:36] Using callback URL: https://13a2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-05-04 15:12:36] NGROK detected in callback URL - ensure this matches your active ngrok tunnel
+[2025-05-04 15:12:36] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNTA0MTUxMjM2",
+    "Timestamp": "20250504151236",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/13a2-197-136-202-10.ngrok-free.app\/Wifi%20Billiling%20system\/Admin\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for 1Hr Konnect"
+}
+[2025-05-04 15:12:36] Sending STK Push request
+[2025-05-04 15:12:37] STK Push response: {
+            "MerchantRequestID":"74cc-45b4-9c87-cf63848fd865214984",
+            "CheckoutRequestID":"ws_CO_04052025151432399114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-05-04 15:12:37] HTTP status code: 200
+[2025-05-04 15:12:37] Request took 1.084859 seconds
+[2025-05-04 15:12:37] Response data: stdClass Object
+(
+    [MerchantRequestID] => 74cc-45b4-9c87-cf63848fd865214984
+    [CheckoutRequestID] => ws_CO_04052025151432399114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-05-04 15:12:37] STK Push successful! CheckoutRequestID: ws_CO_04052025151432399114669532
+[2025-05-04 15:12:37] MerchantRequestID: 74cc-45b4-9c87-cf63848fd865214984
+[2025-05-04 15:12:37] Failed to prepare transaction statement: Unknown column 'router_id' in 'field list'
+[2025-05-04 15:12:37] Sending successful response to client
+[2025-08-21 10:34:44] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-08-21 10:34:44] POST data: Array
+(
+    [reseller_id] => 6
+    [router_id] => 15
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [package_id] => 12
+    [mpesa_number] => 254114669532
+)
+
+[2025-08-21 10:34:44] Form data received: {"resellerId":6,"packageName":"Game Connect","packagePrice":"30.00","mpesaNumber":"254114669532","packageId":12,"routerId":15}
+[2025-08-21 10:34:44] Formatted phone number: 254114669532
+[2025-08-21 10:34:44] Validated amount: 30
+[2025-08-21 10:34:44] Generating access token...
+[2025-08-21 10:34:45] Access token response: {
+            "access_token": "iCM3zSsOeKBbfZyKtViOzvOcC5GH",
+            "expires_in": "3599"
+        }
+        
+[2025-08-21 10:34:45] Access token generated successfully: iCM3zSsOeK...
+[2025-08-21 11:34:45] Using callback URL: https://13a2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-08-21 11:34:45] NGROK detected in callback URL - ensure this matches your active ngrok tunnel
+[2025-08-21 11:34:45] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwODIxMTEzNDQ1",
+    "Timestamp": "20250821113445",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 30,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/13a2-197-136-202-10.ngrok-free.app\/Wifi%20Billiling%20system\/Admin\/mpesa_callback.php",
+    "AccountReference": "Qtro Technologies",
+    "TransactionDesc": "Payment for Game Connect"
+}
+[2025-08-21 11:34:45] Sending STK Push request
+[2025-08-21 11:34:46] STK Push response: {
+            "MerchantRequestID":"92f0-455d-9e8c-b8f93c31aced35280",
+            "CheckoutRequestID":"ws_CO_210820251134475114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-08-21 11:34:46] HTTP status code: 200
+[2025-08-21 11:34:46] Request took 0.929519 seconds
+[2025-08-21 11:34:46] Response data: stdClass Object
+(
+    [MerchantRequestID] => 92f0-455d-9e8c-b8f93c31aced35280
+    [CheckoutRequestID] => ws_CO_210820251134475114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-08-21 11:34:46] STK Push successful! CheckoutRequestID: ws_CO_210820251134475114669532
+[2025-08-21 11:34:46] MerchantRequestID: 92f0-455d-9e8c-b8f93c31aced35280
+[2025-08-21 11:34:46] Failed to prepare transaction statement: Unknown column 'router_id' in 'field list'
+[2025-08-21 11:34:46] Sending successful response to client
+[2025-09-23 21:41:30] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-09-23 21:41:30] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [mpesa_number] => 254114669532
+)
+
+[2025-09-23 21:41:30] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","mpesaNumber":"254114669532","packageId":30,"routerId":19}
+[2025-09-23 21:41:30] Formatted phone number: 254114669532
+[2025-09-23 21:41:30] Validated amount: 11
+[2025-09-23 21:41:30] Generating access token...
+[2025-09-23 21:41:31] Access token response: 
+[2025-09-23 21:41:31] Failed to generate access token: Unknown error
+[2025-09-23 21:41:35] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-09-23 21:41:35] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [mpesa_number] => 254114669532
+)
+
+[2025-09-23 21:41:35] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","mpesaNumber":"254114669532","packageId":30,"routerId":19}
+[2025-09-23 21:41:35] Formatted phone number: 254114669532
+[2025-09-23 21:41:35] Validated amount: 11
+[2025-09-23 21:41:35] Generating access token...
+[2025-09-23 21:41:36] Access token response: 
+[2025-09-23 21:41:36] Failed to generate access token: Unknown error
+[2025-09-23 21:43:00] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-09-23 21:43:00] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [mpesa_number] => 254114669532
+)
+
+[2025-09-23 21:43:00] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","mpesaNumber":"254114669532","packageId":30,"routerId":19}
+[2025-09-23 21:43:00] Formatted phone number: 254114669532
+[2025-09-23 21:43:00] Validated amount: 11
+[2025-09-23 21:43:00] Generating access token...
+[2025-09-23 21:43:01] Access token response: 
+[2025-09-23 21:43:01] Failed to generate access token: Unknown error

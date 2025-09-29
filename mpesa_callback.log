@@ -1,0 +1,360 @@
+[2025-04-09 08:48:30] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 08:48:30] Callback data: 
+[2025-04-09 08:48:30] Failed to decode JSON data: Syntax error
+[2025-04-09 08:50:14] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 08:50:14] Callback data: 
+[2025-04-09 08:50:14] Failed to decode JSON data: Syntax error
+[2025-04-09 08:51:29] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 08:51:29] Callback data: 
+[2025-04-09 08:51:29] Failed to decode JSON data: Syntax error
+[2025-04-09 08:51:35] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 08:51:35] Callback data: 
+[2025-04-09 08:51:35] Failed to decode JSON data: Syntax error
+[2025-04-09 08:51:39] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 08:51:39] Callback data: 
+[2025-04-09 08:51:39] Failed to decode JSON data: Syntax error
+[2025-04-09 08:55:20] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 08:55:20] Callback data: 
+[2025-04-09 08:55:20] Failed to decode JSON data: Syntax error
+[2025-04-09 08:56:35] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 08:56:35] Callback data: 
+[2025-04-09 08:56:35] Failed to decode JSON data: Syntax error
+[2025-04-09 09:11:40] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 09:11:40] Remote IP: ::1
+[2025-04-09 09:11:40] Request Method: GET
+[2025-04-09 09:11:40] Request URI: /Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 09:11:40] Full URL: http://b3d2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 09:11:40] Request Headers: Array
+(
+    [Host] => b3d2-197-136-202-10.ngrok-free.app
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0
+    [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9
+    [Cache-Control] => max-age=0
+    [Cookie] => abuse_interstitial=b3d2-197-136-202-10.ngrok-free.app; PHPSESSID=v89i1mjupkfksdsr2i9gr37r0b
+    [Priority] => u=0, i
+    [Sec-Ch-Ua] => "Not A(Brand";v="8", "Chromium";v="132", "Opera";v="117"
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Sec-Ch-Ua-Platform] => "Windows"
+    [Sec-Fetch-Dest] => document
+    [Sec-Fetch-Mode] => navigate
+    [Sec-Fetch-Site] => none
+    [Sec-Fetch-User] => ?1
+    [Upgrade-Insecure-Requests] => 1
+    [X-Forwarded-For] => 197.136.202.10
+    [X-Forwarded-Host] => b3d2-197-136-202-10.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-04-09 09:11:40] Callback raw data: 
+[2025-04-09 09:11:40] Failed to decode JSON data: Syntax error
+[2025-04-09 09:18:29] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 09:18:29] Remote IP: ::1
+[2025-04-09 09:18:29] Request Method: GET
+[2025-04-09 09:18:29] Request URI: /Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 09:18:29] Full URL: http://b3d2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 09:18:29] Request Headers: Array
+(
+    [Host] => b3d2-197-136-202-10.ngrok-free.app
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0
+    [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9
+    [Cache-Control] => max-age=0
+    [Cookie] => abuse_interstitial=b3d2-197-136-202-10.ngrok-free.app; PHPSESSID=v89i1mjupkfksdsr2i9gr37r0b
+    [Priority] => u=0, i
+    [Sec-Ch-Ua] => "Not A(Brand";v="8", "Chromium";v="132", "Opera";v="117"
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Sec-Ch-Ua-Platform] => "Windows"
+    [Sec-Fetch-Dest] => document
+    [Sec-Fetch-Mode] => navigate
+    [Sec-Fetch-Site] => none
+    [Sec-Fetch-User] => ?1
+    [Upgrade-Insecure-Requests] => 1
+    [X-Forwarded-For] => 197.136.202.10
+    [X-Forwarded-Host] => b3d2-197-136-202-10.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-04-09 09:18:29] Callback raw data: 
+[2025-04-09 09:18:29] Failed to decode JSON data: Syntax error
+[2025-04-09 09:18:41] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 09:18:41] Remote IP: ::1
+[2025-04-09 09:18:41] Request Method: POST
+[2025-04-09 09:18:41] Request URI: /Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 09:18:41] Full URL: http://b3d2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 09:18:41] Request Headers: Array
+(
+    [Host] => b3d2-197-136-202-10.ngrok-free.app
+    [Content-Length] => 406
+    [Accept] => */*
+    [Content-Type] => application/json
+    [X-Forwarded-For] => 197.136.202.10
+    [X-Forwarded-Host] => b3d2-197-136-202-10.ngrok-free.app
+    [X-Forwarded-Proto] => https
+    [Accept-Encoding] => gzip
+)
+
+[2025-04-09 09:18:41] Callback raw data: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_202504090917086875","CheckoutRequestID":"ws_CO_202504090917089236","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":20},{"Name":"MpesaReceiptNumber","Value":"TEST3572495"},{"Name":"TransactionDate","Value":"20250409091840"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-04-09 09:18:41] Callback decoded: stdClass Object
+(
+    [Body] => stdClass Object
+        (
+            [stkCallback] => stdClass Object
+                (
+                    [MerchantRequestID] => ws_MR_202504090917086875
+                    [CheckoutRequestID] => ws_CO_202504090917089236
+                    [ResultCode] => 0
+                    [ResultDesc] => The service request is processed successfully.
+                    [CallbackMetadata] => stdClass Object
+                        (
+                            [Item] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [Name] => Amount
+                                            [Value] => 20
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [Name] => MpesaReceiptNumber
+                                            [Value] => TEST3572495
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [Name] => TransactionDate
+                                            [Value] => 20250409091840
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [Name] => PhoneNumber
+                                            [Value] => 254700123456
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-04-09 09:18:41] Processing STK callback: CheckoutRequestID=ws_CO_202504090917089236, ResultCode=0, ResultDesc=The service request is processed successfully.
+[2025-04-09 09:18:41] ERROR: No transaction found with CheckoutRequestID: ws_CO_202504090917089236
+[2025-04-09 09:20:10] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 09:20:10] Remote IP: ::1
+[2025-04-09 09:20:10] Request Method: POST
+[2025-04-09 09:20:10] Request URI: /Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 09:20:10] Full URL: http://b3d2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 09:20:10] Request Headers: Array
+(
+    [Host] => b3d2-197-136-202-10.ngrok-free.app
+    [Content-Length] => 406
+    [Accept] => */*
+    [Content-Type] => application/json
+    [X-Forwarded-For] => 197.136.202.10
+    [X-Forwarded-Host] => b3d2-197-136-202-10.ngrok-free.app
+    [X-Forwarded-Proto] => https
+    [Accept-Encoding] => gzip
+)
+
+[2025-04-09 09:20:10] Callback raw data: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_202504090917086878","CheckoutRequestID":"ws_CO_202504090917089237","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":50},{"Name":"MpesaReceiptNumber","Value":"TEST8637253"},{"Name":"TransactionDate","Value":"20250409092009"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-04-09 09:20:10] Callback decoded: stdClass Object
+(
+    [Body] => stdClass Object
+        (
+            [stkCallback] => stdClass Object
+                (
+                    [MerchantRequestID] => ws_MR_202504090917086878
+                    [CheckoutRequestID] => ws_CO_202504090917089237
+                    [ResultCode] => 0
+                    [ResultDesc] => The service request is processed successfully.
+                    [CallbackMetadata] => stdClass Object
+                        (
+                            [Item] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [Name] => Amount
+                                            [Value] => 50
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [Name] => MpesaReceiptNumber
+                                            [Value] => TEST8637253
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [Name] => TransactionDate
+                                            [Value] => 20250409092009
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [Name] => PhoneNumber
+                                            [Value] => 254700123456
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-04-09 09:20:10] Processing STK callback: CheckoutRequestID=ws_CO_202504090917089237, ResultCode=0, ResultDesc=The service request is processed successfully.
+[2025-04-09 09:20:10] ERROR: No transaction found with CheckoutRequestID: ws_CO_202504090917089237
+[2025-04-09 11:02:57] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 11:02:57] Remote IP: ::1
+[2025-04-09 11:02:57] Request Method: GET
+[2025-04-09 11:02:57] Request URI: /Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 11:02:57] Full URL: http://b3d2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 11:02:57] Request Headers: Array
+(
+    [Host] => b3d2-197-136-202-10.ngrok-free.app
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0
+    [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9
+    [Cookie] => abuse_interstitial=b3d2-197-136-202-10.ngrok-free.app; PHPSESSID=v89i1mjupkfksdsr2i9gr37r0b
+    [Priority] => u=0, i
+    [Sec-Ch-Ua] => "Not A(Brand";v="8", "Chromium";v="132", "Opera";v="117"
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Sec-Ch-Ua-Platform] => "Windows"
+    [Sec-Fetch-Dest] => document
+    [Sec-Fetch-Mode] => navigate
+    [Sec-Fetch-Site] => none
+    [Sec-Fetch-User] => ?1
+    [Upgrade-Insecure-Requests] => 1
+    [X-Forwarded-For] => 197.136.202.10
+    [X-Forwarded-Host] => b3d2-197-136-202-10.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-04-09 11:02:57] Callback raw data: 
+[2025-04-09 11:02:57] Failed to decode JSON data: Syntax error
+[2025-04-09 11:15:50] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-09 11:15:50] Remote IP: ::1
+[2025-04-09 11:15:50] Request Method: POST
+[2025-04-09 11:15:50] Request URI: /Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 11:15:50] Full URL: http://b3d2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-09 11:15:50] Request Headers: Array
+(
+    [Host] => b3d2-197-136-202-10.ngrok-free.app
+    [Content-Length] => 406
+    [Accept] => */*
+    [Content-Type] => application/json
+    [X-Forwarded-For] => 197.136.202.10
+    [X-Forwarded-Host] => b3d2-197-136-202-10.ngrok-free.app
+    [X-Forwarded-Proto] => https
+    [Accept-Encoding] => gzip
+)
+
+[2025-04-09 11:15:50] Callback raw data: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_202504090917086878","CheckoutRequestID":"ws_CO_202504090917089237","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":50},{"Name":"MpesaReceiptNumber","Value":"TEST9514697"},{"Name":"TransactionDate","Value":"20250409111548"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-04-09 11:15:50] Callback decoded: stdClass Object
+(
+    [Body] => stdClass Object
+        (
+            [stkCallback] => stdClass Object
+                (
+                    [MerchantRequestID] => ws_MR_202504090917086878
+                    [CheckoutRequestID] => ws_CO_202504090917089237
+                    [ResultCode] => 0
+                    [ResultDesc] => The service request is processed successfully.
+                    [CallbackMetadata] => stdClass Object
+                        (
+                            [Item] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [Name] => Amount
+                                            [Value] => 50
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [Name] => MpesaReceiptNumber
+                                            [Value] => TEST9514697
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [Name] => TransactionDate
+                                            [Value] => 20250409111548
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [Name] => PhoneNumber
+                                            [Value] => 254700123456
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-04-09 11:15:50] Processing STK callback: CheckoutRequestID=ws_CO_202504090917089237, ResultCode=0, ResultDesc=The service request is processed successfully.
+[2025-04-09 11:15:50] ERROR: No transaction found with CheckoutRequestID: ws_CO_202504090917089237
+[2025-04-14 12:27:16] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-14 12:27:16] Remote IP: ::1
+[2025-04-14 12:27:16] Request Method: GET
+[2025-04-14 12:27:16] Request URI: /Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-14 12:27:16] Full URL: http://13a2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-14 12:27:16] Request Headers: Array
+(
+    [Host] => 13a2-197-136-202-10.ngrok-free.app
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+    [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9
+    [Cookie] => abuse_interstitial=13a2-197-136-202-10.ngrok-free.app; PHPSESSID=s0s4ovditjv6j4m56dgnd46pr8
+    [Priority] => u=0, i
+    [Sec-Ch-Ua] => "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Sec-Ch-Ua-Platform] => "Windows"
+    [Sec-Fetch-Dest] => document
+    [Sec-Fetch-Mode] => navigate
+    [Sec-Fetch-Site] => none
+    [Sec-Fetch-User] => ?1
+    [Upgrade-Insecure-Requests] => 1
+    [X-Forwarded-For] => 197.136.202.10
+    [X-Forwarded-Host] => 13a2-197-136-202-10.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-04-14 12:27:16] Callback raw data: 
+[2025-04-14 12:27:16] Failed to decode JSON data: Syntax error
+[2025-04-14 12:27:27] ======= M-PESA CALLBACK RECEIVED =======
+[2025-04-14 12:27:27] Remote IP: ::1
+[2025-04-14 12:27:27] Request Method: GET
+[2025-04-14 12:27:27] Request URI: /Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-14 12:27:27] Full URL: http://13a2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-04-14 12:27:27] Request Headers: Array
+(
+    [Host] => 13a2-197-136-202-10.ngrok-free.app
+    [User-Agent] => got (https://github.com/sindresorhus/got)
+    [Accept-Encoding] => gzip, deflate, br
+    [X-Forwarded-For] => 54.227.43.111
+    [X-Forwarded-Host] => 13a2-197-136-202-10.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-04-14 12:27:27] Callback raw data: 
+[2025-04-14 12:27:27] Failed to decode JSON data: Syntax error

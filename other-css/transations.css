@@ -1,0 +1,446 @@
+/* Transactions Page Styles */
+
+/* Page Header & Title */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--bg-accent);
+}
+
+.page-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-icon {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    cursor: help;
+}
+
+/* Search and Filters */
+.transactions-table-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.search-filter {
+    position: relative;
+    margin-left: auto;
+}
+
+.search-filter i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+}
+
+.search-filter input {
+    padding: 8px 10px 8px 35px;
+    border: 1px solid var(--bg-accent);
+    border-radius: 6px;
+    width: 300px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: all var(--transition-speed);
+}
+
+.search-filter input:hover {
+    border-color: var(--accent-blue);
+}
+
+.search-filter input:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(var(--accent-blue-rgb), 0.2);
+}
+
+/* Table Styles */
+.transactions-table-container {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--bg-accent);
+}
+
+.transactions-table th {
+    font-weight: 600;
+    color: var(--text-primary);
+    background-color: var(--bg-accent);
+}
+
+.transactions-table th i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.transactions-table tbody tr:hover {
+    background-color: var(--bg-accent);
+}
+
+.checkbox-cell {
+    width: 40px;
+    padding: 12px 5px !important;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--bg-accent);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all var(--transition-speed);
+}
+
+.custom-checkbox:hover {
+    border-color: var(--accent-blue);
+}
+
+.custom-checkbox.checked {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-blue);
+}
+
+.custom-checkbox.checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.status-success {
+    background-color: rgba(var(--accent-green-rgb), 0.2);
+    color: var(--accent-green);
+}
+
+.status-processing,
+.status-pending {
+    background-color: rgba(var(--accent-orange-rgb), 0.2);
+    color: var(--accent-orange);
+}
+
+.status-danger,
+.status-failed {
+    background-color: rgba(var(--accent-red-rgb), 0.2);
+    color: var(--accent-red);
+}
+
+.checked-status {
+    color: var(--accent-green);
+    font-weight: 500;
+}
+
+/* Action Menu */
+.actions-cell {
+    width: 60px;
+    position: relative;
+}
+
+.action-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all var(--transition-speed);
+}
+
+.action-menu:hover {
+    background-color: var(--bg-accent);
+    color: var(--accent-blue);
+}
+
+.action-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: var(--bg-secondary);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 10;
+    min-width: 150px;
+}
+
+.action-dropdown.active {
+    display: block;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    color: var(--text-primary);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all var(--transition-speed);
+    font-weight: 500;
+}
+
+.action-item:hover {
+    background-color: var(--bg-accent);
+    color: var(--accent-blue);
+}
+
+.action-item i {
+    color: var(--text-secondary);
+    width: 16px;
+}
+
+.action-item:hover i {
+    color: var(--accent-blue);
+}
+
+/* Table Footer */
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--bg-accent);
+    padding-top: 15px;
+}
+
+.results-info {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.per-page {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.per-page span {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.per-page select {
+    padding: 6px 12px;
+    border: 1px solid var(--bg-accent);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.per-page select:hover {
+    border-color: var(--accent-blue);
+}
+
+.per-page select:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(var(--accent-blue-rgb), 0.2);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--bg-accent);
+    border-radius: 6px;
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--bg-secondary);
+    transition: all var(--transition-speed);
+}
+
+.page-link:hover {
+    background-color: var(--bg-accent);
+    border-color: var(--accent-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-link.active {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.page-link.active:hover {
+    background-color: var(--accent-green);
+    border-color: var(--accent-green);
+}
+
+/* Page Footer */
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--bg-accent);
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--accent-blue);
+    text-decoration: underline;
+}
+
+.copyright {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* No records message */
+.no-records {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Button Styles - Keep these for other features */
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-primary {
+    background-color: var(--accent-blue);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-purple);
+}
+
+.btn-secondary {
+    background-color: var(--bg-accent);
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--text-secondary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .search-filter input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .transactions-table-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .search-filter {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .search-filter input {
+        width: 100%;
+    }
+    
+    .table-footer {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .pagination {
+        order: 1;
+        margin-top: 10px;
+    }
+    
+    .per-page {
+        order: 2;
+    }
+    
+    .results-info {
+        order: 3;
+    }
+}

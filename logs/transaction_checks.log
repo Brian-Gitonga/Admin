@@ -1,0 +1,49 @@
+[2025-04-11 11:14:44] Checking transaction ID: 1
+[2025-04-11 12:14:45] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39264111",
+            "CheckoutRequestID":"ws_CO_09042025095732720114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-11 12:14:45] M-Pesa API confirms payment was successful for transaction: 1
+[2025-04-11 12:14:45] Updated transaction status to completed: 1
+[2025-04-11 12:15:11] Failed to add voucher to MikroTik: Failed to connect to MikroTik router
+[2025-04-25 03:16:16] Checking transaction ID: 8
+[2025-04-25 04:16:18] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"75f4-4e91-aa3c-79e4611bbc5833591",
+            "CheckoutRequestID":"ws_CO_25042025041216243114669532",
+            "ResultCode": "1032",
+            "ResultDesc":"Request cancelled by user"
+        }
+        
+[2025-04-25 04:16:18] M-Pesa API returned non-zero result code: 1032
+[2025-04-25 04:16:18] Updated transaction with status pending: 8
+[2025-04-25 03:16:33] Checking transaction ID: 8
+[2025-04-25 04:16:35] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"75f4-4e91-aa3c-79e4611bbc5833591",
+            "CheckoutRequestID":"ws_CO_25042025041216243114669532",
+            "ResultCode": "1032",
+            "ResultDesc":"Request cancelled by user"
+        }
+        
+[2025-04-25 04:16:35] M-Pesa API returned non-zero result code: 1032
+[2025-04-25 04:16:35] Updated transaction with status pending: 8
+[2025-04-25 04:57:48] Checking transaction ID: 8
+[2025-04-25 05:57:54] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"75f4-4e91-aa3c-79e4611bbc5833591",
+            "CheckoutRequestID":"ws_CO_25042025041216243114669532",
+            "ResultCode": "1032",
+            "ResultDesc":"Request cancelled by user"
+        }
+        
+[2025-04-25 05:57:54] M-Pesa API returned non-zero result code: 1032
+[2025-04-25 05:57:54] Updated transaction with status pending: 8

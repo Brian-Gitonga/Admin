@@ -1,0 +1,534 @@
+[2025-04-05 11:30:46] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-05 11:30:46] Processing payment status check for CheckoutRequestID: ws_CO_05042025123030394114669532
+[2025-04-05 11:30:46] Generating access token...
+[2025-04-05 11:30:46] Access token response: {
+            "access_token": "7ziK1X3u1fjSi5mOD0IHVsY6KPb6",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:30:46] Access token generated successfully
+[2025-04-05 12:30:46] Checking payment status for CheckoutRequestID: ws_CO_05042025123030394114669532
+[2025-04-05 12:30:46] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzMDQ2","Timestamp":"20250405123046","CheckoutRequestID":"ws_CO_05042025123030394114669532"}
+[2025-04-05 12:30:47] Status check response: {
+                    "requestId":"ws_CO_05042025123030394114669532",
+                    "errorCode": "500.001.1001",
+                    "errorMessage": "The transaction is being processed"
+                }
+            
+[2025-04-05 12:30:47] Status check complete: Array
+(
+    [requestId] => ws_CO_05042025123030394114669532
+    [errorCode] => 500.001.1001
+    [errorMessage] => The transaction is being processed
+)
+
+[2025-04-05 11:34:24] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-05 11:34:24] Processing payment status check for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 11:34:24] Generating access token...
+[2025-04-05 11:34:25] Access token response: {
+            "access_token": "85A7djCkcorbV6g4dSypOaOCOrcD",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:34:25] Access token generated successfully
+[2025-04-05 12:34:25] Checking payment status for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 12:34:25] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzNDI1","Timestamp":"20250405123425","CheckoutRequestID":"ws_CO_05042025123542618114669532"}
+[2025-04-05 12:34:25] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"aa10-4361-b7cd-2aa0e34ed7e4175319",
+            "CheckoutRequestID":"ws_CO_05042025123542618114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-05 12:34:25] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => aa10-4361-b7cd-2aa0e34ed7e4175319
+    [CheckoutRequestID] => ws_CO_05042025123542618114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-05 11:34:31] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-05 11:34:31] Processing payment status check for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 11:34:31] Generating access token...
+[2025-04-05 11:34:31] Access token response: {
+            "access_token": "Vv8K2m5nPtCNu6ZljxpGgfPd6BGH",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:34:31] Access token generated successfully
+[2025-04-05 12:34:31] Checking payment status for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 12:34:31] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzNDMx","Timestamp":"20250405123431","CheckoutRequestID":"ws_CO_05042025123542618114669532"}
+[2025-04-05 12:34:32] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"aa10-4361-b7cd-2aa0e34ed7e4175319",
+            "CheckoutRequestID":"ws_CO_05042025123542618114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-05 12:34:32] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => aa10-4361-b7cd-2aa0e34ed7e4175319
+    [CheckoutRequestID] => ws_CO_05042025123542618114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-05 11:34:33] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-05 11:34:33] Processing payment status check for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 11:34:33] Generating access token...
+[2025-04-05 11:34:34] Access token response: {
+            "access_token": "8BglwTjpne4or8JODbybHKLhQjkl",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:34:34] Access token generated successfully
+[2025-04-05 12:34:34] Checking payment status for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 12:34:34] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzNDM0","Timestamp":"20250405123434","CheckoutRequestID":"ws_CO_05042025123542618114669532"}
+[2025-04-05 12:34:34] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"aa10-4361-b7cd-2aa0e34ed7e4175319",
+            "CheckoutRequestID":"ws_CO_05042025123542618114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-05 12:34:34] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => aa10-4361-b7cd-2aa0e34ed7e4175319
+    [CheckoutRequestID] => ws_CO_05042025123542618114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-05 11:34:37] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-05 11:34:37] Processing payment status check for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 11:34:37] Generating access token...
+[2025-04-05 11:34:38] Access token response: {
+            "access_token": "dIEXAKhdhsAeqWQilyYAz25UvlXA",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:34:38] Access token generated successfully
+[2025-04-05 12:34:38] Checking payment status for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 12:34:38] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzNDM4","Timestamp":"20250405123438","CheckoutRequestID":"ws_CO_05042025123542618114669532"}
+[2025-04-05 12:34:38] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"aa10-4361-b7cd-2aa0e34ed7e4175319",
+            "CheckoutRequestID":"ws_CO_05042025123542618114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-05 12:34:38] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => aa10-4361-b7cd-2aa0e34ed7e4175319
+    [CheckoutRequestID] => ws_CO_05042025123542618114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-05 11:34:49] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-05 11:34:49] Processing payment status check for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 11:34:49] Generating access token...
+[2025-04-05 11:34:49] Access token response: {
+            "access_token": "8h7YqIyAAUoItcgf6SBd9VQ4kaJL",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:34:49] Access token generated successfully
+[2025-04-05 12:34:49] Checking payment status for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 12:34:49] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzNDQ5","Timestamp":"20250405123449","CheckoutRequestID":"ws_CO_05042025123542618114669532"}
+[2025-04-05 12:34:50] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"aa10-4361-b7cd-2aa0e34ed7e4175319",
+            "CheckoutRequestID":"ws_CO_05042025123542618114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-05 12:34:50] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => aa10-4361-b7cd-2aa0e34ed7e4175319
+    [CheckoutRequestID] => ws_CO_05042025123542618114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-05 11:35:01] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-05 11:35:01] Processing payment status check for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 11:35:01] Generating access token...
+[2025-04-05 11:35:01] Access token response: {
+            "access_token": "oV6E2U8dZQaIPiWVL9SKYOqLAAud",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 11:35:01] Access token generated successfully
+[2025-04-05 12:35:01] Checking payment status for CheckoutRequestID: ws_CO_05042025123542618114669532
+[2025-04-05 12:35:01] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTIzNTAx","Timestamp":"20250405123501","CheckoutRequestID":"ws_CO_05042025123542618114669532"}
+[2025-04-05 12:35:02] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"aa10-4361-b7cd-2aa0e34ed7e4175319",
+            "CheckoutRequestID":"ws_CO_05042025123542618114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-05 12:35:02] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => aa10-4361-b7cd-2aa0e34ed7e4175319
+    [CheckoutRequestID] => ws_CO_05042025123542618114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-05 15:47:27] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-05 15:47:27] Processing payment status check for CheckoutRequestID: ws_CO_05042025164711645114669532
+[2025-04-05 15:47:27] Generating access token...
+[2025-04-05 15:47:28] Access token response: {
+            "access_token": "MxFH1pCVRBbqqxZF63ZALFmLYszF",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 15:47:28] Access token generated successfully
+[2025-04-05 16:47:28] Checking payment status for CheckoutRequestID: ws_CO_05042025164711645114669532
+[2025-04-05 16:47:28] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTY0NzI4","Timestamp":"20250405164728","CheckoutRequestID":"ws_CO_05042025164711645114669532"}
+[2025-04-05 16:47:28] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"bbcd-4a89-bd1a-6ecdc639893b3921352",
+            "CheckoutRequestID":"ws_CO_05042025164711645114669532",
+            "ResultCode": "1032",
+            "ResultDesc":"Request cancelled by user"
+        }
+        
+[2025-04-05 16:47:28] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => bbcd-4a89-bd1a-6ecdc639893b3921352
+    [CheckoutRequestID] => ws_CO_05042025164711645114669532
+    [ResultCode] => 1032
+    [ResultDesc] => Request cancelled by user
+)
+
+[2025-04-05 15:47:30] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-05 15:47:30] Processing payment status check for CheckoutRequestID: ws_CO_05042025164711645114669532
+[2025-04-05 15:47:30] Generating access token...
+[2025-04-05 15:47:31] Access token response: {
+            "access_token": "MtdATHNG6ZaJK4V2mwRlLq2Ppve5",
+            "expires_in": "3599"
+        }
+        
+[2025-04-05 15:47:31] Access token generated successfully
+[2025-04-05 16:47:31] Checking payment status for CheckoutRequestID: ws_CO_05042025164711645114669532
+[2025-04-05 16:47:31] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA1MTY0NzMx","Timestamp":"20250405164731","CheckoutRequestID":"ws_CO_05042025164711645114669532"}
+[2025-04-05 16:47:31] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"bbcd-4a89-bd1a-6ecdc639893b3921352",
+            "CheckoutRequestID":"ws_CO_05042025164711645114669532",
+            "ResultCode": "1032",
+            "ResultDesc":"Request cancelled by user"
+        }
+        
+[2025-04-05 16:47:31] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => bbcd-4a89-bd1a-6ecdc639893b3921352
+    [CheckoutRequestID] => ws_CO_05042025164711645114669532
+    [ResultCode] => 1032
+    [ResultDesc] => Request cancelled by user
+)
+
+[2025-04-09 08:50:21] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-09 08:50:21] Processing payment status check for CheckoutRequestID: ws_CO_09042025094942156114669532
+[2025-04-09 08:50:21] Generating access token...
+[2025-04-09 08:50:22] Access token response: {
+            "access_token": "2Y243QAth2OzshJCaLM5yF89bcxv",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:50:22] Access token generated successfully
+[2025-04-09 09:50:22] Checking payment status for CheckoutRequestID: ws_CO_09042025094942156114669532
+[2025-04-09 09:50:22] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk1MDIy","Timestamp":"20250409095022","CheckoutRequestID":"ws_CO_09042025094942156114669532"}
+[2025-04-09 09:50:22] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39263974",
+            "CheckoutRequestID":"ws_CO_09042025094942156114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-09 09:50:22] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39263974
+    [CheckoutRequestID] => ws_CO_09042025094942156114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-09 08:50:25] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-09 08:50:25] Processing payment status check for CheckoutRequestID: ws_CO_09042025094942156114669532
+[2025-04-09 08:50:25] Generating access token...
+[2025-04-09 08:50:25] Access token response: {
+            "access_token": "a4fawyTePOHHBLOjooJO4NcfFJYQ",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:50:25] Access token generated successfully
+[2025-04-09 09:50:26] Checking payment status for CheckoutRequestID: ws_CO_09042025094942156114669532
+[2025-04-09 09:50:26] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk1MDI2","Timestamp":"20250409095026","CheckoutRequestID":"ws_CO_09042025094942156114669532"}
+[2025-04-09 09:50:26] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39263974",
+            "CheckoutRequestID":"ws_CO_09042025094942156114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-09 09:50:26] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39263974
+    [CheckoutRequestID] => ws_CO_09042025094942156114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-09 08:55:26] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-09 08:55:26] Processing payment status check for CheckoutRequestID: ws_CO_09042025094942156114669532
+[2025-04-09 08:55:26] Generating access token...
+[2025-04-09 08:55:26] Access token response: {
+            "access_token": "beH8H8IhsDT9QvO8mGNip2M1V2GB",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:55:26] Access token generated successfully
+[2025-04-09 09:55:26] Checking payment status for CheckoutRequestID: ws_CO_09042025094942156114669532
+[2025-04-09 09:55:26] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk1NTI2","Timestamp":"20250409095526","CheckoutRequestID":"ws_CO_09042025094942156114669532"}
+[2025-04-09 09:55:27] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39263974",
+            "CheckoutRequestID":"ws_CO_09042025094942156114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-09 09:55:27] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39263974
+    [CheckoutRequestID] => ws_CO_09042025094942156114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-09 08:55:29] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-09 08:55:29] Processing payment status check for CheckoutRequestID: ws_CO_09042025094942156114669532
+[2025-04-09 08:55:29] Generating access token...
+[2025-04-09 08:55:30] Access token response: {
+            "access_token": "e2JlBpSN6RsLIapZnBhIeeuEW1Vk",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:55:30] Access token generated successfully
+[2025-04-09 09:55:30] Checking payment status for CheckoutRequestID: ws_CO_09042025094942156114669532
+[2025-04-09 09:55:30] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk1NTMw","Timestamp":"20250409095530","CheckoutRequestID":"ws_CO_09042025094942156114669532"}
+[2025-04-09 09:55:30] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39263974",
+            "CheckoutRequestID":"ws_CO_09042025094942156114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-09 09:55:30] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39263974
+    [CheckoutRequestID] => ws_CO_09042025094942156114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-09 08:56:23] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-09 08:56:23] Processing payment status check for CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 08:56:23] Generating access token...
+[2025-04-09 08:56:23] Access token response: {
+            "access_token": "U789h2lrIsE7df5wYlksJx9GrdZi",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:56:23] Access token generated successfully
+[2025-04-09 09:56:23] Checking payment status for CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 09:56:23] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk1NjIz","Timestamp":"20250409095623","CheckoutRequestID":"ws_CO_09042025095732720114669532"}
+[2025-04-09 09:56:24] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39264111",
+            "CheckoutRequestID":"ws_CO_09042025095732720114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-09 09:56:24] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39264111
+    [CheckoutRequestID] => ws_CO_09042025095732720114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-09 08:56:26] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-09 08:56:26] Processing payment status check for CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 08:56:26] Generating access token...
+[2025-04-09 08:56:26] Access token response: {
+            "access_token": "ekLUASJGQ7YWYJApFZiGsr0mWOWW",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:56:26] Access token generated successfully
+[2025-04-09 09:56:26] Checking payment status for CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 09:56:26] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk1NjI2","Timestamp":"20250409095626","CheckoutRequestID":"ws_CO_09042025095732720114669532"}
+[2025-04-09 09:56:27] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39264111",
+            "CheckoutRequestID":"ws_CO_09042025095732720114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-09 09:56:27] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39264111
+    [CheckoutRequestID] => ws_CO_09042025095732720114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-09 08:56:29] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-09 08:56:29] Processing payment status check for CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 08:56:29] Generating access token...
+[2025-04-09 08:56:30] Access token response: {
+            "access_token": "17wE08UAxOpKtsmSUMdv16vpXfAm",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:56:30] Access token generated successfully
+[2025-04-09 09:56:30] Checking payment status for CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 09:56:30] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk1NjMw","Timestamp":"20250409095630","CheckoutRequestID":"ws_CO_09042025095732720114669532"}
+[2025-04-09 09:56:31] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39264111",
+            "CheckoutRequestID":"ws_CO_09042025095732720114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-09 09:56:31] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39264111
+    [CheckoutRequestID] => ws_CO_09042025095732720114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-09 08:56:41] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-09 08:56:41] Processing payment status check for CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 08:56:41] Generating access token...
+[2025-04-09 08:56:42] Access token response: {
+            "access_token": "CKXMML0MpGZC7OituswZBlUvh0LO",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:56:42] Access token generated successfully
+[2025-04-09 09:56:42] Checking payment status for CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 09:56:42] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk1NjQy","Timestamp":"20250409095642","CheckoutRequestID":"ws_CO_09042025095732720114669532"}
+[2025-04-09 09:56:42] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39264111",
+            "CheckoutRequestID":"ws_CO_09042025095732720114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-09 09:56:42] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39264111
+    [CheckoutRequestID] => ws_CO_09042025095732720114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+
+[2025-04-09 08:58:09] ======= PAYMENT STATUS CHECK STARTED =======
+[2025-04-09 08:58:09] Processing payment status check for CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 08:58:09] Generating access token...
+[2025-04-09 08:58:10] Access token response: {
+            "access_token": "3Oc8gKVUqAWJ6mAdFUFkANGiq0pu",
+            "expires_in": "3599"
+        }
+        
+[2025-04-09 08:58:10] Access token generated successfully
+[2025-04-09 09:58:10] Checking payment status for CheckoutRequestID: ws_CO_09042025095732720114669532
+[2025-04-09 09:58:10] Query data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNDA5MDk1ODEw","Timestamp":"20250409095810","CheckoutRequestID":"ws_CO_09042025095732720114669532"}
+[2025-04-09 09:58:10] Status check response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successsfully",
+            "MerchantRequestID":"c20c-4eb8-8161-40af4f84ee39264111",
+            "CheckoutRequestID":"ws_CO_09042025095732720114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-04-09 09:58:10] Status check complete: Array
+(
+    [ResponseCode] => 0
+    [ResponseDescription] => The service request has been accepted successsfully
+    [MerchantRequestID] => c20c-4eb8-8161-40af4f84ee39264111
+    [CheckoutRequestID] => ws_CO_09042025095732720114669532
+    [ResultCode] => 0
+    [ResultDesc] => The service request is processed successfully.
+)
+

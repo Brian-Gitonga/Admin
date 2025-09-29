@@ -1,0 +1,5 @@
+My crecidentail
+Live secret sk_live_3e881579ac151896d523fa7c1e47f2c2df264400
+Live Public Key pk_live_21eb33f8487ac36f06c777662780e4fcfb42e32e
+
+Documentation url https://paystack.com/docs

@@ -1,0 +1,1016 @@
+[2025-03-22 15:01:39] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-22 15:01:39] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 3840
+    [product_id] => 2
+    [product_name] => Landing Page HTML 5 Template
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 32
+)
+
+[2025-03-22 15:01:39] Database connection successful
+[2025-03-22 15:01:39] Requesting access token
+[2025-03-22 15:01:39] Generating access token...
+[2025-03-22 15:01:40] Access token response: {
+            "access_token": "ySWTYvliq1RNmEGxHVVjSRAH0HUq",
+            "expires_in": "3599"
+        }
+        
+[2025-03-22 15:01:40] Access token generated successfully
+[2025-03-22 15:01:40] Access token: ySWTYvliq1...
+[2025-03-22 17:01:40] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250322170140"}
+[2025-03-22 17:01:40] Processing POST request
+[2025-03-22 17:01:40] Phone number received: 0114669532
+[2025-03-22 17:01:40] Formatted phone number: 254114669532
+[2025-03-22 17:01:40] Amount in KES: 3840
+[2025-03-22 17:01:40] Product name: Landing Page HTML 5 Template
+[2025-03-22 17:01:40] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-22 17:01:40] STK Push request data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzIyMTcwMTQw","Timestamp":"20250322170140","TransactionType":"CustomerPayBillOnline","Amount":3840,"PartyA":"254114669532","PartyB":"174379","PhoneNumber":"254114669532","CallBackURL":"http:\/\/localhost\/marketplace\/callback.php","AccountReference":"Order1742652100","TransactionDesc":"Payment for Landing Page HTML 5 Template"}
+[2025-03-22 17:01:40] Sending STK Push request
+[2025-03-22 17:01:42] STK Push response: {
+                    "requestId":"5fe8-4261-87f6-6d7d41adc6c31751431",
+                    "errorCode": "400.002.02",
+                    "errorMessage": "Bad Request - Invalid CallBackURL"
+                }
+            
+[2025-03-22 17:01:42] HTTP status code: 400
+[2025-03-22 17:01:42] Request took 1.296668 seconds
+[2025-03-22 17:01:42] Response data: stdClass Object
+(
+    [requestId] => 5fe8-4261-87f6-6d7d41adc6c31751431
+    [errorCode] => 400.002.02
+    [errorMessage] => Bad Request - Invalid CallBackURL
+)
+
+[2025-03-22 17:01:42] STK Push failed: Bad Request - Invalid CallBackURL
+[2025-03-22 15:02:56] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-22 15:02:56] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 0
+    [product_id] => 0
+    [product_name] => Unknown Product
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 0
+)
+
+[2025-03-22 15:02:56] Database connection successful
+[2025-03-22 15:02:56] Requesting access token
+[2025-03-22 15:02:56] Generating access token...
+[2025-03-22 15:02:58] Access token response: {
+            "access_token": "7GsVMC5hJcBxhjpuLWoP5wecLFvF",
+            "expires_in": "3599"
+        }
+        
+[2025-03-22 15:02:58] Access token generated successfully
+[2025-03-22 15:02:58] Access token: 7GsVMC5hJc...
+[2025-03-22 17:02:58] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250322170258"}
+[2025-03-22 17:02:58] Processing POST request
+[2025-03-22 17:02:58] Phone number received: 0114669532
+[2025-03-22 17:02:58] Formatted phone number: 254114669532
+[2025-03-22 17:02:58] Amount in KES: 0
+[2025-03-22 17:02:58] Product name: Unknown Product
+[2025-03-22 17:02:58] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-22 17:02:58] STK Push request data: {"BusinessShortCode":"174379","Password":"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzIyMTcwMjU4","Timestamp":"20250322170258","TransactionType":"CustomerPayBillOnline","Amount":0,"PartyA":"254114669532","PartyB":"174379","PhoneNumber":"254114669532","CallBackURL":"http:\/\/localhost\/marketplace\/callback.php","AccountReference":"Order1742652178","TransactionDesc":"Payment for Unknown Product"}
+[2025-03-22 17:02:58] Sending STK Push request
+[2025-03-22 17:02:59] STK Push response: {
+                    "requestId":"b54f-471d-93d9-f7f3bf3f7c0e3549039",
+                    "errorCode": "400.002.02",
+                    "errorMessage": "Bad Request - Invalid Amount"
+                }
+            
+[2025-03-22 17:02:59] HTTP status code: 400
+[2025-03-22 17:02:59] Request took 1.217836 seconds
+[2025-03-22 17:02:59] Response data: stdClass Object
+(
+    [requestId] => b54f-471d-93d9-f7f3bf3f7c0e3549039
+    [errorCode] => 400.002.02
+    [errorMessage] => Bad Request - Invalid Amount
+)
+
+[2025-03-22 17:02:59] STK Push failed: Bad Request - Invalid Amount
+[2025-03-22 15:05:27] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-22 15:05:27] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 10
+    [product_id] => 0
+    [product_name] => Unknown Product
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 0
+)
+
+[2025-03-22 15:05:27] Database connection successful
+[2025-03-22 15:05:27] Requesting access token
+[2025-03-22 15:05:27] Generating access token...
+[2025-03-22 15:05:29] Access token response: {
+            "access_token": "0tLAOUwPUAWIiYRQDAgZ4Ahu3dgH",
+            "expires_in": "3599"
+        }
+        
+[2025-03-22 15:05:29] Access token generated successfully
+[2025-03-22 15:05:29] Access token: 0tLAOUwPUA...
+[2025-03-22 17:05:29] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250322170529"}
+[2025-03-22 17:05:29] Processing POST request
+[2025-03-22 17:05:29] Phone number received: 0114669532
+[2025-03-22 17:05:29] Formatted phone number: 254114669532
+[2025-03-22 17:05:29] Amount in KES: 10
+[2025-03-22 17:05:29] Validated amount: 10
+[2025-03-22 17:05:29] Product name: Unknown Product
+[2025-03-22 17:05:29] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-22 17:05:29] Setting up STK Push with amount: 10 and phone number: 254114669532
+[2025-03-22 17:05:29] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzIyMTcwNTI5",
+    "Timestamp": "20250322170529",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 10,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Marketplace Purchase",
+    "TransactionDesc": "Payment for Digital Products"
+}
+[2025-03-22 17:05:29] Amount value type: integer, Value: 10
+[2025-03-22 17:05:29] Sending STK Push request
+[2025-03-22 17:05:31] STK Push response: {
+            "MerchantRequestID":"5fe8-4261-87f6-6d7d41adc6c31751502",
+            "CheckoutRequestID":"ws_CO_22032025170529449114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-22 17:05:31] HTTP status code: 200
+[2025-03-22 17:05:31] Request took 1.755775 seconds
+[2025-03-22 17:05:31] Response data: stdClass Object
+(
+    [MerchantRequestID] => 5fe8-4261-87f6-6d7d41adc6c31751502
+    [CheckoutRequestID] => ws_CO_22032025170529449114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-22 17:05:31] STK Push successful! CheckoutRequestID: ws_CO_22032025170529449114669532
+[2025-03-22 17:05:31] Redirecting to dashboard
+[2025-03-23 02:19:40] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-23 02:19:40] POST data: Array
+(
+    [mpesa-number1] => 254114669532
+    [amount_kes] => 2880
+    [product_id] => 1
+    [product_name] => Bus Booking Website HTML
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 24
+)
+
+[2025-03-23 02:19:40] Database connection successful
+[2025-03-23 02:19:40] Requesting access token
+[2025-03-23 02:19:40] Generating access token...
+[2025-03-23 02:19:41] Access token response: {
+            "access_token": "IrtIafG18Ze5x6WqZVeCyzgLBiMf",
+            "expires_in": "3599"
+        }
+        
+[2025-03-23 02:19:41] Access token generated successfully
+[2025-03-23 02:19:41] Access token: IrtIafG18Z...
+[2025-03-23 04:19:41] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250323041941"}
+[2025-03-23 04:19:41] Processing POST request
+[2025-03-23 04:19:41] Phone number received: 254114669532
+[2025-03-23 04:19:41] Formatted phone number: 254114669532
+[2025-03-23 04:19:41] Amount in KES: 2880
+[2025-03-23 04:19:41] Validated amount: 2880
+[2025-03-23 04:19:41] Product name: Bus Booking Website HTML
+[2025-03-23 04:19:41] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-23 04:19:41] Setting up STK Push with amount: 2880 and phone number: 254114669532
+[2025-03-23 04:19:41] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzIzMDQxOTQx",
+    "Timestamp": "20250323041941",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 2880,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Marketplace Purchase",
+    "TransactionDesc": "Payment for Digital Products"
+}
+[2025-03-23 04:19:41] Amount value type: integer, Value: 2880
+[2025-03-23 04:19:41] Sending STK Push request
+[2025-03-23 04:19:42] STK Push response: {
+            "MerchantRequestID":"6543-425e-a177-2e84b1462ecd2339470",
+            "CheckoutRequestID":"ws_CO_23032025041942355114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-23 04:19:42] HTTP status code: 200
+[2025-03-23 04:19:42] Request took 0.90999 seconds
+[2025-03-23 04:19:42] Response data: stdClass Object
+(
+    [MerchantRequestID] => 6543-425e-a177-2e84b1462ecd2339470
+    [CheckoutRequestID] => ws_CO_23032025041942355114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-23 04:19:42] STK Push successful! CheckoutRequestID: ws_CO_23032025041942355114669532
+[2025-03-23 04:19:42] Redirecting to dashboard
+[2025-03-24 11:01:15] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-24 11:01:15] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 2880
+    [product_id] => 1
+    [product_name] => Bus Booking Website HTML
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 24
+)
+
+[2025-03-24 11:01:15] Database connection successful
+[2025-03-24 11:01:15] Requesting access token
+[2025-03-24 11:01:15] Generating access token...
+[2025-03-24 11:01:16] Access token response: {
+            "access_token": "uY42gSSVPQaBWXQryfNTOX8GSeEd",
+            "expires_in": "3599"
+        }
+        
+[2025-03-24 11:01:16] Access token generated successfully
+[2025-03-24 11:01:16] Access token: uY42gSSVPQ...
+[2025-03-24 13:01:16] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250324130116"}
+[2025-03-24 13:01:16] Processing POST request
+[2025-03-24 13:01:16] Phone number received: 0114669532
+[2025-03-24 13:01:16] Formatted phone number: 254114669532
+[2025-03-24 13:01:16] Amount in KES: 2880
+[2025-03-24 13:01:16] Validated amount: 2880
+[2025-03-24 13:01:16] Product name: Bus Booking Website HTML
+[2025-03-24 13:01:16] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-24 13:01:16] Setting up STK Push with amount: 2880 and phone number: 254114669532
+[2025-03-24 13:01:16] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzI0MTMwMTE2",
+    "Timestamp": "20250324130116",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 2880,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Marketplace Purchase",
+    "TransactionDesc": "Payment for Digital Products"
+}
+[2025-03-24 13:01:16] Amount value type: integer, Value: 2880
+[2025-03-24 13:01:16] Sending STK Push request
+[2025-03-24 13:01:18] STK Push response: {
+            "MerchantRequestID":"8131-4f68-ab7a-5e68879d780e25402",
+            "CheckoutRequestID":"ws_CO_24032025130251760114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-24 13:01:18] HTTP status code: 200
+[2025-03-24 13:01:18] Request took 1.459413 seconds
+[2025-03-24 13:01:18] Response data: stdClass Object
+(
+    [MerchantRequestID] => 8131-4f68-ab7a-5e68879d780e25402
+    [CheckoutRequestID] => ws_CO_24032025130251760114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-24 13:01:18] STK Push successful! CheckoutRequestID: ws_CO_24032025130251760114669532
+[2025-03-24 13:01:18] Redirecting to dashboard
+[2025-03-24 11:09:01] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-24 11:09:01] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 2880
+    [product_id] => 1
+    [product_name] => Bus Booking Website HTML
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 24
+)
+
+[2025-03-24 11:09:01] Database connection successful
+[2025-03-24 11:09:01] Requesting access token
+[2025-03-24 11:09:01] Generating access token...
+[2025-03-24 11:09:03] Access token response: {
+            "access_token": "JUcM0VZ2CMnStCGuFQaGb5PHGuLM",
+            "expires_in": "3599"
+        }
+        
+[2025-03-24 11:09:03] Access token generated successfully
+[2025-03-24 11:09:03] Access token: JUcM0VZ2CM...
+[2025-03-24 13:09:03] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250324130903"}
+[2025-03-24 13:09:03] Processing POST request
+[2025-03-24 13:09:03] Phone number received: 0114669532
+[2025-03-24 13:09:03] Formatted phone number: 254114669532
+[2025-03-24 13:09:03] Amount in KES: 2880
+[2025-03-24 13:09:03] Validated amount: 2880
+[2025-03-24 13:09:03] Product name: Bus Booking Website HTML
+[2025-03-24 13:09:03] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-24 13:09:03] Setting up STK Push with amount: 2880 and phone number: 254114669532
+[2025-03-24 13:09:03] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzI0MTMwOTAz",
+    "Timestamp": "20250324130903",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 2880,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Marketplace Purchase",
+    "TransactionDesc": "Payment for Digital Products"
+}
+[2025-03-24 13:09:03] Amount value type: integer, Value: 2880
+[2025-03-24 13:09:03] Sending STK Push request
+[2025-03-24 13:09:05] STK Push response: {
+            "MerchantRequestID":"dad7-4978-b02b-d04e9fc77845211834",
+            "CheckoutRequestID":"ws_CO_24032025131038741114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-24 13:09:05] HTTP status code: 200
+[2025-03-24 13:09:05] Request took 1.63941 seconds
+[2025-03-24 13:09:05] Response data: stdClass Object
+(
+    [MerchantRequestID] => dad7-4978-b02b-d04e9fc77845211834
+    [CheckoutRequestID] => ws_CO_24032025131038741114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-24 13:09:05] STK Push successful! CheckoutRequestID: ws_CO_24032025131038741114669532
+[2025-03-24 13:09:05] Redirecting to dashboard
+[2025-03-24 11:15:25] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-24 11:15:25] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 2880
+    [product_id] => 1
+    [product_name] => Bus Booking Website HTML
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 24
+)
+
+[2025-03-24 11:15:25] Database connection successful
+[2025-03-24 11:15:25] Requesting access token
+[2025-03-24 11:15:25] Generating access token...
+[2025-03-24 11:15:27] Access token response: {
+            "access_token": "tHDRu98bRlk4CrA7YI6BxKcHLX3B",
+            "expires_in": "3599"
+        }
+        
+[2025-03-24 11:15:27] Access token generated successfully
+[2025-03-24 11:15:27] Access token: tHDRu98bRl...
+[2025-03-24 13:15:27] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250324131527"}
+[2025-03-24 13:15:27] Processing POST request
+[2025-03-24 13:15:27] Phone number received: 0114669532
+[2025-03-24 13:15:27] Formatted phone number: 254114669532
+[2025-03-24 13:15:27] Amount in KES: 2880
+[2025-03-24 13:15:27] Validated amount: 2880
+[2025-03-24 13:15:27] Product name: Bus Booking Website HTML
+[2025-03-24 13:15:27] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-24 13:15:27] Setting up STK Push with amount: 2880 and phone number: 254114669532
+[2025-03-24 13:15:27] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzI0MTMxNTI3",
+    "Timestamp": "20250324131527",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 2880,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Marketplace Purchase",
+    "TransactionDesc": "Payment for Digital Products"
+}
+[2025-03-24 13:15:27] Amount value type: integer, Value: 2880
+[2025-03-24 13:15:27] Sending STK Push request
+[2025-03-24 13:15:28] STK Push response: {
+            "MerchantRequestID":"8131-4f68-ab7a-5e68879d780e25668",
+            "CheckoutRequestID":"ws_CO_24032025131527954114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-24 13:15:28] HTTP status code: 200
+[2025-03-24 13:15:28] Request took 1.47295 seconds
+[2025-03-24 13:15:28] Response data: stdClass Object
+(
+    [MerchantRequestID] => 8131-4f68-ab7a-5e68879d780e25668
+    [CheckoutRequestID] => ws_CO_24032025131527954114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-24 13:15:28] STK Push successful! CheckoutRequestID: ws_CO_24032025131527954114669532
+[2025-03-24 13:15:28] Redirecting to dashboard
+[2025-03-24 11:19:03] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-24 11:19:03] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 2880
+    [product_id] => 1
+    [product_name] => Bus Booking Website HTML
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 24
+)
+
+[2025-03-24 11:19:03] Database connection successful
+[2025-03-24 11:19:03] Requesting access token
+[2025-03-24 11:19:03] Generating access token...
+[2025-03-24 11:19:04] Access token response: {
+            "access_token": "tkHyrrT2vovuKuh3ABvWawk9DEc3",
+            "expires_in": "3599"
+        }
+        
+[2025-03-24 11:19:04] Access token generated successfully
+[2025-03-24 11:19:04] Access token: tkHyrrT2vo...
+[2025-03-24 13:19:04] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250324131904"}
+[2025-03-24 13:19:04] Processing POST request
+[2025-03-24 13:19:04] Phone number received: 0114669532
+[2025-03-24 13:19:04] Formatted phone number: 254114669532
+[2025-03-24 13:19:04] Amount in KES: 2880
+[2025-03-24 13:19:04] Validated amount: 2880
+[2025-03-24 13:19:04] Product name: Bus Booking Website HTML
+[2025-03-24 13:19:04] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-24 13:19:04] Setting up STK Push with amount: 2880 and phone number: 254114669532
+[2025-03-24 13:19:04] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzI0MTMxOTA0",
+    "Timestamp": "20250324131904",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 2880,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Qtro Testing",
+    "TransactionDesc": "Brian Testing"
+}
+[2025-03-24 13:19:04] Amount value type: integer, Value: 2880
+[2025-03-24 13:19:04] Sending STK Push request
+[2025-03-24 13:19:06] STK Push response: {
+            "MerchantRequestID":"b54f-471d-93d9-f7f3bf3f7c0e3598820",
+            "CheckoutRequestID":"ws_CO_24032025131905329114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-24 13:19:06] HTTP status code: 200
+[2025-03-24 13:19:06] Request took 1.422186 seconds
+[2025-03-24 13:19:06] Response data: stdClass Object
+(
+    [MerchantRequestID] => b54f-471d-93d9-f7f3bf3f7c0e3598820
+    [CheckoutRequestID] => ws_CO_24032025131905329114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-24 13:19:06] STK Push successful! CheckoutRequestID: ws_CO_24032025131905329114669532
+[2025-03-24 13:19:06] Redirecting to dashboard
+[2025-03-24 11:19:56] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-24 11:19:56] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 2880
+    [product_id] => 1
+    [product_name] => Bus Booking Website HTML
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 24
+)
+
+[2025-03-24 11:19:56] Database connection successful
+[2025-03-24 11:19:56] Requesting access token
+[2025-03-24 11:19:56] Generating access token...
+[2025-03-24 11:19:57] Access token response: {
+            "access_token": "wbeUqCCOYzidhxN2Crv4wiIaQCfC",
+            "expires_in": "3599"
+        }
+        
+[2025-03-24 11:19:57] Access token generated successfully
+[2025-03-24 11:19:57] Access token: wbeUqCCOYz...
+[2025-03-24 13:19:57] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250324131957"}
+[2025-03-24 13:19:57] Processing POST request
+[2025-03-24 13:19:57] Phone number received: 0114669532
+[2025-03-24 13:19:57] Formatted phone number: 254114669532
+[2025-03-24 13:19:57] Amount in KES: 2880
+[2025-03-24 13:19:57] Validated amount: 2880
+[2025-03-24 13:19:57] Product name: Bus Booking Website HTML
+[2025-03-24 13:19:57] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-24 13:19:57] Setting up STK Push with amount: 2880 and phone number: 254114669532
+[2025-03-24 13:19:57] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzI0MTMxOTU3",
+    "Timestamp": "20250324131957",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 2880,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Brian Testing",
+    "TransactionDesc": "Qtro Testing"
+}
+[2025-03-24 13:19:57] Amount value type: integer, Value: 2880
+[2025-03-24 13:19:57] Sending STK Push request
+[2025-03-24 13:19:59] STK Push response: {
+            "MerchantRequestID":"dad7-4978-b02b-d04e9fc77845212104",
+            "CheckoutRequestID":"ws_CO_24032025132132597114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-24 13:19:59] HTTP status code: 200
+[2025-03-24 13:19:59] Request took 1.450741 seconds
+[2025-03-24 13:19:59] Response data: stdClass Object
+(
+    [MerchantRequestID] => dad7-4978-b02b-d04e9fc77845212104
+    [CheckoutRequestID] => ws_CO_24032025132132597114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-24 13:19:59] STK Push successful! CheckoutRequestID: ws_CO_24032025132132597114669532
+[2025-03-24 13:19:59] Redirecting to dashboard
+[2025-03-24 12:22:13] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-24 12:22:13] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 8640
+    [product_id] => 1
+    [product_name] => Bus Booking Website HTML
+    [license_type] => extended
+    [support_type] => 6months
+    [amount_usd] => 72
+)
+
+[2025-03-24 12:22:13] Database connection successful
+[2025-03-24 12:22:13] Requesting access token
+[2025-03-24 12:22:13] Generating access token...
+[2025-03-24 12:22:15] Access token response: {
+            "access_token": "SQ4AU6Y409zCxLMkOQV2BCsbL9eq",
+            "expires_in": "3599"
+        }
+        
+[2025-03-24 12:22:15] Access token generated successfully
+[2025-03-24 12:22:16] Access token: SQ4AU6Y409...
+[2025-03-24 14:22:16] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250324142216"}
+[2025-03-24 14:22:16] Processing POST request
+[2025-03-24 14:22:16] Phone number received: 0114669532
+[2025-03-24 14:22:16] Formatted phone number: 254114669532
+[2025-03-24 14:22:16] Amount in KES: 8640
+[2025-03-24 14:22:16] Validated amount: 8640
+[2025-03-24 14:22:16] Product name: Bus Booking Website HTML
+[2025-03-24 14:22:16] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-24 14:22:16] Setting up STK Push with amount: 8640 and phone number: 254114669532
+[2025-03-24 14:22:16] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzI0MTQyMjE2",
+    "Timestamp": "20250324142216",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 8640,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Brian Testing",
+    "TransactionDesc": "Qtro Testing"
+}
+[2025-03-24 14:22:16] Amount value type: integer, Value: 8640
+[2025-03-24 14:22:16] Sending STK Push request
+[2025-03-24 14:22:17] STK Push response: {
+            "MerchantRequestID":"027c-413f-b715-561b76afc534581681",
+            "CheckoutRequestID":"ws_CO_24032025142351503114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-24 14:22:17] HTTP status code: 200
+[2025-03-24 14:22:17] Request took 1.941927 seconds
+[2025-03-24 14:22:17] Response data: stdClass Object
+(
+    [MerchantRequestID] => 027c-413f-b715-561b76afc534581681
+    [CheckoutRequestID] => ws_CO_24032025142351503114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-24 14:22:17] STK Push successful! CheckoutRequestID: ws_CO_24032025142351503114669532
+[2025-03-24 14:22:17] Redirecting to dashboard
+[2025-03-24 12:28:03] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-24 12:28:03] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 8640
+    [product_id] => 1
+    [product_name] => Bus Booking Website HTML
+    [license_type] => extended
+    [support_type] => 6months
+    [amount_usd] => 72
+)
+
+[2025-03-24 12:28:03] Database connection successful
+[2025-03-24 12:28:03] Requesting access token
+[2025-03-24 12:28:03] Generating access token...
+[2025-03-24 12:28:05] Access token response: {
+            "access_token": "W8nKttdbRZTKQHfoTQ0wAj2JzniH",
+            "expires_in": "3599"
+        }
+        
+[2025-03-24 12:28:05] Access token generated successfully
+[2025-03-24 12:28:05] Access token: W8nKttdbRZ...
+[2025-03-24 14:28:05] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250324142805"}
+[2025-03-24 14:28:05] Processing POST request
+[2025-03-24 14:28:05] Phone number received: 0114669532
+[2025-03-24 14:28:05] Formatted phone number: 254114669532
+[2025-03-24 14:28:05] Amount in KES: 8640
+[2025-03-24 14:28:05] Validated amount: 8640
+[2025-03-24 14:28:05] Product name: Bus Booking Website HTML
+[2025-03-24 14:28:05] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-24 14:28:05] Setting up STK Push with amount: 8640 and phone number: 254114669532
+[2025-03-24 14:28:05] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzI0MTQyODA1",
+    "Timestamp": "20250324142805",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 8640,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Brian Testing",
+    "TransactionDesc": "Qtro Testing"
+}
+[2025-03-24 14:28:05] Amount value type: integer, Value: 8640
+[2025-03-24 14:28:05] Sending STK Push request
+[2025-03-24 14:28:07] STK Push response: {
+            "MerchantRequestID":"8131-4f68-ab7a-5e68879d780e26998",
+            "CheckoutRequestID":"ws_CO_24032025142806142114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-24 14:28:07] HTTP status code: 200
+[2025-03-24 14:28:07] Request took 1.663376 seconds
+[2025-03-24 14:28:07] Response data: stdClass Object
+(
+    [MerchantRequestID] => 8131-4f68-ab7a-5e68879d780e26998
+    [CheckoutRequestID] => ws_CO_24032025142806142114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-24 14:28:07] STK Push successful! CheckoutRequestID: ws_CO_24032025142806142114669532
+[2025-03-24 14:28:07] Redirecting to dashboard
+[2025-03-24 12:29:21] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-24 12:29:21] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 2880
+    [product_id] => 1
+    [product_name] => Bus Booking Website HTML
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 24
+)
+
+[2025-03-24 12:29:21] Database connection successful
+[2025-03-24 12:29:21] Requesting access token
+[2025-03-24 12:29:21] Generating access token...
+[2025-03-24 12:29:22] Access token response: {
+            "access_token": "I1zJXLlYtCaC3cRDjpA4aAtZE7Kz",
+            "expires_in": "3599"
+        }
+        
+[2025-03-24 12:29:22] Access token generated successfully
+[2025-03-24 12:29:22] Access token: I1zJXLlYtC...
+[2025-03-24 14:29:22] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250324142922"}
+[2025-03-24 14:29:22] Processing POST request
+[2025-03-24 14:29:22] Phone number received: 0114669532
+[2025-03-24 14:29:22] Formatted phone number: 254114669532
+[2025-03-24 14:29:22] Amount in KES: 2880
+[2025-03-24 14:29:22] Validated amount: 2880
+[2025-03-24 14:29:22] Product name: Bus Booking Website HTML
+[2025-03-24 14:29:22] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-24 14:29:22] Setting up STK Push with amount: 2880 and phone number: 254114669532
+[2025-03-24 14:29:22] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzI0MTQyOTIy",
+    "Timestamp": "20250324142922",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 2880,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Brian Testing",
+    "TransactionDesc": "Qtro Testing"
+}
+[2025-03-24 14:29:22] Amount value type: integer, Value: 2880
+[2025-03-24 14:29:22] Sending STK Push request
+[2025-03-24 14:29:24] STK Push response: {
+            "MerchantRequestID":"b54f-471d-93d9-f7f3bf3f7c0e3600046",
+            "CheckoutRequestID":"ws_CO_24032025143058297114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-24 14:29:24] HTTP status code: 200
+[2025-03-24 14:29:24] Request took 1.934503 seconds
+[2025-03-24 14:29:24] Response data: stdClass Object
+(
+    [MerchantRequestID] => b54f-471d-93d9-f7f3bf3f7c0e3600046
+    [CheckoutRequestID] => ws_CO_24032025143058297114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-24 14:29:24] STK Push successful! CheckoutRequestID: ws_CO_24032025143058297114669532
+[2025-03-24 14:29:24] Redirecting to dashboard
+[2025-03-24 12:32:38] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-24 12:32:38] POST data: Array
+(
+    [mpesa-number1] => 0114669532
+    [amount_kes] => 2880
+    [product_id] => 1
+    [product_name] => Bus Booking Website HTML
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 24
+)
+
+[2025-03-24 12:32:38] Database connection successful
+[2025-03-24 12:32:38] Requesting access token
+[2025-03-24 12:32:38] Generating access token...
+[2025-03-24 12:32:39] Access token response: {
+            "access_token": "W7y4ExSlugkBDOaY7BxkXpDFGKvm",
+            "expires_in": "3599"
+        }
+        
+[2025-03-24 12:32:39] Access token generated successfully
+[2025-03-24 12:32:39] Access token: W7y4ExSlug...
+[2025-03-24 14:32:39] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250324143239"}
+[2025-03-24 14:32:39] Processing POST request
+[2025-03-24 14:32:39] Phone number received: 0114669532
+[2025-03-24 14:32:39] Formatted phone number: 254114669532
+[2025-03-24 14:32:39] Amount in KES: 2880
+[2025-03-24 14:32:39] Validated amount: 2880
+[2025-03-24 14:32:39] Product name: Bus Booking Website HTML
+[2025-03-24 14:32:39] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-24 14:32:39] Setting up STK Push with amount: 2880 and phone number: 254114669532
+[2025-03-24 14:32:39] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzI0MTQzMjM5",
+    "Timestamp": "20250324143239",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 2880,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Brian Testing",
+    "TransactionDesc": "Qtro Testing"
+}
+[2025-03-24 14:32:39] Amount value type: integer, Value: 2880
+[2025-03-24 14:32:39] Sending STK Push request
+[2025-03-24 14:32:40] STK Push response: {
+            "MerchantRequestID":"027c-413f-b715-561b76afc534581929",
+            "CheckoutRequestID":"ws_CO_24032025143240100114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-24 14:32:40] HTTP status code: 200
+[2025-03-24 14:32:40] Request took 1.533268 seconds
+[2025-03-24 14:32:40] Response data: stdClass Object
+(
+    [MerchantRequestID] => 027c-413f-b715-561b76afc534581929
+    [CheckoutRequestID] => ws_CO_24032025143240100114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-24 14:32:40] STK Push successful! CheckoutRequestID: ws_CO_24032025143240100114669532
+[2025-03-24 14:32:40] Redirecting to dashboard
+[2025-03-30 11:07:50] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-30 11:07:50] POST data: Array
+(
+    [mpesa-number1] => 254114669532
+    [amount_kes] => 3840
+    [product_id] => 2
+    [product_name] => Landing Page HTML 5 Template
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 32
+)
+
+[2025-03-30 11:07:50] Database connection successful
+[2025-03-30 11:07:50] Requesting access token
+[2025-03-30 11:07:50] Generating access token...
+[2025-03-30 11:07:50] Access token response: 
+[2025-03-30 11:07:50] Curl error: Could not resolve host: sandbox.safaricom.co.ke
+[2025-03-30 11:09:05] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-30 11:09:05] POST data: Array
+(
+    [mpesa-number1] => 254114669532
+    [amount_kes] => 3840
+    [product_id] => 2
+    [product_name] => Landing Page HTML 5 Template
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 32
+)
+
+[2025-03-30 11:09:05] Database connection successful
+[2025-03-30 11:09:05] Requesting access token
+[2025-03-30 11:09:05] Generating access token...
+[2025-03-30 11:09:06] Access token response: {
+            "access_token": "NQZPUJilP9odTX5GcXhJ51kdznyV",
+            "expires_in": "3599"
+        }
+        
+[2025-03-30 11:09:06] Access token generated successfully
+[2025-03-30 11:09:06] Access token: NQZPUJilP9...
+[2025-03-30 12:09:06] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250330120906"}
+[2025-03-30 12:09:06] Processing POST request
+[2025-03-30 12:09:06] Phone number received: 254114669532
+[2025-03-30 12:09:06] Formatted phone number: 254114669532
+[2025-03-30 12:09:06] Amount in KES: 3840
+[2025-03-30 12:09:06] Validated amount: 3840
+[2025-03-30 12:09:06] Product name: Landing Page HTML 5 Template
+[2025-03-30 12:09:06] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-30 12:09:06] Setting up STK Push with amount: 3840 and phone number: 254114669532
+[2025-03-30 12:09:06] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzMwMTIwOTA2",
+    "Timestamp": "20250330120906",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 3840,
+    "PartyA": "254114669532",
+    "PartyB": "174379",
+    "PhoneNumber": "254114669532",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Brian Testing",
+    "TransactionDesc": "Qtro Testing"
+}
+[2025-03-30 12:09:06] Amount value type: integer, Value: 3840
+[2025-03-30 12:09:06] Sending STK Push request
+[2025-03-30 12:09:07] STK Push response: {
+            "MerchantRequestID":"ef8b-4d2a-a5e0-abde86e87ec034183",
+            "CheckoutRequestID":"ws_CO_30032025120904286114669532",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-30 12:09:07] HTTP status code: 200
+[2025-03-30 12:09:07] Request took 1.137599 seconds
+[2025-03-30 12:09:07] Response data: stdClass Object
+(
+    [MerchantRequestID] => ef8b-4d2a-a5e0-abde86e87ec034183
+    [CheckoutRequestID] => ws_CO_30032025120904286114669532
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-30 12:09:07] STK Push successful! CheckoutRequestID: ws_CO_30032025120904286114669532
+[2025-03-30 12:09:07] Redirecting to dashboard
+[2025-03-30 11:09:36] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-30 11:09:36] POST data: Array
+(
+    [mpesa-number1] => 254750059353
+    [amount_kes] => 3840
+    [product_id] => 2
+    [product_name] => Landing Page HTML 5 Template
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 32
+)
+
+[2025-03-30 11:09:36] Database connection successful
+[2025-03-30 11:09:36] Requesting access token
+[2025-03-30 11:09:36] Generating access token...
+[2025-03-30 11:09:47] Access token response: 
+[2025-03-30 11:09:47] Curl error: Could not resolve host: sandbox.safaricom.co.ke
+[2025-03-30 11:10:05] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-30 11:10:05] POST data: Array
+(
+    [mpesa-number1] => 25472272121
+    [amount_kes] => 3840
+    [product_id] => 2
+    [product_name] => Landing Page HTML 5 Template
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 32
+)
+
+[2025-03-30 11:10:05] Database connection successful
+[2025-03-30 11:10:05] Requesting access token
+[2025-03-30 11:10:05] Generating access token...
+[2025-03-30 11:10:16] Access token response: 
+[2025-03-30 11:10:16] Curl error: Could not resolve host: sandbox.safaricom.co.ke
+[2025-03-30 11:12:22] ======= NEW PAYMENT PROCESS STARTED =======
+[2025-03-30 11:12:22] POST data: Array
+(
+    [mpesa-number1] => 0727722121
+    [amount_kes] => 3840
+    [product_id] => 2
+    [product_name] => Landing Page HTML 5 Template
+    [license_type] => regular
+    [support_type] => 6months
+    [amount_usd] => 32
+)
+
+[2025-03-30 11:12:22] Database connection successful
+[2025-03-30 11:12:22] Requesting access token
+[2025-03-30 11:12:22] Generating access token...
+[2025-03-30 11:12:23] Access token response: {
+            "access_token": "aBQy6X4O8AGEq8gTZErvbI8cwSx8",
+            "expires_in": "3599"
+        }
+        
+[2025-03-30 11:12:23] Access token generated successfully
+[2025-03-30 11:12:23] Access token: aBQy6X4O8A...
+[2025-03-30 12:12:23] Transaction details prepared: {"BusinessShortCode":"174379","Timestamp":"20250330121223"}
+[2025-03-30 12:12:23] Processing POST request
+[2025-03-30 12:12:23] Phone number received: 0727722121
+[2025-03-30 12:12:23] Formatted phone number: 254727722121
+[2025-03-30 12:12:23] Amount in KES: 3840
+[2025-03-30 12:12:23] Validated amount: 3840
+[2025-03-30 12:12:23] Product name: Landing Page HTML 5 Template
+[2025-03-30 12:12:23] Callback URL: http://localhost/marketplace/callback.php
+[2025-03-30 12:12:23] Setting up STK Push with amount: 3840 and phone number: 254727722121
+[2025-03-30 12:12:23] STK Push payload: {
+    "BusinessShortCode": "174379",
+    "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwMzMwMTIxMjIz",
+    "Timestamp": "20250330121223",
+    "TransactionType": "CustomerPayBillOnline",
+    "Amount": 3840,
+    "PartyA": "254727722121",
+    "PartyB": "174379",
+    "PhoneNumber": "254727722121",
+    "CallBackURL": "https:\/\/example.com\/callback",
+    "AccountReference": "Brian Testing",
+    "TransactionDesc": "Qtro Testing"
+}
+[2025-03-30 12:12:23] Amount value type: integer, Value: 3840
+[2025-03-30 12:12:23] Sending STK Push request
+[2025-03-30 12:12:26] STK Push response: {
+            "MerchantRequestID":"8131-4f68-ab7a-5e68879d780e186785",
+            "CheckoutRequestID":"ws_CO_30032025121400223727722121",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+[2025-03-30 12:12:26] HTTP status code: 200
+[2025-03-30 12:12:26] Request took 3.657477 seconds
+[2025-03-30 12:12:26] Response data: stdClass Object
+(
+    [MerchantRequestID] => 8131-4f68-ab7a-5e68879d780e186785
+    [CheckoutRequestID] => ws_CO_30032025121400223727722121
+    [ResponseCode] => 0
+    [ResponseDescription] => Success. Request accepted for processing
+    [CustomerMessage] => Success. Request accepted for processing
+)
+
+[2025-03-30 12:12:26] STK Push successful! CheckoutRequestID: ws_CO_30032025121400223727722121
+[2025-03-30 12:12:26] Redirecting to dashboard

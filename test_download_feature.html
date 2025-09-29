@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Captive Portal Download Feature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .test-section {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .success {
+            border-left-color: #10b981;
+            background: #f0fdf4;
+        }
+        
+        .warning {
+            border-left-color: #f59e0b;
+            background: #fffbeb;
+        }
+        
+        .error {
+            border-left-color: #ef4444;
+            background: #fef2f2;
+        }
+        
+        button {
+            background: #f59e0b;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        
+        button:hover {
+            background: #d97706;
+        }
+        
+        .secondary {
+            background: #6b7280;
+        }
+        
+        .secondary:hover {
+            background: #4b5563;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Captive Portal Download Feature Test</h1>
+    
+    <div class="test-section success">
+        <h2>✅ Feature Implementation Complete</h2>
+        <p>The downloadable captive portal feature has been successfully implemented with the following corrections:</p>
+        <ul>
+            <li><strong>Moved to Admin Area:</strong> Download button is now in <code>routers.php</code> (admin dashboard)</li>
+            <li><strong>Simplified Design:</strong> Lightweight, clean captive portal with minimal CSS</li>
+            <li><strong>Core Functionality:</strong> Voucher input, Connect button, Buy Voucher button</li>
+            <li><strong>MikroTik Compatible:</strong> Proper form structure and CHAP authentication</li>
+            <li><strong>Mobile Responsive:</strong> Works on all device sizes</li>
+        </ul>
+    </div>
+    
+    <div class="test-section warning">
+        <h2>🔧 How to Test</h2>
+        <ol>
+            <li><strong>Access Admin Dashboard:</strong> Login to your admin account</li>
+            <li><strong>Go to Router Management:</strong> Navigate to <code>routers.php</code></li>
+            <li><strong>Select a Router:</strong> Choose a router from the dropdown</li>
+            <li><strong>Download Portal:</strong> Click "Download Captive Portal" button</li>
+            <li><strong>Verify File:</strong> Check that HTML file downloads with correct filename</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <h2>📋 Test Checklist</h2>
+        <div id="test-results">
+            <p><input type="checkbox" id="test1"> <label for="test1">Download button appears in routers.php</label></p>
+            <p><input type="checkbox" id="test2"> <label for="test2">Button is disabled when no router selected</label></p>
+            <p><input type="checkbox" id="test3"> <label for="test3">Download generates HTML file with correct filename</label></p>
+            <p><input type="checkbox" id="test4"> <label for="test4">HTML file opens properly in browser</label></p>
+            <p><input type="checkbox" id="test5"> <label for="test5">Captive portal has voucher input field</label></p>
+            <p><input type="checkbox" id="test6"> <label for="test6">Connect button works (form submission)</label></p>
+            <p><input type="checkbox" id="test7"> <label for="test7">Buy Voucher button links to portal.php</label></p>
+            <p><input type="checkbox" id="test8"> <label for="test8">Mobile layout displays correctly</label></p>
+            <p><input type="checkbox" id="test9"> <label for="test9">MikroTik variables are present ($(link-login-only), etc.)</label></p>
+            <p><input type="checkbox" id="test10"> <label for="test10">CHAP authentication code is included</label></p>
+        </div>
+        
+        <button onclick="checkAllTests()">✅ Mark All Complete</button>
+        <button onclick="clearAllTests()" class="secondary">🔄 Reset Tests</button>
+    </div>
+    
+    <div class="test-section">
+        <h2>🚀 Quick Test URLs</h2>
+        <p>Use these URLs to quickly test the functionality:</p>
+        <ul>
+            <li><strong>Admin Dashboard:</strong> <a href="routers.php" target="_blank">routers.php</a></li>
+            <li><strong>Portal Page:</strong> <a href="portal.php?router_id=1" target="_blank">portal.php?router_id=1</a></li>
+            <li><strong>Test Generator:</strong> <button onclick="testDownload()">Test Download Function</button></li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>📝 Expected Captive Portal Structure</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;WiFi Login - [Business Name]&lt;/title&gt;
+    &lt;style&gt;/* Inline CSS */&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="header"&gt;
+            &lt;h1&gt;[Business Name]&lt;/h1&gt;
+            &lt;p&gt;WiFi Login Portal&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;form name="login" action="$(link-login-only)" method="post"&gt;
+                &lt;input name="username" type="text" placeholder="Enter voucher code" /&gt;
+                &lt;button type="submit"&gt;Connect to WiFi&lt;/button&gt;
+            &lt;/form&gt;
+            &lt;a href="[portal_url]"&gt;Buy WiFi Voucher&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    
+    <div class="test-section success">
+        <h2>🎯 Key Improvements Made</h2>
+        <ul>
+            <li><strong>Correct Location:</strong> Moved from public portal to admin dashboard</li>
+            <li><strong>Simplified Code:</strong> Removed complex features, focused on core functionality</li>
+            <li><strong>Lightweight Design:</strong> Minimal CSS, fast loading</li>
+            <li><strong>Router Compatibility:</strong> Works with any router system</li>
+            <li><strong>Proper Workflow:</strong> Captive portal → Buy voucher → Return with code</li>
+            <li><strong>Mobile First:</strong> Responsive design for mobile users</li>
+            <li><strong>Clean UI:</strong> Professional appearance matching portal theme</li>
+        </ul>
+    </div>
+    
+    <script>
+        function checkAllTests() {
+            const checkboxes = document.querySelectorAll('#test-results input[type="checkbox"]');
+            checkboxes.forEach(cb => cb.checked = true);
+            alert('All tests marked as complete! 🎉');
+        }
+        
+        function clearAllTests() {
+            const checkboxes = document.querySelectorAll('#test-results input[type="checkbox"]');
+            checkboxes.forEach(cb => cb.checked = false);
+            alert('All tests reset. Ready for testing! 🔄');
+        }
+        
+        function testDownload() {
+            // Simulate download test
+            const testData = {
+                router_id: 1,
+                reseller_id: 1
+            };
+            
+            fetch('generate_captive_portal.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(testData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('✅ Download function is working! Check your downloads folder.');
+                    return response.blob();
+                } else {
+                    throw new Error('Download failed');
+                }
+            })
+            .then(blob => {
+                // Create download link
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = 'test_captive_portal.html';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
+            })
+            .catch(error => {
+                alert('❌ Download test failed: ' + error.message);
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

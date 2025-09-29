@@ -1,0 +1,463 @@
+/* Router Configuration Page Styles - Matching System Theme */
+
+/* Ensure main-content works properly with sidebar layout */
+.main-content {
+    /* Let the main style.css handle the sidebar margin and layout */
+    /* Only override specific properties if needed */
+    max-width: none;
+}
+
+.page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--bg-accent);
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.page-title i {
+    color: var(--accent-blue);
+}
+
+/* Alert Styles - Matching System Theme */
+.alert {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 500;
+    border-left: 4px solid;
+    background: var(--bg-secondary);
+}
+
+.alert-success {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border-left-color: #10b981;
+}
+
+.alert-success i {
+    color: #10b981;
+}
+
+.alert-danger {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border-left-color: #ef4444;
+}
+
+.alert-danger i {
+    color: #ef4444;
+}
+
+.alert i {
+    font-size: 1.25rem;
+}
+
+/* Router Grid Layout - Matching System Cards */
+.router-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Router Visual Section - Using System Card Style */
+.router-visual {
+    background: var(--bg-secondary);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--bg-accent);
+}
+
+.error-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--accent-orange);
+}
+
+.error-message i {
+    color: var(--accent-orange);
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.error-content {
+    flex: 1;
+}
+
+.error-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.error-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.contact-number {
+    font-weight: 600;
+    color: var(--accent-orange);
+    background: rgba(59, 130, 246, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Router Form Section - Using System Card Style */
+.router-form {
+    background: var(--bg-secondary);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--bg-accent);
+}
+
+.form-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--bg-accent);
+}
+
+.form-title i {
+    color: var(--accent-blue);
+}
+
+/* Form Styles - Matching System Forms */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.form-label i {
+    color: var(--accent-blue);
+    width: 16px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--bg-accent);
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.form-hint {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+/* IP Segments */
+.ip-segments {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ip-segment {
+    width: 4rem;
+    text-align: center;
+}
+
+.ip-dot {
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+}
+
+/* Password Toggle */
+.input-icon {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: var(--accent-orange);
+}
+
+/* Buttons - Matching System Button Style */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: var(--accent-blue);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--accent-purple);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: var(--accent-orange);
+    color: white;
+}
+
+.btn-secondary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn-danger {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+    transform: translateY(-1px);
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: flex-end;
+}
+
+/* Remote Access Section - Using System Card Style */
+.remote-access-section {
+    background: var(--bg-secondary);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border: 1px solid var(--bg-accent);
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--bg-accent);
+}
+
+.section-title i {
+    color: var(--accent-blue);
+}
+
+/* Request Cards - Using System Card Style */
+.request-card {
+    background: var(--bg-primary);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--bg-accent);
+    transition: all 0.2s ease;
+}
+
+.request-card:hover {
+    border-color: var(--accent-blue);
+}
+
+.request-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.request-router {
+    font-weight: 500;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.request-router i {
+    color: var(--accent-blue);
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.status-ordered {
+    background: var(--accent-orange);
+    color: white;
+}
+
+.status-approved {
+    background: #10b981;
+    color: white;
+}
+
+.status-rejected {
+    background: #ef4444;
+    color: white;
+}
+
+/* Credentials Display - Using System Style */
+.credentials {
+    background: var(--bg-secondary);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--bg-accent);
+}
+
+.credential-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.credential-item:last-child {
+    margin-bottom: 0;
+}
+
+.credential-label {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.credential-value {
+    font-family: 'Courier New', monospace;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--bg-accent);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Responsive Design - Matching System Breakpoints */
+@media (max-width: 768px) {
+    .router-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .ip-segments {
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    .ip-segment {
+        width: 3rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .request-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .credential-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .credential-value {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .router-visual,
+    .router-form,
+    .remote-access-section {
+        padding: 1rem;
+    }
+
+    .page-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}

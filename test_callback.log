@@ -1,0 +1,67 @@
+[2025-04-09 09:17:08] Test script accessed from ::1
+[2025-04-09 09:17:23] Test script accessed from ::1
+[2025-04-09 09:17:23] Sending test callback to https://your-ngrok-id.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_202504090917086874","CheckoutRequestID":"ws_CO_202504090917089234","ResultCode":1,"ResultDesc":"Transaction failed or canceled by user"}}}
+[2025-04-09 09:17:24] Response from callback: HTTP 404, Body: <!DOCTYPE html>
+<html class="h-full" lang="en-US" dir="ltr">
+  <head>
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-Regular-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-RegularItalic-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-Medium-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-Semibold-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-MediumItalic-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/ibm-plex-mono/IBMPlexMono-Text.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/ibm-plex-mono/IBMPlexMono-TextItalic.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/ibm-plex-mono/IBMPlexMono-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/ibm-plex-mono/IBMPlexMono-SemiBoldItalic.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <meta charset="utf-8">
+    <meta name="author" content="ngrok">
+    <meta name="description" content="ngrok is the fastest way to put anything on the internet with a single command.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="style" rel="stylesheet" href="https://cdn.ngrok.com/static/css/error.css">
+    <noscript>The endpoint your-ngrok-id.ngrok-free.app is offline. (ERR_NGROK_3200)</noscript>
+    <script id="script" src="https://cdn.ngrok.com/static/js/error.js" type="text/javascript"></script>
+  </head>
+  <body class="h-full" id="ngrok">
+    <div id="root" data-payload="eyJjZG5CYXNlIjoiaHR0cHM6Ly9jZG4ubmdyb2suY29tLyIsImNvZGUiOiIzMjAwIiwibWVzc2FnZSI6IlRoZSBlbmRwb2ludCB5b3VyLW5ncm9rLWlkLm5ncm9rLWZyZWUuYXBwIGlzIG9mZmxpbmUuIiwidGl0bGUiOiJOb3QgRm91bmQifQ=="></div>
+  </body>
+</html>
+
+[2025-04-09 09:18:40] Test script accessed from ::1
+[2025-04-09 09:18:40] Sending test callback to https://b3d2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_202504090917086875","CheckoutRequestID":"ws_CO_202504090917089236","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":20},{"Name":"MpesaReceiptNumber","Value":"TEST3572495"},{"Name":"TransactionDate","Value":"20250409091840"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-04-09 09:18:41] Response from callback: HTTP 200, Body:  {"ResultCode":0,"ResultDesc":"Success"}
+[2025-04-09 09:20:09] Test script accessed from ::1
+[2025-04-09 09:20:09] Sending test callback to https://b3d2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_202504090917086878","CheckoutRequestID":"ws_CO_202504090917089237","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":50},{"Name":"MpesaReceiptNumber","Value":"TEST8637253"},{"Name":"TransactionDate","Value":"20250409092009"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-04-09 09:20:10] Response from callback: HTTP 200, Body:  {"ResultCode":0,"ResultDesc":"Success"}
+[2025-04-09 11:15:48] Test script accessed from ::1
+[2025-04-09 11:15:48] Sending test callback to https://b3d2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_202504090917086878","CheckoutRequestID":"ws_CO_202504090917089237","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":50},{"Name":"MpesaReceiptNumber","Value":"TEST9514697"},{"Name":"TransactionDate","Value":"20250409111548"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-04-09 11:15:50] Response from callback: HTTP 200, Body:  {"ResultCode":0,"ResultDesc":"Success"}
+[2025-04-14 12:16:30] Test script accessed from ::1
+[2025-04-14 12:16:39] Test script accessed from ::1
+[2025-04-14 12:16:39] Sending test callback to https://your-ngrok-id.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_202504141216302398","CheckoutRequestID":"ws_CO_202504141216301558","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":10},{"Name":"MpesaReceiptNumber","Value":"TEST6270737"},{"Name":"TransactionDate","Value":"20250414121639"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-04-14 12:16:42] Response from callback: HTTP 404, Body: <!DOCTYPE html>
+<html class="h-full" lang="en-US" dir="ltr">
+  <head>
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-Regular-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-RegularItalic-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-Medium-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-Semibold-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-MediumItalic-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/ibm-plex-mono/IBMPlexMono-Text.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/ibm-plex-mono/IBMPlexMono-TextItalic.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/ibm-plex-mono/IBMPlexMono-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/ibm-plex-mono/IBMPlexMono-SemiBoldItalic.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <meta charset="utf-8">
+    <meta name="author" content="ngrok">
+    <meta name="description" content="ngrok is the fastest way to put anything on the internet with a single command.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="style" rel="stylesheet" href="https://cdn.ngrok.com/static/css/error.css">
+    <noscript>The endpoint your-ngrok-id.ngrok-free.app is offline. (ERR_NGROK_3200)</noscript>
+    <script id="script" src="https://cdn.ngrok.com/static/js/error.js" type="text/javascript"></script>
+  </head>
+  <body class="h-full" id="ngrok">
+    <div id="root" data-payload="eyJjZG5CYXNlIjoiaHR0cHM6Ly9jZG4ubmdyb2suY29tLyIsImNvZGUiOiIzMjAwIiwibWVzc2FnZSI6IlRoZSBlbmRwb2ludCB5b3VyLW5ncm9rLWlkLm5ncm9rLWZyZWUuYXBwIGlzIG9mZmxpbmUuIiwidGl0bGUiOiJOb3QgRm91bmQifQ=="></div>
+  </body>
+</html>
+

@@ -1,0 +1,22 @@
+[2025-04-11 11:12:47] Generating voucher for transaction ID: 2
+[2025-04-11 11:12:47] Generated new voucher code: 1P8K2KYY for transaction: 2
+[2025-04-11 11:12:47] Adding voucher to MikroTik: 1P8K2KYY for Package ID: 15
+[2025-04-11 11:12:47] Getting router connection details for reseller ID: 6
+[2025-04-11 11:12:47] Found router for reseller: 192.168.1.1
+[2025-04-11 11:12:47] Getting package info for package ID: 15
+[2025-04-11 11:12:47] Found package: 1Hr Konnect
+[2025-04-11 11:12:47] Connecting to MikroTik at 192.168.1.1 with username admin
+[2025-04-11 11:12:47] Using profile: 1day
+[2025-04-11 11:13:12] Failed to connect to MikroTik. Error: No connection could be made because the target machine actively refused it
+[2025-04-11 11:13:12] Failed to add voucher to MikroTik: Failed to connect to MikroTik router
+[2025-04-11 11:15:27] Generating voucher for transaction ID: 2
+[2025-04-11 11:15:27] Generated new voucher code: QSD2I4R2 for transaction: 2
+[2025-04-11 11:15:27] Adding voucher to MikroTik: QSD2I4R2 for Package ID: 15
+[2025-04-11 11:15:27] Getting router connection details for reseller ID: 6
+[2025-04-11 11:15:27] Found router for reseller: 192.168.1.1
+[2025-04-11 11:15:27] Getting package info for package ID: 15
+[2025-04-11 11:15:27] Found package: 1Hr Konnect
+[2025-04-11 11:15:27] Connecting to MikroTik at 192.168.1.1 with username admin
+[2025-04-11 11:15:27] Using profile: 1day
+[2025-04-11 11:15:52] Failed to connect to MikroTik. Error: No connection could be made because the target machine actively refused it
+[2025-04-11 11:15:52] Failed to add voucher to MikroTik: Failed to connect to MikroTik router
