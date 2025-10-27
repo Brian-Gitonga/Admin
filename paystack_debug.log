@@ -20,3 +20,496 @@
 [2025-09-23 22:09:54] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
 [2025-09-23 22:09:55] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/bej5nrycsmleffr","access_code":"bej5nrycsmleffr","reference":"QTRO_68d2fe926be1c_1758658194"}}
 [2025-09-23 22:09:55] Payment initialization successful. Redirecting to: https://checkout.paystack.com/bej5nrycsmleffr
+[2025-09-30 16:10:07] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 16:10:07] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 16:10:07] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 16:10:07] Formatted phone number: 254114669532
+[2025-09-30 16:10:07] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 16:10:07] Validated amount: 11
+[2025-09-30 16:10:07] Error: Missing Paystack API keys
+[2025-09-30 16:10:23] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 16:10:23] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 254114669532@customer.qtro.co.ke
+)
+
+[2025-09-30 16:10:23] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"254114669532@customer.qtro.co.ke","packageId":30,"routerId":19}
+[2025-09-30 16:10:23] Formatted phone number: 254114669532
+[2025-09-30 16:10:23] Validated amount: 11
+[2025-09-30 16:10:23] Error: Missing Paystack API keys
+[2025-09-30 16:11:48] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 16:11:48] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 254114669532@customer.qtro.co.ke
+)
+
+[2025-09-30 16:11:48] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"254114669532@customer.qtro.co.ke","packageId":30,"routerId":19}
+[2025-09-30 16:11:48] Formatted phone number: 254114669532
+[2025-09-30 16:11:48] Validated amount: 11
+[2025-09-30 16:11:48] Error: Missing Paystack API keys
+[2025-09-30 16:11:52] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 16:11:52] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 254114669532@customer.qtro.co.ke
+)
+
+[2025-09-30 16:11:52] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"254114669532@customer.qtro.co.ke","packageId":30,"routerId":19}
+[2025-09-30 16:11:52] Formatted phone number: 254114669532
+[2025-09-30 16:11:52] Validated amount: 11
+[2025-09-30 16:11:52] Error: Missing Paystack API keys
+[2025-09-30 16:12:04] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 16:12:04] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 16:12:04] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 16:12:04] Formatted phone number: 254114669532
+[2025-09-30 16:12:04] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 16:12:04] Validated amount: 11
+[2025-09-30 16:12:04] Error: Missing Paystack API keys
+[2025-09-30 16:12:44] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 16:12:44] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 16:12:44] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 16:12:44] Formatted phone number: 254114669532
+[2025-09-30 16:12:44] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 16:12:44] Validated amount: 11
+[2025-09-30 16:12:44] Error: Missing Paystack API keys
+[2025-09-30 16:19:24] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 16:19:24] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 16:19:24] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 16:19:24] Formatted phone number: 254114669532
+[2025-09-30 16:19:24] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 16:19:24] Validated amount: 11
+[2025-09-30 16:19:24] Error: Missing Paystack API keys
+[2025-09-30 16:52:32] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 16:52:32] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 16:52:32] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 16:52:32] Formatted phone number: 254114669532
+[2025-09-30 16:52:32] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 16:52:32] Validated amount: 11
+[2025-09-30 16:52:32] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 16:52:32] Transaction data: {"reference":"QTRO_68dbeeb019aad_1759243952","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dbeeb019aad_1759243952","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 16:52:32] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 16:52:35] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/5q8mu27liu7nkfe","access_code":"5q8mu27liu7nkfe","reference":"QTRO_68dbeeb019aad_1759243952"}}
+[2025-09-30 16:52:35] Payment initialization successful. Redirecting to: https://checkout.paystack.com/5q8mu27liu7nkfe
+[2025-09-30 17:01:42] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 17:01:42] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 17:01:42] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 17:01:42] Formatted phone number: 254114669532
+[2025-09-30 17:01:42] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 17:01:42] Validated amount: 11
+[2025-09-30 17:01:42] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 17:01:42] Transaction data: {"reference":"QTRO_68dbf0d68c652_1759244502","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dbf0d68c652_1759244502","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 17:01:42] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 17:01:42] Paystack API response: 
+[2025-09-30 17:01:42] cURL Error: Could not resolve host: api.paystack.co
+[2025-09-30 17:01:47] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 17:01:47] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 254114669532@customer.qtro.co.ke
+)
+
+[2025-09-30 17:01:47] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"254114669532@customer.qtro.co.ke","packageId":30,"routerId":19}
+[2025-09-30 17:01:47] Formatted phone number: 254114669532
+[2025-09-30 17:01:47] Validated amount: 11
+[2025-09-30 17:01:47] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 17:01:47] Transaction data: {"reference":"QTRO_68dbf0db6baf1_1759244507","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dbf0db6baf1_1759244507","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 17:01:47] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 17:01:47] Paystack API response: 
+[2025-09-30 17:01:47] cURL Error: Could not resolve host: api.paystack.co
+[2025-09-30 17:01:55] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 17:01:55] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 254114669532@customer.qtro.co.ke
+)
+
+[2025-09-30 17:01:55] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"254114669532@customer.qtro.co.ke","packageId":30,"routerId":19}
+[2025-09-30 17:01:55] Formatted phone number: 254114669532
+[2025-09-30 17:01:55] Validated amount: 11
+[2025-09-30 17:01:55] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 17:01:55] Transaction data: {"reference":"QTRO_68dbf0e3da789_1759244515","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dbf0e3da789_1759244515","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 17:01:55] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 17:01:55] Paystack API response: 
+[2025-09-30 17:01:55] cURL Error: Could not resolve host: api.paystack.co
+[2025-09-30 18:49:33] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 18:49:33] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 18:49:33] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 18:49:33] Formatted phone number: 254114669532
+[2025-09-30 18:49:33] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 18:49:33] Validated amount: 11
+[2025-09-30 18:49:33] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 18:49:33] Transaction data: {"reference":"QTRO_68dc0a1da8ee6_1759250973","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dc0a1da8ee6_1759250973","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 18:49:33] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 18:50:02] Paystack API response: 
+[2025-09-30 18:50:02] cURL Error: OpenSSL SSL_connect: Connection was reset in connection to api.paystack.co:443 
+[2025-09-30 18:50:18] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 18:50:18] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 18:50:18] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 18:50:18] Formatted phone number: 254114669532
+[2025-09-30 18:50:18] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 18:50:18] Validated amount: 11
+[2025-09-30 18:50:18] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 18:50:18] Transaction data: {"reference":"QTRO_68dc0a4ae6897_1759251018","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dc0a4ae6897_1759251018","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 18:50:18] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 18:50:47] Paystack API response: 
+[2025-09-30 18:50:47] cURL Error: OpenSSL SSL_connect: Connection was reset in connection to api.paystack.co:443 
+[2025-09-30 18:50:59] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 18:50:59] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 18:50:59] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 18:50:59] Formatted phone number: 254114669532
+[2025-09-30 18:50:59] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 18:50:59] Validated amount: 11
+[2025-09-30 18:50:59] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 18:50:59] Transaction data: {"reference":"QTRO_68dc0a739eb69_1759251059","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dc0a739eb69_1759251059","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 18:50:59] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 18:51:23] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 18:51:23] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 18:51:23] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 18:51:23] Formatted phone number: 254114669532
+[2025-09-30 18:51:23] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 18:51:23] Validated amount: 11
+[2025-09-30 18:51:23] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 18:51:23] Transaction data: {"reference":"QTRO_68dc0a8b83bab_1759251083","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dc0a8b83bab_1759251083","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 18:51:23] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 18:51:29] Paystack API response: 
+[2025-09-30 18:51:29] cURL Error: OpenSSL SSL_connect: Connection was reset in connection to api.paystack.co:443 
+[2025-09-30 18:51:45] Paystack API response: 
+[2025-09-30 18:51:45] cURL Error: OpenSSL SSL_connect: Connection was reset in connection to api.paystack.co:443 
+[2025-09-30 18:53:09] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 18:53:09] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 0114669532
+    [paystack_email] => 254114669532@customer.qtro.co.ke
+)
+
+[2025-09-30 18:53:09] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"0114669532","paystackEmail":"254114669532@customer.qtro.co.ke","packageId":30,"routerId":19}
+[2025-09-30 18:53:09] Formatted phone number: 254114669532
+[2025-09-30 18:53:09] Validated amount: 11
+[2025-09-30 18:53:09] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 18:53:09] Transaction data: {"reference":"QTRO_68dc0af57e1b2_1759251189","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dc0af57e1b2_1759251189","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 18:53:09] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 18:53:25] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/s7redmsslbtncb4","access_code":"s7redmsslbtncb4","reference":"QTRO_68dc0af57e1b2_1759251189"}}
+[2025-09-30 18:53:25] Payment initialization successful. Redirecting to: https://checkout.paystack.com/s7redmsslbtncb4
+[2025-09-30 19:36:41] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 19:36:41] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 254114669532@customer.qtro.co.ke
+)
+
+[2025-09-30 19:36:41] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"254114669532@customer.qtro.co.ke","packageId":30,"routerId":19}
+[2025-09-30 19:36:41] Formatted phone number: 254114669532
+[2025-09-30 19:36:41] Validated amount: 11
+[2025-09-30 19:36:41] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 19:36:41] Transaction data: {"reference":"QTRO_68dc15293c080_1759253801","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dc15293c080_1759253801","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 19:36:41] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 19:36:42] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/h57s2qtqdf1xa79","access_code":"h57s2qtqdf1xa79","reference":"QTRO_68dc15293c080_1759253801"}}
+[2025-09-30 19:36:42] Payment initialization successful. Redirecting to: https://checkout.paystack.com/h57s2qtqdf1xa79
+[2025-09-30 20:42:24] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 20:42:24] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 20:42:24] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 20:42:24] Formatted phone number: 254114669532
+[2025-09-30 20:42:24] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 20:42:24] Validated amount: 11
+[2025-09-30 20:42:24] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 20:42:24] Transaction data: {"reference":"QTRO_68dc24903f552_1759257744","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dc24903f552_1759257744","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 20:42:24] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 20:42:25] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/yeqnmczqoap15m3","access_code":"yeqnmczqoap15m3","reference":"QTRO_68dc24903f552_1759257744"}}
+[2025-09-30 20:42:25] Payment initialization successful. Redirecting to: https://checkout.paystack.com/yeqnmczqoap15m3
+[2025-09-30 20:43:14] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 20:43:14] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 20:43:14] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 20:43:14] Formatted phone number: 254114669532
+[2025-09-30 20:43:14] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 20:43:14] Validated amount: 11
+[2025-09-30 20:43:14] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 20:43:14] Transaction data: {"reference":"QTRO_68dc24c225a82_1759257794","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dc24c225a82_1759257794","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 20:43:14] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 20:43:14] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/esmejmcdh137owo","access_code":"esmejmcdh137owo","reference":"QTRO_68dc24c225a82_1759257794"}}
+[2025-09-30 20:43:14] Payment initialization successful. Redirecting to: https://checkout.paystack.com/esmejmcdh137owo
+[2025-09-30 20:45:03] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 20:45:03] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 20:45:03] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 20:45:03] Formatted phone number: 254114669532
+[2025-09-30 20:45:03] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 20:45:03] Validated amount: 11
+[2025-09-30 20:45:03] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 20:45:03] Transaction data: {"reference":"QTRO_68dc252f4f40f_1759257903","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dc252f4f40f_1759257903","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 20:45:03] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 20:45:04] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/6ipzortmulda7pb","access_code":"6ipzortmulda7pb","reference":"QTRO_68dc252f4f40f_1759257903"}}
+[2025-09-30 20:45:04] Payment initialization successful. Redirecting to: https://checkout.paystack.com/6ipzortmulda7pb
+[2025-09-30 21:19:54] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 21:19:54] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 21:19:54] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 21:19:54] Formatted phone number: 254114669532
+[2025-09-30 21:19:54] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 21:19:54] Validated amount: 11
+[2025-09-30 21:19:54] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 21:19:54] Transaction data: {"reference":"QTRO_68dc2d5ac0424_1759259994","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/paystack_verify.php?reference=QTRO_68dc2d5ac0424_1759259994","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 21:19:54] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 21:19:55] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/icc9c5upovow2xo","access_code":"icc9c5upovow2xo","reference":"QTRO_68dc2d5ac0424_1759259994"}}
+[2025-09-30 21:19:55] Payment initialization successful. Redirecting to: https://checkout.paystack.com/icc9c5upovow2xo
+[2025-09-30 23:17:30] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 23:17:30] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 23:17:30] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 23:17:30] Formatted phone number: 254114669532
+[2025-09-30 23:17:30] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 23:17:30] Validated amount: 11
+[2025-09-30 23:17:30] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 23:17:30] Transaction data: {"reference":"QTRO_68dc48ea3fbff_1759267050","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/SAAS\/Wifi%20Billiling%20system\/Admin\/paystack_verify.php?reference=QTRO_68dc48ea3fbff_1759267050","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 23:17:30] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 23:17:32] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/p6t7qvztjpeuh2a","access_code":"p6t7qvztjpeuh2a","reference":"QTRO_68dc48ea3fbff_1759267050"}}
+[2025-09-30 23:17:32] Payment initialization successful. Redirecting to: https://checkout.paystack.com/p6t7qvztjpeuh2a
+[2025-09-30 23:49:08] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 23:49:08] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 19
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [package_id] => 30
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 23:49:08] Form data received: {"resellerId":17,"packageName":"Konnect","packagePrice":"11.00","phoneNumber":"254114669532","paystackEmail":"","packageId":30,"routerId":19}
+[2025-09-30 23:49:08] Formatted phone number: 254114669532
+[2025-09-30 23:49:08] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 23:49:08] Validated amount: 11
+[2025-09-30 23:49:08] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 23:49:08] Transaction data: {"reference":"QTRO_68dc505489a3a_1759268948","amount":1100,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/SAAS\/Wifi%20Billiling%20system\/Admin\/paystack_verify.php?reference=QTRO_68dc505489a3a_1759268948","metadata":{"package_id":30,"package_name":"Konnect","reseller_id":17,"router_id":19,"phone_number":"254114669532"}}
+[2025-09-30 23:49:08] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 23:49:09] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/e5d9ci4rh87rbsk","access_code":"e5d9ci4rh87rbsk","reference":"QTRO_68dc505489a3a_1759268948"}}
+[2025-09-30 23:49:09] Payment initialization successful. Redirecting to: https://checkout.paystack.com/e5d9ci4rh87rbsk
+[2025-09-30 23:56:30] ======= NEW PAYSTACK PAYMENT PROCESS STARTED =======
+[2025-09-30 23:56:30] POST data: Array
+(
+    [reseller_id] => 17
+    [router_id] => 20
+    [package_name] => Game Connect
+    [package_price] => 5.00
+    [package_id] => 31
+    [payment_gateway] => paystack
+    [mpesa_number] => 254114669532
+    [paystack_email] => 
+)
+
+[2025-09-30 23:56:30] Form data received: {"resellerId":17,"packageName":"Game Connect","packagePrice":"5.00","phoneNumber":"254114669532","paystackEmail":"","packageId":31,"routerId":20}
+[2025-09-30 23:56:30] Formatted phone number: 254114669532
+[2025-09-30 23:56:30] Generated email from phone: 254114669532@customer.qtro.co.ke
+[2025-09-30 23:56:30] Validated amount: 5
+[2025-09-30 23:56:30] Using Paystack keys: Secret=sk_li..., Public=pk_li...
+[2025-09-30 23:56:30] Transaction data: {"reference":"QTRO_68dc520e07abe_1759269390","amount":500,"email":"254114669532@customer.qtro.co.ke","currency":"KES","callback_url":"http:\/\/localhost\/SAAS\/Wifi%20Billiling%20system\/Admin\/paystack_verify.php?reference=QTRO_68dc520e07abe_1759269390","metadata":{"package_id":31,"package_name":"Game Connect","reseller_id":17,"router_id":20,"phone_number":"254114669532"}}
+[2025-09-30 23:56:30] Failed to prepare transaction statement: Unknown column 'phone_number' in 'field list'
+[2025-09-30 23:56:31] Paystack API response: {"status":true,"message":"Authorization URL created","data":{"authorization_url":"https://checkout.paystack.com/18oz7sq4uw0wasj","access_code":"18oz7sq4uw0wasj","reference":"QTRO_68dc520e07abe_1759269390"}}
+[2025-09-30 23:56:31] Payment initialization successful. Redirecting to: https://checkout.paystack.com/18oz7sq4uw0wasj

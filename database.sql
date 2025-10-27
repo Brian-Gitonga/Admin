@@ -236,6 +236,8 @@ CREATE TABLE IF NOT EXISTS `mpesa_transactions` (
   `transaction_date` varchar(50) DEFAULT NULL,
   `result_code` int(11) DEFAULT NULL,
   `result_description` varchar(255) DEFAULT NULL,
+  `voucher_code` varchar(50) DEFAULT NULL,
+  `notes` text DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),

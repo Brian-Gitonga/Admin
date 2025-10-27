@@ -17,3 +17,1308 @@
 [2025-04-09 10:20:58] M-Pesa API confirms payment was successful!
 [2025-04-09 10:20:58] Updated transaction status to completed in database
 [2025-04-09 10:20:58] Vouchers table does not exist, using mock voucher code only
+[2025-10-03 11:57:14] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 11:57:14] Remote IP: ::1
+[2025-10-03 11:57:14] Request Method: POST
+[2025-10-03 11:57:14] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 11:57:14] Checking payment status for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 11:57:14] Transaction found. Status: completed
+[2025-10-03 11:57:14] Payment already completed!
+[2025-10-03 11:57:19] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 11:57:19] Remote IP: ::1
+[2025-10-03 11:57:19] Request Method: POST
+[2025-10-03 11:57:19] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 11:57:19] Checking payment status for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 11:57:19] Transaction found. Status: completed
+[2025-10-03 11:57:19] Payment already completed!
+[2025-10-03 11:57:29] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 11:57:29] Remote IP: ::1
+[2025-10-03 11:57:29] Request Method: POST
+[2025-10-03 11:57:29] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 11:57:29] Checking payment status for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 11:57:29] Transaction found. Status: completed
+[2025-10-03 11:57:29] Payment already completed!
+[2025-10-03 11:57:30] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 11:57:30] Remote IP: ::1
+[2025-10-03 11:57:30] Request Method: POST
+[2025-10-03 11:57:30] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 11:57:30] Checking payment status for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 11:57:30] Transaction found. Status: completed
+[2025-10-03 11:57:30] Payment already completed!
+[2025-10-03 12:03:37] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:03:37] Remote IP: ::1
+[2025-10-03 12:03:37] Request Method: POST
+[2025-10-03 12:03:37] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:03:37] Checking payment status for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 12:03:37] Transaction found. Status: completed
+[2025-10-03 12:03:37] Payment already completed!
+[2025-10-03 12:03:40] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:03:40] Remote IP: ::1
+[2025-10-03 12:03:40] Request Method: POST
+[2025-10-03 12:03:40] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:03:40] Checking payment status for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 12:03:40] Transaction found. Status: completed
+[2025-10-03 12:03:40] Payment already completed!
+[2025-10-03 12:08:09] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:08:09] Remote IP: ::1
+[2025-10-03 12:08:09] Request Method: POST
+[2025-10-03 12:08:09] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:08:09] Checking payment status for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 12:08:09] Transaction found. Status: completed
+[2025-10-03 12:08:09] Payment already completed!
+[2025-10-03 12:08:10] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:08:10] Remote IP: ::1
+[2025-10-03 12:08:10] Request Method: POST
+[2025-10-03 12:08:10] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:08:10] Checking payment status for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 12:08:10] Transaction found. Status: completed
+[2025-10-03 12:08:10] Payment already completed!
+[2025-10-03 12:10:52] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:10:52] Remote IP: ::1
+[2025-10-03 12:10:52] Request Method: POST
+[2025-10-03 12:10:52] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:10:52] Checking payment status for checkout request ID: ws_CO_03102025131048891114669532
+[2025-10-03 12:10:52] Transaction found. Status: pending
+[2025-10-03 12:10:52] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-03 13:10:54] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad11253",
+            "CheckoutRequestID":"ws_CO_03102025131048891114669532",
+            "ResultCode": "4999",
+            "ResultDesc":"The transaction is still under processing"
+        }
+        
+[2025-10-03 13:10:54] M-Pesa API returned non-zero result code: 4999
+[2025-10-03 13:10:54] Updated transaction with result code and description
+[2025-10-03 12:11:13] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:11:13] Remote IP: ::1
+[2025-10-03 12:11:13] Request Method: POST
+[2025-10-03 12:11:13] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:11:13] Checking payment status for checkout request ID: ws_CO_03102025131048891114669532
+[2025-10-03 12:11:13] Transaction found. Status: pending
+[2025-10-03 12:11:13] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-03 13:11:14] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad11253",
+            "CheckoutRequestID":"ws_CO_03102025131048891114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-03 13:11:14] M-Pesa API confirms payment was successful!
+[2025-10-03 13:11:14] Updated transaction status to completed in database
+[2025-10-03 12:11:25] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:11:25] Remote IP: ::1
+[2025-10-03 12:11:25] Request Method: POST
+[2025-10-03 12:11:25] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:11:25] Checking payment status for checkout request ID: ws_CO_03102025131048891114669532
+[2025-10-03 12:11:25] Transaction found. Status: completed
+[2025-10-03 12:11:25] Payment already completed!
+[2025-10-03 12:11:28] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:11:28] Remote IP: ::1
+[2025-10-03 12:11:28] Request Method: POST
+[2025-10-03 12:11:28] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:11:28] Checking payment status for checkout request ID: ws_CO_03102025131048891114669532
+[2025-10-03 12:11:28] Transaction found. Status: completed
+[2025-10-03 12:11:28] Payment already completed!
+[2025-10-03 12:12:06] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:12:06] Remote IP: ::1
+[2025-10-03 12:12:06] Request Method: POST
+[2025-10-03 12:12:06] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:12:06] Checking payment status for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 12:12:06] Transaction found. Status: completed
+[2025-10-03 12:12:06] Payment already completed!
+[2025-10-03 12:21:32] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:21:32] Remote IP: ::1
+[2025-10-03 12:21:32] Request Method: POST
+[2025-10-03 12:21:32] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:21:32] Checking payment status for checkout request ID: ws_CO_03102025132120439114669532
+[2025-10-03 12:21:32] Transaction found. Status: pending
+[2025-10-03 12:21:32] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-03 13:21:34] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"2e9c-429c-a95c-b4cd653531a36930",
+            "CheckoutRequestID":"ws_CO_03102025132120439114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-03 13:21:34] M-Pesa API confirms payment was successful!
+[2025-10-03 13:21:34] Updated transaction status to completed in database
+[2025-10-03 12:21:43] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:21:43] Remote IP: ::1
+[2025-10-03 12:21:43] Request Method: POST
+[2025-10-03 12:21:43] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:21:43] Checking payment status for checkout request ID: ws_CO_03102025132120439114669532
+[2025-10-03 12:21:43] Transaction found. Status: completed
+[2025-10-03 12:21:43] Payment already completed!
+[2025-10-03 12:21:50] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:21:50] Remote IP: ::1
+[2025-10-03 12:21:50] Request Method: POST
+[2025-10-03 12:21:50] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:21:50] Checking payment status for checkout request ID: ws_CO_03102025132120439114669532
+[2025-10-03 12:21:50] Transaction found. Status: completed
+[2025-10-03 12:21:50] Payment already completed!
+[2025-10-03 12:22:50] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:22:50] Remote IP: ::1
+[2025-10-03 12:22:50] Request Method: POST
+[2025-10-03 12:22:50] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:22:50] Checking payment status for checkout request ID: ws_CO_03102025131048891114669532
+[2025-10-03 12:22:50] Transaction found. Status: completed
+[2025-10-03 12:22:50] Payment already completed!
+[2025-10-03 12:22:52] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:22:52] Remote IP: ::1
+[2025-10-03 12:22:52] Request Method: POST
+[2025-10-03 12:22:52] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:22:52] Checking payment status for checkout request ID: ws_CO_03102025131048891114669532
+[2025-10-03 12:22:52] Transaction found. Status: completed
+[2025-10-03 12:22:52] Payment already completed!
+[2025-10-03 12:27:57] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:27:57] Remote IP: ::1
+[2025-10-03 12:27:57] Request Method: POST
+[2025-10-03 12:27:57] Session ID: 071k4dk9ft7meeuv75mhg64kar
+[2025-10-03 12:27:57] Checking payment status for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 12:27:57] Transaction found. Status: completed
+[2025-10-03 12:27:57] Payment already completed!
+[2025-10-03 12:31:58] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:31:58] Remote IP: ::1
+[2025-10-03 12:31:58] Request Method: POST
+[2025-10-03 12:31:58] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:31:58] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:31:58] Transaction found. Status: pending
+[2025-10-03 12:31:58] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-03 13:31:59] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad11589",
+            "CheckoutRequestID":"ws_CO_03102025133135920114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-03 13:31:59] M-Pesa API confirms payment was successful!
+[2025-10-03 13:31:59] Updated transaction status to completed in database
+[2025-10-03 12:32:09] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:32:09] Remote IP: ::1
+[2025-10-03 12:32:09] Request Method: POST
+[2025-10-03 12:32:09] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:32:09] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:32:09] Transaction found. Status: completed
+[2025-10-03 12:32:09] Payment already completed!
+[2025-10-03 12:32:17] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:32:17] Remote IP: ::1
+[2025-10-03 12:32:17] Request Method: POST
+[2025-10-03 12:32:17] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:32:17] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:32:17] Transaction found. Status: completed
+[2025-10-03 12:32:17] Payment already completed!
+[2025-10-03 12:32:20] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:32:20] Remote IP: ::1
+[2025-10-03 12:32:20] Request Method: POST
+[2025-10-03 12:32:20] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:32:20] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:32:20] Transaction found. Status: completed
+[2025-10-03 12:32:20] Payment already completed!
+[2025-10-03 12:32:21] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:32:21] Remote IP: ::1
+[2025-10-03 12:32:21] Request Method: POST
+[2025-10-03 12:32:21] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:32:21] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:32:21] Transaction found. Status: completed
+[2025-10-03 12:32:21] Payment already completed!
+[2025-10-03 12:32:25] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:32:25] Remote IP: ::1
+[2025-10-03 12:32:25] Request Method: POST
+[2025-10-03 12:32:25] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:32:25] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:32:25] Transaction found. Status: completed
+[2025-10-03 12:32:25] Payment already completed!
+[2025-10-03 12:34:00] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:34:00] Remote IP: ::1
+[2025-10-03 12:34:00] Request Method: POST
+[2025-10-03 12:34:00] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:34:00] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:34:00] Transaction found. Status: completed
+[2025-10-03 12:34:00] Payment already completed!
+[2025-10-03 12:34:00] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:34:00] Remote IP: ::1
+[2025-10-03 12:34:00] Request Method: POST
+[2025-10-03 12:34:00] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:34:00] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:34:00] Transaction found. Status: completed
+[2025-10-03 12:34:00] Payment already completed!
+[2025-10-03 12:34:10] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:34:10] Remote IP: ::1
+[2025-10-03 12:34:10] Request Method: POST
+[2025-10-03 12:34:10] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:34:10] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:34:10] Transaction found. Status: completed
+[2025-10-03 12:34:10] Payment already completed!
+[2025-10-03 12:34:11] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:34:11] Remote IP: ::1
+[2025-10-03 12:34:11] Request Method: POST
+[2025-10-03 12:34:11] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:34:11] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:34:11] Transaction found. Status: completed
+[2025-10-03 12:34:11] Payment already completed!
+[2025-10-03 12:34:12] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:34:12] Remote IP: ::1
+[2025-10-03 12:34:12] Request Method: POST
+[2025-10-03 12:34:12] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:34:12] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:34:12] Transaction found. Status: completed
+[2025-10-03 12:34:12] Payment already completed!
+[2025-10-03 12:34:22] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:34:22] Remote IP: ::1
+[2025-10-03 12:34:22] Request Method: POST
+[2025-10-03 12:34:22] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:34:22] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:34:22] Transaction found. Status: completed
+[2025-10-03 12:34:22] Payment already completed!
+[2025-10-03 12:34:23] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:34:23] Remote IP: ::1
+[2025-10-03 12:34:23] Request Method: POST
+[2025-10-03 12:34:23] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:34:23] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:34:23] Transaction found. Status: completed
+[2025-10-03 12:34:23] Payment already completed!
+[2025-10-03 12:35:07] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:35:07] Remote IP: ::1
+[2025-10-03 12:35:07] Request Method: POST
+[2025-10-03 12:35:07] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:35:07] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:35:07] Transaction found. Status: completed
+[2025-10-03 12:35:07] Payment already completed!
+[2025-10-03 12:35:16] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:35:16] Remote IP: ::1
+[2025-10-03 12:35:16] Request Method: POST
+[2025-10-03 12:35:16] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:35:16] Checking payment status for checkout request ID: ws_CO_03102025131048891114669532
+[2025-10-03 12:35:16] Transaction found. Status: completed
+[2025-10-03 12:35:16] Payment already completed!
+[2025-10-03 12:36:24] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:36:24] Remote IP: ::1
+[2025-10-03 12:36:24] Request Method: POST
+[2025-10-03 12:36:24] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 12:36:24] Checking payment status for checkout request ID: ws_CO_03102025133608928114669532
+[2025-10-03 12:36:24] Transaction found. Status: pending
+[2025-10-03 12:36:24] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-03 13:36:25] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a4181",
+            "CheckoutRequestID":"ws_CO_03102025133608928114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-03 13:36:25] M-Pesa API confirms payment was successful!
+[2025-10-03 13:36:25] Updated transaction status to completed in database
+[2025-10-03 12:38:50] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:38:50] Remote IP: ::1
+[2025-10-03 12:38:50] Request Method: POST
+[2025-10-03 12:38:50] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:38:50] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:38:50] Transaction found. Status: completed
+[2025-10-03 12:38:50] Payment already completed!
+[2025-10-03 12:38:51] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:38:51] Remote IP: ::1
+[2025-10-03 12:38:51] Request Method: POST
+[2025-10-03 12:38:51] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:38:51] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:38:51] Transaction found. Status: completed
+[2025-10-03 12:38:51] Payment already completed!
+[2025-10-03 12:38:54] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:38:54] Remote IP: ::1
+[2025-10-03 12:38:54] Request Method: POST
+[2025-10-03 12:38:54] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:38:54] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 12:38:54] Transaction found. Status: completed
+[2025-10-03 12:38:54] Payment already completed!
+[2025-10-03 12:51:03] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:51:03] Remote IP: ::1
+[2025-10-03 12:51:03] Request Method: POST
+[2025-10-03 12:51:03] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:51:03] Checking payment status for checkout request ID: ws_CO_03102025125103476922
+[2025-10-03 12:51:03] Transaction found. Status: completed
+[2025-10-03 12:51:03] Payment already completed!
+[2025-10-03 12:51:34] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:51:34] Remote IP: ::1
+[2025-10-03 12:51:34] Request Method: POST
+[2025-10-03 12:51:34] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:51:34] Checking payment status for checkout request ID: ws_CO_03102025125134485095
+[2025-10-03 12:51:34] Transaction found. Status: completed
+[2025-10-03 12:51:34] Payment already completed!
+[2025-10-03 12:51:41] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:51:41] Remote IP: ::1
+[2025-10-03 12:51:41] Request Method: POST
+[2025-10-03 12:51:41] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:51:41] Checking payment status for checkout request ID: ws_CO_03102025125141779435
+[2025-10-03 12:51:41] Transaction found. Status: completed
+[2025-10-03 12:51:41] Payment already completed!
+[2025-10-03 12:51:47] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:51:47] Remote IP: ::1
+[2025-10-03 12:51:47] Request Method: POST
+[2025-10-03 12:51:47] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:51:47] Checking payment status for checkout request ID: ws_CO_03102025125146252562
+[2025-10-03 12:51:47] Transaction found. Status: completed
+[2025-10-03 12:51:47] Payment already completed!
+[2025-10-03 12:51:49] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:51:49] Remote IP: ::1
+[2025-10-03 12:51:49] Request Method: POST
+[2025-10-03 12:51:49] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:51:49] Checking payment status for checkout request ID: ws_CO_03102025125149874563
+[2025-10-03 12:51:49] Transaction found. Status: completed
+[2025-10-03 12:51:49] Payment already completed!
+[2025-10-03 12:51:50] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:51:50] Remote IP: ::1
+[2025-10-03 12:51:50] Request Method: POST
+[2025-10-03 12:51:50] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:51:50] Checking payment status for checkout request ID: ws_CO_03102025125150791564
+[2025-10-03 12:51:50] Transaction found. Status: completed
+[2025-10-03 12:51:50] Payment already completed!
+[2025-10-03 12:51:50] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:51:50] Remote IP: ::1
+[2025-10-03 12:51:50] Request Method: POST
+[2025-10-03 12:51:50] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:51:50] Checking payment status for checkout request ID: ws_CO_03102025125150502077
+[2025-10-03 12:51:50] Transaction found. Status: completed
+[2025-10-03 12:51:50] Payment already completed!
+[2025-10-03 12:53:07] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 12:53:07] Remote IP: ::1
+[2025-10-03 12:53:07] Request Method: POST
+[2025-10-03 12:53:07] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 12:53:07] Checking payment status for checkout request ID: ws_CO_03102025125307308069
+[2025-10-03 12:53:07] Transaction found. Status: completed
+[2025-10-03 12:53:07] Payment already completed!
+[2025-10-03 14:20:25] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 14:20:25] Remote IP: ::1
+[2025-10-03 14:20:25] Request Method: POST
+[2025-10-03 14:20:25] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 14:20:25] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 14:20:25] Transaction found. Status: completed
+[2025-10-03 14:20:25] Payment already completed!
+[2025-10-03 14:20:49] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 14:20:49] Remote IP: ::1
+[2025-10-03 14:20:49] Request Method: POST
+[2025-10-03 14:20:49] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 14:20:49] Checking payment status for checkout request ID: ws_CO_03102025142049790605
+[2025-10-03 14:20:49] Transaction found. Status: completed
+[2025-10-03 14:20:49] Payment already completed!
+[2025-10-03 14:22:03] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 14:22:03] Remote IP: ::1
+[2025-10-03 14:22:03] Request Method: POST
+[2025-10-03 14:22:03] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 14:22:03] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 14:22:03] Transaction found. Status: completed
+[2025-10-03 14:22:03] Payment already completed!
+[2025-10-03 14:22:07] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 14:22:07] Remote IP: ::1
+[2025-10-03 14:22:07] Request Method: POST
+[2025-10-03 14:22:07] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 14:22:07] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 14:22:07] Transaction found. Status: completed
+[2025-10-03 14:22:07] Payment already completed!
+[2025-10-03 14:22:07] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 14:22:07] Remote IP: ::1
+[2025-10-03 14:22:07] Request Method: POST
+[2025-10-03 14:22:07] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 14:22:07] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 14:22:07] Transaction found. Status: completed
+[2025-10-03 14:22:07] Payment already completed!
+[2025-10-03 14:22:07] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 14:22:07] Remote IP: ::1
+[2025-10-03 14:22:07] Request Method: POST
+[2025-10-03 14:22:07] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 14:22:07] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 14:22:07] Transaction found. Status: completed
+[2025-10-03 14:22:07] Payment already completed!
+[2025-10-03 14:22:18] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 14:22:18] Remote IP: ::1
+[2025-10-03 14:22:18] Request Method: POST
+[2025-10-03 14:22:18] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 14:22:18] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 14:22:18] Transaction found. Status: completed
+[2025-10-03 14:22:18] Payment already completed!
+[2025-10-03 14:38:26] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 14:38:26] Remote IP: ::1
+[2025-10-03 14:38:26] Request Method: POST
+[2025-10-03 14:38:26] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 14:38:26] Checking payment status for checkout request ID: ws_CO_03102025143826705330
+[2025-10-03 14:38:26] Transaction found. Status: completed
+[2025-10-03 14:38:26] Payment already completed!
+[2025-10-03 14:38:26] Voucher assigned: STU334 (username: bravo2) - Active voucher fetched and assigned successfully
+[2025-10-03 14:47:11] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 14:47:11] Remote IP: ::1
+[2025-10-03 14:47:11] Request Method: POST
+[2025-10-03 14:47:11] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 14:47:11] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 14:47:11] Transaction found. Status: completed
+[2025-10-03 14:47:11] Payment already completed!
+[2025-10-03 14:47:11] Voucher assigned: K6TMKR3Z (username: K6TMKR3Z) - Active voucher fetched and assigned successfully
+[2025-10-03 15:50:58] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:50:58] Remote IP: ::1
+[2025-10-03 15:50:58] Request Method: POST
+[2025-10-03 15:50:58] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:50:58] Checking payment status for checkout request ID: ws_CO_03102025155058813628
+[2025-10-03 15:50:58] Transaction found. Status: completed
+[2025-10-03 15:50:58] Payment already completed!
+[2025-10-03 15:50:58] Voucher assigned: VWX445 (username: charlie3) - Active voucher fetched and assigned successfully
+[2025-10-03 15:53:34] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:53:34] Remote IP: ::1
+[2025-10-03 15:53:34] Request Method: POST
+[2025-10-03 15:53:34] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 15:53:34] Checking payment status for checkout request ID: ws_CO_03102025165317439114669532
+[2025-10-03 15:53:34] Transaction found. Status: pending
+[2025-10-03 15:53:34] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-03 16:53:36] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad13573",
+            "CheckoutRequestID":"ws_CO_03102025165317439114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-03 16:53:36] M-Pesa API confirms payment was successful!
+[2025-10-03 16:53:36] Updated transaction status to completed in database
+[2025-10-03 15:54:27] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:54:27] Remote IP: ::1
+[2025-10-03 15:54:27] Request Method: POST
+[2025-10-03 15:54:27] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 15:54:27] Checking payment status for checkout request ID: ws_CO_03102025165317439114669532
+[2025-10-03 15:54:27] Transaction found. Status: completed
+[2025-10-03 15:54:27] Payment already completed!
+[2025-10-03 15:54:27] Voucher assigned: ESVQVU9F (username: ESVQVU9F) - Active voucher fetched and assigned successfully
+[2025-10-03 15:54:32] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:54:32] Remote IP: ::1
+[2025-10-03 15:54:32] Request Method: POST
+[2025-10-03 15:54:32] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 15:54:32] Checking payment status for checkout request ID: ws_CO_03102025165317439114669532
+[2025-10-03 15:54:32] Transaction found. Status: completed
+[2025-10-03 15:54:32] Payment already completed!
+[2025-10-03 15:54:32] Voucher assigned: ESVQVU9F (username: ESVQVU9F) - Voucher already assigned to this transaction
+[2025-10-03 15:54:42] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:54:42] Remote IP: ::1
+[2025-10-03 15:54:42] Request Method: POST
+[2025-10-03 15:54:42] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 15:54:42] Checking payment status for checkout request ID: ws_CO_03102025165317439114669532
+[2025-10-03 15:54:42] Transaction found. Status: completed
+[2025-10-03 15:54:42] Payment already completed!
+[2025-10-03 15:54:42] Voucher assigned: ESVQVU9F (username: ESVQVU9F) - Voucher already assigned to this transaction
+[2025-10-03 15:55:35] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:55:35] Remote IP: ::1
+[2025-10-03 15:55:35] Request Method: POST
+[2025-10-03 15:55:35] Session ID: u7a7vkbv637g1lvp0oraqmv1e3
+[2025-10-03 15:55:35] Checking payment status for checkout request ID: ws_CO_03102025165521680114669532
+[2025-10-03 15:55:35] Transaction found. Status: pending
+[2025-10-03 15:55:35] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-03 16:55:37] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de1109",
+            "CheckoutRequestID":"ws_CO_03102025165521680114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-03 16:55:37] M-Pesa API confirms payment was successful!
+[2025-10-03 16:55:37] Updated transaction status to completed in database
+[2025-10-03 15:56:03] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:56:03] Remote IP: ::1
+[2025-10-03 15:56:03] Request Method: POST
+[2025-10-03 15:56:03] Session ID: u7a7vkbv637g1lvp0oraqmv1e3
+[2025-10-03 15:56:03] Checking payment status for checkout request ID: ws_CO_03102025165521680114669532
+[2025-10-03 15:56:03] Transaction found. Status: completed
+[2025-10-03 15:56:03] Payment already completed!
+[2025-10-03 15:56:04] Voucher assigned: qtro722 (username: qtro722) - Active voucher fetched and assigned successfully
+[2025-10-03 15:56:13] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:56:13] Remote IP: ::1
+[2025-10-03 15:56:13] Request Method: POST
+[2025-10-03 15:56:13] Session ID: u7a7vkbv637g1lvp0oraqmv1e3
+[2025-10-03 15:56:13] Checking payment status for checkout request ID: ws_CO_03102025165521680114669532
+[2025-10-03 15:56:13] Transaction found. Status: completed
+[2025-10-03 15:56:13] Payment already completed!
+[2025-10-03 15:56:13] Voucher assigned: qtro722 (username: qtro722) - Voucher already assigned to this transaction
+[2025-10-03 15:56:16] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:56:16] Remote IP: ::1
+[2025-10-03 15:56:16] Request Method: POST
+[2025-10-03 15:56:16] Session ID: u7a7vkbv637g1lvp0oraqmv1e3
+[2025-10-03 15:56:16] Checking payment status for checkout request ID: ws_CO_03102025165521680114669532
+[2025-10-03 15:56:16] Transaction found. Status: completed
+[2025-10-03 15:56:16] Payment already completed!
+[2025-10-03 15:56:16] Voucher assigned: qtro722 (username: qtro722) - Voucher already assigned to this transaction
+[2025-10-03 15:56:36] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:56:36] Remote IP: ::1
+[2025-10-03 15:56:36] Request Method: POST
+[2025-10-03 15:56:36] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:56:36] Checking payment status for checkout request ID: ws_CO_03102025155636703229
+[2025-10-03 15:56:36] Transaction found. Status: completed
+[2025-10-03 15:56:36] Payment already completed!
+[2025-10-03 15:56:36] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:56:36] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:56:52] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:56:52] Remote IP: ::1
+[2025-10-03 15:56:52] Request Method: POST
+[2025-10-03 15:56:52] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:56:52] Checking payment status for checkout request ID: ws_CO_03102025155651265824
+[2025-10-03 15:56:52] Transaction found. Status: completed
+[2025-10-03 15:56:52] Payment already completed!
+[2025-10-03 15:56:52] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:56:52] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:56:58] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:56:58] Remote IP: ::1
+[2025-10-03 15:56:58] Request Method: POST
+[2025-10-03 15:56:58] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:56:58] Checking payment status for checkout request ID: ws_CO_03102025155658583700
+[2025-10-03 15:56:58] Transaction found. Status: completed
+[2025-10-03 15:56:58] Payment already completed!
+[2025-10-03 15:56:58] Voucher assigned: qtro329 (username: qtro329) - Active voucher fetched and assigned successfully
+[2025-10-03 15:57:10] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:57:10] Remote IP: ::1
+[2025-10-03 15:57:10] Request Method: POST
+[2025-10-03 15:57:10] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:57:10] Checking payment status for checkout request ID: ws_CO_03102025155710908350
+[2025-10-03 15:57:10] Transaction found. Status: completed
+[2025-10-03 15:57:10] Payment already completed!
+[2025-10-03 15:57:10] Voucher assigned: WJK652 (username: user11) - Active voucher fetched and assigned successfully
+[2025-10-03 15:57:13] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:57:13] Remote IP: ::1
+[2025-10-03 15:57:13] Request Method: POST
+[2025-10-03 15:57:13] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:57:13] Checking payment status for checkout request ID: ws_CO_03102025155713950139
+[2025-10-03 15:57:13] Transaction found. Status: completed
+[2025-10-03 15:57:13] Payment already completed!
+[2025-10-03 15:57:13] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:57:13] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:57:20] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:57:20] Remote IP: ::1
+[2025-10-03 15:57:20] Request Method: POST
+[2025-10-03 15:57:20] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:57:20] Checking payment status for checkout request ID: ws_CO_03102025155720838470
+[2025-10-03 15:57:20] Transaction found. Status: completed
+[2025-10-03 15:57:20] Payment already completed!
+[2025-10-03 15:57:20] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:57:20] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:57:29] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:57:29] Remote IP: ::1
+[2025-10-03 15:57:29] Request Method: POST
+[2025-10-03 15:57:29] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:57:29] Checking payment status for checkout request ID: ws_CO_03102025155728351642
+[2025-10-03 15:57:29] Transaction found. Status: completed
+[2025-10-03 15:57:29] Payment already completed!
+[2025-10-03 15:57:29] Voucher assigned: J33ACVTD (username: J33ACVTD) - Active voucher fetched and assigned successfully
+[2025-10-03 15:57:32] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:57:32] Remote IP: ::1
+[2025-10-03 15:57:32] Request Method: POST
+[2025-10-03 15:57:32] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:57:32] Checking payment status for checkout request ID: ws_CO_03102025155732125450
+[2025-10-03 15:57:32] Transaction found. Status: completed
+[2025-10-03 15:57:32] Payment already completed!
+[2025-10-03 15:57:32] Voucher assigned: YZA556 (username: delta4) - Active voucher fetched and assigned successfully
+[2025-10-03 15:57:36] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:57:36] Remote IP: ::1
+[2025-10-03 15:57:36] Request Method: POST
+[2025-10-03 15:57:36] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:57:36] Checking payment status for checkout request ID: ws_CO_03102025155736739391
+[2025-10-03 15:57:36] Transaction found. Status: completed
+[2025-10-03 15:57:36] Payment already completed!
+[2025-10-03 15:57:36] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:57:36] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:58:34] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:58:34] Remote IP: ::1
+[2025-10-03 15:58:34] Request Method: POST
+[2025-10-03 15:58:34] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:58:34] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 15:58:34] Transaction found. Status: completed
+[2025-10-03 15:58:34] Payment already completed!
+[2025-10-03 15:58:34] Voucher assigned: K6TMKR3Z (username: K6TMKR3Z) - Voucher already assigned to this transaction
+[2025-10-03 15:58:50] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:58:50] Remote IP: ::1
+[2025-10-03 15:58:50] Request Method: POST
+[2025-10-03 15:58:50] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:58:50] Checking payment status for checkout request ID: ws_CO_03102025155850628736
+[2025-10-03 15:58:50] Transaction found. Status: completed
+[2025-10-03 15:58:50] Payment already completed!
+[2025-10-03 15:58:50] Voucher assigned: qtro724 (username: qtro724) - Active voucher fetched and assigned successfully
+[2025-10-03 15:58:52] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:58:52] Remote IP: ::1
+[2025-10-03 15:58:52] Request Method: POST
+[2025-10-03 15:58:52] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:58:52] Checking payment status for checkout request ID: ws_CO_03102025155852787807
+[2025-10-03 15:58:52] Transaction found. Status: completed
+[2025-10-03 15:58:52] Payment already completed!
+[2025-10-03 15:58:53] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:58:53] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:58:58] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:58:58] Remote IP: ::1
+[2025-10-03 15:58:58] Request Method: POST
+[2025-10-03 15:58:58] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:58:58] Checking payment status for checkout request ID: ws_CO_03102025155858624159
+[2025-10-03 15:58:58] Transaction found. Status: completed
+[2025-10-03 15:58:58] Payment already completed!
+[2025-10-03 15:58:58] Voucher assigned: XAU341 (username: user9) - Active voucher fetched and assigned successfully
+[2025-10-03 15:59:02] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:02] Remote IP: ::1
+[2025-10-03 15:59:02] Request Method: POST
+[2025-10-03 15:59:02] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:02] Checking payment status for checkout request ID: ws_CO_03102025155902401083
+[2025-10-03 15:59:02] Transaction found. Status: completed
+[2025-10-03 15:59:02] Payment already completed!
+[2025-10-03 15:59:02] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:59:02] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:59:04] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:04] Remote IP: ::1
+[2025-10-03 15:59:04] Request Method: POST
+[2025-10-03 15:59:04] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:04] Checking payment status for checkout request ID: ws_CO_03102025155904669574
+[2025-10-03 15:59:04] Transaction found. Status: completed
+[2025-10-03 15:59:04] Payment already completed!
+[2025-10-03 15:59:04] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:59:04] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:59:07] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:07] Remote IP: ::1
+[2025-10-03 15:59:07] Request Method: POST
+[2025-10-03 15:59:07] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:07] Checking payment status for checkout request ID: ws_CO_03102025155907987449
+[2025-10-03 15:59:07] Transaction found. Status: completed
+[2025-10-03 15:59:07] Payment already completed!
+[2025-10-03 15:59:07] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:59:07] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:59:10] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:10] Remote IP: ::1
+[2025-10-03 15:59:10] Request Method: POST
+[2025-10-03 15:59:10] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:10] Checking payment status for checkout request ID: ws_CO_03102025155910440576
+[2025-10-03 15:59:10] Transaction found. Status: completed
+[2025-10-03 15:59:10] Payment already completed!
+[2025-10-03 15:59:10] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:59:10] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:59:13] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:13] Remote IP: ::1
+[2025-10-03 15:59:13] Request Method: POST
+[2025-10-03 15:59:13] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:13] Checking payment status for checkout request ID: ws_CO_03102025155913150541
+[2025-10-03 15:59:13] Transaction found. Status: completed
+[2025-10-03 15:59:13] Payment already completed!
+[2025-10-03 15:59:13] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:59:13] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:59:17] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:17] Remote IP: ::1
+[2025-10-03 15:59:17] Request Method: POST
+[2025-10-03 15:59:17] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:17] Checking payment status for checkout request ID: ws_CO_03102025155917717529
+[2025-10-03 15:59:17] Transaction found. Status: completed
+[2025-10-03 15:59:17] Payment already completed!
+[2025-10-03 15:59:17] Voucher assigned: BCD667 (username: echo5) - Active voucher fetched and assigned successfully
+[2025-10-03 15:59:20] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:20] Remote IP: ::1
+[2025-10-03 15:59:20] Request Method: POST
+[2025-10-03 15:59:20] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:20] Checking payment status for checkout request ID: ws_CO_03102025155920945790
+[2025-10-03 15:59:20] Transaction found. Status: completed
+[2025-10-03 15:59:20] Payment already completed!
+[2025-10-03 15:59:20] Voucher assigned: 2EFWER7X (username: 2EFWER7X) - Active voucher fetched and assigned successfully
+[2025-10-03 15:59:22] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:22] Remote IP: ::1
+[2025-10-03 15:59:22] Request Method: POST
+[2025-10-03 15:59:22] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:22] Checking payment status for checkout request ID: ws_CO_03102025155921136938
+[2025-10-03 15:59:22] Transaction found. Status: completed
+[2025-10-03 15:59:22] Payment already completed!
+[2025-10-03 15:59:22] Voucher assigned: P2244KE4 (username: P2244KE4) - Active voucher fetched and assigned successfully
+[2025-10-03 15:59:22] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:22] Remote IP: ::1
+[2025-10-03 15:59:22] Request Method: POST
+[2025-10-03 15:59:22] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:22] Checking payment status for checkout request ID: ws_CO_03102025155922786400
+[2025-10-03 15:59:22] Transaction found. Status: completed
+[2025-10-03 15:59:22] Payment already completed!
+[2025-10-03 15:59:22] Voucher assigned: UQXXLWDN (username: UQXXLWDN) - Active voucher fetched and assigned successfully
+[2025-10-03 15:59:23] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:23] Remote IP: ::1
+[2025-10-03 15:59:23] Request Method: POST
+[2025-10-03 15:59:23] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:23] Checking payment status for checkout request ID: ws_CO_03102025155923638180
+[2025-10-03 15:59:23] Transaction found. Status: completed
+[2025-10-03 15:59:23] Payment already completed!
+[2025-10-03 15:59:23] Voucher assigned: WJ2F469B (username: WJ2F469B) - Active voucher fetched and assigned successfully
+[2025-10-03 15:59:24] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:24] Remote IP: ::1
+[2025-10-03 15:59:24] Request Method: POST
+[2025-10-03 15:59:24] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:24] Checking payment status for checkout request ID: ws_CO_03102025155924994219
+[2025-10-03 15:59:24] Transaction found. Status: completed
+[2025-10-03 15:59:24] Payment already completed!
+[2025-10-03 15:59:24] Voucher assigned: QJQRZ8PF (username: QJQRZ8PF) - Active voucher fetched and assigned successfully
+[2025-10-03 15:59:47] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:47] Remote IP: ::1
+[2025-10-03 15:59:47] Request Method: POST
+[2025-10-03 15:59:47] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:47] Checking payment status for checkout request ID: ws_CO_03102025155947619906
+[2025-10-03 15:59:47] Transaction found. Status: completed
+[2025-10-03 15:59:47] Payment already completed!
+[2025-10-03 15:59:47] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:59:47] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:59:49] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:49] Remote IP: ::1
+[2025-10-03 15:59:49] Request Method: POST
+[2025-10-03 15:59:49] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:49] Checking payment status for checkout request ID: ws_CO_03102025155949490863
+[2025-10-03 15:59:49] Transaction found. Status: completed
+[2025-10-03 15:59:49] Payment already completed!
+[2025-10-03 15:59:49] Voucher assigned: 7SJ8ZQKM (username: 7SJ8ZQKM) - Active voucher fetched and assigned successfully
+[2025-10-03 15:59:52] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:52] Remote IP: ::1
+[2025-10-03 15:59:52] Request Method: POST
+[2025-10-03 15:59:52] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:52] Checking payment status for checkout request ID: ws_CO_03102025155952927673
+[2025-10-03 15:59:52] Transaction found. Status: completed
+[2025-10-03 15:59:52] Payment already completed!
+[2025-10-03 15:59:52] Voucher assigned: PQR223 (username: alpha1) - Active voucher fetched and assigned successfully
+[2025-10-03 15:59:54] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:54] Remote IP: ::1
+[2025-10-03 15:59:54] Request Method: POST
+[2025-10-03 15:59:54] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:54] Checking payment status for checkout request ID: ws_CO_03102025155954289844
+[2025-10-03 15:59:54] Transaction found. Status: completed
+[2025-10-03 15:59:54] Payment already completed!
+[2025-10-03 15:59:54] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:59:54] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:59:56] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:56] Remote IP: ::1
+[2025-10-03 15:59:56] Request Method: POST
+[2025-10-03 15:59:56] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:56] Checking payment status for checkout request ID: ws_CO_03102025155956825155
+[2025-10-03 15:59:56] Transaction found. Status: completed
+[2025-10-03 15:59:56] Payment already completed!
+[2025-10-03 15:59:56] Voucher assigned: WZM542 (username: user10) - Active voucher fetched and assigned successfully
+[2025-10-03 15:59:59] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 15:59:59] Remote IP: ::1
+[2025-10-03 15:59:59] Request Method: POST
+[2025-10-03 15:59:59] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 15:59:59] Checking payment status for checkout request ID: ws_CO_03102025155959864262
+[2025-10-03 15:59:59] Transaction found. Status: completed
+[2025-10-03 15:59:59] Payment already completed!
+[2025-10-03 15:59:59] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 15:59:59] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 16:00:01] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:00:01] Remote IP: ::1
+[2025-10-03 16:00:01] Request Method: POST
+[2025-10-03 16:00:01] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 16:00:01] Checking payment status for checkout request ID: ws_CO_03102025160001926622
+[2025-10-03 16:00:01] Transaction found. Status: completed
+[2025-10-03 16:00:01] Payment already completed!
+[2025-10-03 16:00:01] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 16:00:01] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 16:00:04] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:00:04] Remote IP: ::1
+[2025-10-03 16:00:04] Request Method: POST
+[2025-10-03 16:00:04] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 16:00:04] Checking payment status for checkout request ID: ws_CO_03102025160004748426
+[2025-10-03 16:00:04] Transaction found. Status: completed
+[2025-10-03 16:00:04] Payment already completed!
+[2025-10-03 16:00:04] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 16:00:04] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 16:00:06] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:00:06] Remote IP: ::1
+[2025-10-03 16:00:06] Request Method: POST
+[2025-10-03 16:00:06] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 16:00:06] Checking payment status for checkout request ID: ws_CO_03102025160006378176
+[2025-10-03 16:00:06] Transaction found. Status: completed
+[2025-10-03 16:00:06] Payment already completed!
+[2025-10-03 16:00:06] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 16:00:06] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 16:00:08] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:00:08] Remote IP: ::1
+[2025-10-03 16:00:08] Request Method: POST
+[2025-10-03 16:00:08] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 16:00:08] Checking payment status for checkout request ID: ws_CO_03102025160008971860
+[2025-10-03 16:00:08] Transaction found. Status: completed
+[2025-10-03 16:00:08] Payment already completed!
+[2025-10-03 16:00:08] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 16:00:08] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 16:00:11] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:00:11] Remote IP: ::1
+[2025-10-03 16:00:11] Request Method: POST
+[2025-10-03 16:00:11] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 16:00:11] Checking payment status for checkout request ID: ws_CO_03102025160011172596
+[2025-10-03 16:00:11] Transaction found. Status: completed
+[2025-10-03 16:00:11] Payment already completed!
+[2025-10-03 16:00:11] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 16:00:11] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 16:00:14] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:00:14] Remote IP: ::1
+[2025-10-03 16:00:14] Request Method: POST
+[2025-10-03 16:00:14] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 16:00:14] Checking payment status for checkout request ID: ws_CO_03102025160014143782
+[2025-10-03 16:00:14] Transaction found. Status: completed
+[2025-10-03 16:00:14] Payment already completed!
+[2025-10-03 16:00:14] Failed to fetch voucher: No available vouchers found for this package. Please contact support.
+[2025-10-03 16:00:14] Voucher handler full result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 16:00:47] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:00:47] Remote IP: ::1
+[2025-10-03 16:00:47] Request Method: POST
+[2025-10-03 16:00:47] Session ID: nsfnpgoalqnq299cglpfo22pc8
+[2025-10-03 16:00:47] Checking payment status for checkout request ID: ws_CO_03102025133135920114669532
+[2025-10-03 16:00:47] Transaction found. Status: completed
+[2025-10-03 16:00:47] Payment already completed!
+[2025-10-03 16:00:47] Voucher assigned: K6TMKR3Z (username: K6TMKR3Z) - Voucher already assigned to this transaction
+[2025-10-03 16:21:46] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:21:46] Remote IP: ::1
+[2025-10-03 16:21:46] Request Method: POST
+[2025-10-03 16:21:46] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 16:21:46] Checking payment status for checkout request ID: ws_CO_03102025172130645114669532
+[2025-10-03 16:21:46] Transaction found. Status: pending
+[2025-10-03 16:21:46] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-03 17:21:48] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad13804",
+            "CheckoutRequestID":"ws_CO_03102025172130645114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-03 17:21:48] M-Pesa API confirms payment was successful!
+[2025-10-03 17:21:48] Updated transaction status to completed in database
+[2025-10-03 16:21:52] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:21:52] Remote IP: ::1
+[2025-10-03 16:21:52] Request Method: POST
+[2025-10-03 16:21:52] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 16:21:52] Checking payment status for checkout request ID: ws_CO_03102025172130645114669532
+[2025-10-03 16:21:52] Transaction found. Status: completed
+[2025-10-03 16:21:52] Payment already completed!
+[2025-10-03 16:21:52] Voucher assigned: qtro490 (username: qtro490) - Active voucher fetched and assigned successfully
+[2025-10-03 16:21:54] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:21:54] Remote IP: ::1
+[2025-10-03 16:21:54] Request Method: POST
+[2025-10-03 16:21:54] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 16:21:54] Checking payment status for checkout request ID: ws_CO_03102025172130645114669532
+[2025-10-03 16:21:54] Transaction found. Status: completed
+[2025-10-03 16:21:54] Payment already completed!
+[2025-10-03 16:21:54] Voucher assigned: qtro490 (username: qtro490) - Voucher already assigned to this transaction
+[2025-10-03 16:21:56] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-03 16:21:56] Remote IP: ::1
+[2025-10-03 16:21:56] Request Method: POST
+[2025-10-03 16:21:56] Session ID: kcarj7a7ceni0tm4ogov1ce717
+[2025-10-03 16:21:56] Checking payment status for checkout request ID: ws_CO_03102025172130645114669532
+[2025-10-03 16:21:56] Transaction found. Status: completed
+[2025-10-03 16:21:56] Payment already completed!
+[2025-10-03 16:21:56] Voucher assigned: qtro490 (username: qtro490) - Voucher already assigned to this transaction
+[2025-10-04 00:53:47] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 00:53:47] Remote IP: ::1
+[2025-10-04 00:53:47] Request Method: POST
+[2025-10-04 00:53:47] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 00:53:47] Checking payment status for checkout request ID: ws_CO_04102025015322727114669532
+[2025-10-04 00:53:47] Transaction found. Status: pending
+[2025-10-04 00:53:47] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 01:53:49] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad18525",
+            "CheckoutRequestID":"ws_CO_04102025015322727114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 01:53:49] M-Pesa API confirms payment was successful!
+[2025-10-04 01:53:49] Updated transaction status to completed in database
+[2025-10-04 00:53:59] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 00:53:59] Remote IP: ::1
+[2025-10-04 00:53:59] Request Method: POST
+[2025-10-04 00:53:59] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 00:53:59] Checking payment status for checkout request ID: ws_CO_04102025015322727114669532
+[2025-10-04 00:53:59] Transaction found. Status: completed
+[2025-10-04 00:53:59] Payment already completed!
+[2025-10-04 00:53:59] Voucher assigned: qtro320 (username: qtro320) - Active voucher fetched and assigned successfully
+[2025-10-04 00:54:01] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 00:54:01] Remote IP: ::1
+[2025-10-04 00:54:01] Request Method: POST
+[2025-10-04 00:54:01] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 00:54:01] Checking payment status for checkout request ID: ws_CO_04102025015322727114669532
+[2025-10-04 00:54:01] Transaction found. Status: completed
+[2025-10-04 00:54:01] Payment already completed!
+[2025-10-04 00:54:01] Voucher assigned: qtro320 (username: qtro320) - Voucher already assigned to this transaction
+[2025-10-04 00:54:21] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 00:54:21] Remote IP: ::1
+[2025-10-04 00:54:21] Request Method: POST
+[2025-10-04 00:54:21] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 00:54:21] Checking payment status for checkout request ID: ws_CO_04102025015322727114669532
+[2025-10-04 00:54:21] Transaction found. Status: completed
+[2025-10-04 00:54:21] Payment already completed!
+[2025-10-04 00:54:21] Voucher assigned: qtro320 (username: qtro320) - Voucher already assigned to this transaction
+[2025-10-04 01:10:09] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 01:10:09] Remote IP: ::1
+[2025-10-04 01:10:09] Request Method: POST
+[2025-10-04 01:10:09] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 01:10:09] Checking payment status for checkout request ID: ws_CO_04102025020944727114669532
+[2025-10-04 01:10:09] Transaction found. Status: pending
+[2025-10-04 01:10:09] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 02:10:10] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 02:10:10] Error in M-Pesa API request: Unknown error
+[2025-10-04 01:10:20] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 01:10:20] Remote IP: ::1
+[2025-10-04 01:10:20] Request Method: POST
+[2025-10-04 01:10:20] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 01:10:20] Checking payment status for checkout request ID: ws_CO_04102025020944727114669532
+[2025-10-04 01:10:20] Transaction found. Status: pending
+[2025-10-04 01:10:20] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 02:10:21] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 02:10:21] Error in M-Pesa API request: Unknown error
+[2025-10-04 01:10:43] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 01:10:43] Remote IP: ::1
+[2025-10-04 01:10:43] Request Method: POST
+[2025-10-04 01:10:43] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 01:10:43] Checking payment status for checkout request ID: ws_CO_04102025020944727114669532
+[2025-10-04 01:10:43] Transaction found. Status: pending
+[2025-10-04 01:10:43] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 02:10:45] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a9174",
+            "CheckoutRequestID":"ws_CO_04102025020944727114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 02:10:45] M-Pesa API confirms payment was successful!
+[2025-10-04 02:10:45] Updated transaction status to completed in database
+[2025-10-04 01:10:50] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 01:10:50] Remote IP: ::1
+[2025-10-04 01:10:50] Request Method: POST
+[2025-10-04 01:10:50] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 01:10:50] Checking payment status for checkout request ID: ws_CO_04102025020944727114669532
+[2025-10-04 01:10:50] Transaction found. Status: completed
+[2025-10-04 01:10:50] Payment already completed!
+[2025-10-04 01:10:50] Voucher assigned: qtro720 (username: qtro720) - Active voucher fetched and assigned successfully
+[2025-10-04 01:10:51] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 01:10:51] Remote IP: ::1
+[2025-10-04 01:10:51] Request Method: POST
+[2025-10-04 01:10:51] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 01:10:51] Checking payment status for checkout request ID: ws_CO_04102025020944727114669532
+[2025-10-04 01:10:51] Transaction found. Status: completed
+[2025-10-04 01:10:51] Payment already completed!
+[2025-10-04 01:10:51] Voucher assigned: qtro720 (username: qtro720) - Voucher already assigned to this transaction
+[2025-10-04 01:46:44] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 01:46:44] Remote IP: ::1
+[2025-10-04 01:46:44] Request Method: POST
+[2025-10-04 01:46:44] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 01:46:44] Checking payment status for checkout request ID: ws_CO_04102025024629629114669532
+[2025-10-04 01:46:44] Transaction found. Status: pending
+[2025-10-04 01:46:44] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 02:46:46] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a9419",
+            "CheckoutRequestID":"ws_CO_04102025024629629114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 02:46:46] M-Pesa API confirms payment was successful!
+[2025-10-04 02:46:46] Updated transaction status to completed in database
+[2025-10-04 01:46:52] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 01:46:52] Remote IP: ::1
+[2025-10-04 01:46:52] Request Method: POST
+[2025-10-04 01:46:52] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 01:46:52] Checking payment status for checkout request ID: ws_CO_04102025024629629114669532
+[2025-10-04 01:46:52] Transaction found. Status: completed
+[2025-10-04 01:46:52] Payment already completed!
+[2025-10-04 01:46:52] Voucher assigned: qtro761 (username: qtro761) - Active voucher fetched and assigned successfully
+[2025-10-04 01:46:54] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 01:46:54] Remote IP: ::1
+[2025-10-04 01:46:54] Request Method: POST
+[2025-10-04 01:46:54] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 01:46:54] Checking payment status for checkout request ID: ws_CO_04102025024629629114669532
+[2025-10-04 01:46:54] Transaction found. Status: completed
+[2025-10-04 01:46:54] Payment already completed!
+[2025-10-04 01:46:54] Voucher assigned: qtro761 (username: qtro761) - Voucher already assigned to this transaction
+[2025-10-04 02:18:00] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 02:18:00] Remote IP: ::1
+[2025-10-04 02:18:00] Request Method: POST
+[2025-10-04 02:18:00] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 02:18:00] Checking payment status for checkout request ID: ws_CO_04102025031731867114669532
+[2025-10-04 02:18:00] Transaction found. Status: pending
+[2025-10-04 02:18:00] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 03:18:01] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 03:18:01] Error in M-Pesa API request: Unknown error
+[2025-10-04 02:21:01] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 02:21:01] Remote IP: ::1
+[2025-10-04 02:21:01] Request Method: POST
+[2025-10-04 02:21:01] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 02:21:01] Checking payment status for checkout request ID: ws_CO_04102025032046779114669532
+[2025-10-04 02:21:01] Transaction found. Status: pending
+[2025-10-04 02:21:01] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 03:21:02] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de6962",
+            "CheckoutRequestID":"ws_CO_04102025032046779114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 03:21:02] M-Pesa API confirms payment was successful!
+[2025-10-04 03:21:02] Updated transaction status to completed in database
+[2025-10-04 02:21:07] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 02:21:07] Remote IP: ::1
+[2025-10-04 02:21:07] Request Method: POST
+[2025-10-04 02:21:07] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 02:21:07] Checking payment status for checkout request ID: ws_CO_04102025032046779114669532
+[2025-10-04 02:21:07] Transaction found. Status: completed
+[2025-10-04 02:21:07] Payment already completed!
+[2025-10-04 02:21:07] Voucher assigned: qtro351 (username: qtro351) - Active voucher fetched and assigned successfully
+[2025-10-04 02:21:10] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 02:21:10] Remote IP: ::1
+[2025-10-04 02:21:10] Request Method: POST
+[2025-10-04 02:21:10] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 02:21:10] Checking payment status for checkout request ID: ws_CO_04102025032046779114669532
+[2025-10-04 02:21:10] Transaction found. Status: completed
+[2025-10-04 02:21:10] Payment already completed!
+[2025-10-04 02:21:10] Voucher assigned: qtro351 (username: qtro351) - Voucher already assigned to this transaction
+[2025-10-04 02:44:01] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 02:44:01] Remote IP: ::1
+[2025-10-04 02:44:01] Request Method: POST
+[2025-10-04 02:44:01] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 02:44:01] Checking payment status for checkout request ID: ws_CO_04102025034347411114669532
+[2025-10-04 02:44:01] Transaction found. Status: pending
+[2025-10-04 02:44:01] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 03:44:02] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"2e9c-429c-a95c-b4cd653531a312845",
+            "CheckoutRequestID":"ws_CO_04102025034347411114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 03:44:02] M-Pesa API confirms payment was successful!
+[2025-10-04 03:44:02] Updated transaction status to completed in database
+[2025-10-04 03:02:03] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 03:02:03] Remote IP: ::1
+[2025-10-04 03:02:03] Request Method: POST
+[2025-10-04 03:02:03] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 03:02:03] Checking payment status for checkout request ID: ws_CO_04102025040154299114669532
+[2025-10-04 03:02:03] Transaction found. Status: pending
+[2025-10-04 03:02:03] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 04:02:04] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 04:02:04] Error in M-Pesa API request: Unknown error
+[2025-10-04 03:02:40] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 03:02:40] Remote IP: ::1
+[2025-10-04 03:02:40] Request Method: POST
+[2025-10-04 03:02:40] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 03:02:40] Checking payment status for checkout request ID: ws_CO_04102025040227159114669532
+[2025-10-04 03:02:40] Transaction found. Status: pending
+[2025-10-04 03:02:40] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 04:02:41] M-Pesa API query response: <html style="height:100%"><head><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"><meta name="format-detection" content="telephone=no"><meta name="viewport" content="initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></head><body style="margin:0px;height:100%"><iframe id="main-iframe" src="/_Incapsula_Resource?CWUDNSAI=23&xinfo=18-119465071-0%200NNN%20RT%281759539762012%20102%29%20q%280%20-1%20-1%20-1%29%20r%280%20-1%29%20B15%2811%2c6926146%2c0%29%20U6&incident_id=6553000510203106605-688604633754045650&edet=15&cinfo=0b000000&rpinfo=0&cip=102.219.208.90&mth=POST" frameborder=0 width="100%" height="100%" marginheight="0px" marginwidth="0px">Request unsuccessful. Incapsula incident ID: 6553000510203106605-688604633754045650</iframe></body></html>
+[2025-10-04 04:02:41] Error in M-Pesa API request: Unknown error
+[2025-10-04 03:32:11] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 03:32:11] Remote IP: ::1
+[2025-10-04 03:32:11] Request Method: POST
+[2025-10-04 03:32:11] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 03:32:11] Checking payment status for checkout request ID: ws_CO_04102025043140951114669532
+[2025-10-04 03:32:11] Transaction found. Status: pending
+[2025-10-04 03:32:11] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 04:32:12] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de7657",
+            "CheckoutRequestID":"ws_CO_04102025043140951114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 04:32:12] M-Pesa API confirms payment was successful!
+[2025-10-04 04:32:12] Updated transaction status to completed in database
+[2025-10-04 03:46:00] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 03:46:00] Remote IP: ::1
+[2025-10-04 03:46:00] Request Method: POST
+[2025-10-04 03:46:00] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 03:46:00] Checking payment status for checkout request ID: ws_CO_04102025044546954114669532
+[2025-10-04 03:46:00] Transaction found. Status: pending
+[2025-10-04 03:46:00] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 04:46:00] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 04:46:00] Error in M-Pesa API request: Unknown error
+[2025-10-04 04:02:02] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 04:02:02] Remote IP: ::1
+[2025-10-04 04:02:02] Request Method: POST
+[2025-10-04 04:02:02] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 04:02:02] Checking payment status for checkout request ID: ws_CO_04102025050139137114669532
+[2025-10-04 04:02:02] Transaction found. Status: pending
+[2025-10-04 04:02:02] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 05:02:04] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"2e9c-429c-a95c-b4cd653531a313458",
+            "CheckoutRequestID":"ws_CO_04102025050139137114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 05:02:04] M-Pesa API confirms payment was successful!
+[2025-10-04 05:02:04] Updated transaction status to completed in database
+[2025-10-04 04:02:08] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 04:02:08] Remote IP: ::1
+[2025-10-04 04:02:08] Request Method: POST
+[2025-10-04 04:02:08] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 04:02:08] Checking payment status for checkout request ID: ws_CO_04102025050139137114669532
+[2025-10-04 04:02:08] Transaction found. Status: completed
+[2025-10-04 04:02:08] Payment already completed!
+[2025-10-04 04:02:08] Voucher assigned: qtro721 (username: qtro721) - Active voucher fetched and assigned successfully
+[2025-10-04 04:12:00] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 04:12:00] Remote IP: ::1
+[2025-10-04 04:12:00] Request Method: POST
+[2025-10-04 04:12:00] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 04:12:00] Checking payment status for checkout request ID: ws_CO_04102025051145417114669532
+[2025-10-04 04:12:00] Transaction found. Status: pending
+[2025-10-04 04:12:00] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 05:12:01] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 05:12:01] Error in M-Pesa API request: Unknown error
+[2025-10-04 04:15:15] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 04:15:15] Remote IP: ::1
+[2025-10-04 04:15:15] Request Method: POST
+[2025-10-04 04:15:15] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 04:15:15] Checking payment status for checkout request ID: ws_CO_04102025051455428114669532
+[2025-10-04 04:15:15] Transaction found. Status: pending
+[2025-10-04 04:15:15] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 05:15:16] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 05:15:16] Error in M-Pesa API request: Unknown error
+[2025-10-04 04:50:34] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 04:50:34] Remote IP: ::1
+[2025-10-04 04:50:34] Request Method: POST
+[2025-10-04 04:50:34] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 04:50:34] Checking payment status for checkout request ID: ws_CO_04102025055010719114669532
+[2025-10-04 04:50:34] Transaction found. Status: pending
+[2025-10-04 04:50:34] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 05:50:35] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"2e9c-429c-a95c-b4cd653531a313890",
+            "CheckoutRequestID":"ws_CO_04102025055010719114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 05:50:35] M-Pesa API confirms payment was successful!
+[2025-10-04 05:50:35] Updated transaction status to completed in database
+[2025-10-04 05:02:59] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 05:02:59] Remote IP: ::1
+[2025-10-04 05:02:59] Request Method: POST
+[2025-10-04 05:02:59] Session ID: iefr5o3m7rk6h51kv4nl79g4tp
+[2025-10-04 05:02:59] Checking payment status for checkout request ID: ws_CO_04102025060235499114669532
+[2025-10-04 05:02:59] Transaction found. Status: pending
+[2025-10-04 05:02:59] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 06:03:00] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 06:03:00] Error in M-Pesa API request: Unknown error
+[2025-10-04 09:59:58] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 09:59:58] Remote IP: ::1
+[2025-10-04 09:59:58] Request Method: POST
+[2025-10-04 09:59:58] Session ID: tlcacc3uur7siepplnslr21o3k
+[2025-10-04 09:59:58] Checking payment status for checkout request ID: ws_CO_04102025105910191114669532
+[2025-10-04 09:59:58] Transaction found. Status: pending
+[2025-10-04 09:59:58] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 11:00:03] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad23850",
+            "CheckoutRequestID":"ws_CO_04102025105910191114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 11:00:03] M-Pesa API confirms payment was successful!
+[2025-10-04 11:00:03] Updated transaction status to completed in database
+[2025-10-04 10:10:58] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 10:10:58] Remote IP: ::1
+[2025-10-04 10:10:58] Request Method: POST
+[2025-10-04 10:10:58] Session ID: tlcacc3uur7siepplnslr21o3k
+[2025-10-04 10:10:58] Checking payment status for checkout request ID: ws_CO_04102025111038148114669532
+[2025-10-04 10:10:58] Transaction found. Status: pending
+[2025-10-04 10:10:58] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 11:10:59] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a13288",
+            "CheckoutRequestID":"ws_CO_04102025111038148114669532",
+            "ResultCode": "4999",
+            "ResultDesc":"The transaction is still under processing"
+        }
+        
+[2025-10-04 11:10:59] M-Pesa API returned non-zero result code: 4999
+[2025-10-04 11:10:59] Updated transaction with result code and description
+[2025-10-04 10:11:03] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 10:11:03] Remote IP: ::1
+[2025-10-04 10:11:03] Request Method: POST
+[2025-10-04 10:11:03] Session ID: tlcacc3uur7siepplnslr21o3k
+[2025-10-04 10:11:03] Checking payment status for checkout request ID: ws_CO_04102025111038148114669532
+[2025-10-04 10:11:03] Transaction found. Status: pending
+[2025-10-04 10:11:03] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 11:11:04] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a13288",
+            "CheckoutRequestID":"ws_CO_04102025111038148114669532",
+            "ResultCode": "1037",
+            "ResultDesc":"No response from user."
+        }
+        
+[2025-10-04 11:11:04] M-Pesa API returned non-zero result code: 1037
+[2025-10-04 11:11:04] Updated transaction with result code and description
+[2025-10-04 13:27:15] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 13:27:15] Remote IP: ::1
+[2025-10-04 13:27:15] Request Method: POST
+[2025-10-04 13:27:15] Session ID: tlcacc3uur7siepplnslr21o3k
+[2025-10-04 13:27:15] Checking payment status for checkout request ID: ws_CO_04102025142633878114669532
+[2025-10-04 13:27:15] Transaction found. Status: pending
+[2025-10-04 13:27:15] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 14:27:16] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 14:27:16] Error in M-Pesa API request: Unknown error
+[2025-10-04 19:20:41] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 19:20:41] Remote IP: ::1
+[2025-10-04 19:20:41] Request Method: POST
+[2025-10-04 19:20:41] Session ID: 9vgdftt5qibb32fpf2vjj6auol
+[2025-10-04 19:20:41] Checking payment status for checkout request ID: ws_CO_04102025202001992114669532
+[2025-10-04 19:20:41] Transaction found. Status: pending
+[2025-10-04 19:20:41] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 20:20:42] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad30325",
+            "CheckoutRequestID":"ws_CO_04102025202001992114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 20:20:42] M-Pesa API confirms payment was successful!
+[2025-10-04 20:20:42] Updated transaction status to completed in database
+[2025-10-04 19:24:16] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 19:24:16] Remote IP: ::1
+[2025-10-04 19:24:16] Request Method: POST
+[2025-10-04 19:24:16] Session ID: 9vgdftt5qibb32fpf2vjj6auol
+[2025-10-04 19:24:16] Checking payment status for checkout request ID: ws_CO_04102025202359583114669532
+[2025-10-04 19:24:16] Transaction found. Status: pending
+[2025-10-04 19:24:16] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 20:24:17] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 20:24:17] Error in M-Pesa API request: Unknown error
+[2025-10-04 20:01:39] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 20:01:39] Remote IP: ::1
+[2025-10-04 20:01:39] Request Method: POST
+[2025-10-04 20:01:39] Session ID: 9vgdftt5qibb32fpf2vjj6auol
+[2025-10-04 20:01:39] Checking payment status for checkout request ID: ws_CO_04102025210105487114669532
+[2025-10-04 20:01:39] Transaction found. Status: pending
+[2025-10-04 20:01:39] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 21:01:43] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 21:01:43] Error in M-Pesa API request: Unknown error
+[2025-10-04 20:36:14] ===== PAYMENT STATUS CHECK INITIATED =====
+[2025-10-04 20:36:14] Remote IP: ::1
+[2025-10-04 20:36:14] Request Method: POST
+[2025-10-04 20:36:14] Session ID: 9vgdftt5qibb32fpf2vjj6auol
+[2025-10-04 20:36:14] Checking payment status for checkout request ID: ws_CO_04102025213555225114669532
+[2025-10-04 20:36:14] Transaction found. Status: pending
+[2025-10-04 20:36:14] Payment not marked as completed in database, checking with M-Pesa API
+[2025-10-04 21:36:17] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 21:36:17] Error in M-Pesa API request: Unknown error

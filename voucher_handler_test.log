@@ -1,0 +1,12 @@
+[2025-10-03 14:35:13] === VOUCHER HANDLER DIRECT TEST STARTED ===
+[2025-10-03 14:35:13] Test parameters: checkout=ws_CO_03102025142049790605, package=30, reseller=6, phone=254114669532
+[2025-10-03 14:35:13] Calling createVoucherAfterPayment function...
+[2025-10-03 14:35:13] Voucher handler result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:50:33] === VOUCHER HANDLER DIRECT TEST STARTED ===
+[2025-10-03 15:50:33] Test parameters: checkout=ws_CO_03102025142049790605, package=30, reseller=6, phone=254114669532
+[2025-10-03 15:50:33] Calling createVoucherAfterPayment function...
+[2025-10-03 15:50:33] Voucher handler result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}
+[2025-10-03 15:59:35] === VOUCHER HANDLER DIRECT TEST STARTED ===
+[2025-10-03 15:59:35] Test parameters: checkout=ws_CO_03102025142049790605, package=30, reseller=6, phone=254114669532
+[2025-10-03 15:59:35] Calling createVoucherAfterPayment function...
+[2025-10-03 15:59:35] Voucher handler result: {"success":false,"message":"No available vouchers found for this package. Please contact support."}

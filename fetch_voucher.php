@@ -16,7 +16,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Include database connection
-require_once 'vouchers_script/db_connection.php';
+require_once 'portal_connection.php';
 
 /**
  * Fetches an active voucher from the database based on package ID and router ID
@@ -202,10 +202,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
  * @return array|null Voucher data or null
  */
 function getVoucherForPayment($packageId, $routerId, $customerPhone, $transactionId = '') {
-    global $conn;
-    
+    global $portal_conn;
+
     // Fetch voucher
-    $voucher = fetchVoucher($conn, $packageId, $routerId, $customerPhone);
+    $voucher = fetchVoucher($portal_conn, $packageId, $routerId, $customerPhone);
     
     if ($voucher && !empty($transactionId)) {
         // Log transaction if transaction_id provided
@@ -214,71 +214,15 @@ function getVoucherForPayment($packageId, $routerId, $customerPhone, $transactio
                          voucher_code = ? 
                      WHERE checkout_request_id = ?";
         
-        $logStmt = $conn->prepare($logQuery);
-        
+        $logStmt = $portal_conn->prepare($logQuery);
+
         if ($logStmt) {
             $logStmt->bind_param("iss", $voucher['id'], $voucher['code'], $transactionId);
             $logStmt->execute();
         }
         
-        // Send SMS notification about the voucher
-        error_log("Sending voucher SMS notification for transaction $transactionId to $customerPhone");
-        
-        // Get package name/details for SMS
-        $packageName = "WiFi Package"; // Default name
-        $packageDuration = "";
-        
-        // Try to get package details
-        $packageQuery = $conn->prepare("SELECT name, description, duration FROM packages WHERE id = ?");
-        if ($packageQuery) {
-            $packageQuery->bind_param("i", $packageId);
-            $packageQuery->execute();
-            $packageResult = $packageQuery->get_result();
-            
-            if ($packageResult && $packageResult->num_rows > 0) {
-                $packageData = $packageResult->fetch_assoc();
-                $packageName = $packageData['name'];
-                $packageDuration = $packageData['duration'] ?? "";
-            }
-            $packageQuery->close();
-        }
-        
-        // Prepare parameters for SMS sending
-        $smsData = [
-            'phone_number' => $customerPhone,
-            'voucher_code' => $voucher['code'],
-            'username' => $voucher['username'] ?: $voucher['code'],
-            'password' => $voucher['password'] ?: $voucher['code'],
-            'package_name' => $packageName,
-            'duration' => $packageDuration
-        ];
-        
-        // Send SMS using cURL
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'send_free_trial_sms.php');
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($smsData));
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        
-        $smsResponse = curl_exec($ch);
-        $smsError = curl_error($ch);
-        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
-        
-        if ($smsError) {
-            error_log("SMS sending error: $smsError");
-        } else {
-            error_log("SMS sending response (HTTP $httpCode): $smsResponse");
-            
-            // Try to parse the JSON response
-            $smsResult = json_decode($smsResponse, true);
-            if ($smsResult && isset($smsResult['success']) && $smsResult['success']) {
-                error_log("SMS sent successfully to: $customerPhone");
-            } else {
-                $errorMsg = isset($smsResult['message']) ? $smsResult['message'] : 'Unknown error';
-                error_log("SMS sending failed: $errorMsg");
-            }
-        }
+        // Log voucher assignment (SMS will be sent from paystack_verify.php)
+        error_log("Voucher assigned for transaction $transactionId to $customerPhone - Code: " . $voucher['code']);
     }
     
     return $voucher;

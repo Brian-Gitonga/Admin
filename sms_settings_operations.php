@@ -42,7 +42,7 @@ function getDefaultSmsSettings() {
     return [
         'sms_provider' => 'textsms',
         'enable_sms' => 1,
-        'textsms_api_key' => '1DL4pRCKKmg238fsCU6i7ZYEStP9fL9o4q',
+        'textsms_api_key' => '4b15c9b5e4d670c1f271fe74bae59f7f',
         'textsms_partner_id' => '13361',
         'textsms_sender_id' => 'TextSMS',
         'textsms_use_get' => 1,

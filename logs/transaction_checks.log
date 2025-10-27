@@ -47,3 +47,398 @@
         
 [2025-04-25 05:57:54] M-Pesa API returned non-zero result code: 1032
 [2025-04-25 05:57:54] Updated transaction with status pending: 8
+[2025-10-04 02:19:00] Checking transaction ID: 81
+[2025-10-04 03:19:02] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad19395",
+            "CheckoutRequestID":"ws_CO_04102025031731867114669532",
+            "ResultCode": "1032",
+            "ResultDesc":"Request Cancelled by user."
+        }
+        
+[2025-10-04 03:19:02] M-Pesa API returned non-zero result code: 1032
+[2025-10-04 03:19:02] Updated transaction with status pending: 81
+[2025-10-04 03:03:55] Checking transaction ID: 89
+[2025-10-04 04:03:56] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"2e9c-429c-a95c-b4cd653531a313000",
+            "CheckoutRequestID":"ws_CO_04102025040227159114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 04:03:56] M-Pesa API confirms payment was successful for transaction: 89
+[2025-10-04 04:03:56] Updated transaction status to completed: 89
+[2025-10-04 03:46:33] Checking transaction ID: 92
+[2025-10-04 04:46:35] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de7795",
+            "CheckoutRequestID":"ws_CO_04102025044546954114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 04:46:35] M-Pesa API confirms payment was successful for transaction: 92
+[2025-10-04 04:46:35] Updated transaction status to completed: 92
+[2025-10-04 03:47:05] Checking transaction ID: 91
+[2025-10-04 04:47:06] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"2e9c-429c-a95c-b4cd653531a313325",
+            "CheckoutRequestID":"ws_CO_04102025044216372114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 04:47:06] M-Pesa API confirms payment was successful for transaction: 91
+[2025-10-04 04:47:06] Updated transaction status to completed: 91
+[2025-10-04 03:47:22] Checking transaction ID: 88
+[2025-10-04 04:47:23] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 04:47:23] Error in M-Pesa API request: Unknown error
+[2025-10-04 04:13:34] Checking transaction ID: 94
+[2025-10-04 05:13:36] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de8053",
+            "CheckoutRequestID":"ws_CO_04102025051145417114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 05:13:36] M-Pesa API confirms payment was successful for transaction: 94
+[2025-10-04 05:13:37] Updated transaction status to completed: 94
+[2025-10-04 04:24:55] Checking transaction ID: 95
+[2025-10-04 05:24:57] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a10619",
+            "CheckoutRequestID":"ws_CO_04102025051455428114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 05:24:57] M-Pesa API confirms payment was successful for transaction: 95
+[2025-10-04 05:24:57] Updated transaction status to completed: 95
+[2025-10-04 05:04:00] Checking transaction ID: 97
+[2025-10-04 06:04:02] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a10961",
+            "CheckoutRequestID":"ws_CO_04102025060235499114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 06:04:02] M-Pesa API confirms payment was successful for transaction: 97
+[2025-10-04 06:04:02] Updated transaction status to completed: 97
+[2025-10-04 05:16:46] Checking transaction ID: 98
+[2025-10-04 06:16:49] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad21064",
+            "CheckoutRequestID":"ws_CO_04102025061459696114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 06:16:49] M-Pesa API confirms payment was successful for transaction: 98
+[2025-10-04 06:16:49] Updated transaction status to completed: 98
+[2025-10-04 09:57:30] Checking transaction ID: 99
+[2025-10-04 10:57:33] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de11308",
+            "CheckoutRequestID":"ws_CO_04102025105433877114669532",
+            "ResultCode": "1037",
+            "ResultDesc":"No response from user."
+        }
+        
+[2025-10-04 10:57:33] M-Pesa API returned non-zero result code: 1037
+[2025-10-04 10:57:33] Updated transaction with status failed: 99
+[2025-10-04 10:12:49] Checking transaction ID: 102
+[2025-10-04 11:12:51] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a13295",
+            "CheckoutRequestID":"ws_CO_04102025111132819114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 11:12:51] M-Pesa API confirms payment was successful for transaction: 102
+[2025-10-04 11:12:51] Updated transaction status to completed: 102
+[2025-10-04 10:43:34] Checking transaction ID: 104
+[2025-10-04 11:43:36] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 11:43:36] Error in M-Pesa API request: Unknown error
+[2025-10-04 10:44:33] Checking transaction ID: 104
+[2025-10-04 11:44:35] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de11823",
+            "CheckoutRequestID":"ws_CO_04102025114236178114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 11:44:35] M-Pesa API confirms payment was successful for transaction: 104
+[2025-10-04 11:44:35] Updated transaction status to completed: 104
+[2025-10-04 11:40:47] Checking transaction ID: 105
+[2025-10-04 12:40:50] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"2e9c-429c-a95c-b4cd653531a317168",
+            "CheckoutRequestID":"ws_CO_04102025123847792114669532",
+            "ResultCode": "1037",
+            "ResultDesc":"DS timeout user cannot be reached."
+        }
+        
+[2025-10-04 12:40:50] M-Pesa API returned non-zero result code: 1037
+[2025-10-04 12:40:50] Updated transaction with status failed: 105
+[2025-10-04 12:03:41] Checking transaction ID: 109
+[2025-10-04 13:03:43] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad25223",
+            "CheckoutRequestID":"ws_CO_04102025130253338114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 13:03:43] M-Pesa API confirms payment was successful for transaction: 109
+[2025-10-04 13:03:43] Updated transaction status to completed: 109
+[2025-10-04 12:15:41] Checking transaction ID: 109
+[2025-10-04 12:15:41] Transaction is not pending: 109, Status: completed
+[2025-10-04 12:16:07] Checking transaction ID: 108
+[2025-10-04 13:16:08] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de12732",
+            "CheckoutRequestID":"ws_CO_04102025130003863114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 13:16:08] M-Pesa API confirms payment was successful for transaction: 108
+[2025-10-04 13:16:08] Updated transaction status to completed: 108
+[2025-10-04 13:16:08] Voucher created: AXRZ8D8L
+[2025-10-04 13:16:08] Voucher generated successfully (router integration disabled): AXRZ8D8L
+[2025-10-04 12:19:08] Checking transaction ID: 110
+[2025-10-04 13:19:09] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 13:19:09] Error in M-Pesa API request: Unknown error
+[2025-10-04 12:19:32] Checking transaction ID: 110
+[2025-10-04 13:19:34] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"2e9c-429c-a95c-b4cd653531a317493",
+            "CheckoutRequestID":"ws_CO_04102025131713278114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 13:19:34] M-Pesa API confirms payment was successful for transaction: 110
+[2025-10-04 13:19:34] Updated transaction status to completed: 110
+[2025-10-04 13:19:34] Voucher created: VGXPNUM9
+[2025-10-04 13:19:34] Voucher generated successfully (router integration disabled): VGXPNUM9
+[2025-10-04 12:33:14] Checking transaction ID: 112
+[2025-10-04 13:33:15] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 13:33:15] Error in M-Pesa API request: Unknown error
+[2025-10-04 12:33:32] Checking transaction ID: 112
+[2025-10-04 13:33:33] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"2e9c-429c-a95c-b4cd653531a317624",
+            "CheckoutRequestID":"ws_CO_04102025133200961114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 13:33:33] M-Pesa API confirms payment was successful for transaction: 112
+[2025-10-04 13:33:33] Updated transaction status to completed: 112
+[2025-10-04 12:34:45] Checking transaction ID: 111
+[2025-10-04 13:34:46] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"2e9c-429c-a95c-b4cd653531a317614",
+            "CheckoutRequestID":"ws_CO_04102025133013808114669532",
+            "ResultCode": "1037",
+            "ResultDesc":"DS timeout user cannot be reached."
+        }
+        
+[2025-10-04 13:34:46] M-Pesa API returned non-zero result code: 1037
+[2025-10-04 13:34:46] Updated transaction with status failed: 111
+[2025-10-04 13:54:34] Checking transaction ID: 117
+[2025-10-04 14:54:35] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de13494",
+            "CheckoutRequestID":"ws_CO_04102025140010445114669532",
+            "ResultCode": "1037",
+            "ResultDesc":"DS timeout user cannot be reached."
+        }
+        
+[2025-10-04 14:54:35] M-Pesa API returned non-zero result code: 1037
+[2025-10-04 14:54:35] Updated transaction with status failed: 117
+[2025-10-04 13:54:55] Checking transaction ID: 118
+[2025-10-04 14:54:57] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a14940",
+            "CheckoutRequestID":"ws_CO_04102025142633878114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 14:54:57] M-Pesa API confirms payment was successful for transaction: 118
+[2025-10-04 14:54:57] Updated transaction status to completed: 118
+[2025-10-04 14:04:18] Checking transaction ID: 119
+[2025-10-04 15:04:20] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de14048",
+            "CheckoutRequestID":"ws_CO_04102025145036947114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 15:04:20] M-Pesa API confirms payment was successful for transaction: 119
+[2025-10-04 15:04:20] Updated transaction status to completed: 119
+[2025-10-04 19:25:16] Checking transaction ID: 123
+[2025-10-04 20:25:17] M-Pesa API query response: {"fault":{"faultstring":"Spike arrest violation. Allowed rate : MessageRate{messagesPerPeriod=5, periodInMicroseconds=60000000, maxBurstMessageCount=1.0}","detail":{"errorcode":"policies.ratelimit.SpikeArrestViolation"}}}
+[2025-10-04 20:25:17] Error in M-Pesa API request: Unknown error
+[2025-10-04 19:25:30] Checking transaction ID: 123
+[2025-10-04 20:25:31] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a17824",
+            "CheckoutRequestID":"ws_CO_04102025202359583114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 20:25:31] M-Pesa API confirms payment was successful for transaction: 123
+[2025-10-04 20:25:31] Updated transaction status to completed: 123
+[2025-10-04 20:37:53] Checking transaction ID: 125
+[2025-10-04 21:37:55] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de18588",
+            "CheckoutRequestID":"ws_CO_04102025213555225114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 21:37:55] M-Pesa API confirms payment was successful for transaction: 125
+[2025-10-04 21:37:55] Updated transaction status to completed: 125
+[2025-10-04 21:14:32] Checking transaction ID: 126
+[2025-10-04 22:14:35] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"8650-45d8-a15a-b8eb285d295a18400",
+            "CheckoutRequestID":"ws_CO_04102025213846024114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 22:14:35] M-Pesa API confirms payment was successful for transaction: 126
+[2025-10-04 22:14:35] Updated transaction status to completed: 126
+[2025-10-04 21:16:04] Checking transaction ID: 127
+[2025-10-04 22:16:05] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de18964",
+            "CheckoutRequestID":"ws_CO_04102025221506849114669532",
+            "ResultCode": "0",
+            "ResultDesc":"The service request is processed successfully."
+        }
+        
+[2025-10-04 22:16:05] M-Pesa API confirms payment was successful for transaction: 127
+[2025-10-04 22:16:05] Updated transaction status to completed: 127
+[2025-10-04 22:19:39] Checking transaction ID: 129
+[2025-10-04 23:19:42] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad32264",
+            "CheckoutRequestID":"ws_CO_04102025231739196114669532",
+            "ResultCode": "1037",
+            "ResultDesc":"No response from user."
+        }
+        
+[2025-10-04 23:19:42] M-Pesa API returned non-zero result code: 1037
+[2025-10-04 23:19:42] Updated transaction with status failed: 129
+[2025-10-08 12:26:36] Checking transaction ID: 130
+[2025-10-08 13:26:38] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"ec67-43aa-9362-0f167cc2e9de74884",
+            "CheckoutRequestID":"ws_CO_08102025132549503114669532",
+            "ResultCode": "1037",
+            "ResultDesc":"No response from user."
+        }
+        
+[2025-10-08 13:26:38] M-Pesa API returned non-zero result code: 1037
+[2025-10-08 13:26:38] Updated transaction with status failed: 130
+[2025-10-20 20:43:16] Checking transaction ID: 132
+[2025-10-20 21:43:21] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"637b-46ff-b231-d1b29c9a0cf79926",
+            "CheckoutRequestID":"ws_CO_20102025212336964114669532",
+            "ResultCode": "1037",
+            "ResultDesc":"No response from user."
+        }
+        
+[2025-10-20 21:43:21] M-Pesa API returned non-zero result code: 1037
+[2025-10-20 21:43:21] Updated transaction with status failed: 132
+[2025-10-20 20:43:22] Checking transaction ID: 132
+[2025-10-20 20:43:22] Transaction is not pending: 132, Status: failed
+[2025-10-20 21:12:00] Checking transaction ID: 134
+[2025-10-20 22:12:03] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"5c3b-422b-b5fb-8525d105316a11242",
+            "CheckoutRequestID":"ws_CO_20102025213908350114669532",
+            "ResultCode": "4999",
+            "ResultDesc":"The transaction is still under processing"
+        }
+        
+[2025-10-20 22:12:03] M-Pesa API returned non-zero result code: 4999
+[2025-10-20 22:12:03] Updated transaction with status failed: 134
+[2025-10-20 21:12:12] Checking transaction ID: 135
+[2025-10-20 22:12:14] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"94ee-4aa2-9826-0f5e5087ff068921",
+            "CheckoutRequestID":"ws_CO_20102025220240093114669532",
+            "ResultCode": "4999",
+            "ResultDesc":"The transaction is still under processing"
+        }
+        
+[2025-10-20 22:12:14] M-Pesa API returned non-zero result code: 4999
+[2025-10-20 22:12:14] Updated transaction with status failed: 135
+[2025-10-20 21:13:08] Checking transaction ID: 136
+[2025-10-20 22:13:10] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"94ee-4aa2-9826-0f5e5087ff069011",
+            "CheckoutRequestID":"ws_CO_20102025221236408114669532",
+            "ResultCode": "4999",
+            "ResultDesc":"The transaction is still under processing"
+        }
+        
+[2025-10-20 22:13:10] M-Pesa API returned non-zero result code: 4999
+[2025-10-20 22:13:10] Updated transaction with status failed: 136
+[2025-10-21 18:43:50] Checking transaction ID: 139
+[2025-10-21 19:43:52] M-Pesa API query response: {
+            "ResponseCode": "0",
+            "ResponseDescription":"The service request has been accepted successfully",
+            "MerchantRequestID":"b745-4ef9-a475-c3183dc804941713",
+            "CheckoutRequestID":"ws_CO_21102025194241705114669532",
+            "ResultCode": "4999",
+            "ResultDesc":"The transaction is still under processing"
+        }
+        
+[2025-10-21 19:43:52] M-Pesa API returned non-zero result code: 4999
+[2025-10-21 19:43:52] Updated transaction with status failed: 139

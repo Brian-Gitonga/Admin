@@ -9,40 +9,63 @@ require_once 'mpesa_settings_operations.php';
 // Get router ID from URL parameter
 $router_id = isset($_GET['router_id']) ? intval($_GET['router_id']) : 0;
 
-// Get business name from URL parameter
+// Get business name from URL parameter (for display purposes)
 $businessName = isset($_GET['business']) ? $_GET['business'] : 'Qtro Wifi';
 
-// Get reseller ID from business name
-$resellerId = getResellerIdByBusinessName($conn, $businessName);
+// Initialize variables
+$resellerId = 0;
+$routerInfo = null;
 
-// If reseller not found or not active, set a default business name
-if (!$resellerId) {
-    $businessName = 'Qtro Wifi';
-    // Try again with default name
+// PRIORITY 1: If router_id is provided, get reseller_id from the hotspots table
+// This is the PRIMARY and CORRECT way to identify the reseller
+if ($router_id > 0) {
+    error_log("Portal: Attempting to load portal using router_id: $router_id");
+    
+    // Get router details and reseller_id from hotspots table
+    $routerQuery = "SELECT h.*, h.reseller_id FROM hotspots h WHERE h.id = ? AND h.is_active = 1";
+    $routerStmt = $conn->prepare($routerQuery);
+    
+    if ($routerStmt) {
+        $routerStmt->bind_param("i", $router_id);
+        $routerStmt->execute();
+        $routerResult = $routerStmt->get_result();
+
+        if ($routerResult && $routerResult->num_rows > 0) {
+            $routerInfo = $routerResult->fetch_assoc();
+            $resellerId = $routerInfo['reseller_id']; // Get reseller_id from router
+            error_log("Portal: Found router '$router_id' belonging to reseller_id: $resellerId");
+        } else {
+            error_log("Portal: Router ID $router_id not found or inactive");
+            $router_id = 0; // Reset if router not found
+        }
+    } else {
+        error_log("Portal: Error preparing router query: " . $conn->error);
+    }
+}
+
+// PRIORITY 2: If no valid router_id, fall back to business_name (for backward compatibility)
+// This should only be used when router_id is not provided in the URL
+if ($resellerId == 0) {
+    error_log("Portal: No valid router_id, falling back to business_name: $businessName");
+    
+    // Get reseller ID from business name
     $resellerId = getResellerIdByBusinessName($conn, $businessName);
     
-    // If still not found, create a dummy ID for displaying default packages
+    // If reseller not found, try default business name
     if (!$resellerId) {
-        $resellerId = 0;
+        $businessName = 'Qtro Wifi';
+        error_log("Portal: Business name not found, trying default: $businessName");
+        $resellerId = getResellerIdByBusinessName($conn, $businessName);
+        
+        // If still not found, set to 0
+        if (!$resellerId) {
+            error_log("Portal: No reseller found, setting reseller_id to 0");
+            $resellerId = 0;
+        }
     }
 }
 
-// Get router details if router_id is provided
-$routerInfo = null;
-if ($router_id > 0) {
-    $routerQuery = "SELECT * FROM hotspots WHERE id = ? AND reseller_id = ? AND is_active = 1";
-    $routerStmt = $conn->prepare($routerQuery);
-    $routerStmt->bind_param("ii", $router_id, $resellerId);
-    $routerStmt->execute();
-    $routerResult = $routerStmt->get_result();
-    
-    if ($routerResult && $routerResult->num_rows > 0) {
-        $routerInfo = $routerResult->fetch_assoc();
-    } else {
-        // If router not found or doesn't belong to this reseller, reset router_id
-        $router_id = 0;
-    }
-}
+error_log("Portal: Final reseller_id: $resellerId, router_id: $router_id");
 
 // Get reseller info
 $resellerInfo = $resellerId ? getResellerInfo($conn, $resellerId) : null;
@@ -80,7 +103,7 @@ function getPackagesByTypeLocal($conn, $resellerId, $packageType) {
     
     if (!$packagesCheckResult || $packagesCheckResult->num_rows == 0) {
         // Packages table doesn't exist
-        error_log("Packages table doesn't exist");
+        error_log("Portal: Packages table doesn't exist for reseller_id: $resellerId");
         return createEmptyResultSet();
     }
     
@@ -89,7 +112,7 @@ function getPackagesByTypeLocal($conn, $resellerId, $packageType) {
     $columnsResult = $conn->query($columnsQuery);
     
     if (!$columnsResult) {
-        error_log("Error checking packages columns: " . $conn->error);
+        error_log("Portal: Error checking packages columns: " . $conn->error);
         return createEmptyResultSet();
     }
     
@@ -101,51 +124,143 @@ function getPackagesByTypeLocal($conn, $resellerId, $packageType) {
     // Check if necessary columns exist
     $hasTypeColumn = in_array('type', $columns);
     $hasActiveColumn = in_array('is_active', $columns);
+    $hasEnabledColumn = in_array('is_enabled', $columns);
+    $hasDescriptionColumn = in_array('description', $columns);
+    $hasDurationInMinutes = in_array('duration_in_minutes', $columns);
+    $hasUploadSpeed = in_array('upload_speed', $columns);
+    $hasDownloadSpeed = in_array('download_speed', $columns);
     
-    // Build query based on available columns
-    $query = "SELECT * FROM packages WHERE reseller_id = ?";
+    // Log the schema detection for debugging
+    error_log("Portal: Package schema for reseller $resellerId - has_type: " . ($hasTypeColumn ? 'yes' : 'no') .
+              ", has_is_active: " . ($hasActiveColumn ? 'yes' : 'no') .
+              ", has_is_enabled: " . ($hasEnabledColumn ? 'yes' : 'no') .
+              ", has_duration_in_minutes: " . ($hasDurationInMinutes ? 'yes' : 'no'));
     
-    // Add type filter if column exists
-    if ($hasTypeColumn) {
-        $query .= " AND type = ?";
+    // Build SELECT clause based on available columns
+    $selectClause = "SELECT id, name, price, ";
+    
+    if ($hasDescriptionColumn) {
+        $selectClause .= "description";
+    } else if ($hasUploadSpeed && $hasDownloadSpeed) {
+        // Build description from speed and duration
+        $selectClause .= "CONCAT(upload_speed, '/', download_speed, ' Mbps - ', duration) AS description";
+    } else {
+        $selectClause .= "duration AS description";
     }
     
-    // Add active filter if column exists
+    // Determine package type filter strategy
+    $useTypeFilter = false;
+    $useDurationFilter = false;
+    
+    if ($hasTypeColumn) {
+        // Check if type column uses 'daily/weekly/monthly' or 'hotspot/pppoe/data-plan'
+        $typeCheckQuery = "SELECT DISTINCT type FROM packages WHERE reseller_id = ? LIMIT 5";
+        $typeStmt = $conn->prepare($typeCheckQuery);
+        $typeStmt->bind_param("i", $resellerId);
+        $typeStmt->execute();
+        $typeResult = $typeStmt->get_result();
+        
+        $types = [];
+        while ($row = $typeResult->fetch_assoc()) {
+            $types[] = $row['type'];
+        }
+        
+        // If we find daily/weekly/monthly types, use type filter
+        if (in_array('daily', $types) || in_array('weekly', $types) || in_array('monthly', $types)) {
+            $useTypeFilter = true;
+            error_log("Portal: Using type filter for reseller $resellerId with type: $packageType");
+        } else if ($hasDurationInMinutes) {
+            // Otherwise use duration-based filtering
+            $useDurationFilter = true;
+            error_log("Portal: Using duration filter for reseller $resellerId with type: $packageType");
+        }
+    } else if ($hasDurationInMinutes) {
+        $useDurationFilter = true;
+        error_log("Portal: No type column, using duration filter for reseller $resellerId");
+    }
+    
+    // Build WHERE clause
+    $query = $selectClause . " FROM packages WHERE reseller_id = ?";
+    
+    // Add type or duration filter
+    if ($useTypeFilter) {
+        $query .= " AND type = ?";
+    } else if ($useDurationFilter) {
+        // Determine duration range based on package type
+        switch ($packageType) {
+            case 'daily':
+                $query .= " AND duration_in_minutes <= 1440"; // Up to 1 day
+                break;
+            case 'weekly':
+                $query .= " AND duration_in_minutes > 1440 AND duration_in_minutes <= 10080"; // 1-7 days
+                break;
+            case 'monthly':
+                $query .= " AND duration_in_minutes > 10080"; // More than 7 days
+                break;
+        }
+    }
+    
+    // Add active/enabled filter
     if ($hasActiveColumn) {
         $query .= " AND is_active = 1";
+    } else if ($hasEnabledColumn) {
+        $query .= " AND is_enabled = 1";
     }
     
     $query .= " ORDER BY price ASC";
+    
+    error_log("Portal: Query for reseller $resellerId, type $packageType: $query");
     
     $stmt = $conn->prepare($query);
     
     // Check if prepare statement was successful
     if ($stmt === false) {
-        error_log("Error preparing statement: " . $conn->error);
+        error_log("Portal: Error preparing statement: " . $conn->error);
         return createEmptyResultSet();
     }
     
-    // Bind parameters based on which columns exist
-    if ($hasTypeColumn) {
+    // Bind parameters based on filter type
+    if ($useTypeFilter) {
         $stmt->bind_param("is", $resellerId, $packageType);
     } else {
         $stmt->bind_param("i", $resellerId);
     }
     
     // Execute the query
-    $stmt->execute();
-    return $stmt->get_result();
+    if (!$stmt->execute()) {
+        error_log("Portal: Error executing query: " . $stmt->error);
+        return createEmptyResultSet();
+    }
+    
+    $result = $stmt->get_result();
+    error_log("Portal: Found " . $result->num_rows . " packages for reseller $resellerId, type $packageType");
+    
+    return $result;
 }
 
 // Function to get packages by type and router
 function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId) {
+    error_log("Portal: Router-specific query for reseller $resellerId, router $routerId, type $packageType");
+    
+    // Check if package_router table exists
+    $checkQuery = "SHOW TABLES LIKE 'package_router'";
+    $checkResult = $conn->query($checkQuery);
+    
+    if (!$checkResult || $checkResult->num_rows == 0) {
+        // No package_router table, fall back to local function
+        error_log("Portal: No package_router table, using getPackagesByTypeLocal for reseller $resellerId");
+        return getPackagesByTypeLocal($conn, $resellerId, $packageType);
+    }
+    
+    // Package_router table exists, but we still need to use the smart query from getPackagesByTypeLocal
+    // Just add the router filter to it
+    
     // First check if the packages table exists
     $packagesCheckQuery = "SHOW TABLES LIKE 'packages'";
     $packagesCheckResult = $conn->query($packagesCheckQuery);
     
     if (!$packagesCheckResult || $packagesCheckResult->num_rows == 0) {
-        // Packages table doesn't exist
-        error_log("Packages table doesn't exist");
+        error_log("Portal: Packages table doesn't exist for reseller_id: $resellerId, router_id: $routerId");
         return createEmptyResultSet();
     }
     
@@ -154,7 +269,7 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
     $columnsResult = $conn->query($columnsQuery);
     
     if (!$columnsResult) {
-        error_log("Error checking packages columns: " . $conn->error);
+        error_log("Portal: Error checking packages columns: " . $conn->error);
         return createEmptyResultSet();
     }
     
@@ -166,87 +281,114 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
     // Check if necessary columns exist
     $hasTypeColumn = in_array('type', $columns);
     $hasActiveColumn = in_array('is_active', $columns);
+    $hasEnabledColumn = in_array('is_enabled', $columns);
+    $hasDescriptionColumn = in_array('description', $columns);
+    $hasDurationInMinutes = in_array('duration_in_minutes', $columns);
+    $hasUploadSpeed = in_array('upload_speed', $columns);
+    $hasDownloadSpeed = in_array('download_speed', $columns);
     
-    // Now check if package_router table exists
-    $checkQuery = "SHOW TABLES LIKE 'package_router'";
-    $checkResult = $conn->query($checkQuery);
+    // Build SELECT clause based on available columns
+    $selectClause = "SELECT p.id, p.name, p.price, ";
     
-    if ($checkResult && $checkResult->num_rows > 0) {
-        // If package_router table exists, use it to filter packages
-        $query = "SELECT p.* FROM packages p 
-                 INNER JOIN package_router pr ON p.id = pr.package_id 
-                 WHERE p.reseller_id = ?";
-        
-        // Add type filter if column exists
-        if ($hasTypeColumn) {
-            $query .= " AND p.type = ?";
-        }
-        
-        $query .= " AND pr.router_id = ?";
-        
-        // Add active filter if column exists
-        if ($hasActiveColumn) {
-            $query .= " AND p.is_active = 1";
-        }
-        
-        $query .= " ORDER BY p.price ASC";
-        
-        $stmt = $conn->prepare($query);
-        
-        // Check if prepare statement was successful
-        if ($stmt === false) {
-            error_log("Error preparing statement: " . $conn->error);
-            // Fall back to getting all packages for this reseller
-            return getPackagesByType($conn, $resellerId, $packageType);
-        }
-        
-        // Bind parameters based on which columns exist
-        if ($hasTypeColumn) {
-            $stmt->bind_param("isi", $resellerId, $packageType, $routerId);
-        } else {
-            $stmt->bind_param("ii", $resellerId, $routerId);
-        }
+    if ($hasDescriptionColumn) {
+        $selectClause .= "p.description";
+    } else if ($hasUploadSpeed && $hasDownloadSpeed) {
+        $selectClause .= "CONCAT(p.upload_speed, '/', p.download_speed, ' Mbps - ', p.duration) AS description";
     } else {
-        // Otherwise, just get all packages for this reseller
-        $query = "SELECT * FROM packages WHERE reseller_id = ?";
+        $selectClause .= "p.duration AS description";
+    }
+    
+    // Determine package type filter strategy
+    $useTypeFilter = false;
+    $useDurationFilter = false;
+    
+    if ($hasTypeColumn) {
+        // Check if type column uses 'daily/weekly/monthly' or 'hotspot/pppoe/data-plan'
+        $typeCheckQuery = "SELECT DISTINCT type FROM packages WHERE reseller_id = ? LIMIT 5";
+        $typeStmt = $conn->prepare($typeCheckQuery);
+        $typeStmt->bind_param("i", $resellerId);
+        $typeStmt->execute();
+        $typeResult = $typeStmt->get_result();
         
-        // Add type filter if column exists
-        if ($hasTypeColumn) {
-            $query .= " AND type = ?";
+        $types = [];
+        while ($row = $typeResult->fetch_assoc()) {
+            $types[] = $row['type'];
         }
         
-        // Add active filter if column exists
-        if ($hasActiveColumn) {
-            $query .= " AND is_active = 1";
+        if (in_array('daily', $types) || in_array('weekly', $types) || in_array('monthly', $types)) {
+            $useTypeFilter = true;
+        } else if ($hasDurationInMinutes) {
+            $useDurationFilter = true;
         }
-        
-        $query .= " ORDER BY price ASC";
-        
-        $stmt = $conn->prepare($query);
-        
-        // Check if prepare statement was successful
-        if ($stmt === false) {
-            error_log("Error preparing statement: " . $conn->error);
-            return createEmptyResultSet();
-        }
-        
-        // Bind parameters based on which columns exist
-        if ($hasTypeColumn) {
-            $stmt->bind_param("is", $resellerId, $packageType);
-        } else {
-            $stmt->bind_param("i", $resellerId);
+    } else if ($hasDurationInMinutes) {
+        $useDurationFilter = true;
+    }
+    
+    // Build query with package_router join
+    $query = $selectClause . " FROM packages p
+             INNER JOIN package_router pr ON p.id = pr.package_id
+             WHERE p.reseller_id = ?";
+    
+    // Add type or duration filter
+    if ($useTypeFilter) {
+        $query .= " AND p.type = ?";
+    } else if ($useDurationFilter) {
+        switch ($packageType) {
+            case 'daily':
+                $query .= " AND p.duration_in_minutes <= 1440";
+                break;
+            case 'weekly':
+                $query .= " AND p.duration_in_minutes > 1440 AND p.duration_in_minutes <= 10080";
+                break;
+            case 'monthly':
+                $query .= " AND p.duration_in_minutes > 10080";
+                break;
         }
     }
     
+    $query .= " AND pr.router_id = ?";
+    
+    // Add active/enabled filter
+    if ($hasActiveColumn) {
+        $query .= " AND p.is_active = 1";
+    } else if ($hasEnabledColumn) {
+        $query .= " AND p.is_enabled = 1";
+    }
+    
+    $query .= " ORDER BY p.price ASC";
+    
+    error_log("Portal: Router query: $query");
+    
+    $stmt = $conn->prepare($query);
+    
+    // Check if prepare statement was successful
+    if ($stmt === false) {
+        error_log("Portal: Error preparing router-specific statement: " . $conn->error);
+        // Fall back to getting all packages for this reseller
+        return getPackagesByTypeLocal($conn, $resellerId, $packageType);
+    }
+    
+    // Bind parameters based on filter type
+    if ($useTypeFilter) {
+        $stmt->bind_param("isi", $resellerId, $packageType, $routerId);
+    } else {
+        $stmt->bind_param("ii", $resellerId, $routerId);
+    }
+    
     // Execute the query
-    $stmt->execute();
+    if (!$stmt->execute()) {
+        error_log("Portal: Error executing router query: " . $stmt->error);
+        return createEmptyResultSet();
+    }
+    
     $result = $stmt->get_result();
+    error_log("Portal: Found " . $result->num_rows . " packages for reseller $resellerId, router $routerId, type $packageType");
     
     // Check if we got results
     if ($result->num_rows == 0 && $routerId > 0) {
         // If no packages found for this router, fall back to all packages for this reseller
-        error_log("No packages found for router $routerId, falling back to all packages");
-        return getPackagesByType($conn, $resellerId, $packageType);
+        error_log("Portal: No packages found for router $routerId, falling back to all packages");
+        return getPackagesByTypeLocal($conn, $resellerId, $packageType);
     }
     
     return $result;
@@ -258,6 +400,7 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($routerInfo ? $routerInfo['name'] . ' - ' : ''); ?><?php echo htmlspecialchars($resellerInfo && isset($resellerInfo['business_display_name']) ? $resellerInfo['business_display_name'] : $businessName); ?> - WiFi Hotspot</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -914,8 +1057,8 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
                         <span>Connect with Voucher</span>
                     </button>
                     <button class="connection-btn mobile-btn" id="mobile-btn">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span>Connect with Mobile</span>
+                        <i class="fas fa-receipt"></i>
+                        <span>View Voucher</span>
                     </button>
                 </div>
             </div>
@@ -1008,36 +1151,43 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
         </div>
     </div>
     
-    <!-- Mobile Login Modal -->
+    <!-- View Voucher Modal -->
     <div class="modal-overlay" id="mobile-modal">
         <div class="modal">
             <div class="modal-header">
-                <h3 class="modal-title">Connect with Mobile</h3>
+                <h3 class="modal-title">View Your Voucher</h3>
                 <button class="modal-close" id="mobile-modal-close">&times;</button>
             </div>
             <div class="modal-body">
-                <form id="mobile-form" method="post" action="connect_mobile.php">
-                    <input type="hidden" name="reseller_id" value="<?php echo $resellerId; ?>">
-                    <input type="hidden" name="router_id" value="<?php echo $router_id; ?>">
+                <form id="mobile-form">
                     <div class="mobile-form-group">
                         <label for="mobile-number" class="form-label">Mobile Number</label>
                         <input type="tel" id="mobile-number" name="mobile_number" class="form-input" placeholder="Enter your mobile number (e.g., 07XX XXX XXX)" required>
-                        <p class="form-help">Enter your registered mobile number</p>
+                        <p class="form-help">Enter the phone number you used for payment</p>
                     </div>
-                    
-                    <div class="mobile-form-group">
-                        <label for="mobile-pin" class="form-label">PIN</label>
-                        <input type="password" id="mobile-pin" name="mobile_pin" class="form-input" placeholder="Enter your PIN" required>
-                        <p class="form-help">Enter your PIN or password</p>
+
+                    <div class="mobile-form-group" id="voucher-display-area" style="display: none;">
+                        <div style="background: #f0fdf4; border: 2px solid #22c55e; border-radius: 8px; padding: 20px; text-align: center;">
+                            <p style="color: #15803d; font-size: 14px; margin-bottom: 10px; font-weight: 600;">Your Voucher Code</p>
+                            <p id="voucher-code-display" style="font-size: 28px; font-weight: bold; color: #15803d; letter-spacing: 2px; margin: 10px 0;"></p>
+                            <p id="voucher-package-display" style="color: #16a34a; font-size: 14px; margin-top: 10px;"></p>
+                            <p id="voucher-amount-display" style="color: #16a34a; font-size: 13px; margin-top: 5px;"></p>
+                        </div>
                     </div>
-                    
-                    <button type="submit" class="pay-btn">
-                        Connect
+
+                    <div id="voucher-error-area" style="display: none;">
+                        <div style="background: #fef2f2; border: 2px solid #ef4444; border-radius: 8px; padding: 15px; text-align: center;">
+                            <p id="voucher-error-message" style="color: #dc2626; font-size: 14px;"></p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="pay-btn" id="view-voucher-btn">
+                        View Voucher
                     </button>
                 </form>
             </div>
             <div class="modal-footer">
-                By connecting, you agree to our Terms & Conditions
+                Enter your phone number to retrieve your voucher
             </div>
         </div>
     </div>
@@ -1319,24 +1469,20 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
         // Form submission
         paymentForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             // Show loading message
             const payButton = document.querySelector('.pay-btn');
-            payButton.innerHTML = 'Processing... Please wait';
+            payButton.innerHTML = 'Checking availability...';
             payButton.disabled = true;
-            
+
             // Get form data
             const formData = new FormData(paymentForm);
-            
-            // Get the payment gateway
-            const paymentGateway = '<?php echo $paymentGateway; ?>';
-            formData.append('payment_gateway', paymentGateway);
-            document.getElementById('payment-gateway').value = paymentGateway;
-            
-            // Determine which payment processor to use
-            let processingEndpoint = 'process_payment.php'; // Default M-Pesa
-            
-            // Always check for phone number
+
+            // Get package and router IDs for voucher availability check
+            const packageId = document.getElementById('form-package-id').value;
+            const routerId = formData.get('router_id');
+
+            // Always check for phone number first
             const phoneNumber = document.getElementById('mpesa-number').value;
             if (!phoneNumber) {
                 alert('Please enter your phone number');
@@ -1344,25 +1490,57 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
                 payButton.disabled = false;
                 return;
             }
-            
-            if (paymentGateway === 'paystack') {
-                processingEndpoint = 'process_paystack_payment.php';
-                
-                // Generate email from phone number for Paystack
-                const sanitizedPhone = phoneNumber.replace(/\D/g, ''); // Remove non-digits
-                const generatedEmail = `${sanitizedPhone}@customer.qtro.co.ke`;
-                document.getElementById('paystack-email').value = generatedEmail;
-            }
-            
-            console.log('Submitting payment to: ' + processingEndpoint);
-            
-            // Submit the form using fetch API
-            fetch(processingEndpoint, {
+
+            // Check voucher availability before proceeding with payment
+            fetch('check_voucher_availability.php', {
                 method: 'POST',
-                body: formData
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    package_id: packageId,
+                    router_id: routerId
+                })
             })
             .then(response => response.json())
-            .then(data => {
+            .then(voucherData => {
+                if (!voucherData.success || !voucherData.available) {
+                    // No vouchers available
+                    alert('Sorry, no vouchers are currently available for this package. Please try a different package or contact support.');
+                    payButton.innerHTML = 'Pay Now';
+                    payButton.disabled = false;
+                    return;
+                }
+
+                // Vouchers are available, proceed with payment
+                payButton.innerHTML = 'Processing payment...';
+
+                // Get the payment gateway
+                const paymentGateway = '<?php echo $paymentGateway; ?>';
+                formData.append('payment_gateway', paymentGateway);
+                document.getElementById('payment-gateway').value = paymentGateway;
+
+                // Determine which payment processor to use
+                let processingEndpoint = 'process_payment.php'; // Default M-Pesa
+
+                if (paymentGateway === 'paystack') {
+                    processingEndpoint = 'process_paystack_payment.php';
+
+                    // Generate email from phone number for Paystack
+                    const sanitizedPhone = phoneNumber.replace(/\D/g, ''); // Remove non-digits
+                    const generatedEmail = `${sanitizedPhone}@customer.qtro.co.ke`;
+                    document.getElementById('paystack-email').value = generatedEmail;
+                }
+
+                console.log('Submitting payment to: ' + processingEndpoint);
+
+                // Submit the form using fetch API
+                fetch(processingEndpoint, {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
                 if (data.success) {
                     // Different handling based on payment gateway
                     if (paymentGateway === 'paystack') {
@@ -1402,34 +1580,33 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
                             <div style="color: #64748b; font-size: 13px; margin-bottom: 10px;">
                                 Transaction Reference: ${data.checkout_request_id || 'N/A'}
                             </div>
+
                             <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; margin-bottom: 20px; background-color: #f8fafc;">
-                                <h4 style="margin-bottom: 10px; color: #334155; font-size: 14px;">Important Instructions:</h4>
-                                <ol style="text-align: left; color: #64748b; font-size: 13px; padding-left: 20px;">
-                                    <li>You will receive an M-Pesa payment prompt on your phone.</li>
-                                    <li>Enter your M-Pesa PIN to authorize the payment.</li>
-                                    <li>You will receive an M-Pesa confirmation message once payment is complete.</li>
-                                    <li>Your voucher code will be displayed here or sent to your phone.</li>
+                                <h4 style="margin-bottom: 10px; color: #334155; font-size: 14px;">
+                                    <i class="fas fa-info-circle" style="margin-right: 5px;"></i>
+                                    How to Get Your Voucher:
+                                </h4>
+                                <ol style="text-align: left; color: #64748b; font-size: 13px; padding-left: 20px; line-height: 1.8;">
+                                    <li>Complete the M-Pesa payment on your phone by entering your PIN.</li>
+                                    <li>After payment is complete, click the <strong>"Close"</strong> button below.</li>
+                                    <li>Click on <strong>"View Voucher"</strong> button on the portal.</li>
+                                    <li>Enter your phone number (${mpesaNumber}) and click <strong>"View Voucher"</strong>.</li>
+                                    <li>Your WiFi voucher code will be displayed on the screen.</li>
                                 </ol>
                             </div>
-                            <div id="payment-status" style="margin-bottom: 20px; color: #64748b; font-size: 14px;">
-                                <p>Waiting for payment confirmation...</p>
-                                <div style="margin-top: 10px; display: inline-block;">
-                                    <span class="dot" style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: #10b981; margin-right: 5px; animation: pulse 1.5s infinite;"></span>
-                                    <span class="dot" style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: #10b981; margin-right: 5px; animation: pulse 1.5s infinite 0.5s;"></span>
-                                    <span class="dot" style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: #10b981; animation: pulse 1.5s infinite 1s;"></span>
-                                </div>
+
+                            <div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
+                                <h4 style="margin-bottom: 10px; color: #856404; font-size: 14px;">
+                                    <i class="fas fa-exclamation-triangle" style="margin-right: 5px;"></i>
+                                    Need Help?
+                                </h4>
+                                <p style="color: #856404; font-size: 13px; margin: 0;">
+                                    If you experience any problems retrieving your voucher, please contact the administrator using the phone number in the footer below.
+                                </p>
                             </div>
-                            <style>
-                                @keyframes pulse {
-                                    0% { opacity: 0.3; }
-                                    50% { opacity: 1; }
-                                    100% { opacity: 0.3; }
-                                }
-                            </style>
-                            <button type="button" id="check-payment-status" class="pay-btn" style="background-color: #3b82f6; margin-bottom: 10px;">
-                                I've Completed Payment
-                            </button>
-                            <button type="button" id="close-payment-modal" class="pay-btn" style="background-color: #64748b;">
+
+                            <button type="button" id="close-payment-modal" class="pay-btn" style="background-color: #10b981;">
+                                <i class="fas fa-check" style="margin-right: 5px;"></i>
                                 Close
                             </button>
                         </div>
@@ -1437,148 +1614,54 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
                     
                     // Add event listener to the close button
                     document.getElementById('close-payment-modal').addEventListener('click', () => {
-                paymentModal.classList.remove('active');
+                        paymentModal.classList.remove('active');
                         document.body.style.overflow = '';
-                        
+
                         // Restore the form for next time
                         formElement.parentNode.replaceChild(formClone, formElement);
-                    });
-                    
-                    // Add event listener to the "I've Completed Payment" button
-                    document.getElementById('check-payment-status').addEventListener('click', () => {
-                        // Show loading state
-                        const statusButton = document.getElementById('check-payment-status');
-                        statusButton.innerHTML = 'Checking payment...';
-                        statusButton.disabled = true;
-                        
-                        // Get checkout request ID 
-                        const checkoutRequestId = data.checkout_request_id || '';
-                        
-                        // Send AJAX request to check payment status
-                        fetch('check_payment_status.php', {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/x-www-form-urlencoded',
-                            },
-                            body: 'checkout_request_id=' + encodeURIComponent(checkoutRequestId)
-                        })
-                        .then(response => response.json())
-                        .then(result => {
-                            if (result.success) {
-                                // Payment successful - Instead of displaying voucher details, send SMS and show simplified message
-                                document.getElementById('payment-status').innerHTML = `
-                                    <div style="color: #10b981; margin: 15px 0;">
-                                        <i class="fas fa-check-circle" style="font-size: 24px;"></i>
-                                        <p style="margin-top: 5px;">Thank you for your payment!</p>
-                                        <div style="margin: 15px 0; padding: 15px; background-color: #ecfdf5; border-radius: 6px; border: 1px solid #10b981;">
-                                            <p style="margin: 0; font-size: 16px; text-align: center;">We have sent a message to ${mpesaNumber}</p>
-                                                </div>
-                                        <p style="font-size: 13px; margin-top: 10px; text-align: center;">Check your phone for WiFi access details.</p>
-                                        <p style="font-size: 12px; margin-top: 5px; text-align: center;">Receipt: ${result.receipt || 'N/A'}</p>
-                                    </div>
-                                `;
-                                
-                                // Send SMS with voucher details
-                                if (result.voucher_code && result.phone_number) {
-                                    const smsData = new FormData();
-                                    smsData.append('phone_number', result.phone_number);
-                                    smsData.append('voucher_code', result.voucher_code);
-                                    
-                                    if (result.voucher_username) {
-                                        smsData.append('username', result.voucher_username);
-                                    }
-                                    
-                                    if (result.voucher_password) {
-                                        smsData.append('password', result.voucher_password);
-                                    }
-                                    
-                                    if (result.package_name) {
-                                        smsData.append('package_name', result.package_name);
-                                    }
-                                    
-                                    if (result.duration) {
-                                        smsData.append('duration', result.duration);
-                                    }
-                                    
-                                    // Send request to the SMS endpoint
-                                    fetch('send_free_trial_sms.php', {
-                                        method: 'POST',
-                                        body: smsData
-                                    }).then(response => response.json())
-                                    .then(smsResult => {
-                                        console.log('SMS sending result:', smsResult);
-                                    }).catch(error => {
-                                        console.error('Error sending SMS:', error);
-                                    });
-                                }
-                                
-                                // Hide the check payment button
-                                statusButton.style.display = 'none';
-                            } else {
-                                // Payment not yet completed
-                                document.getElementById('payment-status').innerHTML = `
-                                    <div style="color: #f59e0b; margin: 15px 0;">
-                                        <i class="fas fa-exclamation-circle" style="font-size: 24px;"></i>
-                                        <p style="margin-top: 5px;">${result.message || 'Payment not yet confirmed'}</p>
-                                        <p style="font-size: 13px; margin-top: 5px;">Please check your phone and complete the payment.</p>
-                                    </div>
-                                `;
-                                
-                                // Re-enable the button
-                                statusButton.innerHTML = 'Check Again';
-                                statusButton.disabled = false;
-                            }
-                        })
-                        .catch(error => {
-                            console.error('Error:', error);
-                            document.getElementById('payment-status').innerHTML = `
-                                <div style="color: #ef4444; margin: 15px 0;">
-                                    <i class="fas fa-times-circle" style="font-size: 24px;"></i>
-                                    <p style="margin-top: 5px;">Error checking payment status</p>
-                                    <p style="font-size: 13px; margin-top: 5px;">Please try again or contact support.</p>
-                                </div>
-                            `;
-                            
-                            // Re-enable the button
-                            statusButton.innerHTML = 'Try Again';
-                            statusButton.disabled = false;
-                        });
                     });
                     }
                 } else {
                     // Payment failed
                     payButton.innerHTML = 'Try Again';
                     payButton.disabled = false;
-                    
+
                     // Show error message
                     alert(data.message || 'Payment failed. Please try again.');
                 }
+                })
+                .catch(error => {
+                    console.error('Payment Error:', error);
+                    payButton.innerHTML = 'Try Again';
+                    payButton.disabled = false;
+                    alert('An error occurred during payment. Please try again.');
+                });
             })
             .catch(error => {
-                console.error('Error:', error);
+                console.error('Voucher Availability Check Error:', error);
                 payButton.innerHTML = 'Try Again';
                 payButton.disabled = false;
-                alert('An error occurred. Please try again.');
+                alert('Unable to check voucher availability. Please try again.');
             });
         });
-        
+
         // Voucher Modal Functionality
         const voucherBtn = document.getElementById('voucher-btn');
         const voucherModal = document.getElementById('voucher-modal');
         const voucherModalClose = document.getElementById('voucher-modal-close');
         const voucherForm = document.getElementById('voucher-form');
-        
+
         voucherBtn.addEventListener('click', () => {
             // Close the current page/tab
             window.close();
         });
-        
+
         voucherModalClose.addEventListener('click', () => {
             voucherModal.classList.remove('active');
             document.body.style.overflow = ''; // Re-enable scrolling
             voucherForm.reset(); // Reset form fields
         });
-        
+
         voucherModal.addEventListener('click', (e) => {
             if (e.target === voucherModal) {
                 voucherModal.classList.remove('active');
@@ -1586,15 +1669,15 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
                 voucherForm.reset(); // Reset form fields
             }
         });
-        
+
         voucherForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             const voucherCode = document.getElementById('voucher-code').value;
-            
+
             // Here you would validate the voucher code
             alert(`Connecting with voucher code: ${voucherCode}`);
-            
+
             // Close the modal after submission
             setTimeout(() => {
                 voucherModal.classList.remove('active');
@@ -1602,47 +1685,152 @@ function getPackagesByTypeAndRouter($conn, $resellerId, $packageType, $routerId)
                 voucherForm.reset(); // Reset form fields
             }, 1000);
         });
-        
-        // Mobile Login Modal Functionality
+
+        // View Voucher Modal Functionality
         const mobileBtn = document.getElementById('mobile-btn');
         const mobileModal = document.getElementById('mobile-modal');
         const mobileModalClose = document.getElementById('mobile-modal-close');
         const mobileForm = document.getElementById('mobile-form');
-        
+        const voucherDisplayArea = document.getElementById('voucher-display-area');
+        const voucherErrorArea = document.getElementById('voucher-error-area');
+        const voucherCodeDisplay = document.getElementById('voucher-code-display');
+        const voucherPackageDisplay = document.getElementById('voucher-package-display');
+        const voucherAmountDisplay = document.getElementById('voucher-amount-display');
+        const voucherErrorMessage = document.getElementById('voucher-error-message');
+        const viewVoucherBtn = document.getElementById('view-voucher-btn');
+
         mobileBtn.addEventListener('click', () => {
             mobileModal.classList.add('active');
             document.body.style.overflow = 'hidden'; // Prevent scrolling
+            // Reset display areas
+            voucherDisplayArea.style.display = 'none';
+            voucherErrorArea.style.display = 'none';
         });
-        
+
         mobileModalClose.addEventListener('click', () => {
             mobileModal.classList.remove('active');
             document.body.style.overflow = ''; // Re-enable scrolling
             mobileForm.reset(); // Reset form fields
+            voucherDisplayArea.style.display = 'none';
+            voucherErrorArea.style.display = 'none';
         });
-        
+
         mobileModal.addEventListener('click', (e) => {
             if (e.target === mobileModal) {
                 mobileModal.classList.remove('active');
                 document.body.style.overflow = ''; // Re-enable scrolling
                 mobileForm.reset(); // Reset form fields
+                voucherDisplayArea.style.display = 'none';
+                voucherErrorArea.style.display = 'none';
             }
         });
-        
+
         mobileForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
             const mobileNumber = document.getElementById('mobile-number').value;
 
-            // Here you would validate the mobile login
-            alert(`Connecting with mobile number: ${mobileNumber}`);
+            // Hide previous results
+            voucherDisplayArea.style.display = 'none';
+            voucherErrorArea.style.display = 'none';
 
-            // Close the modal after submission
-            setTimeout(() => {
-                mobileModal.classList.remove('active');
-                document.body.style.overflow = ''; // Re-enable scrolling
-                mobileForm.reset(); // Reset form fields
-            }, 1000);
+            // Disable button and show loading state
+            viewVoucherBtn.disabled = true;
+            viewVoucherBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+
+            // Make AJAX request to fetch voucher
+            fetch('fetch_update_voucher.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'phone_number=' + encodeURIComponent(mobileNumber)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Re-enable button
+                viewVoucherBtn.disabled = false;
+                viewVoucherBtn.innerHTML = 'View Voucher';
+
+                if (data.success) {
+                    // Display voucher
+                    voucherCodeDisplay.textContent = data.voucher_code;
+                    voucherPackageDisplay.textContent = data.package_name;
+                    voucherAmountDisplay.textContent = 'Amount: KSh ' + data.amount;
+                    voucherDisplayArea.style.display = 'block';
+                    voucherErrorArea.style.display = 'none';
+                } else {
+                    // Display error
+                    voucherErrorMessage.textContent = data.message;
+                    voucherErrorArea.style.display = 'block';
+                    voucherDisplayArea.style.display = 'none';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Re-enable button
+                viewVoucherBtn.disabled = false;
+                viewVoucherBtn.innerHTML = 'View Voucher';
+
+                // Display error
+                voucherErrorMessage.textContent = 'An error occurred. Please try again.';
+                voucherErrorArea.style.display = 'block';
+                voucherDisplayArea.style.display = 'none';
+            });
         });
+
+        // Copy to clipboard function
+        function copyToClipboard(text) {
+            if (navigator.clipboard && window.isSecureContext) {
+                // Use the modern clipboard API
+                navigator.clipboard.writeText(text).then(() => {
+                    // Show success message
+                    const button = event.target;
+                    const originalText = button.textContent;
+                    button.textContent = 'Copied!';
+                    button.style.backgroundColor = '#10b981';
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                        button.style.backgroundColor = '#3b82f6';
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                    fallbackCopyTextToClipboard(text);
+                });
+            } else {
+                // Fallback for older browsers
+                fallbackCopyTextToClipboard(text);
+            }
+        }
+
+        function fallbackCopyTextToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.position = "fixed";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    const button = event.target;
+                    const originalText = button.textContent;
+                    button.textContent = 'Copied!';
+                    button.style.backgroundColor = '#10b981';
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                        button.style.backgroundColor = '#3b82f6';
+                    }, 2000);
+                }
+            } catch (err) {
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+
+            document.body.removeChild(textArea);
+        }
 
 
     </script>

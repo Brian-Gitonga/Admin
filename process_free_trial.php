@@ -150,49 +150,55 @@ try {
     
     $stmt->execute();
     
+    // Include SMS settings operations to use the same SMS system as paid packages
+    require_once 'sms_settings_operations.php';
+
     // Set up the SMS data
     $smsSent = false;
-    
-    // Prepare the SMS message
-    $message = "Your have sucessfully bought {$package['name']} plan. Your username is: {$voucher_username}, Password: {$voucher_password} and voucher is: {$voucher_code}";
-    
-    // Format phone number for Umeskia - needs to be in format 07XXXXXXXX (with leading 0)
-    $formattedPhone = formatPhoneNumberForUmeskia($phone_number);
-    
-    // Umeskia API credentials
-    $apiKey = 'eadad3b302940dd8c2f58e1289c3701f';
-    $appId = 'UMSC617032';
-    $senderId = 'UMS_TX';
-    
-    // Send SMS using Umeskia API
-    $smsResult = send_sms_umeskia($formattedPhone, $message, $apiKey, $appId, $senderId);
-    
-    // Log the API response
-    error_log("Umeskia SMS API Response for $formattedPhone: " . print_r($smsResult, true));
-    
-    if (!$smsResult['error']) {
-        // Try to decode the JSON response
-        $responseData = json_decode($smsResult['response'], true);
-        
-        // Check if the API returned success
-        if ($responseData && isset($responseData['status']) && $responseData['status'] === true) {
+
+    // Send SMS using the same system as paid packages
+    error_log("=== INITIATING FREE TRIAL SMS DELIVERY ===");
+    error_log("Voucher details - Code: $voucher_code, Username: $voucher_username, Password: $voucher_password");
+
+    try {
+        $smsResult = sendFreeTrialVoucherSMS(
+            $phone_number,
+            $voucher_code,
+            $voucher_username,
+            $voucher_password,
+            $package['name'],
+            $reseller_id
+        );
+
+        // Log the SMS result
+        error_log("Free Trial SMS function returned: " . json_encode($smsResult));
+
+        if ($smsResult['success']) {
             $smsSent = true;
-            error_log("SMS sent successfully to $formattedPhone via Umeskia");
+            error_log("✅ Free trial SMS sent successfully to $phone_number");
         } else {
-            $errorMsg = isset($responseData['message']) ? $responseData['message'] : 'Unknown error';
-            error_log("Umeskia SMS API returned error: " . $errorMsg);
+            error_log("❌ Free trial SMS sending failed: " . $smsResult['message']);
+            // Don't fail the entire process if SMS fails, just log it
+            $smsSent = false;
         }
-    } else {
-        error_log("Umeskia SMS API call failed. Error: " . $smsResult['error']);
+    } catch (Exception $smsException) {
+        error_log("❌ Free trial SMS exception: " . $smsException->getMessage());
+        error_log("Exception trace: " . $smsException->getTraceAsString());
+        $smsSent = false;
+        // Continue with the process even if SMS fails
     }
     
     $conn->commit();
     
-    // Return success with a simpler message, hiding voucher details
+    // Return success with appropriate message based on SMS status
+    $message = $smsSent ?
+        'Success! We have sent your voucher to ' . $phone_number :
+        'Success! Your free trial voucher has been generated. Voucher: ' . $voucher_code;
+
     echo json_encode([
-        'success' => true, 
-        'message' => 'Success! We have sent a message to ' . $phone_number,
-        'sms_sent' => true, // Always set to true since we want to hide the details regardless
+        'success' => true,
+        'message' => $message,
+        'sms_sent' => $smsSent,
         // The following fields are only for backend reference and should be hidden in UI
         '_voucher' => $voucher_code,
         '_username' => $voucher_username,
@@ -290,4 +296,180 @@ function send_sms_umeskia($phone_number, $message, $api_key, $app_id, $sender_id
         'response' => $response,
         'error' => $err
     ];
-} 
+}
+
+/**
+ * Send free trial voucher SMS using the same system as paid packages
+ */
+function sendFreeTrialVoucherSMS($phoneNumber, $voucherCode, $username, $password, $packageName, $resellerId) {
+    global $conn, $portal_conn;
+
+    // Use portal_conn if available, fallback to conn
+    $db_conn = $portal_conn ?: $conn;
+
+    try {
+        error_log("=== FREE TRIAL SMS SENDING STARTED ===");
+        error_log("Phone: $phoneNumber, Voucher: $voucherCode, Package: $packageName, Reseller: $resellerId");
+
+        // Get SMS settings for the reseller
+        $smsSettings = getSmsSettings($db_conn, $resellerId);
+        error_log("SMS Settings retrieved: " . ($smsSettings ? 'Found' : 'Not found'));
+
+        if (!$smsSettings) {
+            error_log("No SMS settings found for reseller $resellerId");
+            return ['success' => false, 'message' => 'No SMS settings found for this reseller'];
+        }
+
+        if (!$smsSettings['enable_sms']) {
+            error_log("SMS is disabled for reseller $resellerId");
+            return ['success' => false, 'message' => 'SMS is not enabled for this reseller'];
+        }
+
+        error_log("SMS Provider: " . $smsSettings['sms_provider']);
+
+        // Format phone number for Kenya (ensure it starts with 254)
+        $formattedPhone = formatPhoneNumberForSMS($phoneNumber);
+        error_log("Phone formatted from $phoneNumber to $formattedPhone");
+
+        // Prepare message using template
+        $template = $smsSettings['payment_template'] ?: 'Thank you for your free trial of {package}. Your login credentials: Username: {username}, Password: {password}, Voucher: {voucher}';
+        error_log("SMS Template: $template");
+
+        $message = str_replace(
+            ['{package}', '{username}', '{password}', '{voucher}'],
+            [$packageName, $username, $password, $voucherCode],
+            $template
+        );
+        error_log("SMS Message prepared: $message");
+
+        // Send SMS based on provider
+        error_log("Sending SMS via provider: " . $smsSettings['sms_provider']);
+
+        switch ($smsSettings['sms_provider']) {
+            case 'textsms':
+                $result = sendTextSMSForFreeTrial($formattedPhone, $message, $smsSettings);
+                error_log("TextSMS result: " . json_encode($result));
+                return $result;
+
+            case 'africas-talking':
+                $result = sendAfricaTalkingSMSForFreeTrial($formattedPhone, $message, $smsSettings);
+                error_log("Africa's Talking result: " . json_encode($result));
+                return $result;
+
+            case 'hostpinnacle':
+                $result = sendHostPinnacleSMSForFreeTrial($formattedPhone, $message, $smsSettings);
+                error_log("HostPinnacle result: " . json_encode($result));
+                return $result;
+
+            default:
+                error_log("Unsupported SMS provider: " . $smsSettings['sms_provider']);
+                return ['success' => false, 'message' => 'Unsupported SMS provider: ' . $smsSettings['sms_provider']];
+        }
+
+    } catch (Exception $e) {
+        error_log("Free trial SMS sending exception: " . $e->getMessage());
+        error_log("Exception trace: " . $e->getTraceAsString());
+        return ['success' => false, 'message' => 'SMS sending error: ' . $e->getMessage()];
+    }
+}
+
+/**
+ * Format phone number for SMS (Kenya format)
+ */
+function formatPhoneNumberForSMS($phoneNumber) {
+    // Remove any spaces, dashes, or plus signs
+    $phone = preg_replace('/[\s\-\+]/', '', $phoneNumber);
+
+    // If it starts with 0, replace with 254
+    if (substr($phone, 0, 1) === '0') {
+        $phone = '254' . substr($phone, 1);
+    }
+
+    // If it doesn't start with 254, assume it's a local number and add 254
+    if (substr($phone, 0, 3) !== '254') {
+        $phone = '254' . $phone;
+    }
+
+    return $phone;
+}
+
+/**
+ * Send SMS via TextSMS API for free trial
+ */
+function sendTextSMSForFreeTrial($phoneNumber, $message, $settings) {
+    $url = "https://sms.textsms.co.ke/api/services/sendsms/?" .
+           "apikey=" . urlencode($settings['textsms_api_key']) .
+           "&partnerID=" . urlencode($settings['textsms_partner_id']) .
+           "&message=" . urlencode($message) .
+           "&shortcode=" . urlencode($settings['textsms_sender_id']) .
+           "&mobile=" . urlencode($phoneNumber);
+
+    $response = @file_get_contents($url);
+
+    if ($response === false) {
+        return ['success' => false, 'message' => 'Failed to connect to TextSMS API'];
+    }
+
+    // TextSMS returns various response formats, check for success indicators
+    if (strpos($response, 'success') !== false || strpos($response, 'Success') !== false || is_numeric($response)) {
+        return ['success' => true, 'message' => 'SMS sent successfully via TextSMS', 'response' => $response];
+    } else {
+        return ['success' => false, 'message' => 'TextSMS API error: ' . $response];
+    }
+}
+
+/**
+ * Send SMS via Africa's Talking API for free trial
+ */
+function sendAfricaTalkingSMSForFreeTrial($phoneNumber, $message, $settings) {
+    // Africa's Talking implementation
+    $url = 'https://api.africastalking.com/version1/messaging';
+
+    $data = [
+        'username' => $settings['at_username'],
+        'to' => $phoneNumber,
+        'message' => $message,
+        'from' => $settings['at_shortcode'] ?: null
+    ];
+
+    $headers = [
+        'Accept: application/json',
+        'Content-Type: application/x-www-form-urlencoded',
+        'apiKey: ' . $settings['at_api_key']
+    ];
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($response === false || $httpCode !== 200) {
+        return ['success' => false, 'message' => 'Failed to connect to Africa\'s Talking API'];
+    }
+
+    $responseData = json_decode($response, true);
+
+    if (isset($responseData['SMSMessageData']['Recipients'][0]['status']) &&
+        $responseData['SMSMessageData']['Recipients'][0]['status'] === 'Success') {
+        return ['success' => true, 'message' => 'SMS sent successfully via Africa\'s Talking'];
+    } else {
+        $error = isset($responseData['SMSMessageData']['Recipients'][0]['status']) ?
+                 $responseData['SMSMessageData']['Recipients'][0]['status'] : 'Unknown error';
+        return ['success' => false, 'message' => 'Africa\'s Talking API error: ' . $error];
+    }
+}
+
+/**
+ * Send SMS via HostPinnacle API for free trial (placeholder)
+ */
+function sendHostPinnacleSMSForFreeTrial($phoneNumber, $message, $settings) {
+    // HostPinnacle implementation would go here
+    return ['success' => false, 'message' => 'HostPinnacle SMS provider not yet implemented'];
+}

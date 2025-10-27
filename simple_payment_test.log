@@ -1,0 +1,832 @@
+[2025-10-03 12:49:33] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 12:51:03] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 12:51:03] POST request received
+[2025-10-03 12:51:03] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [mpesa_number] => 0712345678
+    [package_id] => 15
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 12:51:03] Parsed data: reseller=6, package=1Hr Konnect, price=1.00, phone=0712345678, packageId=15
+[2025-10-03 12:51:03] Formatted phone: 254712345678
+[2025-10-03 12:51:03] Generated IDs: checkout=ws_CO_03102025125103476922, merchant=mr_03102025125103931578
+[2025-10-03 12:51:03] Transaction inserted successfully
+[2025-10-03 12:51:03] Success response sent
+[2025-10-03 12:51:34] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 12:51:34] POST request received
+[2025-10-03 12:51:34] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr internet
+    [package_price] => 10.00
+    [mpesa_number] => 0712345678
+    [package_id] => 23
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 12:51:34] Parsed data: reseller=6, package=1Hr internet, price=10.00, phone=0712345678, packageId=23
+[2025-10-03 12:51:34] Formatted phone: 254712345678
+[2025-10-03 12:51:34] Generated IDs: checkout=ws_CO_03102025125134485095, merchant=mr_03102025125134809441
+[2025-10-03 12:51:34] Transaction inserted successfully
+[2025-10-03 12:51:34] Success response sent
+[2025-10-03 12:51:41] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 12:51:41] POST request received
+[2025-10-03 12:51:41] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Free 1 hr trial
+    [package_price] => 0.00
+    [mpesa_number] => 0712345678
+    [package_id] => 29
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 12:51:41] Parsed data: reseller=6, package=Free 1 hr trial, price=0.00, phone=0712345678, packageId=29
+[2025-10-03 12:51:41] Formatted phone: 254712345678
+[2025-10-03 12:51:41] Generated IDs: checkout=ws_CO_03102025125141779435, merchant=mr_03102025125141572501
+[2025-10-03 12:51:41] Transaction inserted successfully
+[2025-10-03 12:51:41] Success response sent
+[2025-10-03 12:51:46] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 12:51:46] POST request received
+[2025-10-03 12:51:46] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [mpesa_number] => 0712345678
+    [package_id] => 30
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 12:51:46] Parsed data: reseller=6, package=Konnect, price=11.00, phone=0712345678, packageId=30
+[2025-10-03 12:51:46] Formatted phone: 254712345678
+[2025-10-03 12:51:46] Generated IDs: checkout=ws_CO_03102025125146252562, merchant=mr_03102025125146432858
+[2025-10-03 12:51:46] Transaction inserted successfully
+[2025-10-03 12:51:46] Success response sent
+[2025-10-03 12:51:49] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 12:51:49] POST request received
+[2025-10-03 12:51:49] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [mpesa_number] => 0712345678
+    [package_id] => 30
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 12:51:49] Parsed data: reseller=6, package=Konnect, price=11.00, phone=0712345678, packageId=30
+[2025-10-03 12:51:49] Formatted phone: 254712345678
+[2025-10-03 12:51:49] Generated IDs: checkout=ws_CO_03102025125149874563, merchant=mr_03102025125149369341
+[2025-10-03 12:51:49] Transaction inserted successfully
+[2025-10-03 12:51:49] Success response sent
+[2025-10-03 12:51:50] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 12:51:50] POST request received
+[2025-10-03 12:51:50] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [mpesa_number] => 0712345678
+    [package_id] => 30
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 12:51:50] Parsed data: reseller=6, package=Konnect, price=11.00, phone=0712345678, packageId=30
+[2025-10-03 12:51:50] Formatted phone: 254712345678
+[2025-10-03 12:51:50] Generated IDs: checkout=ws_CO_03102025125150791564, merchant=mr_03102025125150193286
+[2025-10-03 12:51:50] Transaction inserted successfully
+[2025-10-03 12:51:50] Success response sent
+[2025-10-03 12:51:50] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 12:51:50] POST request received
+[2025-10-03 12:51:50] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [mpesa_number] => 0712345678
+    [package_id] => 30
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 12:51:50] Parsed data: reseller=6, package=Konnect, price=11.00, phone=0712345678, packageId=30
+[2025-10-03 12:51:50] Formatted phone: 254712345678
+[2025-10-03 12:51:50] Generated IDs: checkout=ws_CO_03102025125150502077, merchant=mr_03102025125150460463
+[2025-10-03 12:51:50] Transaction inserted successfully
+[2025-10-03 12:51:50] Success response sent
+[2025-10-03 12:53:07] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 12:53:07] POST request received
+[2025-10-03 12:53:07] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [mpesa_number] => 0114669532
+    [package_id] => 30
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 12:53:07] Parsed data: reseller=6, package=Konnect, price=11.00, phone=0114669532, packageId=30
+[2025-10-03 12:53:07] Formatted phone: 254114669532
+[2025-10-03 12:53:07] Generated IDs: checkout=ws_CO_03102025125307308069, merchant=mr_03102025125307855707
+[2025-10-03 12:53:07] Transaction inserted successfully
+[2025-10-03 12:53:07] Success response sent
+[2025-10-03 14:20:08] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 14:20:49] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 14:20:49] POST request received
+[2025-10-03 14:20:49] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [mpesa_number] => 0114669532
+    [package_id] => 30
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 14:20:49] Parsed data: reseller=6, package=Konnect, price=11.00, phone=0114669532, packageId=30
+[2025-10-03 14:20:49] Formatted phone: 254114669532
+[2025-10-03 14:20:49] Generated IDs: checkout=ws_CO_03102025142049790605, merchant=mr_03102025142049977335
+[2025-10-03 14:20:49] Transaction inserted successfully
+[2025-10-03 14:20:49] Success response sent
+[2025-10-03 14:38:26] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 14:38:26] POST request received
+[2025-10-03 14:38:26] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 200.00
+    [mpesa_number] => 0712345678
+    [package_id] => 10
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 14:38:26] Parsed data: reseller=6, package=Konnect, price=200.00, phone=0712345678, packageId=10
+[2025-10-03 14:38:26] Formatted phone: 254712345678
+[2025-10-03 14:38:26] Generated IDs: checkout=ws_CO_03102025143826705330, merchant=mr_03102025143826419900
+[2025-10-03 14:38:26] Transaction inserted successfully
+[2025-10-03 14:38:26] Success response sent
+[2025-10-03 14:46:49] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:50:58] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:50:58] POST request received
+[2025-10-03 15:50:58] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 200.00
+    [mpesa_number] => 0712345678
+    [package_id] => 10
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:50:58] Parsed data: reseller=6, package=Konnect, price=200.00, phone=0712345678, packageId=10
+[2025-10-03 15:50:58] Formatted phone: 254712345678
+[2025-10-03 15:50:58] Generated IDs: checkout=ws_CO_03102025155058813628, merchant=mr_03102025155058936824
+[2025-10-03 15:50:58] Transaction inserted successfully
+[2025-10-03 15:50:58] Success response sent
+[2025-10-03 15:56:36] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:56:36] POST request received
+[2025-10-03 15:56:36] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [mpesa_number] => 0114669532
+    [package_id] => 30
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:56:36] Parsed data: reseller=6, package=Konnect, price=11.00, phone=0114669532, packageId=30
+[2025-10-03 15:56:36] Formatted phone: 254114669532
+[2025-10-03 15:56:36] Generated IDs: checkout=ws_CO_03102025155636703229, merchant=mr_03102025155636753647
+[2025-10-03 15:56:36] Transaction inserted successfully
+[2025-10-03 15:56:36] Success response sent
+[2025-10-03 15:56:51] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:56:51] POST request received
+[2025-10-03 15:56:51] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 120.00
+    [mpesa_number] => 0114669532
+    [package_id] => 16
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:56:51] Parsed data: reseller=6, package=Game Connect, price=120.00, phone=0114669532, packageId=16
+[2025-10-03 15:56:51] Formatted phone: 254114669532
+[2025-10-03 15:56:51] Generated IDs: checkout=ws_CO_03102025155651265824, merchant=mr_03102025155651910326
+[2025-10-03 15:56:51] Transaction inserted successfully
+[2025-10-03 15:56:51] Success response sent
+[2025-10-03 15:56:58] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:56:58] POST request received
+[2025-10-03 15:56:58] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [mpesa_number] => 0114669532
+    [package_id] => 15
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:56:58] Parsed data: reseller=6, package=1Hr Konnect, price=1.00, phone=0114669532, packageId=15
+[2025-10-03 15:56:58] Formatted phone: 254114669532
+[2025-10-03 15:56:58] Generated IDs: checkout=ws_CO_03102025155658583700, merchant=mr_03102025155658355830
+[2025-10-03 15:56:58] Transaction inserted successfully
+[2025-10-03 15:56:58] Success response sent
+[2025-10-03 15:57:10] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:57:10] POST request received
+[2025-10-03 15:57:10] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => free trial
+    [package_price] => 0.00
+    [mpesa_number] => 0114669532
+    [package_id] => 21
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:57:10] Parsed data: reseller=6, package=free trial, price=0.00, phone=0114669532, packageId=21
+[2025-10-03 15:57:10] Formatted phone: 254114669532
+[2025-10-03 15:57:10] Generated IDs: checkout=ws_CO_03102025155710908350, merchant=mr_03102025155710472141
+[2025-10-03 15:57:10] Transaction inserted successfully
+[2025-10-03 15:57:10] Success response sent
+[2025-10-03 15:57:13] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:57:13] POST request received
+[2025-10-03 15:57:13] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => A Half day internet
+    [package_price] => 50.00
+    [mpesa_number] => 0114669532
+    [package_id] => 25
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:57:13] Parsed data: reseller=6, package=A Half day internet, price=50.00, phone=0114669532, packageId=25
+[2025-10-03 15:57:13] Formatted phone: 254114669532
+[2025-10-03 15:57:13] Generated IDs: checkout=ws_CO_03102025155713950139, merchant=mr_03102025155713631777
+[2025-10-03 15:57:13] Transaction inserted successfully
+[2025-10-03 15:57:13] Success response sent
+[2025-10-03 15:57:20] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:57:20] POST request received
+[2025-10-03 15:57:20] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1 Hr Package
+    [package_price] => 14.00
+    [mpesa_number] => 0114669532
+    [package_id] => 27
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:57:20] Parsed data: reseller=6, package=1 Hr Package, price=14.00, phone=0114669532, packageId=27
+[2025-10-03 15:57:20] Formatted phone: 254114669532
+[2025-10-03 15:57:20] Generated IDs: checkout=ws_CO_03102025155720838470, merchant=mr_03102025155720836731
+[2025-10-03 15:57:20] Transaction inserted successfully
+[2025-10-03 15:57:20] Success response sent
+[2025-10-03 15:57:28] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:57:28] POST request received
+[2025-10-03 15:57:28] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [mpesa_number] => 0114669532
+    [package_id] => 12
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:57:28] Parsed data: reseller=6, package=Game Connect, price=30.00, phone=0114669532, packageId=12
+[2025-10-03 15:57:28] Formatted phone: 254114669532
+[2025-10-03 15:57:28] Generated IDs: checkout=ws_CO_03102025155728351642, merchant=mr_03102025155728257178
+[2025-10-03 15:57:28] Transaction inserted successfully
+[2025-10-03 15:57:28] Success response sent
+[2025-10-03 15:57:32] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:57:32] POST request received
+[2025-10-03 15:57:32] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 200.00
+    [mpesa_number] => 0114669532
+    [package_id] => 10
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:57:32] Parsed data: reseller=6, package=Konnect, price=200.00, phone=0114669532, packageId=10
+[2025-10-03 15:57:32] Formatted phone: 254114669532
+[2025-10-03 15:57:32] Generated IDs: checkout=ws_CO_03102025155732125450, merchant=mr_03102025155732493972
+[2025-10-03 15:57:32] Transaction inserted successfully
+[2025-10-03 15:57:32] Success response sent
+[2025-10-03 15:57:36] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:57:36] POST request received
+[2025-10-03 15:57:36] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 3Hr internet
+    [package_price] => 25.00
+    [mpesa_number] => 0114669532
+    [package_id] => 24
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:57:36] Parsed data: reseller=6, package=3Hr internet, price=25.00, phone=0114669532, packageId=24
+[2025-10-03 15:57:36] Formatted phone: 254114669532
+[2025-10-03 15:57:36] Generated IDs: checkout=ws_CO_03102025155736739391, merchant=mr_03102025155736341105
+[2025-10-03 15:57:36] Transaction inserted successfully
+[2025-10-03 15:57:36] Success response sent
+[2025-10-03 15:58:50] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:58:50] POST request received
+[2025-10-03 15:58:50] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [mpesa_number] => 0712345678
+    [package_id] => 15
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:58:50] Parsed data: reseller=6, package=1Hr Konnect, price=1.00, phone=0712345678, packageId=15
+[2025-10-03 15:58:50] Formatted phone: 254712345678
+[2025-10-03 15:58:50] Generated IDs: checkout=ws_CO_03102025155850628736, merchant=mr_03102025155850472385
+[2025-10-03 15:58:50] Transaction inserted successfully
+[2025-10-03 15:58:50] Success response sent
+[2025-10-03 15:58:52] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:58:52] POST request received
+[2025-10-03 15:58:52] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 120.00
+    [mpesa_number] => 0712345678
+    [package_id] => 16
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:58:52] Parsed data: reseller=6, package=Game Connect, price=120.00, phone=0712345678, packageId=16
+[2025-10-03 15:58:52] Formatted phone: 254712345678
+[2025-10-03 15:58:52] Generated IDs: checkout=ws_CO_03102025155852787807, merchant=mr_03102025155852722500
+[2025-10-03 15:58:52] Transaction inserted successfully
+[2025-10-03 15:58:52] Success response sent
+[2025-10-03 15:58:58] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:58:58] POST request received
+[2025-10-03 15:58:58] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => free trial
+    [package_price] => 0.00
+    [mpesa_number] => 0712345678
+    [package_id] => 21
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:58:58] Parsed data: reseller=6, package=free trial, price=0.00, phone=0712345678, packageId=21
+[2025-10-03 15:58:58] Formatted phone: 254712345678
+[2025-10-03 15:58:58] Generated IDs: checkout=ws_CO_03102025155858624159, merchant=mr_03102025155858245618
+[2025-10-03 15:58:58] Transaction inserted successfully
+[2025-10-03 15:58:58] Success response sent
+[2025-10-03 15:59:02] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:02] POST request received
+[2025-10-03 15:59:02] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 3Hr internet
+    [package_price] => 25.00
+    [mpesa_number] => 0712345678
+    [package_id] => 24
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:02] Parsed data: reseller=6, package=3Hr internet, price=25.00, phone=0712345678, packageId=24
+[2025-10-03 15:59:02] Formatted phone: 254712345678
+[2025-10-03 15:59:02] Generated IDs: checkout=ws_CO_03102025155902401083, merchant=mr_03102025155902540257
+[2025-10-03 15:59:02] Transaction inserted successfully
+[2025-10-03 15:59:02] Success response sent
+[2025-10-03 15:59:04] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:04] POST request received
+[2025-10-03 15:59:04] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => A Half day internet
+    [package_price] => 50.00
+    [mpesa_number] => 0712345678
+    [package_id] => 25
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:04] Parsed data: reseller=6, package=A Half day internet, price=50.00, phone=0712345678, packageId=25
+[2025-10-03 15:59:04] Formatted phone: 254712345678
+[2025-10-03 15:59:04] Generated IDs: checkout=ws_CO_03102025155904669574, merchant=mr_03102025155904983441
+[2025-10-03 15:59:04] Transaction inserted successfully
+[2025-10-03 15:59:04] Success response sent
+[2025-10-03 15:59:07] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:07] POST request received
+[2025-10-03 15:59:07] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1 Hr Package
+    [package_price] => 14.00
+    [mpesa_number] => 0712345678
+    [package_id] => 27
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:07] Parsed data: reseller=6, package=1 Hr Package, price=14.00, phone=0712345678, packageId=27
+[2025-10-03 15:59:07] Formatted phone: 254712345678
+[2025-10-03 15:59:07] Generated IDs: checkout=ws_CO_03102025155907987449, merchant=mr_03102025155907342270
+[2025-10-03 15:59:07] Transaction inserted successfully
+[2025-10-03 15:59:07] Success response sent
+[2025-10-03 15:59:10] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:10] POST request received
+[2025-10-03 15:59:10] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Free 1 hr trial
+    [package_price] => 0.00
+    [mpesa_number] => 0712345678
+    [package_id] => 29
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:10] Parsed data: reseller=6, package=Free 1 hr trial, price=0.00, phone=0712345678, packageId=29
+[2025-10-03 15:59:10] Formatted phone: 254712345678
+[2025-10-03 15:59:10] Generated IDs: checkout=ws_CO_03102025155910440576, merchant=mr_03102025155910994998
+[2025-10-03 15:59:10] Transaction inserted successfully
+[2025-10-03 15:59:10] Success response sent
+[2025-10-03 15:59:13] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:13] POST request received
+[2025-10-03 15:59:13] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 5.00
+    [mpesa_number] => 0712345678
+    [package_id] => 31
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:13] Parsed data: reseller=6, package=Game Connect, price=5.00, phone=0712345678, packageId=31
+[2025-10-03 15:59:13] Formatted phone: 254712345678
+[2025-10-03 15:59:13] Generated IDs: checkout=ws_CO_03102025155913150541, merchant=mr_03102025155913821764
+[2025-10-03 15:59:13] Transaction inserted successfully
+[2025-10-03 15:59:13] Success response sent
+[2025-10-03 15:59:17] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:17] POST request received
+[2025-10-03 15:59:17] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 200.00
+    [mpesa_number] => 0712345678
+    [package_id] => 10
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:17] Parsed data: reseller=6, package=Konnect, price=200.00, phone=0712345678, packageId=10
+[2025-10-03 15:59:17] Formatted phone: 254712345678
+[2025-10-03 15:59:17] Generated IDs: checkout=ws_CO_03102025155917717529, merchant=mr_03102025155917708404
+[2025-10-03 15:59:17] Transaction inserted successfully
+[2025-10-03 15:59:17] Success response sent
+[2025-10-03 15:59:20] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:20] POST request received
+[2025-10-03 15:59:20] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [mpesa_number] => 0712345678
+    [package_id] => 12
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:20] Parsed data: reseller=6, package=Game Connect, price=30.00, phone=0712345678, packageId=12
+[2025-10-03 15:59:20] Formatted phone: 254712345678
+[2025-10-03 15:59:20] Generated IDs: checkout=ws_CO_03102025155920945790, merchant=mr_03102025155920381778
+[2025-10-03 15:59:20] Transaction inserted successfully
+[2025-10-03 15:59:20] Success response sent
+[2025-10-03 15:59:21] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:21] POST request received
+[2025-10-03 15:59:21] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [mpesa_number] => 0712345678
+    [package_id] => 12
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:21] Parsed data: reseller=6, package=Game Connect, price=30.00, phone=0712345678, packageId=12
+[2025-10-03 15:59:21] Formatted phone: 254712345678
+[2025-10-03 15:59:21] Generated IDs: checkout=ws_CO_03102025155921136938, merchant=mr_03102025155921293226
+[2025-10-03 15:59:21] Transaction inserted successfully
+[2025-10-03 15:59:21] Success response sent
+[2025-10-03 15:59:22] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:22] POST request received
+[2025-10-03 15:59:22] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [mpesa_number] => 0712345678
+    [package_id] => 12
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:22] Parsed data: reseller=6, package=Game Connect, price=30.00, phone=0712345678, packageId=12
+[2025-10-03 15:59:22] Formatted phone: 254712345678
+[2025-10-03 15:59:22] Generated IDs: checkout=ws_CO_03102025155922786400, merchant=mr_03102025155922515886
+[2025-10-03 15:59:22] Transaction inserted successfully
+[2025-10-03 15:59:22] Success response sent
+[2025-10-03 15:59:23] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:23] POST request received
+[2025-10-03 15:59:23] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [mpesa_number] => 0712345678
+    [package_id] => 12
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:23] Parsed data: reseller=6, package=Game Connect, price=30.00, phone=0712345678, packageId=12
+[2025-10-03 15:59:23] Formatted phone: 254712345678
+[2025-10-03 15:59:23] Generated IDs: checkout=ws_CO_03102025155923638180, merchant=mr_03102025155923849096
+[2025-10-03 15:59:23] Transaction inserted successfully
+[2025-10-03 15:59:23] Success response sent
+[2025-10-03 15:59:24] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:24] POST request received
+[2025-10-03 15:59:24] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [mpesa_number] => 0712345678
+    [package_id] => 12
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:24] Parsed data: reseller=6, package=Game Connect, price=30.00, phone=0712345678, packageId=12
+[2025-10-03 15:59:24] Formatted phone: 254712345678
+[2025-10-03 15:59:24] Generated IDs: checkout=ws_CO_03102025155924994219, merchant=mr_03102025155924707298
+[2025-10-03 15:59:24] Transaction inserted successfully
+[2025-10-03 15:59:24] Success response sent
+[2025-10-03 15:59:47] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:47] POST request received
+[2025-10-03 15:59:47] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 3Hr internet
+    [package_price] => 25.00
+    [mpesa_number] => 0114669532
+    [package_id] => 24
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:47] Parsed data: reseller=6, package=3Hr internet, price=25.00, phone=0114669532, packageId=24
+[2025-10-03 15:59:47] Formatted phone: 254114669532
+[2025-10-03 15:59:47] Generated IDs: checkout=ws_CO_03102025155947619906, merchant=mr_03102025155947158504
+[2025-10-03 15:59:47] Transaction inserted successfully
+[2025-10-03 15:59:47] Success response sent
+[2025-10-03 15:59:49] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:49] POST request received
+[2025-10-03 15:59:49] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 30.00
+    [mpesa_number] => 0114669532
+    [package_id] => 12
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:49] Parsed data: reseller=6, package=Game Connect, price=30.00, phone=0114669532, packageId=12
+[2025-10-03 15:59:49] Formatted phone: 254114669532
+[2025-10-03 15:59:49] Generated IDs: checkout=ws_CO_03102025155949490863, merchant=mr_03102025155949659955
+[2025-10-03 15:59:49] Transaction inserted successfully
+[2025-10-03 15:59:49] Success response sent
+[2025-10-03 15:59:52] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:52] POST request received
+[2025-10-03 15:59:52] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 200.00
+    [mpesa_number] => 0114669532
+    [package_id] => 10
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:52] Parsed data: reseller=6, package=Konnect, price=200.00, phone=0114669532, packageId=10
+[2025-10-03 15:59:52] Formatted phone: 254114669532
+[2025-10-03 15:59:52] Generated IDs: checkout=ws_CO_03102025155952927673, merchant=mr_03102025155952199443
+[2025-10-03 15:59:52] Transaction inserted successfully
+[2025-10-03 15:59:52] Success response sent
+[2025-10-03 15:59:54] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:54] POST request received
+[2025-10-03 15:59:54] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr Konnect
+    [package_price] => 1.00
+    [mpesa_number] => 0114669532
+    [package_id] => 15
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:54] Parsed data: reseller=6, package=1Hr Konnect, price=1.00, phone=0114669532, packageId=15
+[2025-10-03 15:59:54] Formatted phone: 254114669532
+[2025-10-03 15:59:54] Generated IDs: checkout=ws_CO_03102025155954289844, merchant=mr_03102025155954236061
+[2025-10-03 15:59:54] Transaction inserted successfully
+[2025-10-03 15:59:54] Success response sent
+[2025-10-03 15:59:56] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:56] POST request received
+[2025-10-03 15:59:56] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => free trial
+    [package_price] => 0.00
+    [mpesa_number] => 0114669532
+    [package_id] => 21
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:56] Parsed data: reseller=6, package=free trial, price=0.00, phone=0114669532, packageId=21
+[2025-10-03 15:59:56] Formatted phone: 254114669532
+[2025-10-03 15:59:56] Generated IDs: checkout=ws_CO_03102025155956825155, merchant=mr_03102025155956759624
+[2025-10-03 15:59:56] Transaction inserted successfully
+[2025-10-03 15:59:56] Success response sent
+[2025-10-03 15:59:59] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 15:59:59] POST request received
+[2025-10-03 15:59:59] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1Hr internet
+    [package_price] => 10.00
+    [mpesa_number] => 0114669532
+    [package_id] => 23
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 15:59:59] Parsed data: reseller=6, package=1Hr internet, price=10.00, phone=0114669532, packageId=23
+[2025-10-03 15:59:59] Formatted phone: 254114669532
+[2025-10-03 15:59:59] Generated IDs: checkout=ws_CO_03102025155959864262, merchant=mr_03102025155959164805
+[2025-10-03 15:59:59] Transaction inserted successfully
+[2025-10-03 15:59:59] Success response sent
+[2025-10-03 16:00:01] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 16:00:01] POST request received
+[2025-10-03 16:00:01] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 3Hr internet
+    [package_price] => 25.00
+    [mpesa_number] => 0114669532
+    [package_id] => 24
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 16:00:01] Parsed data: reseller=6, package=3Hr internet, price=25.00, phone=0114669532, packageId=24
+[2025-10-03 16:00:01] Formatted phone: 254114669532
+[2025-10-03 16:00:01] Generated IDs: checkout=ws_CO_03102025160001926622, merchant=mr_03102025160001144474
+[2025-10-03 16:00:01] Transaction inserted successfully
+[2025-10-03 16:00:01] Success response sent
+[2025-10-03 16:00:04] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 16:00:04] POST request received
+[2025-10-03 16:00:04] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 5GB Data Plan
+    [package_price] => 500.00
+    [mpesa_number] => 0114669532
+    [package_id] => 26
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 16:00:04] Parsed data: reseller=6, package=5GB Data Plan, price=500.00, phone=0114669532, packageId=26
+[2025-10-03 16:00:04] Formatted phone: 254114669532
+[2025-10-03 16:00:04] Generated IDs: checkout=ws_CO_03102025160004748426, merchant=mr_03102025160004398548
+[2025-10-03 16:00:04] Transaction inserted successfully
+[2025-10-03 16:00:04] Success response sent
+[2025-10-03 16:00:06] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 16:00:06] POST request received
+[2025-10-03 16:00:06] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => 1 Hr Package
+    [package_price] => 14.00
+    [mpesa_number] => 0114669532
+    [package_id] => 27
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 16:00:06] Parsed data: reseller=6, package=1 Hr Package, price=14.00, phone=0114669532, packageId=27
+[2025-10-03 16:00:06] Formatted phone: 254114669532
+[2025-10-03 16:00:06] Generated IDs: checkout=ws_CO_03102025160006378176, merchant=mr_03102025160006866139
+[2025-10-03 16:00:06] Transaction inserted successfully
+[2025-10-03 16:00:06] Success response sent
+[2025-10-03 16:00:08] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 16:00:08] POST request received
+[2025-10-03 16:00:08] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Free 1 hr trial
+    [package_price] => 0.00
+    [mpesa_number] => 0114669532
+    [package_id] => 29
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 16:00:08] Parsed data: reseller=6, package=Free 1 hr trial, price=0.00, phone=0114669532, packageId=29
+[2025-10-03 16:00:08] Formatted phone: 254114669532
+[2025-10-03 16:00:08] Generated IDs: checkout=ws_CO_03102025160008971860, merchant=mr_03102025160008618534
+[2025-10-03 16:00:08] Transaction inserted successfully
+[2025-10-03 16:00:08] Success response sent
+[2025-10-03 16:00:11] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 16:00:11] POST request received
+[2025-10-03 16:00:11] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Konnect
+    [package_price] => 11.00
+    [mpesa_number] => 0114669532
+    [package_id] => 30
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 16:00:11] Parsed data: reseller=6, package=Konnect, price=11.00, phone=0114669532, packageId=30
+[2025-10-03 16:00:11] Formatted phone: 254114669532
+[2025-10-03 16:00:11] Generated IDs: checkout=ws_CO_03102025160011172596, merchant=mr_03102025160011653742
+[2025-10-03 16:00:11] Transaction inserted successfully
+[2025-10-03 16:00:11] Success response sent
+[2025-10-03 16:00:14] === SIMPLE PAYMENT TEST STARTED ===
+[2025-10-03 16:00:14] POST request received
+[2025-10-03 16:00:14] POST data: Array
+(
+    [reseller_id] => 6
+    [package_name] => Game Connect
+    [package_price] => 5.00
+    [mpesa_number] => 0114669532
+    [package_id] => 31
+    [router_id] => 0
+    [payment_gateway] => mpesa
+)
+
+[2025-10-03 16:00:14] Parsed data: reseller=6, package=Game Connect, price=5.00, phone=0114669532, packageId=31
+[2025-10-03 16:00:14] Formatted phone: 254114669532
+[2025-10-03 16:00:14] Generated IDs: checkout=ws_CO_03102025160014143782, merchant=mr_03102025160014532892
+[2025-10-03 16:00:14] Transaction inserted successfully
+[2025-10-03 16:00:14] Success response sent
+[2025-10-04 00:56:44] === SIMPLE PAYMENT TEST STARTED ===

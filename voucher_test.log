@@ -1,0 +1,23 @@
+[2025-10-03 11:55:46] === VOUCHER TEST HANDLER STARTED ===
+[2025-10-03 11:55:46] Testing voucher fetch for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 11:55:46] Transaction found. Status: completed
+[2025-10-03 11:55:46] Payment is completed, fetching voucher...
+[2025-10-03 11:55:46] Transaction details: Package ID: 15, Reseller ID: 6, Phone: 254114669532
+[2025-10-03 15:52:06] === VOUCHER TEST HANDLER STARTED ===
+[2025-10-03 15:52:06] Testing voucher fetch for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 15:52:06] Transaction found. Status: completed
+[2025-10-03 15:52:06] Payment is completed, fetching voucher...
+[2025-10-03 15:52:06] Transaction details: Package ID: 15, Reseller ID: 6, Phone: 254114669532
+[2025-10-03 15:52:06] Voucher handler result: {"success":true,"voucher_code":"7MM6QDBA","voucher_username":null,"voucher_password":null,"message":"Active voucher fetched and assigned successfully"}
+[2025-10-03 15:52:06] Voucher assigned: 7MM6QDBA (username: 7MM6QDBA)
+[2025-10-03 15:52:06] Package details: Name: 1Hr Konnect, Duration: 1 Hour
+[2025-10-03 15:52:06] Sending success response: {"success":true,"message":"Payment completed successfully","receipt":"TJ3MX6CLYC","voucher_code":"7MM6QDBA","voucher_username":"7MM6QDBA","voucher_password":"7MM6QDBA","phone_number":"254114669532","package_name":"1Hr Konnect","duration":"1 Hour"}
+[2025-10-03 16:16:08] === VOUCHER TEST HANDLER STARTED ===
+[2025-10-03 16:16:08] Testing voucher fetch for checkout request ID: ws_CO_03102025030409377114669532
+[2025-10-03 16:16:08] Transaction found. Status: completed
+[2025-10-03 16:16:08] Payment is completed, fetching voucher...
+[2025-10-03 16:16:08] Transaction details: Package ID: 15, Reseller ID: 6, Phone: 254114669532
+[2025-10-03 16:16:08] Voucher handler result: {"success":true,"voucher_code":"7MM6QDBA","message":"Voucher already assigned to this transaction"}
+[2025-10-03 16:16:08] Voucher assigned: 7MM6QDBA (username: 7MM6QDBA)
+[2025-10-03 16:16:08] Package details: Name: 1Hr Konnect, Duration: 1 Hour
+[2025-10-03 16:16:08] Sending success response: {"success":true,"message":"Payment completed successfully","receipt":"TJ3MX6CLYC","voucher_code":"7MM6QDBA","voucher_username":"7MM6QDBA","voucher_password":"7MM6QDBA","phone_number":"254114669532","package_name":"1Hr Konnect","duration":"1 Hour"}

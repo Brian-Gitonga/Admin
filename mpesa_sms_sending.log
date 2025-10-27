@@ -1,0 +1,24 @@
+[2025-10-02 23:14:44] ===== M-PESA SMS SENDING INITIATED =====
+[2025-10-02 23:14:44] SMS request - Phone: 254700123456, Voucher: TEST123456, Package: Test WiFi Package
+[2025-10-02 23:14:44] Formatted phone number: 254700123456
+[2025-10-02 23:14:44] Message prepared: Thank you for your payment! Your WiFi access details: Username: TEST123456, Password: TEST123456, Voucher: TEST123456 for Test WiFi Package
+[2025-10-02 23:14:44] SMS settings found - Provider: textsms
+[2025-10-02 23:14:44] Sending TextSMS to 254700123456
+[2025-10-02 23:14:44] API Key: Set
+[2025-10-02 23:14:44] Partner ID: Set
+[2025-10-02 23:14:44] TextSMS URL: https://sms.textsms.co.ke/api/services/sendsms/?apikey=4b15c9b5e4d670c1f271fe74bae59f7f&partnerID=13361&message=Thank+you+for+your+payment%21+Your+WiFi+access+details%3A+Username%3A+TEST123456%2C+Password%3A+TEST123456%2C+Voucher%3A+TEST123456+for+Test+WiFi+Package&shortcode=TextSMS&mobile=254700123456
+[2025-10-02 23:15:05] TextSMS connection failed
+[2025-10-02 23:15:05] SMS sending result: {"success":false,"message":"Failed to connect to TextSMS API"}
+[2025-10-02 23:15:05] SMS sending failed: Failed to connect to TextSMS API
+[2025-10-02 23:26:19] ===== M-PESA SMS SENDING INITIATED =====
+[2025-10-02 23:26:19] SMS request - Phone: 254700123456, Voucher: TEST123456, Package: Test WiFi Package
+[2025-10-02 23:26:19] Formatted phone number: 254700123456
+[2025-10-02 23:26:19] Message prepared: Thank you for your payment! Your WiFi access details: Username: TEST123456, Password: TEST123456, Voucher: TEST123456 for Test WiFi Package
+[2025-10-02 23:26:19] SMS settings found - Provider: textsms
+[2025-10-02 23:26:19] Sending TextSMS to 254700123456
+[2025-10-02 23:26:19] API Key: Set
+[2025-10-02 23:26:19] Partner ID: Set
+[2025-10-02 23:26:19] TextSMS URL: https://sms.textsms.co.ke/api/services/sendsms/?apikey=4b15c9b5e4d670c1f271fe74bae59f7f&partnerID=13361&message=Thank+you+for+your+payment%21+Your+WiFi+access+details%3A+Username%3A+TEST123456%2C+Password%3A+TEST123456%2C+Voucher%3A+TEST123456+for+Test+WiFi+Package&shortcode=TextSMS&mobile=254700123456
+[2025-10-02 23:26:40] TextSMS connection failed
+[2025-10-02 23:26:40] SMS sending result: {"success":false,"message":"Failed to connect to TextSMS API"}
+[2025-10-02 23:26:40] SMS sending failed: Failed to connect to TextSMS API

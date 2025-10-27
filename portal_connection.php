@@ -5,12 +5,52 @@ $username = "root"; // Change this to your actual database username
 $password = ""; // Change this to your actual database password
 $dbname = "billing_system";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Create connection with error handling
+try {
+    // Try MySQLi first
+    if (extension_loaded('mysqli')) {
+        $portal_conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+        // Check connection
+        if ($portal_conn->connect_error) {
+            throw new Exception("MySQLi connection failed: " . $portal_conn->connect_error);
+        }
+
+        // Set charset to utf8mb4
+        if (!$portal_conn->set_charset("utf8mb4")) {
+            throw new Exception("Error setting charset: " . $portal_conn->error);
+        }
+
+        // For backward compatibility, also set $conn
+        $conn = $portal_conn;
+
+    } elseif (extension_loaded('pdo_mysql')) {
+        // Fallback to PDO
+        require_once 'pdo_connection.php';
+
+        if (!$portal_conn) {
+            throw new Exception("PDO connection failed");
+        }
+
+    } else {
+        throw new Exception("Neither MySQLi nor PDO MySQL extensions are available. Please enable one of them in php.ini");
+    }
+
+} catch (Exception $e) {
+    error_log("Portal Database Connection Error: " . $e->getMessage());
+
+    // Create a fallback connection variable
+    $portal_conn = null;
+    $conn = null;
+
+    // Only show error message if we're in development mode
+    if (isset($_SERVER['SERVER_NAME']) && ($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '127.0.0.1')) {
+        echo "<div style='color: red; padding: 20px; margin: 20px; border: 1px solid red; background: #ffeeee;'>";
+        echo "<h3>Portal Database Connection Error</h3>";
+        echo "<p>" . htmlspecialchars($e->getMessage()) . "</p>";
+        echo "<p>Please check your database configuration and ensure MySQLi or PDO MySQL extension is enabled.</p>";
+        echo "</div>";
+    }
 }
 
 // Function to get reseller ID by business name
@@ -18,37 +58,37 @@ function getResellerIdByBusinessName($conn, $businessName) {
     // Check if resellers table exists
     $tableCheckQuery = "SHOW TABLES LIKE 'resellers'";
     $tableResult = $conn->query($tableCheckQuery);
-    
+
     if ($tableResult->num_rows == 0) {
         // Table doesn't exist
         return false;
     }
-    
+
     // First check if the column is business_name or business
     $columnCheckQuery = "SHOW COLUMNS FROM resellers LIKE 'business_name'";
     $columnResult = $conn->query($columnCheckQuery);
-    
+
     if ($columnResult->num_rows > 0) {
-        // Using business_name column
-        $sql = "SELECT id FROM resellers WHERE business_name = ? AND status = 'active'";
+        // Using business_name column - REMOVED status check to allow all resellers (pending, active, etc.)
+        $sql = "SELECT id FROM resellers WHERE business_name = ?";
     } else {
-        // Using business column
-        $sql = "SELECT id FROM resellers WHERE business = ? AND status = 'active'";
+        // Using business column - REMOVED status check to allow all resellers (pending, active, etc.)
+        $sql = "SELECT id FROM resellers WHERE business = ?";
     }
-    
+
     $stmt = $conn->prepare($sql);
-    
+
     // Check if prepare was successful
     if ($stmt === false) {
         // Log the error
         error_log("Error preparing statement: " . $conn->error);
         return false;
     }
-    
+
     $stmt->bind_param("s", $businessName);
     $stmt->execute();
     $result = $stmt->get_result();
-    
+
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         return $row['id'];

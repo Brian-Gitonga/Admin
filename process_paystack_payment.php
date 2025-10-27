@@ -126,9 +126,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'amount' => $amount * 100, // Convert to the smallest currency unit
         'email' => $paystackEmail,
         'currency' => 'KES',
-        'callback_url' => isset($_SERVER['HTTP_HOST']) ? 
-            'http://' . $_SERVER['HTTP_HOST'] . '/paystack_verify.php?reference=' . $reference : 
-            'https://domain.com/paystack_verify.php?reference=' . $reference,
+        'callback_url' => isset($_SERVER['HTTP_HOST']) ?
+            'http://' . $_SERVER['HTTP_HOST'] . '/SAAS/Wifi%20Billiling%20system/Admin/paystack_verify.php?reference=' . $reference :
+            'https://domain.com/SAAS/Wifi%20Billiling%20system/Admin/paystack_verify.php?reference=' . $reference,
         'metadata' => [
             'package_id' => $packageId,
             'package_name' => $packageName,
@@ -173,13 +173,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         
         // Insert transaction record
-        $insertQuery = "INSERT INTO payment_transactions 
-                        (reference, amount, email, phone_number, package_id, package_name, reseller_id, router_id, status, payment_gateway) 
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'pending', 'paystack')";
-                        
+        $insertQuery = "INSERT INTO payment_transactions
+                        (reference, amount, email, phone_number, package_id, package_name, reseller_id, router_id, user_id, status, payment_gateway)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending', 'paystack')";
+
         $stmt = $conn->prepare($insertQuery);
         if ($stmt) {
-            $stmt->bind_param("sdssiisi", 
+            $stmt->bind_param("sdssiisii",
                 $reference,
                 $amount,
                 $paystackEmail,
@@ -187,7 +187,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $packageId,
                 $packageName,
                 $resellerId,
-                $routerId
+                $routerId,
+                $resellerId  // user_id same as reseller_id
             );
             $stmt->execute();
             log_debug("Transaction details saved to database with ID: " . $conn->insert_id);

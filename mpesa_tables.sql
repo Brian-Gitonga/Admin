@@ -12,6 +12,8 @@ CREATE TABLE IF NOT EXISTS `mpesa_transactions` (
   `mpesa_receipt` varchar(50) DEFAULT NULL,
   `transaction_date` varchar(50) DEFAULT NULL,
   `result_code` int(11) DEFAULT NULL,
+  `voucher_id` varchar(20) NOT NULL,
+  `voucher_code` varchar(20) NOT NULL,
   `result_description` varchar(255) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -23,6 +25,8 @@ CREATE TABLE IF NOT EXISTS `mpesa_transactions` (
 CREATE TABLE IF NOT EXISTS `vouchers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `code` varchar(20) NOT NULL,
+  `username` varchar(50) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
   `package_id` int(11) NOT NULL,
   `reseller_id` int(11) NOT NULL,
   `customer_phone` varchar(20) NOT NULL,

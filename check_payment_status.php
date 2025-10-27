@@ -6,7 +6,24 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // Enable error reporting for debugging
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set('display_errors', 0); // Don't display errors in JSON response
+ini_set('log_errors', 1);
+
+// Set error handler to catch fatal errors
+register_shutdown_function(function() {
+    $error = error_get_last();
+    if ($error && in_array($error['type'], [E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR])) {
+        if (!headers_sent()) {
+            header('Content-Type: application/json');
+        }
+        echo json_encode([
+            'success' => false,
+            'message' => 'Server error occurred. Please contact support.',
+            'debug_error' => $error['message'] . ' in ' . basename($error['file']) . ' on line ' . $error['line']
+        ]);
+        exit;
+    }
+});
 
 // Include necessary files
 require_once 'portal_connection.php';
@@ -44,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     // First, check if payment is already marked as completed in the database
-    $stmt = $conn->prepare("SELECT status, package_id, mpesa_receipt, phone_number, router_id FROM mpesa_transactions WHERE checkout_request_id = ?");
+    $stmt = $conn->prepare("SELECT status, package_id, mpesa_receipt, phone_number FROM mpesa_transactions WHERE checkout_request_id = ?");
     $stmt->bind_param("s", $checkoutRequestID);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -66,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $voucher_code = null;
         
         // Get transaction details for voucher generation
-        $txnStmt = $conn->prepare("SELECT reseller_id, phone_number, package_id, router_id FROM mpesa_transactions WHERE checkout_request_id = ?");
+        $txnStmt = $conn->prepare("SELECT reseller_id, phone_number, package_id FROM mpesa_transactions WHERE checkout_request_id = ?");
         $txnStmt->bind_param("s", $checkoutRequestID);
         $txnStmt->execute();
         $txnResult = $txnStmt->get_result();
@@ -76,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $resellerId = $txnData['reseller_id'];
             $phoneNumber = $txnData['phone_number'];
             $packageId = $txnData['package_id'];
-            $routerId = $txnData['router_id'];
+            $routerId = 0; // Default router ID since column doesn't exist
             
             // Use our new voucher handler to create/retrieve a voucher
             $voucherResult = createVoucherAfterPayment(
@@ -89,8 +106,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             if ($voucherResult['success']) {
                 $voucher_code = $voucherResult['voucher_code'];
-                log_debug("Voucher code: $voucher_code - " . $voucherResult['message']);
-                
+                $voucher_username = isset($voucherResult['voucher_username']) ? $voucherResult['voucher_username'] : $voucher_code;
+                $voucher_password = isset($voucherResult['voucher_password']) ? $voucherResult['voucher_password'] : $voucher_code;
+                log_debug("Voucher assigned: $voucher_code (username: $voucher_username) - " . $voucherResult['message']);
+
                 // Add voucher to MikroTik if it exists in database but not yet in MikroTik
                 $mikrotikResult = add_voucher_to_mikrotik($voucher_code, $packageId, $resellerId, $phoneNumber, $conn);
                 if ($mikrotikResult['success']) {
@@ -99,9 +118,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     log_debug("Failed to add voucher to MikroTik: " . $mikrotikResult['message']);
                 }
             } else {
-                log_debug("Failed to generate voucher: " . $voucherResult['message']);
-                // Fallback to a mock voucher code
-                $voucher_code = "WIFI" . rand(1000, 9999);
+                log_debug("Failed to fetch voucher: " . $voucherResult['message']);
+                log_debug("Voucher handler full result: " . json_encode($voucherResult));
+
+                // Return detailed error message
+                $errorMessage = $voucherResult['message'];
+                if (strpos($errorMessage, 'table') !== false) {
+                    $errorMessage = "Voucher system not properly configured. Please contact support.";
+                } elseif (strpos($errorMessage, 'active') !== false) {
+                    $errorMessage = "No vouchers available for your package. Please contact support.";
+                }
+
+                echo json_encode([
+                    'success' => false,
+                    'message' => $errorMessage,
+                    'debug_info' => [
+                        'original_error' => $voucherResult['message'],
+                        'package_id' => $packageId,
+                        'reseller_id' => $resellerId,
+                        'checkout_id' => $checkoutRequestID
+                    ]
+                ]);
+                exit;
             }
         } else {
             log_debug("Could not find transaction details");
@@ -109,30 +147,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $voucher_code = "WIFI" . rand(1000, 9999);
         }
         
-        // Get package duration from the database
+        // Get package name and duration from the database
+        $packageName = 'WiFi Package'; // Default value
         $packageDuration = null;
-        $packageQuery = $conn->prepare("SELECT duration FROM packages WHERE id = ?");
+        $packageQuery = $conn->prepare("SELECT name, duration FROM packages WHERE id = ?");
         if ($packageQuery) {
             $packageQuery->bind_param("i", $packageId);
             $packageQuery->execute();
             $packageResult = $packageQuery->get_result();
             if ($packageResult && $packageResult->num_rows > 0) {
                 $packageData = $packageResult->fetch_assoc();
+                $packageName = $packageData['name'];
                 $packageDuration = $packageData['duration'];
             }
             $packageQuery->close();
         }
-        
+
+        // Send SMS with voucher details
+        log_debug("Attempting to send SMS to customer");
+        $smsResult = sendMpesaVoucherSMS(
+            $transaction['phone_number'],
+            $voucher_code,
+            isset($voucher_username) ? $voucher_username : $voucher_code,
+            isset($voucher_password) ? $voucher_password : $voucher_code,
+            $packageName,
+            $resellerId
+        );
+
+        if ($smsResult['success']) {
+            log_debug("SMS sent successfully: " . $smsResult['message']);
+        } else {
+            log_debug("SMS sending failed: " . $smsResult['message']);
+        }
+
         echo json_encode([
-            'success' => true, 
+            'success' => true,
             'message' => 'Payment completed successfully',
             'receipt' => $transaction['mpesa_receipt'],
             'voucher_code' => $voucher_code,
             'voucher_username' => isset($voucher_username) ? $voucher_username : $voucher_code,
             'voucher_password' => isset($voucher_password) ? $voucher_password : $voucher_code,
             'phone_number' => $transaction['phone_number'],
-            'package_name' => isset($packageName) ? $packageName : 'WiFi Package',
-            'duration' => isset($packageDuration) ? $packageDuration : ''
+            'package_name' => $packageName,
+            'duration' => $packageDuration ?: ''
         ]);
         exit;
     }
@@ -251,9 +308,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             log_debug("Updated transaction status to completed in database");
             
-            // Get the phone number and router ID from the transaction
+            // Get the phone number and package ID from the transaction
             $mpesaNumber = $transaction['phone_number'];
-            $routerId = isset($transaction['router_id']) ? $transaction['router_id'] : 0;
+            $routerId = 0; // Default router ID since column doesn't exist
             $packageId = $transaction['package_id'];
             
             // Get package name and duration from the database
@@ -299,10 +356,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Check if vouchers table exists
                 $tableCheck = $conn->query("SHOW TABLES LIKE 'vouchers'");
                 if ($tableCheck->num_rows > 0) {
+                    // Check if router_id column exists in vouchers table
+                    $columnCheck = $conn->query("SHOW COLUMNS FROM vouchers LIKE 'router_id'");
+                    $hasRouterId = ($columnCheck && $columnCheck->num_rows > 0);
+
                     // Save the voucher
                     try {
-                        $stmt = $conn->prepare("INSERT INTO vouchers (code, package_id, reseller_id, router_id, customer_phone, username, password, status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, 'used', NOW())");
-                        $stmt->bind_param("siissss", $voucher_code, $packageId, $resellerId, $routerId, $mpesaNumber, $voucher_code, $voucher_code);
+                        if ($hasRouterId) {
+                            $stmt = $conn->prepare("INSERT INTO vouchers (code, package_id, reseller_id, router_id, customer_phone, username, password, status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, 'used', NOW())");
+                            $stmt->bind_param("siissss", $voucher_code, $packageId, $resellerId, $routerId, $mpesaNumber, $voucher_code, $voucher_code);
+                        } else {
+                            $stmt = $conn->prepare("INSERT INTO vouchers (code, package_id, reseller_id, customer_phone, username, password, status, created_at) VALUES (?, ?, ?, ?, ?, ?, 'used', NOW())");
+                            $stmt->bind_param("siisss", $voucher_code, $packageId, $resellerId, $mpesaNumber, $voucher_code, $voucher_code);
+                        }
                         $stmt->execute();
                         log_debug("Generated and saved new voucher: $voucher_code");
                         
@@ -340,9 +406,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $voucher_username = $voucher_code;
                 $voucher_password = $voucher_code;
             }
-            
+
+            // Send SMS immediately after successful payment verification
+            log_debug("Attempting to send SMS to customer");
+            $smsResult = sendMpesaVoucherSMS(
+                $transaction['phone_number'],
+                $voucher_code,
+                isset($voucher_username) ? $voucher_username : $voucher_code,
+                isset($voucher_password) ? $voucher_password : $voucher_code,
+                isset($packageName) ? $packageName : 'WiFi Package',
+                $resellerId
+            );
+
+            log_debug("SMS sending result: " . json_encode($smsResult));
+
             echo json_encode([
-                'success' => true, 
+                'success' => true,
                 'message' => 'Payment completed successfully',
                 'receipt' => $mpesaReceiptNumber,
                 'voucher_code' => $voucher_code,
@@ -350,7 +429,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'voucher_password' => isset($voucher_password) ? $voucher_password : $voucher_code,
                 'phone_number' => $transaction['phone_number'],
                 'package_name' => isset($packageName) ? $packageName : 'WiFi Package',
-                'duration' => isset($packageDuration) ? $packageDuration : ''
+                'duration' => isset($packageDuration) ? $packageDuration : '',
+                'sms_sent' => $smsResult['success'],
+                'sms_message' => $smsResult['message']
             ]);
             exit;
         } else {
@@ -403,4 +484,110 @@ function generateVoucherCode($length = 8) {
     }
     return $code;
 }
-?> 
+
+/**
+ * Send M-Pesa voucher SMS using TextSMS API
+ */
+function sendMpesaVoucherSMS($phoneNumber, $voucherCode, $username, $password, $packageName, $resellerId) {
+    global $portal_conn;
+
+    log_debug("=== M-PESA VOUCHER SMS SENDING STARTED ===");
+    log_debug("Phone: $phoneNumber, Voucher: $voucherCode, Package: $packageName, Reseller: $resellerId");
+
+    try {
+        // Get SMS settings for the reseller
+        $smsSettings = getSmsSettings($portal_conn, $resellerId);
+        log_debug("SMS Settings retrieved: " . ($smsSettings ? 'Found' : 'Not found'));
+
+        if (!$smsSettings || !$smsSettings['enable_sms']) {
+            log_debug("SMS not enabled or settings not found");
+            return ['success' => false, 'message' => 'SMS service not configured'];
+        }
+
+        // Format phone number for SMS
+        $formattedPhone = formatPhoneForMpesaSMS($phoneNumber);
+        log_debug("Formatted phone number: $formattedPhone");
+
+        // Prepare message
+        $message = "Thank you for your payment! Your WiFi access details: Username: $username, Password: $password, Voucher: $voucherCode for $packageName";
+        log_debug("Message prepared: $message");
+
+        // Send SMS based on provider
+        log_debug("Sending SMS via provider: " . $smsSettings['sms_provider']);
+
+        switch ($smsSettings['sms_provider']) {
+            case 'textsms':
+                $result = sendMpesaTextSMSAPI($formattedPhone, $message, $smsSettings);
+                log_debug("TextSMS result: " . json_encode($result));
+                return $result;
+
+            case 'africas-talking':
+                $result = sendMpesaAfricaTalkingSMSAPI($formattedPhone, $message, $smsSettings);
+                log_debug("Africa's Talking result: " . json_encode($result));
+                return $result;
+
+            default:
+                log_debug("Unsupported SMS provider: " . $smsSettings['sms_provider']);
+                return ['success' => false, 'message' => 'Unsupported SMS provider: ' . $smsSettings['sms_provider']];
+        }
+
+    } catch (Exception $e) {
+        log_debug("SMS sending exception: " . $e->getMessage());
+        return ['success' => false, 'message' => 'SMS sending error: ' . $e->getMessage()];
+    }
+}
+
+/**
+ * Format phone number for SMS (254XXXXXXXXX format)
+ */
+function formatPhoneForMpesaSMS($phoneNumber) {
+    // Remove any spaces, dashes, or plus signs
+    $phone = preg_replace('/[\s\-\+]/', '', $phoneNumber);
+
+    // If it starts with 0, replace with 254
+    if (substr($phone, 0, 1) === '0') {
+        $phone = '254' . substr($phone, 1);
+    }
+
+    // If it doesn't start with 254, assume it's a local number and add 254
+    if (substr($phone, 0, 3) !== '254') {
+        $phone = '254' . $phone;
+    }
+
+    return $phone;
+}
+
+/**
+ * Send SMS via TextSMS API
+ */
+function sendMpesaTextSMSAPI($phoneNumber, $message, $settings) {
+    log_debug("Sending TextSMS to $phoneNumber");
+
+    $url = "https://sms.textsms.co.ke/api/services/sendsms/?" .
+           "apikey=" . urlencode($settings['textsms_api_key']) .
+           "&partnerID=" . urlencode($settings['textsms_partner_id']) .
+           "&message=" . urlencode($message) .
+           "&shortcode=" . urlencode($settings['textsms_sender_id']) .
+           "&mobile=" . urlencode($phoneNumber);
+
+    log_debug("TextSMS URL: " . $url);
+
+    $response = @file_get_contents($url);
+
+    if ($response === false) {
+        log_debug("TextSMS connection failed");
+        return ['success' => false, 'message' => 'Failed to connect to TextSMS API'];
+    }
+
+    log_debug("TextSMS raw response: " . $response);
+
+    // TextSMS returns various response formats, check for success indicators
+    if (strpos($response, 'success') !== false || strpos($response, 'Success') !== false || is_numeric($response)) {
+        log_debug("TextSMS success detected");
+        return ['success' => true, 'message' => 'SMS sent successfully via TextSMS', 'response' => $response];
+    } else {
+        log_debug("TextSMS error detected");
+        return ['success' => false, 'message' => 'TextSMS API error', 'response' => $response];
+    }
+}
+?>

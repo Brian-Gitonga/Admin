@@ -1,0 +1,39 @@
+[2025-10-04 02:09:27] TEST SMS FAILED: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 02:32:34] TEST SMS FAILED: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 02:33:43] Umeskia API Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC6281930291310158","sms_cost":1}]}
+[2025-10-04 02:33:43] TEST SMS SUCCESS: Sent to 0114669532
+[2025-10-04 02:34:17] Umeskia API Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC6823431069608236","sms_cost":1}]}
+[2025-10-04 02:34:17] TEST SMS SUCCESS: Sent to 254114669532
+[2025-10-04 02:34:59] Umeskia API Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0750059353","status":"success","message_id":"UMSC2540678554811590","sms_cost":1}]}
+[2025-10-04 02:34:59] TEST SMS SUCCESS: Sent to 0750059353
+[2025-10-04 02:35:51] Umeskia API Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0750059353","status":"success","message_id":"UMSC2429271282225072","sms_cost":1}]}
+[2025-10-04 02:35:51] TEST SMS SUCCESS: Sent to 0750059353
+[2025-10-04 02:36:25] Umeskia API Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC6998131360071076","sms_cost":2}]}
+[2025-10-04 02:36:27] Umeskia API Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC6226207501175733","sms_cost":2}]}
+[2025-10-04 02:36:30] Umeskia API Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC0468195682560207","sms_cost":2}]}
+[2025-10-04 02:36:32] Umeskia API Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC5130754968970919","sms_cost":2}]}
+[2025-10-04 02:36:33] Umeskia API Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC9722243065204616","sms_cost":2}]}
+[2025-10-04 02:36:34] Umeskia API Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC8942817741920977","sms_cost":2}]}
+[2025-10-04 02:58:32] AJAX TEST: FAILED - Phone: 0750059353
+[2025-10-04 02:59:05] AJAX TEST: FAILED - Phone: 254114669532
+[2025-10-04 02:59:06] AJAX TEST: FAILED - Phone: 254114669532
+[2025-10-04 04:08:36] Attempting to send SMS to: 0114669532
+[2025-10-04 04:08:37] Umeskia API Response - HTTP Code: 200, Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC6430505511163923","sms_cost":1}]}
+[2025-10-04 04:08:37] SMS sent successfully to: 0114669532
+[2025-10-04 04:08:37] TEST SMS SUCCESS: Sent to 0114669532
+[2025-10-04 04:08:47] Attempting to send SMS to: 0114669532
+[2025-10-04 04:08:48] Umeskia API Response - HTTP Code: 200, Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC4284353237642935","sms_cost":1}]}
+[2025-10-04 04:08:48] SMS sent successfully to: 0114669532
+[2025-10-04 04:08:48] TEST SMS SUCCESS: Sent to 0114669532
+[2025-10-04 04:08:56] Attempting to send SMS to: 0114669532
+[2025-10-04 04:08:57] Umeskia API Response - HTTP Code: 200, Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC4854004651216654","sms_cost":2}]}
+[2025-10-04 04:08:57] SMS sent successfully to: 0114669532
+[2025-10-04 04:08:57] Attempting to send SMS to: 0114669532
+[2025-10-04 04:08:57] Umeskia API Response - HTTP Code: 200, Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC9875341933805098","sms_cost":2}]}
+[2025-10-04 04:08:57] SMS sent successfully to: 0114669532
+[2025-10-04 04:08:57] Attempting to send SMS to: 0114669532
+[2025-10-04 04:08:58] Umeskia API Response - HTTP Code: 200, Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC1328634677763676","sms_cost":2}]}
+[2025-10-04 04:08:58] SMS sent successfully to: 0114669532
+[2025-10-04 04:10:09] Attempting to send SMS to: 0114669532
+[2025-10-04 04:10:10] Umeskia API Response - HTTP Code: 200, Response: {"status":"complete","message":"SMS sending completed. Check individual results for more details.","data":[{"phone":"0114669532","status":"success","message_id":"UMSC5376536894356600","sms_cost":1}]}
+[2025-10-04 04:10:10] SMS sent successfully to: 0114669532

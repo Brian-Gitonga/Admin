@@ -1,0 +1,617 @@
+[2025-10-04 02:10:02] === STARTING VOUCHER PROCESSING ===
+[2025-10-04 02:10:02] === SEARCHING FOR COMPLETED PAYMENTS NEEDING VOUCHERS ===
+[2025-10-04 02:10:02] Found 38 completed payments needing vouchers
+[2025-10-04 02:10:02] Processing transaction: ws_CO_03102025160014143782
+[2025-10-04 02:10:02] Searching for available voucher: package_id=31, reseller_id=6
+[2025-10-04 02:10:02] No available vouchers found for package_id=31, reseller_id=6
+[2025-10-04 02:10:02] Processing transaction: ws_CO_03102025160011172596
+[2025-10-04 02:10:02] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:10:02] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:10:02] Processing transaction: ws_CO_03102025160008971860
+[2025-10-04 02:10:02] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 02:10:02] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 02:10:02] Processing transaction: ws_CO_03102025160006378176
+[2025-10-04 02:10:02] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 02:10:02] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 02:10:02] Processing transaction: ws_CO_03102025160004748426
+[2025-10-04 02:10:02] Searching for available voucher: package_id=26, reseller_id=6
+[2025-10-04 02:10:02] No available vouchers found for package_id=26, reseller_id=6
+[2025-10-04 02:10:02] Processing transaction: ws_CO_03102025160001926622
+[2025-10-04 02:10:02] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:10:02] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:10:02] Processing transaction: ws_CO_03102025155959864262
+[2025-10-04 02:10:02] Searching for available voucher: package_id=23, reseller_id=6
+[2025-10-04 02:10:02] No available vouchers found for package_id=23, reseller_id=6
+[2025-10-04 02:10:02] Processing transaction: ws_CO_03102025155954289844
+[2025-10-04 02:10:02] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:02] Found available voucher: qtro791
+[2025-10-04 02:10:02] Assigning voucher qtro791 to customer 254114669532
+[2025-10-04 02:10:02] Successfully assigned voucher qtro791 to customer 254114669532
+[2025-10-04 02:10:02] Sending voucher SMS to 254114669532
+[2025-10-04 02:10:04] SMS sending failed to 254114669532: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155947619906
+[2025-10-04 02:10:04] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155913150541
+[2025-10-04 02:10:04] Searching for available voucher: package_id=31, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=31, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155910440576
+[2025-10-04 02:10:04] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155907987449
+[2025-10-04 02:10:04] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155904669574
+[2025-10-04 02:10:04] Searching for available voucher: package_id=25, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=25, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155902401083
+[2025-10-04 02:10:04] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155852787807
+[2025-10-04 02:10:04] Searching for available voucher: package_id=16, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=16, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155736739391
+[2025-10-04 02:10:04] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155720838470
+[2025-10-04 02:10:04] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155713950139
+[2025-10-04 02:10:04] Searching for available voucher: package_id=25, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=25, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155651265824
+[2025-10-04 02:10:04] Searching for available voucher: package_id=16, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=16, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025155636703229
+[2025-10-04 02:10:04] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025142049790605
+[2025-10-04 02:10:04] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025125307308069
+[2025-10-04 02:10:04] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025125150791564
+[2025-10-04 02:10:04] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025125150502077
+[2025-10-04 02:10:04] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025125149874563
+[2025-10-04 02:10:04] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025125146252562
+[2025-10-04 02:10:04] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025125141779435
+[2025-10-04 02:10:04] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025125134485095
+[2025-10-04 02:10:04] Searching for available voucher: package_id=23, reseller_id=6
+[2025-10-04 02:10:04] No available vouchers found for package_id=23, reseller_id=6
+[2025-10-04 02:10:04] Processing transaction: ws_CO_03102025125103476922
+[2025-10-04 02:10:04] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:04] Found available voucher: qtro491
+[2025-10-04 02:10:04] Assigning voucher qtro491 to customer 254712345678
+[2025-10-04 02:10:04] Successfully assigned voucher qtro491 to customer 254712345678
+[2025-10-04 02:10:04] Sending voucher SMS to 254712345678
+[2025-10-04 02:10:05] SMS sending failed to 254712345678: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 02:10:05] Processing transaction: ws_CO_03102025133608928114669532
+[2025-10-04 02:10:05] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:05] Found available voucher: qtro361
+[2025-10-04 02:10:05] Assigning voucher qtro361 to customer 254114669532
+[2025-10-04 02:10:05] Successfully assigned voucher qtro361 to customer 254114669532
+[2025-10-04 02:10:05] Sending voucher SMS to 254114669532
+[2025-10-04 02:10:06] SMS sending failed to 254114669532: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 02:10:06] Processing transaction: ws_CO_03102025132120439114669532
+[2025-10-04 02:10:06] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:06] Found available voucher: qtro391
+[2025-10-04 02:10:06] Assigning voucher qtro391 to customer 254114669532
+[2025-10-04 02:10:06] Successfully assigned voucher qtro391 to customer 254114669532
+[2025-10-04 02:10:06] Sending voucher SMS to 254114669532
+[2025-10-04 02:10:07] SMS sending failed to 254114669532: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 02:10:07] Processing transaction: ws_CO_03102025131048891114669532
+[2025-10-04 02:10:07] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:07] Found available voucher: qtro451
+[2025-10-04 02:10:07] Assigning voucher qtro451 to customer 254114669532
+[2025-10-04 02:10:07] Successfully assigned voucher qtro451 to customer 254114669532
+[2025-10-04 02:10:07] Sending voucher SMS to 254114669532
+[2025-10-04 02:10:08] SMS sending failed to 254114669532: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 02:10:08] Processing transaction: ws_CO_03102025022459391114669532
+[2025-10-04 02:10:08] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:08] No available vouchers found for package_id=15, reseller_id=6
+[2025-10-04 02:10:08] Processing transaction: ws_CO_03102025022352346114669532
+[2025-10-04 02:10:08] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:08] No available vouchers found for package_id=15, reseller_id=6
+[2025-10-04 02:10:08] Processing transaction: ws_CO_03102025015048777114669532
+[2025-10-04 02:10:08] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:08] No available vouchers found for package_id=15, reseller_id=6
+[2025-10-04 02:10:08] Processing transaction: ws_CO_03102025014307593114669532
+[2025-10-04 02:10:08] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:08] No available vouchers found for package_id=15, reseller_id=6
+[2025-10-04 02:10:08] Processing transaction: ws_CO_09042025095732720114669532
+[2025-10-04 02:10:08] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:08] No available vouchers found for package_id=15, reseller_id=6
+[2025-10-04 02:10:08] Processing transaction: ws_CO_09042025102220189114669532
+[2025-10-04 02:10:08] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:10:08] No available vouchers found for package_id=15, reseller_id=6
+[2025-10-04 02:10:08] === PROCESSING COMPLETE ===
+[2025-10-04 02:10:08] Processed: 38, Successful: 0, Failed: 38
+[2025-10-04 02:36:24] === STARTING VOUCHER PROCESSING ===
+[2025-10-04 02:36:24] === SEARCHING FOR COMPLETED PAYMENTS NEEDING VOUCHERS ===
+[2025-10-04 02:36:24] Found 33 completed payments needing vouchers
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025160014143782
+[2025-10-04 02:36:24] Searching for available voucher: package_id=31, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=31, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025160011172596
+[2025-10-04 02:36:24] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025160008971860
+[2025-10-04 02:36:24] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025160006378176
+[2025-10-04 02:36:24] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025160004748426
+[2025-10-04 02:36:24] Searching for available voucher: package_id=26, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=26, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025160001926622
+[2025-10-04 02:36:24] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155959864262
+[2025-10-04 02:36:24] Searching for available voucher: package_id=23, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=23, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155947619906
+[2025-10-04 02:36:24] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155913150541
+[2025-10-04 02:36:24] Searching for available voucher: package_id=31, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=31, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155910440576
+[2025-10-04 02:36:24] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155907987449
+[2025-10-04 02:36:24] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155904669574
+[2025-10-04 02:36:24] Searching for available voucher: package_id=25, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=25, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155902401083
+[2025-10-04 02:36:24] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155852787807
+[2025-10-04 02:36:24] Searching for available voucher: package_id=16, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=16, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155736739391
+[2025-10-04 02:36:24] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155720838470
+[2025-10-04 02:36:24] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155713950139
+[2025-10-04 02:36:24] Searching for available voucher: package_id=25, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=25, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155651265824
+[2025-10-04 02:36:24] Searching for available voucher: package_id=16, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=16, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025155636703229
+[2025-10-04 02:36:24] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025142049790605
+[2025-10-04 02:36:24] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025125307308069
+[2025-10-04 02:36:24] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025125150791564
+[2025-10-04 02:36:24] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025125150502077
+[2025-10-04 02:36:24] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025125149874563
+[2025-10-04 02:36:24] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025125146252562
+[2025-10-04 02:36:24] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025125141779435
+[2025-10-04 02:36:24] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025125134485095
+[2025-10-04 02:36:24] Searching for available voucher: package_id=23, reseller_id=6
+[2025-10-04 02:36:24] No available vouchers found for package_id=23, reseller_id=6
+[2025-10-04 02:36:24] Processing transaction: ws_CO_03102025022459391114669532
+[2025-10-04 02:36:24] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:36:24] Found available voucher: qtro781
+[2025-10-04 02:36:24] Assigning voucher qtro781 to customer 254114669532
+[2025-10-04 02:36:24] Successfully assigned voucher qtro781 to customer 254114669532
+[2025-10-04 02:36:24] Sending voucher SMS to 254114669532
+[2025-10-04 02:36:25] SMS sent successfully to 254114669532
+[2025-10-04 02:36:25] Processing transaction: ws_CO_03102025022352346114669532
+[2025-10-04 02:36:25] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:36:25] Found available voucher: qtro551
+[2025-10-04 02:36:25] Assigning voucher qtro551 to customer 254114669532
+[2025-10-04 02:36:26] Successfully assigned voucher qtro551 to customer 254114669532
+[2025-10-04 02:36:26] Sending voucher SMS to 254114669532
+[2025-10-04 02:36:27] SMS sent successfully to 254114669532
+[2025-10-04 02:36:27] Processing transaction: ws_CO_03102025015048777114669532
+[2025-10-04 02:36:27] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:36:28] Found available voucher: qtro321
+[2025-10-04 02:36:28] Assigning voucher qtro321 to customer 254114669532
+[2025-10-04 02:36:29] Successfully assigned voucher qtro321 to customer 254114669532
+[2025-10-04 02:36:29] Sending voucher SMS to 254114669532
+[2025-10-04 02:36:30] SMS sent successfully to 254114669532
+[2025-10-04 02:36:30] Processing transaction: ws_CO_03102025014307593114669532
+[2025-10-04 02:36:30] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:36:30] Found available voucher: qtro381
+[2025-10-04 02:36:30] Assigning voucher qtro381 to customer 254114669532
+[2025-10-04 02:36:31] Successfully assigned voucher qtro381 to customer 254114669532
+[2025-10-04 02:36:31] Sending voucher SMS to 254114669532
+[2025-10-04 02:36:32] SMS sent successfully to 254114669532
+[2025-10-04 02:36:32] Processing transaction: ws_CO_09042025095732720114669532
+[2025-10-04 02:36:32] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:36:32] Found available voucher: qtro751
+[2025-10-04 02:36:32] Assigning voucher qtro751 to customer 254114669532
+[2025-10-04 02:36:32] Successfully assigned voucher qtro751 to customer 254114669532
+[2025-10-04 02:36:32] Sending voucher SMS to 254114669532
+[2025-10-04 02:36:33] SMS sent successfully to 254114669532
+[2025-10-04 02:36:33] Processing transaction: ws_CO_09042025102220189114669532
+[2025-10-04 02:36:33] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:36:33] Found available voucher: qtro941
+[2025-10-04 02:36:33] Assigning voucher qtro941 to customer 254114669532
+[2025-10-04 02:36:33] Successfully assigned voucher qtro941 to customer 254114669532
+[2025-10-04 02:36:33] Sending voucher SMS to 254114669532
+[2025-10-04 02:36:34] SMS sent successfully to 254114669532
+[2025-10-04 02:36:34] === PROCESSING COMPLETE ===
+[2025-10-04 02:36:34] Processed: 33, Successful: 6, Failed: 27
+[2025-10-04 02:58:04] === PROCESSING SPECIFIC TRANSACTION: ws_CO_04102025034347411114669532 ===
+[2025-10-04 02:58:04] Found transaction for processing: 254114669532, Package: 1Hr Konnect
+[2025-10-04 02:58:04] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 02:58:04] Found available voucher: qtro531
+[2025-10-04 02:58:04] Assigning voucher qtro531 to customer 254114669532
+[2025-10-04 02:58:04] Successfully assigned voucher qtro531 to customer 254114669532
+[2025-10-04 02:58:04] Sending voucher SMS to 254114669532
+[2025-10-04 02:58:05] SMS sending failed to 254114669532: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 02:58:05] PARTIAL SUCCESS: Voucher qtro531 assigned but SMS failed: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 02:58:22] === STARTING VOUCHER PROCESSING ===
+[2025-10-04 02:58:22] === SEARCHING FOR COMPLETED PAYMENTS NEEDING VOUCHERS ===
+[2025-10-04 02:58:22] Found 27 completed payments needing vouchers
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025160014143782
+[2025-10-04 02:58:22] Searching for available voucher: package_id=31, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=31, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025160011172596
+[2025-10-04 02:58:22] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025160008971860
+[2025-10-04 02:58:22] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025160006378176
+[2025-10-04 02:58:22] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025160004748426
+[2025-10-04 02:58:22] Searching for available voucher: package_id=26, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=26, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025160001926622
+[2025-10-04 02:58:22] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155959864262
+[2025-10-04 02:58:22] Searching for available voucher: package_id=23, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=23, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155947619906
+[2025-10-04 02:58:22] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155913150541
+[2025-10-04 02:58:22] Searching for available voucher: package_id=31, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=31, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155910440576
+[2025-10-04 02:58:22] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155907987449
+[2025-10-04 02:58:22] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155904669574
+[2025-10-04 02:58:22] Searching for available voucher: package_id=25, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=25, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155902401083
+[2025-10-04 02:58:22] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155852787807
+[2025-10-04 02:58:22] Searching for available voucher: package_id=16, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=16, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155736739391
+[2025-10-04 02:58:22] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155720838470
+[2025-10-04 02:58:22] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155713950139
+[2025-10-04 02:58:22] Searching for available voucher: package_id=25, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=25, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155651265824
+[2025-10-04 02:58:22] Searching for available voucher: package_id=16, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=16, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025155636703229
+[2025-10-04 02:58:22] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025142049790605
+[2025-10-04 02:58:22] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025125307308069
+[2025-10-04 02:58:22] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025125150791564
+[2025-10-04 02:58:22] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025125150502077
+[2025-10-04 02:58:22] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025125149874563
+[2025-10-04 02:58:22] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025125146252562
+[2025-10-04 02:58:22] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025125141779435
+[2025-10-04 02:58:22] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 02:58:22] Processing transaction: ws_CO_03102025125134485095
+[2025-10-04 02:58:22] Searching for available voucher: package_id=23, reseller_id=6
+[2025-10-04 02:58:22] No available vouchers found for package_id=23, reseller_id=6
+[2025-10-04 02:58:22] === PROCESSING COMPLETE ===
+[2025-10-04 02:58:22] Processed: 27, Successful: 0, Failed: 27
+[2025-10-04 02:58:52] === PROCESSING SPECIFIC TRANSACTION: ws_CO_04102025034347411114669532 ===
+[2025-10-04 02:58:52] No completed transaction found for checkout_request_id: ws_CO_04102025034347411114669532
+[2025-10-04 02:58:53] === PROCESSING SPECIFIC TRANSACTION: ws_CO_04102025034347411114669532 ===
+[2025-10-04 02:58:53] No completed transaction found for checkout_request_id: ws_CO_04102025034347411114669532
+[2025-10-04 02:58:53] === PROCESSING SPECIFIC TRANSACTION: ws_CO_04102025034347411114669532 ===
+[2025-10-04 02:58:53] No completed transaction found for checkout_request_id: ws_CO_04102025034347411114669532
+[2025-10-04 02:58:54] === PROCESSING SPECIFIC TRANSACTION: ws_CO_04102025034347411114669532 ===
+[2025-10-04 02:58:54] No completed transaction found for checkout_request_id: ws_CO_04102025034347411114669532
+[2025-10-04 03:41:02] === PROCESSING SPECIFIC TRANSACTION: ws_CO_04102025034347411114669532 ===
+[2025-10-04 03:41:02] No completed transaction found for checkout_request_id: ws_CO_04102025034347411114669532
+[2025-10-04 03:57:10] === PROCESSING SPECIFIC TRANSACTION: ws_CO_04102025040227159114669532 ===
+[2025-10-04 03:57:10] Found transaction for processing: 254114669532, Package: 1Hr Konnect
+[2025-10-04 03:57:10] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 03:57:10] Found available voucher: qtro871
+[2025-10-04 03:57:10] Assigning voucher qtro871 to customer 254114669532
+[2025-10-04 03:57:10] Successfully assigned voucher qtro871 to customer 254114669532
+[2025-10-04 03:57:10] Sending voucher SMS to 254114669532
+[2025-10-04 03:57:11] SMS sending failed to 254114669532: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 03:57:11] PARTIAL SUCCESS: Voucher qtro871 assigned but SMS failed: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 03:57:12] === PROCESSING SPECIFIC TRANSACTION: ws_CO_04102025040227159114669532 ===
+[2025-10-04 03:57:12] No completed transaction found for checkout_request_id: ws_CO_04102025040227159114669532
+[2025-10-04 04:08:56] === STARTING VOUCHER PROCESSING ===
+[2025-10-04 04:08:56] === SEARCHING FOR COMPLETED PAYMENTS NEEDING VOUCHERS ===
+[2025-10-04 04:08:56] Found 30 completed payments needing vouchers
+[2025-10-04 04:08:56] Processing transaction: ws_CO_04102025044216372114669532
+[2025-10-04 04:08:56] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 04:08:56] Found available voucher: qtro881
+[2025-10-04 04:08:56] Assigning voucher qtro881 to customer 254114669532
+[2025-10-04 04:08:56] Successfully assigned voucher qtro881 to customer 254114669532
+[2025-10-04 04:08:56] === SENDING VOUCHER SMS ===
+[2025-10-04 04:08:56] Phone: 254114669532
+[2025-10-04 04:08:56] Voucher Code: qtro881
+[2025-10-04 04:08:56] Package: 1Hr Konnect
+[2025-10-04 04:08:56] SMS Message Length: 235 characters
+[2025-10-04 04:08:57] ✅ SMS SENT SUCCESSFULLY to 254114669532
+[2025-10-04 04:08:57] Processing transaction: ws_CO_04102025044546954114669532
+[2025-10-04 04:08:57] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 04:08:57] Found available voucher: qtro631
+[2025-10-04 04:08:57] Assigning voucher qtro631 to customer 254114669532
+[2025-10-04 04:08:57] Successfully assigned voucher qtro631 to customer 254114669532
+[2025-10-04 04:08:57] === SENDING VOUCHER SMS ===
+[2025-10-04 04:08:57] Phone: 254114669532
+[2025-10-04 04:08:57] Voucher Code: qtro631
+[2025-10-04 04:08:57] Package: 1Hr Konnect
+[2025-10-04 04:08:57] SMS Message Length: 235 characters
+[2025-10-04 04:08:57] ✅ SMS SENT SUCCESSFULLY to 254114669532
+[2025-10-04 04:08:57] Processing transaction: ws_CO_04102025043140951114669532
+[2025-10-04 04:08:57] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 04:08:57] Found available voucher: qtro681
+[2025-10-04 04:08:57] Assigning voucher qtro681 to customer 254114669532
+[2025-10-04 04:08:57] Successfully assigned voucher qtro681 to customer 254114669532
+[2025-10-04 04:08:57] === SENDING VOUCHER SMS ===
+[2025-10-04 04:08:57] Phone: 254114669532
+[2025-10-04 04:08:57] Voucher Code: qtro681
+[2025-10-04 04:08:57] Package: 1Hr Konnect
+[2025-10-04 04:08:57] SMS Message Length: 235 characters
+[2025-10-04 04:08:58] ✅ SMS SENT SUCCESSFULLY to 254114669532
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025160014143782
+[2025-10-04 04:08:58] Searching for available voucher: package_id=31, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=31, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025160011172596
+[2025-10-04 04:08:58] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025160008971860
+[2025-10-04 04:08:58] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025160006378176
+[2025-10-04 04:08:58] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025160004748426
+[2025-10-04 04:08:58] Searching for available voucher: package_id=26, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=26, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025160001926622
+[2025-10-04 04:08:58] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155959864262
+[2025-10-04 04:08:58] Searching for available voucher: package_id=23, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=23, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155947619906
+[2025-10-04 04:08:58] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155913150541
+[2025-10-04 04:08:58] Searching for available voucher: package_id=31, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=31, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155910440576
+[2025-10-04 04:08:58] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155907987449
+[2025-10-04 04:08:58] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155904669574
+[2025-10-04 04:08:58] Searching for available voucher: package_id=25, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=25, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155902401083
+[2025-10-04 04:08:58] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155852787807
+[2025-10-04 04:08:58] Searching for available voucher: package_id=16, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=16, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155736739391
+[2025-10-04 04:08:58] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155720838470
+[2025-10-04 04:08:58] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155713950139
+[2025-10-04 04:08:58] Searching for available voucher: package_id=25, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=25, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155651265824
+[2025-10-04 04:08:58] Searching for available voucher: package_id=16, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=16, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025155636703229
+[2025-10-04 04:08:58] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025142049790605
+[2025-10-04 04:08:58] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025125307308069
+[2025-10-04 04:08:58] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025125150791564
+[2025-10-04 04:08:58] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025125150502077
+[2025-10-04 04:08:58] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025125149874563
+[2025-10-04 04:08:58] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025125146252562
+[2025-10-04 04:08:58] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025125141779435
+[2025-10-04 04:08:58] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 04:08:58] Processing transaction: ws_CO_03102025125134485095
+[2025-10-04 04:08:58] Searching for available voucher: package_id=23, reseller_id=6
+[2025-10-04 04:08:58] No available vouchers found for package_id=23, reseller_id=6
+[2025-10-04 04:08:58] === PROCESSING COMPLETE ===
+[2025-10-04 04:08:58] Processed: 30, Successful: 3, Failed: 27
+[2025-10-04 04:10:09] === STARTING VOUCHER PROCESSING ===
+[2025-10-04 04:10:09] === SEARCHING FOR COMPLETED PAYMENTS NEEDING VOUCHERS ===
+[2025-10-04 04:10:09] Found 27 completed payments needing vouchers
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025160014143782
+[2025-10-04 04:10:09] Searching for available voucher: package_id=31, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=31, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025160011172596
+[2025-10-04 04:10:09] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025160008971860
+[2025-10-04 04:10:09] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025160006378176
+[2025-10-04 04:10:09] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025160004748426
+[2025-10-04 04:10:09] Searching for available voucher: package_id=26, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=26, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025160001926622
+[2025-10-04 04:10:09] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155959864262
+[2025-10-04 04:10:09] Searching for available voucher: package_id=23, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=23, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155947619906
+[2025-10-04 04:10:09] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155913150541
+[2025-10-04 04:10:09] Searching for available voucher: package_id=31, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=31, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155910440576
+[2025-10-04 04:10:09] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155907987449
+[2025-10-04 04:10:09] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155904669574
+[2025-10-04 04:10:09] Searching for available voucher: package_id=25, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=25, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155902401083
+[2025-10-04 04:10:09] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155852787807
+[2025-10-04 04:10:09] Searching for available voucher: package_id=16, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=16, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155736739391
+[2025-10-04 04:10:09] Searching for available voucher: package_id=24, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=24, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155720838470
+[2025-10-04 04:10:09] Searching for available voucher: package_id=27, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=27, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155713950139
+[2025-10-04 04:10:09] Searching for available voucher: package_id=25, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=25, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155651265824
+[2025-10-04 04:10:09] Searching for available voucher: package_id=16, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=16, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025155636703229
+[2025-10-04 04:10:09] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025142049790605
+[2025-10-04 04:10:09] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025125307308069
+[2025-10-04 04:10:09] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025125150791564
+[2025-10-04 04:10:09] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025125150502077
+[2025-10-04 04:10:09] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025125149874563
+[2025-10-04 04:10:09] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025125146252562
+[2025-10-04 04:10:09] Searching for available voucher: package_id=30, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=30, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025125141779435
+[2025-10-04 04:10:09] Searching for available voucher: package_id=29, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=29, reseller_id=6
+[2025-10-04 04:10:09] Processing transaction: ws_CO_03102025125134485095
+[2025-10-04 04:10:09] Searching for available voucher: package_id=23, reseller_id=6
+[2025-10-04 04:10:09] No available vouchers found for package_id=23, reseller_id=6
+[2025-10-04 04:10:09] === PROCESSING COMPLETE ===
+[2025-10-04 04:10:09] Processed: 27, Successful: 0, Failed: 27
+[2025-10-04 04:52:08] === PROCESSING SPECIFIC TRANSACTION: ws_CO_04102025044216372114669532 ===
+[2025-10-04 04:52:08] No completed transaction found for checkout_request_id: ws_CO_04102025044216372114669532
+[2025-10-04 05:10:15] === PROCESSING SPECIFIC TRANSACTION: ws_CO_04102025060235499114669532 ===
+[2025-10-04 05:10:15] Found transaction for processing: 254114669532, Package: 1Hr Konnect
+[2025-10-04 05:10:15] Searching for available voucher: package_id=15, reseller_id=6
+[2025-10-04 05:10:15] Found available voucher: qtro921
+[2025-10-04 05:10:15] Assigning voucher qtro921 to customer 254114669532
+[2025-10-04 05:10:16] Successfully assigned voucher qtro921 to customer 254114669532
+[2025-10-04 05:10:16] Sending voucher SMS to 254114669532
+[2025-10-04 05:10:17] SMS sending failed to 254114669532: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-04 05:10:17] PARTIAL SUCCESS: Voucher qtro921 assigned but SMS failed: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-27 16:22:45] === PROCESSING SPECIFIC TRANSACTION: ws_CO_27102025182235822114669532 ===
+[2025-10-27 16:22:45] Found transaction for processing: 254114669532, Package: 2
+[2025-10-27 16:22:45] Searching for available voucher: package_id=40, reseller_id=23
+[2025-10-27 16:22:45] Found available voucher: qtro3259
+[2025-10-27 16:22:45] Assigning voucher qtro3259 to customer 254114669532
+[2025-10-27 16:22:45] Successfully assigned voucher qtro3259 to customer 254114669532
+[2025-10-27 16:22:45] Sending voucher SMS to 254114669532
+[2025-10-27 16:22:46] SMS sending failed to 254114669532: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-27 16:22:46] PARTIAL SUCCESS: Voucher qtro3259 assigned but SMS failed: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-27 16:25:51] === PROCESSING SPECIFIC TRANSACTION: ws_CO_27102025182544742114669532 ===
+[2025-10-27 16:25:51] Found transaction for processing: 254114669532, Package: 2
+[2025-10-27 16:25:51] Searching for available voucher: package_id=40, reseller_id=23
+[2025-10-27 16:25:51] Found available voucher: qtro7290
+[2025-10-27 16:25:51] Assigning voucher qtro7290 to customer 254114669532
+[2025-10-27 16:25:51] Successfully assigned voucher qtro7290 to customer 254114669532
+[2025-10-27 16:25:51] Sending voucher SMS to 254114669532
+[2025-10-27 16:25:55] SMS sending failed to 254114669532: Umeskia Error: SMS sending completed. Check individual results for more details.
+[2025-10-27 16:25:55] PARTIAL SUCCESS: Voucher qtro7290 assigned but SMS failed: Umeskia Error: SMS sending completed. Check individual results for more details.

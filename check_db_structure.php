@@ -1,6 +1,6 @@
 <?php
 // Database connection
-require_once 'connection_dp.php';
+require_once 'portal_connection.php';
 
 // Check table structure
 function checkTableStructure($conn, $tableName) {
@@ -58,9 +58,38 @@ function checkTableStructure($conn, $tableName) {
     <h1>Database Structure Check</h1>
     
     <?php
-    if (is_db_connected()) {
-        // Check resellers_mpesa_settings table
-        checkTableStructure($conn, 'resellers_mpesa_settings');
+    if ($portal_conn) {
+        // Check payment_transactions table
+        checkTableStructure($portal_conn, 'payment_transactions');
+
+        // Check mpesa_credentials table
+        checkTableStructure($portal_conn, 'mpesa_credentials');
+
+        // Check recent transactions
+        echo "<h2>Recent Payment Transactions:</h2>";
+        $result = $portal_conn->query("SELECT * FROM payment_transactions ORDER BY created_at DESC LIMIT 3");
+        if ($result && $result->num_rows > 0) {
+            echo "<table border='1' cellpadding='5'>";
+            $first = true;
+            while ($row = $result->fetch_assoc()) {
+                if ($first) {
+                    echo "<tr>";
+                    foreach (array_keys($row) as $key) {
+                        echo "<th>$key</th>";
+                    }
+                    echo "</tr>";
+                    $first = false;
+                }
+                echo "<tr>";
+                foreach ($row as $value) {
+                    echo "<td>" . htmlspecialchars($value) . "</td>";
+                }
+                echo "</tr>";
+            }
+            echo "</table>";
+        } else {
+            echo "<p>No transactions found or error: " . $portal_conn->error . "</p>";
+        }
     } else {
         echo "<p>Error: Database connection failed.</p>";
     }
@@ -68,6 +97,7 @@ function checkTableStructure($conn, $tableName) {
     
 </body>
 </html>
+
 
 
 

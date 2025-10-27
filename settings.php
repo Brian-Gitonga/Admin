@@ -10,12 +10,17 @@ require_once 'mpesa_settings_operations.php';
 $reseller_id = $_SESSION['user_id'];
 
 // Load M-Pesa settings for the current reseller
+// This will automatically use system defaults if reseller hasn't configured yet
 $mpesaSettings = getMpesaSettings($conn, $reseller_id);
 
-// If no settings found, use blank settings
-if (!$mpesaSettings) {
-    $mpesaSettings = getBlankMpesaSettings();
+// Check if this is using system defaults (for display purposes)
+$usingSystemDefaults = false;
+if (empty($mpesaSettings['paybill_consumer_key']) || empty($mpesaSettings['paybill_consumer_secret'])) {
+    $usingSystemDefaults = true;
 }
+
+// Get system defaults to show in UI
+$systemDefaults = getSystemMpesaApiCredentials();
 
 // Load Hotspot settings for the current reseller
 $hotspotSettings = array(
@@ -43,10 +48,11 @@ if ($result->num_rows > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qtro ISP - Settings</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="other-css/settings.css">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
     <?php include 'nav.php'; ?>
@@ -208,49 +214,125 @@ if ($result->num_rows > 0) {
                     
                     <!-- Paybill Settings - All fields editable -->
                     <div id="bank-settings" style="<?php echo $mpesaSettings['payment_gateway'] == 'paybill' ? 'display: block;' : 'display: none;'; ?>">
+                        <?php if ($usingSystemDefaults): ?>
+                        <div class="alert alert-info" style="background: #e3f2fd; border: 1px solid #2196f3; padding: 12px; border-radius: 8px; margin-bottom: 20px;">
+                            <i class="fas fa-info-circle" style="color: #2196f3;"></i>
+                            <strong>Using System Default Credentials</strong><br>
+                            These are test credentials. You can edit and save your own M-Pesa API credentials below.
+                        </div>
+                        <?php endif; ?>
+                        
                         <div class="form-group">
                             <label for="paybill-number" class="form-label">Paybill Number</label>
                             <input type="text" id="paybill-number" class="form-input" placeholder="Enter paybill number" value="<?php echo htmlspecialchars($mpesaSettings['paybill_number']); ?>">
+                            <p class="form-help">Your M-Pesa paybill business number</p>
                         </div>
                         <div class="form-group">
-                            <label for="paybill-shortcode" class="form-label">Mpesa Shortcode</label>
+                            <label for="paybill-shortcode" class="form-label">
+                                M-Pesa Shortcode (Business Number)
+                                <?php if ($usingSystemDefaults): ?>
+                                <span style="color: #2196f3; font-size: 12px;">(Currently: <?php echo $systemDefaults['shortcode']; ?>)</span>
+                                <?php endif; ?>
+                            </label>
                             <input type="text" id="paybill-shortcode" class="form-input" placeholder="Enter mpesa shortcode" value="<?php echo htmlspecialchars($mpesaSettings['paybill_shortcode']); ?>">
+                            <p class="form-help">Your M-Pesa business shortcode for API calls</p>
                         </div>
                         <div class="form-group">
-                            <label for="paybill-passkey" class="form-label">Mpesa Passkey</label>
-                            <input type="text" id="paybill-passkey" class="form-input" placeholder="Enter mpesa passkey" value="<?php echo htmlspecialchars($mpesaSettings['paybill_passkey']); ?>">
+                            <label for="paybill-passkey" class="form-label">
+                                M-Pesa Passkey
+                                <?php if ($usingSystemDefaults): ?>
+                                <span style="color: #2196f3; font-size: 12px;">(Using system default)</span>
+                                <?php endif; ?>
+                            </label>
+                            <input type="password" id="paybill-passkey" class="form-input" placeholder="Enter mpesa passkey" value="<?php echo htmlspecialchars($mpesaSettings['paybill_passkey']); ?>">
+                            <p class="form-help">Your M-Pesa Lipa Na M-Pesa Online Passkey from Daraja</p>
                         </div>
                         <div class="form-group">
-                            <label for="paybill-consumer-key" class="form-label">Consumer Key</label>
+                            <label for="paybill-consumer-key" class="form-label">
+                                Consumer Key (App Key)
+                                <?php if ($usingSystemDefaults): ?>
+                                <span style="color: #2196f3; font-size: 12px;">(Using system default)</span>
+                                <?php endif; ?>
+                            </label>
                             <input type="text" id="paybill-consumer-key" class="form-input" placeholder="Enter consumer key" value="<?php echo htmlspecialchars($mpesaSettings['paybill_consumer_key']); ?>">
+                            <p class="form-help">Your M-Pesa Daraja API Consumer Key</p>
                         </div>
                         <div class="form-group">
-                            <label for="paybill-consumer-secret" class="form-label">Consumer Secret</label>
-                            <input type="text" id="paybill-consumer-secret" class="form-input" placeholder="Enter consumer secret" value="<?php echo htmlspecialchars($mpesaSettings['paybill_consumer_secret']); ?>">
+                            <label for="paybill-consumer-secret" class="form-label">
+                                Consumer Secret (App Secret)
+                                <?php if ($usingSystemDefaults): ?>
+                                <span style="color: #2196f3; font-size: 12px;">(Using system default)</span>
+                                <?php endif; ?>
+                            </label>
+                            <input type="password" id="paybill-consumer-secret" class="form-input" placeholder="Enter consumer secret" value="<?php echo htmlspecialchars($mpesaSettings['paybill_consumer_secret']); ?>">
+                            <p class="form-help">Your M-Pesa Daraja API Consumer Secret</p>
+                        </div>
+                        
+                        <div class="alert alert-warning" style="background: #fff3cd; border: 1px solid #ffc107; padding: 12px; border-radius: 8px; margin-top: 20px;">
+                            <i class="fas fa-exclamation-triangle" style="color: #856404;"></i>
+                            <strong>Note:</strong> The callback URL is automatically configured by the system. You don't need to set it.
                         </div>
                     </div>
                     
                     <!-- Till Settings - All fields editable -->
                     <div id="till-settings" style="<?php echo $mpesaSettings['payment_gateway'] == 'till' ? 'display: block;' : 'display: none;'; ?>">
+                        <?php if ($usingSystemDefaults): ?>
+                        <div class="alert alert-info" style="background: #e3f2fd; border: 1px solid #2196f3; padding: 12px; border-radius: 8px; margin-bottom: 20px;">
+                            <i class="fas fa-info-circle" style="color: #2196f3;"></i>
+                            <strong>Using System Default Credentials</strong><br>
+                            These are test credentials. You can edit and save your own M-Pesa API credentials below.
+                        </div>
+                        <?php endif; ?>
+                        
                         <div class="form-group">
                             <label for="till-number" class="form-label">Till Number</label>
                             <input type="text" id="till-number" class="form-input" placeholder="Enter till number" value="<?php echo htmlspecialchars($mpesaSettings['till_number']); ?>">
+                            <p class="form-help">Your M-Pesa till business number</p>
                         </div>
                         <div class="form-group">
-                            <label for="till-shortcode" class="form-label">Mpesa Shortcode</label>
+                            <label for="till-shortcode" class="form-label">
+                                M-Pesa Shortcode (Business Number)
+                                <?php if ($usingSystemDefaults): ?>
+                                <span style="color: #2196f3; font-size: 12px;">(Currently: <?php echo $systemDefaults['shortcode']; ?>)</span>
+                                <?php endif; ?>
+                            </label>
                             <input type="text" id="till-shortcode" class="form-input" placeholder="Enter mpesa shortcode" value="<?php echo htmlspecialchars($mpesaSettings['till_shortcode']); ?>">
+                            <p class="form-help">Your M-Pesa business shortcode for API calls</p>
                         </div>
                         <div class="form-group">
-                            <label for="till-passkey" class="form-label">Mpesa Passkey</label>
-                            <input type="text" id="till-passkey" class="form-input" placeholder="Enter mpesa passkey" value="<?php echo htmlspecialchars($mpesaSettings['till_passkey']); ?>">
+                            <label for="till-passkey" class="form-label">
+                                M-Pesa Passkey
+                                <?php if ($usingSystemDefaults): ?>
+                                <span style="color: #2196f3; font-size: 12px;">(Using system default)</span>
+                                <?php endif; ?>
+                            </label>
+                            <input type="password" id="till-passkey" class="form-input" placeholder="Enter mpesa passkey" value="<?php echo htmlspecialchars($mpesaSettings['till_passkey']); ?>">
+                            <p class="form-help">Your M-Pesa Lipa Na M-Pesa Online Passkey from Daraja</p>
                         </div>
                         <div class="form-group">
-                            <label for="till-consumer-key" class="form-label">Consumer Key</label>
+                            <label for="till-consumer-key" class="form-label">
+                                Consumer Key (App Key)
+                                <?php if ($usingSystemDefaults): ?>
+                                <span style="color: #2196f3; font-size: 12px;">(Using system default)</span>
+                                <?php endif; ?>
+                            </label>
                             <input type="text" id="till-consumer-key" class="form-input" placeholder="Enter Consumer Key" value="<?php echo htmlspecialchars($mpesaSettings['till_consumer_key']); ?>">
+                            <p class="form-help">Your M-Pesa Daraja API Consumer Key</p>
                         </div>
                         <div class="form-group">
-                            <label for="till-consumer-secret" class="form-label">Consumer Secret</label>
-                            <input type="text" id="till-consumer-secret" class="form-input" placeholder="Enter Consumer Secret" value="<?php echo htmlspecialchars($mpesaSettings['till_consumer_secret']); ?>">
+                            <label for="till-consumer-secret" class="form-label">
+                                Consumer Secret (App Secret)
+                                <?php if ($usingSystemDefaults): ?>
+                                <span style="color: #2196f3; font-size: 12px;">(Using system default)</span>
+                                <?php endif; ?>
+                            </label>
+                            <input type="password" id="till-consumer-secret" class="form-input" placeholder="Enter Consumer Secret" value="<?php echo htmlspecialchars($mpesaSettings['till_consumer_secret']); ?>">
+                            <p class="form-help">Your M-Pesa Daraja API Consumer Secret</p>
+                        </div>
+                        
+                        <div class="alert alert-warning" style="background: #fff3cd; border: 1px solid #ffc107; padding: 12px; border-radius: 8px; margin-top: 20px;">
+                            <i class="fas fa-exclamation-triangle" style="color: #856404;"></i>
+                            <strong>Note:</strong> The callback URL is automatically configured by the system. You don't need to set it.
                         </div>
                     </div>
 

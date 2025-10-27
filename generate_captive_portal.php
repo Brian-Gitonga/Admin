@@ -224,21 +224,32 @@ echo '<!DOCTYPE html>
         </div>
         
         <div class="content">
+            <!-- CHAP Authentication Hidden Form (Required by MikroTik) -->
+            $(if chap-id)
+            <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
+                <input type="hidden" name="username" />
+                <input type="hidden" name="password" />
+                <input type="hidden" name="dst" value="$(link-orig)" />
+                <input type="hidden" name="popup" value="true" />
+            </form>
+            $(endif)
+
             <!-- Voucher Login Form -->
             <form name="login" action="$(link-login-only)" method="post"$(if chap-id) onSubmit="return doLogin()"$(endif)>
-                $(if chap-id)
-                <input name="dst" type="hidden" value="$(link-orig)" />
-                <input name="popup" type="hidden" value="true" />
-                $(endif)
-                
+                <input type="hidden" name="dst" value="$(link-orig)" />
+                <input type="hidden" name="popup" value="true" />
+
                 <div class="form-group">
                     <label class="form-label" for="username">Voucher Code</label>
                     <input name="username" id="username" type="text" class="form-input" placeholder="Enter your voucher code" required />
-                    $(if chap-id)
-                    <input name="password" id="password" type="hidden" value="" />
-                    $(endif)
                 </div>
-                
+
+                $(if chap-id)
+                <div class="form-group" style="display:none;">
+                    <input name="password" id="password" type="password" value="" />
+                </div>
+                $(endif)
+
                 <button type="submit" class="connect-btn">Connect to WiFi</button>
             </form>
             
@@ -256,8 +267,11 @@ echo '<!DOCTYPE html>
     <script>
         $(if chap-id)
         function doLogin() {
-            document.login.username.value = document.login.username.value;
-            document.login.password.value = hexMD5(\'\$(chap-id)\' + document.login.username.value + \'\$(chap-challenge)\');
+            document.sendin.username.value = document.login.username.value;
+            // For voucher authentication, password is typically the same as username
+            var password = document.login.username.value;
+            document.sendin.password.value = hexMD5(\'$(chap-id)\' + password + \'$(chap-challenge)\');
+            document.sendin.submit();
             return false;
         }
 

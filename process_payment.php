@@ -6,7 +6,27 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // Enable error reporting for debugging
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set('display_errors', 0); // Don't display errors in JSON response
+ini_set('log_errors', 1);
+
+// Set error handler to catch fatal errors
+register_shutdown_function(function() {
+    $error = error_get_last();
+    if ($error && in_array($error['type'], [E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR])) {
+        if (!headers_sent()) {
+            header('Content-Type: application/json');
+        }
+        echo json_encode([
+            'success' => false,
+            'message' => 'Server error occurred during payment processing. Please try again.',
+            'debug_error' => $error['message'] . ' in ' . basename($error['file']) . ' on line ' . $error['line']
+        ]);
+        exit;
+    }
+});
+
+// Set JSON content type
+header('Content-Type: application/json');
 
 // Include the portal database connection
 require_once 'portal_connection.php';
@@ -34,7 +54,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mpesaNumber = isset($_POST['mpesa_number']) ? $_POST['mpesa_number'] : '';
     $packageId = isset($_POST['package_id']) ? intval($_POST['package_id']) : 0;
     $routerId = isset($_POST['router_id']) ? intval($_POST['router_id']) : 0;
-    
+
+    // CRITICAL FIX: Fetch package name from database if not provided or if it looks like an ID
+    // This ensures we always store the actual package name, not the ID
+    if (empty($packageName) || is_numeric($packageName)) {
+        log_debug("Package name is empty or numeric ('$packageName'), fetching from database...");
+
+        $packageQuery = $conn->prepare("SELECT name FROM packages WHERE id = ?");
+        if ($packageQuery) {
+            $packageQuery->bind_param("i", $packageId);
+            $packageQuery->execute();
+            $packageResult = $packageQuery->get_result();
+
+            if ($packageResult->num_rows > 0) {
+                $packageRow = $packageResult->fetch_assoc();
+                $packageName = $packageRow['name'];
+                log_debug("✅ Package name fetched from database: '$packageName'");
+            } else {
+                log_debug("❌ Package not found in database for ID: $packageId");
+                $packageName = "Package #$packageId"; // Fallback
+            }
+            $packageQuery->close();
+        } else {
+            log_debug("❌ Failed to prepare package query: " . $conn->error);
+        }
+    }
+
     log_debug("Form data received: " . json_encode([
         'resellerId' => $resellerId,
         'packageName' => $packageName,
@@ -43,12 +88,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'packageId' => $packageId,
         'routerId' => $routerId
     ]));
-    
-    // Validate inputs
-    if (empty($resellerId) || empty($packageName) || empty($packagePrice) || empty($mpesaNumber) || empty($packageId)) {
-        log_debug("Missing required fields");
-        $_SESSION['payment_error'] = 'Missing required fields';
-        echo json_encode(['success' => false, 'message' => 'Missing required fields']);
+
+    // Validate inputs with detailed error messages
+    $missingFields = [];
+    if (empty($resellerId)) $missingFields[] = 'reseller_id';
+    if (empty($packageName)) $missingFields[] = 'package_name';
+    if (empty($packagePrice)) $missingFields[] = 'package_price';
+    if (empty($mpesaNumber)) $missingFields[] = 'mpesa_number';
+    if (empty($packageId)) $missingFields[] = 'package_id';
+
+    if (!empty($missingFields)) {
+        $errorMessage = 'Missing required parameters: ' . implode(', ', $missingFields);
+        log_debug("Validation failed: $errorMessage");
+        log_debug("All POST data: " . print_r($_POST, true));
+
+        $_SESSION['payment_error'] = $errorMessage;
+        echo json_encode([
+            'success' => false,
+            'message' => $errorMessage,
+            'debug_info' => [
+                'missing_fields' => $missingFields,
+                'received_data' => array_keys($_POST)
+            ]
+        ]);
         exit;
     }
     
@@ -85,8 +147,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get reseller-specific M-Pesa credentials
     $mpesaCredentials = getMpesaCredentials($conn, $resellerId);
     
+    log_debug("M-Pesa Credentials Retrieved:");
+    log_debug("  - Payment Gateway: " . ($mpesaCredentials['payment_gateway'] ?? 'NOT SET'));
+    log_debug("  - Environment: " . ($mpesaCredentials['environment'] ?? 'NOT SET'));
+    log_debug("  - Consumer Key: " . (empty($mpesaCredentials['consumer_key']) ? '❌ EMPTY' : '✅ SET (' . strlen($mpesaCredentials['consumer_key']) . ' chars)'));
+    log_debug("  - Consumer Secret: " . (empty($mpesaCredentials['consumer_secret']) ? '❌ EMPTY' : '✅ SET (' . strlen($mpesaCredentials['consumer_secret']) . ' chars)'));
+    log_debug("  - Business Shortcode: " . ($mpesaCredentials['business_shortcode'] ?? 'NOT SET'));
+    log_debug("  - Callback URL: " . ($mpesaCredentials['callback_url'] ?? 'NOT SET'));
+    
     $consumerKey = $mpesaCredentials['consumer_key'];
     $consumerSecret = $mpesaCredentials['consumer_secret'];
+    
+    // Validate that we have credentials
+    if (empty($consumerKey) || empty($consumerSecret)) {
+        $errorMsg = "M-Pesa API credentials not configured for reseller $resellerId. Please configure M-Pesa settings in your account.";
+        log_debug("❌ ERROR: " . $errorMsg);
+        echo json_encode([
+            'success' => false,
+            'message' => 'Payment system not configured. Please contact support.',
+            'debug_info' => 'Missing API credentials'
+        ]);
+        exit;
+    }
     
     function generateAccessToken($consumerKey, $consumerSecret) {
         global $log_file;
@@ -137,9 +219,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $Timestamp = date('YmdHis');
     $Password = base64_encode($BusinessShortCode . $Passkey . $Timestamp);
 
-    // Use the callback URL from the settings if available, otherwise use the default
-    $CallBackURL = !empty($mpesaCredentials['callback_url']) ? $mpesaCredentials['callback_url'] : 'https://mydomain.com/path';
-    log_debug("Using callback URL: " . $CallBackURL);
+    // ALWAYS use the system callback URL (hardcoded, not user-configurable)
+    $systemCredentials = getSystemMpesaApiCredentials();
+    $CallBackURL = $systemCredentials['callback_url'];
+    log_debug("Using system callback URL: " . $CallBackURL);
 
     // Enhanced logging when using ngrok
     if (strpos($CallBackURL, 'ngrok') !== false) {
@@ -206,30 +289,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         // Store transaction details in the database with all available info
         try {
-            // If table doesn't exist yet, this will fail but we'll continue processing
-            $query = "INSERT INTO mpesa_transactions 
-                     (checkout_request_id, merchant_request_id, amount, phone_number, package_id, package_name, reseller_id, router_id, status) 
-                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'pending')";
-                     
+            // Insert transaction with checkout_request_id from M-Pesa API (NOT generated locally)
+            // voucher_id and voucher_code will be populated later by voucher handler after payment
+            $query = "INSERT INTO mpesa_transactions
+                     (checkout_request_id, merchant_request_id, amount, phone_number, package_id, package_name, reseller_id, voucher_id, voucher_code, status)
+                     VALUES (?, ?, ?, ?, ?, ?, ?, '', '', 'pending')";
+
             $stmt = $conn->prepare($query);
             if ($stmt) {
-                $stmt->bind_param("ssdsisii", 
+                $stmt->bind_param("ssdsiis",
                     $response_data->CheckoutRequestID,
-                    $response_data->MerchantRequestID, 
-                    $packagePrice, 
-                    $mpesaNumber, 
-                    $packageId, 
-                    $packageName, 
-                    $resellerId,
-                    $routerId
+                    $response_data->MerchantRequestID,
+                    $packagePrice,
+                    $mpesaNumber,
+                    $packageId,
+                    $packageName,
+                    $resellerId
                 );
-                $stmt->execute();
-                log_debug("Transaction details saved to database with ID: " . $conn->insert_id);
+
+                if ($stmt->execute()) {
+                    $insertId = $conn->insert_id;
+                    log_debug("✅ Transaction saved to database with ID: $insertId | CheckoutRequestID: " . $response_data->CheckoutRequestID);
+                } else {
+                    log_debug("❌ Failed to execute INSERT: " . $stmt->error);
+                }
+                $stmt->close();
             } else {
-                log_debug("Failed to prepare transaction statement: " . $conn->error);
+                log_debug("❌ Failed to prepare transaction statement: " . $conn->error);
             }
         } catch (Exception $e) {
-            log_debug("Database error when saving transaction: " . $e->getMessage());
+            log_debug("❌ Database error when saving transaction: " . $e->getMessage());
             // Continue even if DB error occurs, to not disrupt user flow
         }
 

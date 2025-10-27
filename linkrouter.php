@@ -95,23 +95,63 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['save_router'])) {
     $stmt->close();
 }
 
+// Process router status toggle
+if (isset($_GET['action']) && $_GET['action'] == 'toggle_status' && isset($_GET['id'])) {
+    $router_id = intval($_GET['id']);
+    $reseller_id = $_SESSION['user_id'];
+
+    // First, get the current status
+    $check_stmt = $conn->prepare("SELECT status FROM hotspots WHERE id = ? AND reseller_id = ?");
+    $check_stmt->bind_param("ii", $router_id, $reseller_id);
+    $check_stmt->execute();
+    $result = $check_stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $router = $result->fetch_assoc();
+        $current_status = $router['status'];
+
+        // Toggle the status
+        $new_status = ($current_status == 'online') ? 'offline' : 'online';
+
+        // Update the status
+        $update_stmt = $conn->prepare("UPDATE hotspots SET status = ? WHERE id = ? AND reseller_id = ?");
+        $update_stmt->bind_param("sii", $new_status, $router_id, $reseller_id);
+
+        if ($update_stmt->execute()) {
+            $success_message = "Router status updated to " . ucfirst($new_status) . " successfully!";
+        } else {
+            $error_message = "Error updating router status: " . $update_stmt->error;
+        }
+
+        $update_stmt->close();
+    } else {
+        $error_message = "Router not found or you don't have permission to modify it.";
+    }
+
+    $check_stmt->close();
+
+    // Redirect to avoid resubmission
+    header("Location: linkrouter.php");
+    exit();
+}
+
 // Process router deletion
 if (isset($_GET['action']) && $_GET['action'] == 'delete' && isset($_GET['id'])) {
     $router_id = intval($_GET['id']);
     $reseller_id = $_SESSION['user_id'];
-    
+
     // Prepare and execute delete query with security check for reseller_id
     $stmt = $conn->prepare("DELETE FROM hotspots WHERE id = ? AND reseller_id = ?");
     $stmt->bind_param("ii", $router_id, $reseller_id);
-    
+
     if ($stmt->execute()) {
         $success_message = "Router deleted successfully!";
     } else {
         $error_message = "Error deleting router: " . $stmt->error;
     }
-    
+
     $stmt->close();
-    
+
     // Redirect to avoid resubmission
     header("Location: linkrouter.php");
     exit();
@@ -190,6 +230,7 @@ if ($access_stmt) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>link router</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="other-css/linkrouter.css">
@@ -316,47 +357,54 @@ if ($access_stmt) {
             </div>
         </div>
         
-        <div class="router-card-filters">
-            <h3 class="filter-title">Filter Routers</h3>
-            <div class="filter-options">
-                <a href="linkrouter.php" class="filter-btn <?php echo !isset($_GET['status']) ? 'active' : ''; ?>">All</a>
-                <a href="linkrouter.php?status=online" class="filter-btn <?php echo (isset($_GET['status']) && $_GET['status'] == 'online') ? 'active' : ''; ?>">
-                    <span class="status-dot online"></span> Online
+        <?php
+        // Count online and offline routers
+        $online_count = 0;
+        $offline_count = 0;
+        foreach ($routers as $router) {
+            if ($router['status'] == 'online') {
+                $online_count++;
+            } else {
+                $offline_count++;
+            }
+        }
+        ?>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <div class="filter-header">
+                <h3 class="filter-title">Filter Routers</h3>
+            </div>
+            <div class="filter-buttons">
+                <a href="linkrouter.php" class="filter-btn <?php echo !isset($_GET['status']) ? 'active' : ''; ?>">
+                    All
                 </a>
-                <a href="linkrouter.php?status=offline" class="filter-btn <?php echo (isset($_GET['status']) && $_GET['status'] == 'offline') ? 'active' : ''; ?>">
-                    <span class="status-dot offline"></span> Offline
+                <a href="linkrouter.php?status=online" class="filter-btn filter-online <?php echo (isset($_GET['status']) && $_GET['status'] == 'online') ? 'active' : ''; ?>">
+                    <span class="filter-dot online"></span> Online
+                </a>
+                <a href="linkrouter.php?status=offline" class="filter-btn filter-offline <?php echo (isset($_GET['status']) && $_GET['status'] == 'offline') ? 'active' : ''; ?>">
+                    <span class="filter-dot offline"></span> Offline
                 </a>
             </div>
         </div>
-        
-        <div class="router-cards">
-            <?php 
-            // Count online and offline routers
-            $online_count = 0;
-            $offline_count = 0;
-            foreach ($routers as $router) {
-                if ($router['status'] == 'online') {
-                    $online_count++;
-                } else {
-                    $offline_count++;
-                }
-            }
-            ?>
-            
-            <div class="router-summary">
-                <div class="summary-item">
-                    <div class="summary-title">Total Routers</div>
-                    <div class="summary-value"><?php echo count($routers); ?></div>
-                </div>
-                <div class="summary-item">
-                    <div class="summary-title">Online</div>
-                    <div class="summary-value online"><?php echo $online_count; ?></div>
-                </div>
-                <div class="summary-item">
-                    <div class="summary-title">Offline</div>
-                    <div class="summary-value offline"><?php echo $offline_count; ?></div>
-                </div>
+
+        <!-- Router Summary Cards -->
+        <div class="router-summary-grid">
+            <div class="summary-card">
+                <div class="summary-label">TOTAL ROUTERS</div>
+                <div class="summary-number"><?php echo count($routers); ?></div>
             </div>
+            <div class="summary-card summary-online">
+                <div class="summary-label">ONLINE</div>
+                <div class="summary-number"><?php echo $online_count; ?></div>
+            </div>
+            <div class="summary-card summary-offline">
+                <div class="summary-label">OFFLINE</div>
+                <div class="summary-number"><?php echo $offline_count; ?></div>
+            </div>
+        </div>
+
+        <div class="router-cards">
             
             <?php if (empty($routers)): ?>
             <p class="no-routers-message">No routers have been configured yet. Add your first router above.</p>
@@ -364,36 +412,54 @@ if ($access_stmt) {
                 <?php foreach ($routers as $router): ?>
                 <div class="router-card">
                     <div class="router-card-header">
-                        <div class="router-card-title"><?php echo htmlspecialchars($router['name']); ?></div>
-                        <div class="router-card-icon">
-                            <i class="fas fa-wifi"></i>
+                        <div class="router-name">
+                            <i class="fas fa-wifi router-wifi-icon"></i>
+                            <?php echo htmlspecialchars($router['name']); ?>
                         </div>
                     </div>
-                    <div class="router-card-content">
-                        <div class="router-detail">
-                            <span class="detail-label"><i class="fas fa-globe"></i> IP:</span>
-                            <span class="detail-value"><?php echo htmlspecialchars($router['router_ip']); ?></span>
+
+                    <div class="router-card-body">
+                        <div class="router-info-row">
+                            <div class="info-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="info-content">
+                                <div class="info-label">IP:</div>
+                                <div class="info-value"><?php echo htmlspecialchars($router['router_ip']); ?></div>
+                            </div>
                         </div>
-                        <div class="router-detail">
-                            <span class="detail-label"><i class="fas fa-user"></i> Username:</span>
-                            <span class="detail-value"><?php echo htmlspecialchars($router['router_username']); ?></span>
+
+                        <div class="router-info-row">
+                            <div class="info-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="info-content">
+                                <div class="info-label">Username:</div>
+                                <div class="info-value"><?php echo htmlspecialchars($router['router_username']); ?></div>
+                            </div>
                         </div>
-                        <div class="router-detail">
-                            <span class="detail-label"><i class="fas fa-plug"></i> Management Port:</span>
-                            <span class="detail-value"><?php echo htmlspecialchars($router['api_port']); ?></span>
+
+                        <div class="router-info-row">
+                            <div class="info-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <div class="info-content">
+                                <div class="info-label">Management Port:</div>
+                                <div class="info-value"><?php echo htmlspecialchars($router['api_port']); ?></div>
+                            </div>
                         </div>
                     </div>
+
                     <div class="router-card-footer">
-                        <div class="router-card-status">
-                            <span class="status-dot <?php echo ($router['status'] == 'online') ? 'online' : 'offline'; ?>"></span>
+                        <div class="router-status-badge <?php echo ($router['status'] == 'online') ? 'status-online' : 'status-offline'; ?>">
+                            <span class="status-indicator"></span>
                             <?php echo ucfirst($router['status']); ?>
                         </div>
-                        <div class="router-card-actions">
-                            <a href="edit_router.php?id=<?php echo $router['id']; ?>" class="btn-icon" title="Edit Router">
+                        <div class="router-actions">
+                            <a href="edit_router.php?id=<?php echo $router['id']; ?>" class="action-btn action-edit" title="Edit Router">
                                 <i class="fas fa-edit"></i>
                             </a>
-
-                            <a href="?action=delete&id=<?php echo $router['id']; ?>" class="btn-icon btn-delete" 
+                            <a href="?action=delete&id=<?php echo $router['id']; ?>" class="action-btn action-delete"
                                onclick="return confirm('Are you sure you want to delete this router?');" title="Delete Router">
                                 <i class="fas fa-trash-alt"></i>
                             </a>

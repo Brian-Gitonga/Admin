@@ -358,3 +358,1326 @@
 
 [2025-04-14 12:27:27] Callback raw data: 
 [2025-04-14 12:27:27] Failed to decode JSON data: Syntax error
+[2025-10-02 21:45:08] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-02 21:45:08] Remote IP: ::1
+[2025-10-02 21:45:08] Request Method: GET
+[2025-10-02 21:45:08] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 21:45:08] Full URL: http://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 21:45:08] Request Headers: Array
+(
+    [Host] => fd7f49c64822.ngrok-free.app
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9,ru;q=0.8,ja;q=0.7
+    [Cache-Control] => max-age=0
+    [Cookie] => abuse_interstitial=fd7f49c64822.ngrok-free.app; PHPSESSID=dmhbd6m5809hlivour3cm40ofs
+    [Priority] => u=0, i
+    [Sec-Ch-Ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Sec-Ch-Ua-Platform] => "Windows"
+    [Sec-Fetch-Dest] => document
+    [Sec-Fetch-Mode] => navigate
+    [Sec-Fetch-Site] => none
+    [Sec-Fetch-User] => ?1
+    [Upgrade-Insecure-Requests] => 1
+    [X-Forwarded-For] => 102.219.208.90
+    [X-Forwarded-Host] => fd7f49c64822.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-10-02 21:45:08] Callback raw data: 
+[2025-10-02 21:45:08] WARNING: Empty request body received
+[2025-10-02 21:47:51] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-02 21:47:51] Remote IP: ::1
+[2025-10-02 21:47:51] Request Method: GET
+[2025-10-02 21:47:51] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 21:47:51] Full URL: http://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 21:47:51] Request Headers: Array
+(
+    [Host] => fd7f49c64822.ngrok-free.app
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9,ru;q=0.8,ja;q=0.7
+    [Cache-Control] => max-age=0
+    [Cookie] => abuse_interstitial=fd7f49c64822.ngrok-free.app; PHPSESSID=dmhbd6m5809hlivour3cm40ofs
+    [Priority] => u=0, i
+    [Sec-Ch-Ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Sec-Ch-Ua-Platform] => "Windows"
+    [Sec-Fetch-Dest] => document
+    [Sec-Fetch-Mode] => navigate
+    [Sec-Fetch-Site] => none
+    [Sec-Fetch-User] => ?1
+    [Upgrade-Insecure-Requests] => 1
+    [X-Forwarded-For] => 102.219.208.90
+    [X-Forwarded-Host] => fd7f49c64822.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-10-02 21:47:51] Callback raw data: 
+[2025-10-02 21:47:51] WARNING: Empty request body received
+[2025-10-02 21:47:55] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-02 21:47:55] Remote IP: ::1
+[2025-10-02 21:47:55] Request Method: GET
+[2025-10-02 21:47:55] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 21:47:55] Full URL: http://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 21:47:55] Request Headers: Array
+(
+    [Host] => fd7f49c64822.ngrok-free.app
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9,ru;q=0.8,ja;q=0.7
+    [Cache-Control] => max-age=0
+    [Cookie] => abuse_interstitial=fd7f49c64822.ngrok-free.app; PHPSESSID=dmhbd6m5809hlivour3cm40ofs
+    [Priority] => u=0, i
+    [Sec-Ch-Ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Sec-Ch-Ua-Platform] => "Windows"
+    [Sec-Fetch-Dest] => document
+    [Sec-Fetch-Mode] => navigate
+    [Sec-Fetch-Site] => none
+    [Sec-Fetch-User] => ?1
+    [Upgrade-Insecure-Requests] => 1
+    [X-Forwarded-For] => 102.219.208.90
+    [X-Forwarded-Host] => fd7f49c64822.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-10-02 21:47:55] Callback raw data: 
+[2025-10-02 21:47:55] WARNING: Empty request body received
+[2025-10-02 23:21:05] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-02 23:21:05] Remote IP: ::1
+[2025-10-02 23:21:05] Request Method: GET
+[2025-10-02 23:21:05] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 23:21:05] Full URL: http://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 23:21:05] Request Headers: Array
+(
+    [Host] => fd7f49c64822.ngrok-free.app
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9,ru;q=0.8,ja;q=0.7
+    [Cookie] => abuse_interstitial=fd7f49c64822.ngrok-free.app; PHPSESSID=dmhbd6m5809hlivour3cm40ofs
+    [Priority] => u=0, i
+    [Sec-Ch-Ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Sec-Ch-Ua-Platform] => "Windows"
+    [Sec-Fetch-Dest] => document
+    [Sec-Fetch-Mode] => navigate
+    [Sec-Fetch-Site] => none
+    [Sec-Fetch-User] => ?1
+    [Upgrade-Insecure-Requests] => 1
+    [X-Forwarded-For] => 102.219.208.90
+    [X-Forwarded-Host] => fd7f49c64822.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-10-02 23:21:05] Callback raw data: 
+[2025-10-02 23:21:05] WARNING: Empty request body received
+[2025-10-02 23:21:10] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-02 23:21:10] Remote IP: ::1
+[2025-10-02 23:21:10] Request Method: GET
+[2025-10-02 23:21:10] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 23:21:10] Full URL: http://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 23:21:10] Request Headers: Array
+(
+    [Host] => fd7f49c64822.ngrok-free.app
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9,ru;q=0.8,ja;q=0.7
+    [Cache-Control] => max-age=0
+    [Cookie] => abuse_interstitial=fd7f49c64822.ngrok-free.app; PHPSESSID=dmhbd6m5809hlivour3cm40ofs
+    [Priority] => u=0, i
+    [Sec-Ch-Ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Sec-Ch-Ua-Platform] => "Windows"
+    [Sec-Fetch-Dest] => document
+    [Sec-Fetch-Mode] => navigate
+    [Sec-Fetch-Site] => none
+    [Sec-Fetch-User] => ?1
+    [Upgrade-Insecure-Requests] => 1
+    [X-Forwarded-For] => 102.219.208.90
+    [X-Forwarded-Host] => fd7f49c64822.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-10-02 23:21:10] Callback raw data: 
+[2025-10-02 23:21:10] WARNING: Empty request body received
+[2025-10-02 23:54:19] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-02 23:54:19] Remote IP: ::1
+[2025-10-02 23:54:19] Request Method: POST
+[2025-10-02 23:54:19] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 23:54:19] Full URL: http://localhost/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 23:54:19] Request Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 9771
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/SAAS/Wifi%20Billiling%20system/Admin/fix_mpesa_callback_database.php
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9,ru;q=0.8,ja;q=0.7
+    [Cookie] => PHPSESSID=nsfnpgoalqnq299cglpfo22pc8
+)
+
+[2025-10-02 23:54:19] Callback raw data: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_TEST_1759442059564","CheckoutRequestID":"<h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>\n<script>\nfunction testCallback() {\n    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';\n    \n    // Get a checkout ID from the database to test with\n    fetch('?action=get_test_checkout_id')\n    .then(response => response.text())\n    .then(checkoutId => {\n        if (checkoutId && checkoutId.trim() !== '') {\n            // Simulate M-Pesa callback data\n            const callbackData = {\n                \"Body\": {\n                    \"stkCallback\": {\n                        \"MerchantRequestID\": \"ws_MR_TEST_\" + Date.now(),\n                        \"CheckoutRequestID\": checkoutId.trim(),\n                        \"ResultCode\": 0,\n                        \"ResultDesc\": \"The service request is processed successfully.\",\n                        \"CallbackMetadata\": {\n                            \"Item\": [\n                                {\"Name\": \"Amount\", \"Value\": 10},\n                                {\"Name\": \"MpesaReceiptNumber\", \"Value\": \"TEST\" + Math.floor(Math.random() * 1000000)},\n                                {\"Name\": \"TransactionDate\", \"Value\": \"20251002\" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},\n                                {\"Name\": \"PhoneNumber\", \"Value\": \"254700123456\"}\n                            ]\n                        }\n                    }\n                }\n            };\n            \n            // Send to callback\n            fetch('mpesa_callback.php', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/json',\n                },\n                body: JSON.stringify(callbackData)\n            })\n            .then(response => response.text())\n            .then(result => {\n                document.getElementById('callback-test-result').innerHTML = \n                    '<h5>Callback Test Result:</h5>' +\n                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +\n                    '<pre style=\"background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;\">' + result + '</pre>' +\n                    '<p><a href=\"?\" style=\"color: blue;\">Refresh page to see updated data</a></p>';\n            })\n            .catch(error => {\n                document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ Test failed: ' + error + '</p>';\n            });\n        } else {\n            document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ No checkout ID available for testing</p>';\n        }\n    })\n    .catch(error => {\n        document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ Failed to get test checkout ID: ' + error + '</p>';\n    });\n}\n</script>\n\nws_CO_TEST_1759435633847446","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":10},{"Name":"MpesaReceiptNumber","Value":"TEST452328"},{"Name":"TransactionDate","Value":"20251002005419"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-10-02 23:54:19] Callback decoded: stdClass Object
+(
+    [Body] => stdClass Object
+        (
+            [stkCallback] => stdClass Object
+                (
+                    [MerchantRequestID] => ws_MR_TEST_1759442059564
+                    [CheckoutRequestID] => <h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446
+                    [ResultCode] => 0
+                    [ResultDesc] => The service request is processed successfully.
+                    [CallbackMetadata] => stdClass Object
+                        (
+                            [Item] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [Name] => Amount
+                                            [Value] => 10
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [Name] => MpesaReceiptNumber
+                                            [Value] => TEST452328
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [Name] => TransactionDate
+                                            [Value] => 20251002005419
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [Name] => PhoneNumber
+                                            [Value] => 254700123456
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-10-02 23:54:19] Processing STK callback: CheckoutRequestID=<h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446, ResultCode=0, ResultDesc=The service request is processed successfully.
+[2025-10-02 23:54:19] ERROR: No transaction found with CheckoutRequestID: <h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446
+[2025-10-02 23:55:00] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-02 23:55:00] Remote IP: ::1
+[2025-10-02 23:55:00] Request Method: POST
+[2025-10-02 23:55:00] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 23:55:00] Full URL: http://localhost/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 23:55:00] Request Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 9771
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/SAAS/Wifi%20Billiling%20system/Admin/fix_mpesa_callback_database.php?
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9,ru;q=0.8,ja;q=0.7
+    [Cookie] => PHPSESSID=nsfnpgoalqnq299cglpfo22pc8
+)
+
+[2025-10-02 23:55:00] Callback raw data: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_TEST_1759442100264","CheckoutRequestID":"<h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>\n<script>\nfunction testCallback() {\n    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';\n    \n    // Get a checkout ID from the database to test with\n    fetch('?action=get_test_checkout_id')\n    .then(response => response.text())\n    .then(checkoutId => {\n        if (checkoutId && checkoutId.trim() !== '') {\n            // Simulate M-Pesa callback data\n            const callbackData = {\n                \"Body\": {\n                    \"stkCallback\": {\n                        \"MerchantRequestID\": \"ws_MR_TEST_\" + Date.now(),\n                        \"CheckoutRequestID\": checkoutId.trim(),\n                        \"ResultCode\": 0,\n                        \"ResultDesc\": \"The service request is processed successfully.\",\n                        \"CallbackMetadata\": {\n                            \"Item\": [\n                                {\"Name\": \"Amount\", \"Value\": 10},\n                                {\"Name\": \"MpesaReceiptNumber\", \"Value\": \"TEST\" + Math.floor(Math.random() * 1000000)},\n                                {\"Name\": \"TransactionDate\", \"Value\": \"20251002\" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},\n                                {\"Name\": \"PhoneNumber\", \"Value\": \"254700123456\"}\n                            ]\n                        }\n                    }\n                }\n            };\n            \n            // Send to callback\n            fetch('mpesa_callback.php', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/json',\n                },\n                body: JSON.stringify(callbackData)\n            })\n            .then(response => response.text())\n            .then(result => {\n                document.getElementById('callback-test-result').innerHTML = \n                    '<h5>Callback Test Result:</h5>' +\n                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +\n                    '<pre style=\"background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;\">' + result + '</pre>' +\n                    '<p><a href=\"?\" style=\"color: blue;\">Refresh page to see updated data</a></p>';\n            })\n            .catch(error => {\n                document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ Test failed: ' + error + '</p>';\n            });\n        } else {\n            document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ No checkout ID available for testing</p>';\n        }\n    })\n    .catch(error => {\n        document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ Failed to get test checkout ID: ' + error + '</p>';\n    });\n}\n</script>\n\nws_CO_TEST_1759435633847446","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":10},{"Name":"MpesaReceiptNumber","Value":"TEST634099"},{"Name":"TransactionDate","Value":"20251002005500"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-10-02 23:55:00] Callback decoded: stdClass Object
+(
+    [Body] => stdClass Object
+        (
+            [stkCallback] => stdClass Object
+                (
+                    [MerchantRequestID] => ws_MR_TEST_1759442100264
+                    [CheckoutRequestID] => <h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446
+                    [ResultCode] => 0
+                    [ResultDesc] => The service request is processed successfully.
+                    [CallbackMetadata] => stdClass Object
+                        (
+                            [Item] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [Name] => Amount
+                                            [Value] => 10
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [Name] => MpesaReceiptNumber
+                                            [Value] => TEST634099
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [Name] => TransactionDate
+                                            [Value] => 20251002005500
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [Name] => PhoneNumber
+                                            [Value] => 254700123456
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-10-02 23:55:00] Processing STK callback: CheckoutRequestID=<h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446, ResultCode=0, ResultDesc=The service request is processed successfully.
+[2025-10-02 23:55:00] ERROR: No transaction found with CheckoutRequestID: <h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446
+[2025-10-02 23:55:21] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-02 23:55:21] Remote IP: ::1
+[2025-10-02 23:55:21] Request Method: GET
+[2025-10-02 23:55:21] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 23:55:21] Full URL: http://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-02 23:55:21] Request Headers: Array
+(
+    [Host] => fd7f49c64822.ngrok-free.app
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9,ru;q=0.8,ja;q=0.7
+    [Cookie] => abuse_interstitial=fd7f49c64822.ngrok-free.app; PHPSESSID=dmhbd6m5809hlivour3cm40ofs
+    [Priority] => u=0, i
+    [Sec-Ch-Ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Sec-Ch-Ua-Platform] => "Windows"
+    [Sec-Fetch-Dest] => document
+    [Sec-Fetch-Mode] => navigate
+    [Sec-Fetch-Site] => none
+    [Sec-Fetch-User] => ?1
+    [Upgrade-Insecure-Requests] => 1
+    [X-Forwarded-For] => 102.219.208.90
+    [X-Forwarded-Host] => fd7f49c64822.ngrok-free.app
+    [X-Forwarded-Proto] => https
+)
+
+[2025-10-02 23:55:21] Callback raw data: 
+[2025-10-02 23:55:21] WARNING: Empty request body received
+[2025-10-03 00:01:33] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-03 00:01:33] Remote IP: ::1
+[2025-10-03 00:01:33] Request Method: POST
+[2025-10-03 00:01:33] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-03 00:01:33] Full URL: http://localhost/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-03 00:01:33] Request Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 9771
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/SAAS/Wifi%20Billiling%20system/Admin/fix_mpesa_callback_database.php?
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9,ru;q=0.8,ja;q=0.7
+    [Cookie] => PHPSESSID=nsfnpgoalqnq299cglpfo22pc8
+)
+
+[2025-10-03 00:01:33] Callback raw data: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_TEST_1759442493768","CheckoutRequestID":"<h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>\n<script>\nfunction testCallback() {\n    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';\n    \n    // Get a checkout ID from the database to test with\n    fetch('?action=get_test_checkout_id')\n    .then(response => response.text())\n    .then(checkoutId => {\n        if (checkoutId && checkoutId.trim() !== '') {\n            // Simulate M-Pesa callback data\n            const callbackData = {\n                \"Body\": {\n                    \"stkCallback\": {\n                        \"MerchantRequestID\": \"ws_MR_TEST_\" + Date.now(),\n                        \"CheckoutRequestID\": checkoutId.trim(),\n                        \"ResultCode\": 0,\n                        \"ResultDesc\": \"The service request is processed successfully.\",\n                        \"CallbackMetadata\": {\n                            \"Item\": [\n                                {\"Name\": \"Amount\", \"Value\": 10},\n                                {\"Name\": \"MpesaReceiptNumber\", \"Value\": \"TEST\" + Math.floor(Math.random() * 1000000)},\n                                {\"Name\": \"TransactionDate\", \"Value\": \"20251002\" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},\n                                {\"Name\": \"PhoneNumber\", \"Value\": \"254700123456\"}\n                            ]\n                        }\n                    }\n                }\n            };\n            \n            // Send to callback\n            fetch('mpesa_callback.php', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/json',\n                },\n                body: JSON.stringify(callbackData)\n            })\n            .then(response => response.text())\n            .then(result => {\n                document.getElementById('callback-test-result').innerHTML = \n                    '<h5>Callback Test Result:</h5>' +\n                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +\n                    '<pre style=\"background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;\">' + result + '</pre>' +\n                    '<p><a href=\"?\" style=\"color: blue;\">Refresh page to see updated data</a></p>';\n            })\n            .catch(error => {\n                document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ Test failed: ' + error + '</p>';\n            });\n        } else {\n            document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ No checkout ID available for testing</p>';\n        }\n    })\n    .catch(error => {\n        document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ Failed to get test checkout ID: ' + error + '</p>';\n    });\n}\n</script>\n\nws_CO_TEST_1759435633847446","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":10},{"Name":"MpesaReceiptNumber","Value":"TEST744393"},{"Name":"TransactionDate","Value":"20251002010133"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-10-03 00:01:33] Callback decoded: stdClass Object
+(
+    [Body] => stdClass Object
+        (
+            [stkCallback] => stdClass Object
+                (
+                    [MerchantRequestID] => ws_MR_TEST_1759442493768
+                    [CheckoutRequestID] => <h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446
+                    [ResultCode] => 0
+                    [ResultDesc] => The service request is processed successfully.
+                    [CallbackMetadata] => stdClass Object
+                        (
+                            [Item] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [Name] => Amount
+                                            [Value] => 10
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [Name] => MpesaReceiptNumber
+                                            [Value] => TEST744393
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [Name] => TransactionDate
+                                            [Value] => 20251002010133
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [Name] => PhoneNumber
+                                            [Value] => 254700123456
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-10-03 00:01:33] Processing STK callback: CheckoutRequestID=<h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446, ResultCode=0, ResultDesc=The service request is processed successfully.
+[2025-10-03 00:01:33] ERROR: No transaction found with CheckoutRequestID: <h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446
+[2025-10-03 00:39:46] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-03 00:39:46] Remote IP: ::1
+[2025-10-03 00:39:46] Request Method: POST
+[2025-10-03 00:39:46] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-03 00:39:46] Full URL: http://localhost/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-03 00:39:46] Request Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 9771
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/SAAS/Wifi%20Billiling%20system/Admin/fix_mpesa_callback_database.php
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-US,en;q=0.9,ru;q=0.8,ja;q=0.7
+    [Cookie] => PHPSESSID=nsfnpgoalqnq299cglpfo22pc8
+)
+
+[2025-10-03 00:39:46] Callback raw data: {"Body":{"stkCallback":{"MerchantRequestID":"ws_MR_TEST_1759444786138","CheckoutRequestID":"<h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>\n<script>\nfunction testCallback() {\n    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';\n    \n    // Get a checkout ID from the database to test with\n    fetch('?action=get_test_checkout_id')\n    .then(response => response.text())\n    .then(checkoutId => {\n        if (checkoutId && checkoutId.trim() !== '') {\n            // Simulate M-Pesa callback data\n            const callbackData = {\n                \"Body\": {\n                    \"stkCallback\": {\n                        \"MerchantRequestID\": \"ws_MR_TEST_\" + Date.now(),\n                        \"CheckoutRequestID\": checkoutId.trim(),\n                        \"ResultCode\": 0,\n                        \"ResultDesc\": \"The service request is processed successfully.\",\n                        \"CallbackMetadata\": {\n                            \"Item\": [\n                                {\"Name\": \"Amount\", \"Value\": 10},\n                                {\"Name\": \"MpesaReceiptNumber\", \"Value\": \"TEST\" + Math.floor(Math.random() * 1000000)},\n                                {\"Name\": \"TransactionDate\", \"Value\": \"20251002\" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},\n                                {\"Name\": \"PhoneNumber\", \"Value\": \"254700123456\"}\n                            ]\n                        }\n                    }\n                }\n            };\n            \n            // Send to callback\n            fetch('mpesa_callback.php', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/json',\n                },\n                body: JSON.stringify(callbackData)\n            })\n            .then(response => response.text())\n            .then(result => {\n                document.getElementById('callback-test-result').innerHTML = \n                    '<h5>Callback Test Result:</h5>' +\n                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +\n                    '<pre style=\"background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;\">' + result + '</pre>' +\n                    '<p><a href=\"?\" style=\"color: blue;\">Refresh page to see updated data</a></p>';\n            })\n            .catch(error => {\n                document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ Test failed: ' + error + '</p>';\n            });\n        } else {\n            document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ No checkout ID available for testing</p>';\n        }\n    })\n    .catch(error => {\n        document.getElementById('callback-test-result').innerHTML = '<p style=\"color: red;\">❌ Failed to get test checkout ID: ' + error + '</p>';\n    });\n}\n</script>\n\nws_CO_TEST_1759435633847446","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":10},{"Name":"MpesaReceiptNumber","Value":"TEST841317"},{"Name":"TransactionDate","Value":"20251002013946"},{"Name":"PhoneNumber","Value":"254700123456"}]}}}}
+[2025-10-03 00:39:46] Callback decoded: stdClass Object
+(
+    [Body] => stdClass Object
+        (
+            [stkCallback] => stdClass Object
+                (
+                    [MerchantRequestID] => ws_MR_TEST_1759444786138
+                    [CheckoutRequestID] => <h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446
+                    [ResultCode] => 0
+                    [ResultDesc] => The service request is processed successfully.
+                    [CallbackMetadata] => stdClass Object
+                        (
+                            [Item] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [Name] => Amount
+                                            [Value] => 10
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [Name] => MpesaReceiptNumber
+                                            [Value] => TEST841317
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [Name] => TransactionDate
+                                            [Value] => 20251002013946
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [Name] => PhoneNumber
+                                            [Value] => 254700123456
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-10-03 00:39:46] Processing STK callback: CheckoutRequestID=<h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446, ResultCode=0, ResultDesc=The service request is processed successfully.
+[2025-10-03 00:39:46] ERROR: No transaction found with CheckoutRequestID: <h1>🔧 M-Pesa Callback Database Fix</h1><h2>Step 1: Check mpesa_transactions Table</h2><p>✅ mpesa_transactions table exists</p><h3>Table Structure:</h3><table border='1' cellpadding='5' style='border-collapse: collapse;'><tr style='background-color: #f2f2f2;'><th>Field</th><th>Type</th><th>Null</th><th>Key</th><th>Default</th><th>Extra</th></tr><tr><td>id</td><td>int(11)</td><td>NO</td><td>PRI</td><td>NULL</td><td>auto_increment</td></tr><tr><td>checkout_request_id</td><td>varchar(50)</td><td>NO</td><td>UNI</td><td>NULL</td><td></td></tr><tr><td>merchant_request_id</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>amount</td><td>decimal(10,2)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>phone_number</td><td>varchar(20)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>package_name</td><td>varchar(100)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>reseller_id</td><td>int(11)</td><td>NO</td><td></td><td>NULL</td><td></td></tr><tr><td>status</td><td>enum('pending','completed','failed')</td><td>NO</td><td></td><td>pending</td><td></td></tr><tr><td>mpesa_receipt</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>transaction_date</td><td>varchar(50)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_code</td><td>int(11)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>result_description</td><td>varchar(255)</td><td>YES</td><td></td><td>NULL</td><td></td></tr><tr><td>created_at</td><td>timestamp</td><td>NO</td><td></td><td>current_timestamp()</td><td></td></tr><tr><td>updated_at</td><td>timestamp</td><td>YES</td><td></td><td>NULL</td><td></td></tr></table><h3>Recent Transactions:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>ID</th><th>Checkout Request ID</th><th>Merchant Request ID</th><th>Phone</th><th>Amount</th><th>Status</th><th>Created</th></tr><tr><td>10</td><td style='font-size: 11px;'>ws_CO_TEST_1759435633847446</td><td style='font-size: 11px;'>ws_MR_TEST_1759435633</td><td>254700123456</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-10-02 23:07:13</td></tr><tr><td>9</td><td style='font-size: 11px;'>ws_CO_26042025030844768114669532</td><td style='font-size: 11px;'>ce92-4c74-a396-4768a3ea93e4102298</td><td>254114669532</td><td>KES 30.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-26 03:06:53</td></tr><tr><td>8</td><td style='font-size: 11px;'>ws_CO_25042025041216243114669532</td><td style='font-size: 11px;'>75f4-4e91-aa3c-79e4611bbc5833591</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-25 04:10:25</td></tr><tr><td>7</td><td style='font-size: 11px;'>ws_CO_14042025132240303114669532</td><td style='font-size: 11px;'>ec07-4524-9c53-db81c5aef3985599</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:20:56</td></tr><tr><td>6</td><td style='font-size: 11px;'>ws_CO_14042025131316620114669532</td><td style='font-size: 11px;'>5fbd-4f1c-b3c1-b463d28d74d2147095</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:13:17</td></tr><tr><td>5</td><td style='font-size: 11px;'>ws_CO_14042025131239273114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17997</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:10:55</td></tr><tr><td>4</td><td style='font-size: 11px;'>ws_CO_14042025131134377114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f146373</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:50</td></tr><tr><td>3</td><td style='font-size: 11px;'>ws_CO_14042025130920578114669532</td><td style='font-size: 11px;'>5b3d-4c11-9598-abb6c87b02ec17987</td><td>254114669532</td><td>KES 10.00</td><td style='color: orange; font-weight: bold;'>pending</td><td>2025-04-14 13:09:21</td></tr><tr><td>2</td><td style='font-size: 11px;'>ws_CO_09042025102220189114669532</td><td style='font-size: 11px;'>2203-464a-b6e1-0288223bfd3f7770</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 10:20:39</td></tr><tr><td>1</td><td style='font-size: 11px;'>ws_CO_09042025095732720114669532</td><td style='font-size: 11px;'>c20c-4eb8-8161-40af4f84ee39264111</td><td>254114669532</td><td>KES 10.00</td><td style='color: green; font-weight: bold;'>completed</td><td>2025-04-09 09:55:52</td></tr></table><h2>Step 2: Analyze Callback vs Database Mismatch</h2><h3>CheckoutRequestIDs from M-Pesa Callbacks:</h3><ul><li><code>ws_CO_202504090917089236</code></li><li><code>ws_CO_202504090917089237</code></li></ul><h3>Database Check for Callback CheckoutRequestIDs:</h3><table border='1' cellpadding='5' style='border-collapse: collapse; width: 100%;'><tr style='background-color: #f2f2f2;'><th>CheckoutRequestID</th><th>In Database?</th><th>Status</th><th>Action</th></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089236</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089236' style='color: blue;'>Create Missing</a></td></tr><tr><td style='font-size: 11px;'>ws_CO_202504090917089237</td><td style='color: red;'>❌ No</td><td>N/A</td><td><a href='?create_missing=ws_CO_202504090917089237' style='color: blue;'>Create Missing</a></td></tr></table><h2>Step 4: Test Callback Processing</h2><div style='background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 10px 0;'><h4>Test M-Pesa Callback Processing:</h4><p>This will simulate M-Pesa sending a successful payment callback.</p><button onclick='testCallback()' style='background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;'>🧪 Test Callback Processing</button><div id='callback-test-result' style='margin-top: 15px;'></div></div><h2>Step 5: Fix Callback URL Configuration</h2> <p><strong>Current Callback URL:</strong> </p><p>⚠️ Callback URL may need updating</p><p><strong>Should be:</strong> https://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php</p>
+<script>
+function testCallback() {
+    document.getElementById('callback-test-result').innerHTML = '<p>Testing callback processing...</p>';
+    
+    // Get a checkout ID from the database to test with
+    fetch('?action=get_test_checkout_id')
+    .then(response => response.text())
+    .then(checkoutId => {
+        if (checkoutId && checkoutId.trim() !== '') {
+            // Simulate M-Pesa callback data
+            const callbackData = {
+                "Body": {
+                    "stkCallback": {
+                        "MerchantRequestID": "ws_MR_TEST_" + Date.now(),
+                        "CheckoutRequestID": checkoutId.trim(),
+                        "ResultCode": 0,
+                        "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": {
+                            "Item": [
+                                {"Name": "Amount", "Value": 10},
+                                {"Name": "MpesaReceiptNumber", "Value": "TEST" + Math.floor(Math.random() * 1000000)},
+                                {"Name": "TransactionDate", "Value": "20251002" + new Date().toTimeString().replace(/:/g, '').substring(0, 6)},
+                                {"Name": "PhoneNumber", "Value": "254700123456"}
+                            ]
+                        }
+                    }
+                }
+            };
+            
+            // Send to callback
+            fetch('mpesa_callback.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(callbackData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('callback-test-result').innerHTML = 
+                    '<h5>Callback Test Result:</h5>' +
+                    '<p><strong>Checkout ID Used:</strong> ' + checkoutId.trim() + '</p>' +
+                    '<pre style="background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto;">' + result + '</pre>' +
+                    '<p><a href="?" style="color: blue;">Refresh page to see updated data</a></p>';
+            })
+            .catch(error => {
+                document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Test failed: ' + error + '</p>';
+            });
+        } else {
+            document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ No checkout ID available for testing</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('callback-test-result').innerHTML = '<p style="color: red;">❌ Failed to get test checkout ID: ' + error + '</p>';
+    });
+}
+</script>
+
+ws_CO_TEST_1759435633847446
+[2025-10-03 02:04:27] ======= M-PESA CALLBACK RECEIVED =======
+[2025-10-03 02:04:27] Remote IP: ::1
+[2025-10-03 02:04:27] Request Method: POST
+[2025-10-03 02:04:27] Request URI: /SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-03 02:04:27] Full URL: http://fd7f49c64822.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php
+[2025-10-03 02:04:27] Request Headers: Array
+(
+    [Host] => fd7f49c64822.ngrok-free.app
+    [User-Agent] => ReactorNetty/1.2.9
+    [Content-Length] => 435
+    [Accept] => */*
+    [Businessshortcode] => 174379
+    [Content-Type] => application/json;charset=UTF-8
+    [X-Forwarded-For] => 196.201.212.127
+    [X-Forwarded-Host] => fd7f49c64822.ngrok-free.app
+    [X-Forwarded-Proto] => https
+    [Accept-Encoding] => gzip
+)
+
+[2025-10-03 02:04:27] Callback raw data: {"Body":{"stkCallback":{"MerchantRequestID":"5998-46a7-a4aa-5a37a83f21ad3833","CheckoutRequestID":"ws_CO_03102025030409377114669532","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":10},{"Name":"MpesaReceiptNumber","Value":"TJ3MX6CLYC"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20251003030427},{"Name":"PhoneNumber","Value":254114669532}]}}}}
+[2025-10-03 02:04:27] Callback decoded: stdClass Object
+(
+    [Body] => stdClass Object
+        (
+            [stkCallback] => stdClass Object
+                (
+                    [MerchantRequestID] => 5998-46a7-a4aa-5a37a83f21ad3833
+                    [CheckoutRequestID] => ws_CO_03102025030409377114669532
+                    [ResultCode] => 0
+                    [ResultDesc] => The service request is processed successfully.
+                    [CallbackMetadata] => stdClass Object
+                        (
+                            [Item] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [Name] => Amount
+                                            [Value] => 10
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [Name] => MpesaReceiptNumber
+                                            [Value] => TJ3MX6CLYC
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [Name] => Balance
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [Name] => TransactionDate
+                                            [Value] => 20251003030427
+                                        )
+
+                                    [4] => stdClass Object
+                                        (
+                                            [Name] => PhoneNumber
+                                            [Value] => 254114669532
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-10-03 02:04:27] Processing STK callback: CheckoutRequestID=ws_CO_03102025030409377114669532, ResultCode=0, ResultDesc=The service request is processed successfully.
+[2025-10-03 02:04:27] Payment successful: Amount=10, ReceiptNumber=TJ3MX6CLYC, PhoneNumber=254114669532
+[2025-10-03 02:04:27] Transaction updated successfully in database. Affected rows: 1
+[2025-10-03 02:04:27] Transaction updated successfully in database
+[2025-10-03 02:04:27] Automatically assigning voucher for package ID 15, reseller ID 6, customer phone 254114669532
+[2025-10-20 20:37:30] === M-PESA CALLBACK START ===
+[2025-10-20 20:37:30] IP: ::1 | Method: POST
+[2025-10-20 20:37:30] Data received: 196 bytes
+[2025-10-20 20:37:30] Processing: CheckoutID=ws_CO_20102025213716096114669532 | Result=1032
+[2025-10-20 20:37:30] ✅ Transaction FOUND: ID=133 | Current Status=pending
+[2025-10-20 20:37:30] ❌ Payment FAILED: Code=1032 | Desc=Request Cancelled by user.
+[2025-10-20 20:37:30] ⏳ Updating status from 'pending' to 'failed'...
+[2025-10-20 20:37:30] ✅ STATUS UPDATED TO 'failed' | Rows affected: 1
+[2025-10-20 20:37:30] === CALLBACK COMPLETE ===
+[2025-10-21 18:39:24] === M-PESA CALLBACK START ===
+[2025-10-21 18:39:24] IP: ::1 | Method: POST
+[2025-10-21 18:39:24] Data received: 204 bytes
+[2025-10-21 18:39:24] Processing: CheckoutID=ws_CO_21102025193908439114669532 | Result=1037
+[2025-10-21 18:39:24] ✅ Transaction FOUND: ID=138 | Current Status=pending
+[2025-10-21 18:39:24] ❌ Payment FAILED: Code=1037 | Desc=DS timeout user cannot be reached.
+[2025-10-21 18:39:24] ⏳ Updating status from 'pending' to 'failed'...
+[2025-10-21 18:39:24] ✅ STATUS UPDATED TO 'failed' | Rows affected: 1
+[2025-10-21 18:39:24] === CALLBACK COMPLETE ===
+[2025-10-27 16:22:45] === M-PESA CALLBACK START ===
+[2025-10-27 16:22:45] IP: ::1 | Method: POST
+[2025-10-27 16:22:45] Data received: 436 bytes
+[2025-10-27 16:22:45] Processing: CheckoutID=ws_CO_27102025182235822114669532 | Result=0
+[2025-10-27 16:22:45] ✅ Transaction FOUND: ID=141 | Current Status=pending
+[2025-10-27 16:22:45] 💰 Payment SUCCESS: Receipt=TJRMX8I4OS | Amount=10 | Phone=254114669532
+[2025-10-27 16:22:45] ⏳ Updating status from 'pending' to 'completed'...
+[2025-10-27 16:22:45] ✅ STATUS UPDATED TO 'completed' in 2.15ms | Rows affected: 1
+[2025-10-27 16:22:45] 🎉 Transaction ws_CO_27102025182235822114669532 is now COMPLETED and ready for voucher assignment
+[2025-10-27 16:22:45] 🔄 Starting automatic voucher processing...
+[2025-10-27 16:22:46] ✅ VOUCHER PROCESSED: Code=qtro3259 | SMS=FAILED
+[2025-10-27 16:22:46] === CALLBACK COMPLETE ===
+[2025-10-27 16:24:27] === M-PESA CALLBACK START ===
+[2025-10-27 16:24:27] IP: ::1 | Method: POST
+[2025-10-27 16:24:27] Data received: 202 bytes
+[2025-10-27 16:24:27] Processing: CheckoutID=ws_CO_27102025182412995114669532 | Result=1037
+[2025-10-27 16:24:27] ✅ Transaction FOUND: ID=142 | Current Status=pending
+[2025-10-27 16:24:27] ❌ Payment FAILED: Code=1037 | Desc=DS timeout user cannot be reached.
+[2025-10-27 16:24:27] ⏳ Updating status from 'pending' to 'failed'...
+[2025-10-27 16:24:27] ✅ STATUS UPDATED TO 'failed' | Rows affected: 1
+[2025-10-27 16:24:27] === CALLBACK COMPLETE ===
+[2025-10-27 16:25:51] === M-PESA CALLBACK START ===
+[2025-10-27 16:25:51] IP: ::1 | Method: POST
+[2025-10-27 16:25:51] Data received: 436 bytes
+[2025-10-27 16:25:51] Processing: CheckoutID=ws_CO_27102025182544742114669532 | Result=0
+[2025-10-27 16:25:51] ✅ Transaction FOUND: ID=143 | Current Status=pending
+[2025-10-27 16:25:51] 💰 Payment SUCCESS: Receipt=TJRMX8I69S | Amount=10 | Phone=254114669532
+[2025-10-27 16:25:51] ⏳ Updating status from 'pending' to 'completed'...
+[2025-10-27 16:25:51] ✅ STATUS UPDATED TO 'completed' in 2.67ms | Rows affected: 1
+[2025-10-27 16:25:51] 🎉 Transaction ws_CO_27102025182544742114669532 is now COMPLETED and ready for voucher assignment
+[2025-10-27 16:25:51] 🔄 Starting automatic voucher processing...
+[2025-10-27 16:25:55] ✅ VOUCHER PROCESSED: Code=qtro7290 | SMS=FAILED
+[2025-10-27 16:25:55] === CALLBACK COMPLETE ===

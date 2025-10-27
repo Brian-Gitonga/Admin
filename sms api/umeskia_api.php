@@ -78,9 +78,9 @@ function check_sms_balance($api_key, $app_id) {
 // Default values
 $default_phone = '0750059353';
 $default_message = 'Hello! This is a test message from your website using Umeskia SMS API.';
-$default_api_key = 'eadad3b302940dd8c2f58e1289c3701f';
-$default_app_id = 'UMSC617032';
-$default_sender = 'UMS_TX'; // Default sender ID for transactional SMS
+$default_api_key = '7c973941a96b28fd910e19db909e7fda';
+$default_app_id = 'UMSC631939';
+$default_sender = 'UMS_SMS'; // Default sender ID for transactional SMS
 
 // Handle form submission
 $result = null;

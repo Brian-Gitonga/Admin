@@ -15,11 +15,44 @@ function getMpesaSettings($conn, $reseller_id) {
     $result = $stmt->get_result();
     
     if ($result->num_rows > 0) {
-        return $result->fetch_assoc();
+        $settings = $result->fetch_assoc();
+        
+        // Check if the settings have valid API credentials
+        // If consumer_key or consumer_secret is empty, fall back to system defaults
+        if (empty($settings['paybill_consumer_key']) || empty($settings['paybill_consumer_secret'])) {
+            error_log("M-Pesa: Reseller $reseller_id has incomplete credentials, using system defaults for API calls");
+            
+            // Get system defaults
+            $systemCreds = getSystemMpesaApiCredentials();
+            
+            // Merge: keep reseller's payment_gateway and phone settings, but use system API credentials
+            $settings['paybill_consumer_key'] = $systemCreds['consumer_key'];
+            $settings['paybill_consumer_secret'] = $systemCreds['consumer_secret'];
+            $settings['paybill_shortcode'] = $systemCreds['shortcode'];
+            $settings['paybill_passkey'] = $systemCreds['passkey'];
+            
+            // Also set till credentials to system defaults if empty
+            if (empty($settings['till_consumer_key']) || empty($settings['till_consumer_secret'])) {
+                $settings['till_consumer_key'] = $systemCreds['consumer_key'];
+                $settings['till_consumer_secret'] = $systemCreds['consumer_secret'];
+                $settings['till_shortcode'] = $systemCreds['shortcode'];
+                $settings['till_passkey'] = $systemCreds['passkey'];
+            }
+            
+            // Use system callback URL if reseller's is invalid
+            if (empty($settings['callback_url']) ||
+                strpos($settings['callback_url'], 'mydomain.com') !== false ||
+                strpos($settings['callback_url'], 'localhost') !== false) {
+                $settings['callback_url'] = $systemCreds['callback_url'];
+            }
+        }
+        
+        return $settings;
     }
     
-    // If no settings found, return blank settings (not default test values)
-    return getBlankMpesaSettings();
+    // If no settings found at all, return system defaults for testing
+    error_log("M-Pesa: No settings found for reseller $reseller_id, using system defaults");
+    return getDefaultMpesaSettings();
 }
 
 /**
@@ -70,7 +103,7 @@ function getDefaultMpesaSettings() {
         'till_passkey' => '',
         'till_consumer_key' => '',
         'till_consumer_secret' => '',
-        'callback_url' => 'https://13a2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php'
+        'callback_url' => 'https://7d2fcfdeb690.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php'
     ];
 }
 
@@ -215,7 +248,7 @@ function getSystemMpesaApiCredentials() {
         'passkey' => 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919', // Replace with your actual passkey
         'consumer_key' => 'bAoiO0bYMLsAHDgzGSGVMnpSAxSUuCMEfWkrrAOK1MZJNAcA', // Replace with your actual consumer key
         'consumer_secret' => '2idZFLPp26Du8JdF9SB3nLpKrOJO67qDIkvICkkVl7OhADTQCb0Oga5wNgzu1xQx', // Replace with your actual consumer secret
-        'callback_url' => 'https://13a2-197-136-202-10.ngrok-free.app/Wifi%20Billiling%20system/Admin/mpesa_callback.php' // Replace with your actual callback URL
+        'callback_url' => 'https://7d2fcfdeb690.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php' // Replace with your actual callback URL
     ];
 }
 
@@ -245,7 +278,7 @@ function getMpesaCredentials($conn, $reseller_id) {
             $credentials['business_shortcode'] = $settings['paybill_shortcode'];
             $credentials['passkey'] = $settings['paybill_passkey'];
             break;
-        
+
         case 'paybill':
             $credentials['paybill_number'] = $settings['paybill_number'];
             $credentials['consumer_key'] = $settings['paybill_consumer_key'];
@@ -253,13 +286,19 @@ function getMpesaCredentials($conn, $reseller_id) {
             $credentials['business_shortcode'] = $settings['paybill_shortcode'];
             $credentials['passkey'] = $settings['paybill_passkey'];
             break;
-        
+
         case 'till':
             $credentials['till_number'] = $settings['till_number'];
             $credentials['consumer_key'] = $settings['till_consumer_key'];
             $credentials['consumer_secret'] = $settings['till_consumer_secret'];
             $credentials['business_shortcode'] = $settings['till_shortcode'];
             $credentials['passkey'] = $settings['till_passkey'];
+            break;
+
+        case 'paystack':
+            $credentials['secret_key'] = $settings['paystack_secret_key'];
+            $credentials['public_key'] = $settings['paystack_public_key'];
+            $credentials['paystack_email'] = $settings['paystack_email'];
             break;
     }
     

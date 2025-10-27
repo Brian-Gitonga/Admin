@@ -75,39 +75,10 @@ if (strpos($checkoutRequestID, 'MANUAL') === 0) {
     $updateStmt = $conn->prepare("UPDATE mpesa_transactions SET status = 'completed', result_code = 0, result_description = 'Manually marked as completed', updated_at = NOW() WHERE id = ?");
     $updateStmt->bind_param('i', $transaction_id);
     $updateStmt->execute();
-    
-    // Get updated transaction
-    $stmt = $conn->prepare("SELECT * FROM mpesa_transactions WHERE id = ?");
-    $stmt->bind_param('i', $transaction_id);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $transaction = $result->fetch_assoc();
-    
-    // Generate voucher
-    require_once '../mikrotik_helper.php';
-    $voucher_code = generateVoucherCode();
-    
-    // Store the voucher in the database if vouchers table exists
-    $tableCheck = $conn->query("SHOW TABLES LIKE 'vouchers'");
-    if ($tableCheck->num_rows > 0) {
-        $voucherStmt = $conn->prepare("INSERT INTO vouchers 
-            (code, package_id, reseller_id, customer_phone, status, created_at) 
-            VALUES (?, ?, ?, ?, 'active', NOW())");
-        $voucherStmt->bind_param("siis", 
-            $voucher_code, 
-            $transaction['package_id'], 
-            $transaction['reseller_id'], 
-            $transaction['phone_number']
-        );
-        $voucherStmt->execute();
-        
-        log_check("Created voucher for manual transaction: $voucher_code");
-    }
-    
-    // Router integration disabled - voucher generated without router communication
-    log_check("Voucher generated successfully (router integration disabled): $voucher_code");
-    
-    $_SESSION['payment_message'] = 'Transaction marked as completed and voucher generated';
+
+    log_check("Transaction status updated to completed: $transaction_id");
+
+    $_SESSION['payment_message'] = 'Transaction marked as completed';
     $_SESSION['payment_status'] = 'success';
     header('Location: ../transaction_details.php?id=' . $transaction_id);
     exit;
@@ -225,46 +196,10 @@ if (isset($result->ResponseCode) && $result->ResponseCode == "0") {
             $transaction_id
         );
         $stmt->execute();
-        
+
         log_check("Updated transaction status to completed: $transaction_id");
-        
-        // Generate voucher code
-        require_once '../mikrotik_helper.php';
-        $voucher_code = generateVoucherCode();
-        
-        // Check if vouchers table exists
-        $tableCheck = $conn->query("SHOW TABLES LIKE 'vouchers'");
-        if ($tableCheck->num_rows > 0) {
-            $voucherStmt = $conn->prepare("INSERT INTO vouchers 
-                (code, package_id, reseller_id, customer_phone, status, created_at) 
-                VALUES (?, ?, ?, ?, 'active', NOW())");
-            $voucherStmt->bind_param("siis", 
-                $voucher_code, 
-                $transaction['package_id'], 
-                $transaction['reseller_id'], 
-                $transaction['phone_number']
-            );
-            $voucherStmt->execute();
-            
-            log_check("Voucher created: $voucher_code");
-        }
-        
-        // Add voucher to MikroTik
-        $mikrotikResult = addVoucherToMikrotik(
-            $voucher_code, 
-            $transaction['package_id'], 
-            $transaction['reseller_id'], 
-            $transaction['phone_number'], 
-            $conn
-        );
-        
-        if ($mikrotikResult === true) {
-            log_check("Voucher added to MikroTik: $voucher_code");
-        } else {
-            log_check("Failed to add voucher to MikroTik: $mikrotikResult");
-        }
-        
-        $_SESSION['payment_message'] = 'Payment confirmed! Voucher generated successfully.';
+
+        $_SESSION['payment_message'] = 'Payment confirmed successfully!';
         $_SESSION['payment_status'] = 'success';
     } else {
         // Payment failed or is still pending

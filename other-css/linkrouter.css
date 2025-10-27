@@ -399,11 +399,319 @@
     font-weight: 500;
 }
 
+/* Filter Section - Matching Design */
+.filter-section {
+    background: var(--bg-secondary);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--bg-accent);
+}
+
+.filter-header {
+    margin-bottom: 1rem;
+}
+
+.filter-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--bg-accent);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-btn:hover {
+    background: var(--bg-accent);
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background: #10b981;
+    color: white;
+    border-color: #10b981;
+}
+
+.filter-btn.filter-online.active {
+    background: #10b981;
+    border-color: #10b981;
+}
+
+.filter-btn.filter-offline.active {
+    background: #ef4444;
+    border-color: #ef4444;
+}
+
+.filter-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.filter-dot.online {
+    background: #10b981;
+}
+
+.filter-dot.offline {
+    background: #ef4444;
+}
+
+/* Router Summary Grid */
+.router-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    background: var(--bg-secondary);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    border: 1px solid var(--bg-accent);
+    text-align: center;
+}
+
+.summary-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+.summary-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.summary-card.summary-online .summary-number {
+    color: #10b981;
+}
+
+.summary-card.summary-offline .summary-number {
+    color: #ef4444;
+}
+
+/* Router Cards Grid */
+.router-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Individual Router Card */
+.router-card {
+    background: var(--bg-secondary);
+    border-radius: 0.75rem;
+    border: 1px solid var(--bg-accent);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.router-card:hover {
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Router Card Header */
+.router-card-header {
+    background: var(--bg-primary);
+    padding: 1.25rem;
+    border-bottom: 1px solid var(--bg-accent);
+}
+
+.router-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.router-wifi-icon {
+    color: #10b981;
+    font-size: 1.25rem;
+}
+
+/* Router Card Body */
+.router-card-body {
+    padding: 1.25rem;
+}
+
+.router-info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.router-info-row:last-child {
+    margin-bottom: 0;
+}
+
+.info-icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-primary);
+    border-radius: 0.5rem;
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.info-content {
+    flex: 1;
+}
+
+.info-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.info-value {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Router Card Footer */
+.router-card-footer {
+    padding: 1rem 1.25rem;
+    background: var(--bg-primary);
+    border-top: 1px solid var(--bg-accent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.router-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.router-status-badge.status-online {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.router-status-badge.status-offline {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-online .status-indicator {
+    background: #10b981;
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+
+.status-offline .status-indicator {
+    background: #ef4444;
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+}
+
+/* Router Action Buttons */
+.router-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid var(--bg-accent);
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+}
+
+.action-btn.action-edit {
+    color: #3b82f6;
+}
+
+.action-btn.action-edit:hover {
+    background: rgba(59, 130, 246, 0.15);
+    border-color: #3b82f6;
+}
+
+.action-btn.action-delete {
+    color: #ef4444;
+}
+
+.action-btn.action-delete:hover {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: #ef4444;
+}
+
+/* No Routers Message */
+.no-routers-message {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
 /* Responsive Design - Matching System Breakpoints */
 @media (max-width: 768px) {
     .router-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .router-summary-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .router-cards {
+        grid-template-columns: 1fr;
     }
 
     .page-title {
@@ -443,6 +751,15 @@
     .credential-value {
         width: 100%;
         text-align: center;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 

@@ -1,0 +1,88 @@
+[2025-10-04 01:03:20] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:03:20] Checkout ID: ws_CO_04102025015322727114669532
+[2025-10-04 01:03:20] Package ID: 15, Reseller ID: 6
+[2025-10-04 01:03:20] Customer Phone: 254114669532
+[2025-10-04 01:03:20] Voucher already assigned: qtro320
+[2025-10-04 01:03:21] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:03:21] Checkout ID: ws_CO_04102025015322727114669532
+[2025-10-04 01:03:21] Package ID: 15, Reseller ID: 6
+[2025-10-04 01:03:21] Customer Phone: 254114669532
+[2025-10-04 01:03:21] Voucher already assigned: qtro320
+[2025-10-04 01:03:23] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:03:23] Checkout ID: ws_CO_04102025015322727114669532
+[2025-10-04 01:03:23] Package ID: 15, Reseller ID: 6
+[2025-10-04 01:03:23] Customer Phone: 254114669532
+[2025-10-04 01:03:23] Voucher already assigned: qtro320
+[2025-10-04 01:03:24] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:03:24] Checkout ID: ws_CO_03102025172130645114669532
+[2025-10-04 01:03:24] Package ID: 15, Reseller ID: 6
+[2025-10-04 01:03:24] Customer Phone: 254114669532
+[2025-10-04 01:03:24] Voucher already assigned: qtro490
+[2025-10-04 01:03:31] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:03:31] Checkout ID: ws_CO_04102025015322727114669532
+[2025-10-04 01:03:31] Package ID: 15, Reseller ID: 6
+[2025-10-04 01:03:31] Customer Phone: 254114669532
+[2025-10-04 01:03:31] Voucher already assigned: qtro320
+[2025-10-04 01:04:44] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:04:44] Checkout ID: ws_CO_03102025160014143782
+[2025-10-04 01:04:44] Package ID: 31, Reseller ID: 6
+[2025-10-04 01:04:44] Customer Phone: 254114669532
+[2025-10-04 01:04:44] ERROR: No active vouchers available for package 31, reseller 6
+[2025-10-04 01:04:49] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:04:49] Checkout ID: ws_CO_03102025160014143782
+[2025-10-04 01:04:49] Package ID: 31, Reseller ID: 6
+[2025-10-04 01:04:49] Customer Phone: 254114669532
+[2025-10-04 01:04:49] ERROR: No active vouchers available for package 31, reseller 6
+[2025-10-04 01:05:23] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:05:23] Checkout ID: ws_CO_1759532723750wwnki9e15
+[2025-10-04 01:05:23] Package ID: 10, Reseller ID: 6
+[2025-10-04 01:05:23] Customer Phone: 0114669532
+[2025-10-04 01:05:23] Found voucher: ID=47, Code=QRS212
+[2025-10-04 01:05:23] Voucher marked as used successfully
+[2025-10-04 01:05:23] Transaction updated with voucher details
+[2025-10-04 01:05:23] Sending SMS to customer: 0114669532
+[2025-10-04 01:05:45] SMS sending failed: TextSMS Error: Failed to connect to sms.textsms.co.ke port 443: Timed out
+[2025-10-04 01:05:58] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:05:58] Checkout ID: ws_CO_03102025160014143782
+[2025-10-04 01:05:58] Package ID: 31, Reseller ID: 6
+[2025-10-04 01:05:58] Customer Phone: 254114669532
+[2025-10-04 01:05:58] ERROR: No active vouchers available for package 31, reseller 6
+[2025-10-04 01:06:00] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:06:00] Checkout ID: ws_CO_03102025160014143782
+[2025-10-04 01:06:00] Package ID: 31, Reseller ID: 6
+[2025-10-04 01:06:00] Customer Phone: 254114669532
+[2025-10-04 01:06:00] ERROR: No active vouchers available for package 31, reseller 6
+[2025-10-04 01:06:00] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:06:00] Checkout ID: ws_CO_03102025160014143782
+[2025-10-04 01:06:00] Package ID: 31, Reseller ID: 6
+[2025-10-04 01:06:00] Customer Phone: 254114669532
+[2025-10-04 01:06:00] ERROR: No active vouchers available for package 31, reseller 6
+[2025-10-04 01:06:00] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:06:00] Checkout ID: ws_CO_03102025160014143782
+[2025-10-04 01:06:00] Package ID: 31, Reseller ID: 6
+[2025-10-04 01:06:00] Customer Phone: 254114669532
+[2025-10-04 01:06:00] ERROR: No active vouchers available for package 31, reseller 6
+[2025-10-04 01:11:12] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:11:12] Checkout ID: ws_CO_1759533072717yrf94twx7
+[2025-10-04 01:11:12] Package ID: 10, Reseller ID: 6
+[2025-10-04 01:11:12] Customer Phone: 0114669532
+[2025-10-04 01:11:12] Found voucher: ID=46, Code=NOP101
+[2025-10-04 01:11:12] Voucher marked as used successfully
+[2025-10-04 01:11:12] Transaction updated with voucher details
+[2025-10-04 01:11:12] Sending SMS to customer: 0114669532
+[2025-10-04 01:11:34] SMS sending failed: TextSMS Error: Failed to connect to sms.textsms.co.ke port 443: Timed out
+[2025-10-04 01:38:48] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:38:48] Checkout ID: ws_CO_03102025172130645114669532
+[2025-10-04 01:38:48] Package ID: 15, Reseller ID: 6
+[2025-10-04 01:38:48] Customer Phone: 254114669532
+[2025-10-04 01:38:48] Voucher already assigned: qtro490
+[2025-10-04 01:38:51] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:38:51] Checkout ID: ws_CO_1759533072717yrf94twx7
+[2025-10-04 01:38:51] Package ID: 10, Reseller ID: 6
+[2025-10-04 01:38:51] Customer Phone: 0114669532
+[2025-10-04 01:38:51] Voucher already assigned: NOP101
+[2025-10-04 01:41:42] === VOUCHER DELIVERY STARTED ===
+[2025-10-04 01:41:42] Checkout ID: ws_CO_1759533072717yrf94twx7
+[2025-10-04 01:41:42] Package ID: 10, Reseller ID: 6
+[2025-10-04 01:41:42] Customer Phone: 0114669532
+[2025-10-04 01:41:42] Voucher already assigned: NOP101

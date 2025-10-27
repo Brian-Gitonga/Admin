@@ -13,6 +13,7 @@ require_once 'dashboard_data.php';
     <title>Qtro ISP System</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     <?php include 'nav.php'; ?>
