@@ -83,4 +83,214 @@ This feature allows you to import vouchers from Excel files (.xlsx or .xls) in a
 
 ### Support
 
-For any issues or questions, please contact the system administrator. 
+For any issues or questions, please contact the system administrator.
+
+## MikroTik Router Configuration Script
+
+This automated script helps ISP resellers configure their MikroTik routers for hotspot deployment with walled-garden access to the payment portal.
+
+### Features
+- Automated hotspot setup with captive portal
+- Walled-garden configuration allowing access to:
+  - Payment portal: `https://qtroispman.co.ke`
+  - M-Pesa/Safaricom payment services
+- Separate management and hotspot networks
+- Pre-configured firewall rules for security
+- API and Winbox access control
+
+### Prerequisites
+- Fresh or factory-reset MikroTik router
+- WAN connection on ether1
+- LAN ports: ether2-4 and wlan1 (wireless)
+
+### Network Configuration
+- **Management IP**: 192.168.88.1/24 (for Winbox/API access)
+- **Hotspot Gateway**: 192.168.89.1/24 (for client connections)
+- **Hotspot Pool**: 192.168.89.2-192.168.89.254
+
+### Installation Instructions
+
+1. **Connect to your MikroTik router** via Winbox or SSH
+2. **Open a new terminal window** in the router
+3. **Copy and paste the entire script** below into the terminal
+4. **Press Enter** to execute
+5. **Wait for completion** - you'll see a log message when done
+
+### Configuration Script
+
+```routeros
+# --- BEGIN: Automated Hotspot + Walled-Garden Setup Script ---
+# Assumptions: fresh/reset router. WAN on ether1. LAN ports ether2-4 + wlan1.
+
+# 0. Safe defaults - remove any lingering old configs (be careful on non-fresh routers)
+# (Comment out these lines if you don't want auto-clean)
+# /interface bridge remove [find]
+# /ip address remove [find]
+# /ip dhcp-server remove [find]
+# /ip hotspot remove [find]
+# /ip hotspot profile remove [find]
+
+# 1. WAN - DHCP client (gets internet from ISP)
+/ip dhcp-client
+add interface=ether1 use-peer-dns=yes use-peer-ntp=yes disabled=no
+
+# 2. Bridge for LAN & Wi-Fi (management + hotspot share same physical network)
+/interface bridge
+add name=bridge-lan
+
+/interface bridge port
+add bridge=bridge-lan interface=ether2
+add bridge=bridge-lan interface=ether3
+add bridge=bridge-lan interface=ether4
+# Add wireless interface to bridge (if present)
+add bridge=bridge-lan interface=wlan1
+
+# 3. Management IP (use this address for Winbox, Mikhmon, API)
+/ip address
+add address=192.168.88.1/24 interface=bridge-lan comment="Management IP - use for Winbox/Mikhmon"
+
+# 4. Hotspot gateway IP (client pool will be in this subnet)
+add address=192.168.89.1/24 interface=bridge-lan comment="Hotspot Gateway"
+
+# 5. NAT masquerade (internet for authenticated users)
+/ip firewall nat
+add chain=srcnat out-interface=ether1 action=masquerade comment="Masquerade WAN"
+
+# 6. Enable API and Winbox only to management/hotspot subnets
+/ip service
+set api disabled=no address=192.168.88.0/24,192.168.89.0/24
+set winbox address=192.168.88.0/24
+
+# 7. DNS (router will answer DNS for clients)
+/ip dns
+set servers=8.8.8.8,8.8.4.4 allow-remote-requests=yes
+
+# 8. Hotspot: pool, profile, and hotspot server
+/ip pool
+add name=hs-pool ranges=192.168.89.2-192.168.89.254
+
+/ip hotspot profile
+add name=hs-profile hotspot-address=192.168.89.1 dns-name=wifi.login html-directory=hotspot
+
+/ip hotspot
+add name=hotspot1 interface=bridge-lan address-pool=hs-pool profile=hs-profile
+
+# 9. Example user profiles and a test voucher (customize rates/profiles as needed)
+/ip hotspot user profile
+add name=1hr limit-uptime=1h rate-limit=2M/2M
+add name=1day limit-uptime=1d rate-limit=2M/2M
+
+/ip hotspot user
+add name=TEST password=1234 profile=1hr comment="Test voucher - delete in prod"
+
+# 10. Walled-garden - ALLOW these domains before login (add your real payment domain below)
+/ip hotspot walled-garden
+add dst-host=qtroispman.co.ke
+add dst-host=*.qtroispman.co.ke
+add dst-host=*.safaricom.com
+add dst-host=*.mpesa.com
+add dst-host=*.safaricom.co.ke
+# If using ngrok for testing, add your ngrok domain:
+# add dst-host=your-ngrok-id.ngrok-free.app
+# add dst-host=*.ngrok-free.app
+
+# 11. Firewall - allow router services and block guest -> WAN except allowed services
+# 11.1 Accept established/related (always keep)
+/ip firewall filter
+add chain=forward connection-state=established,related action=accept comment="accept established"
+
+# 11.2 Allow hotspot server traffic (so clients can reach hotspot web pages and router DNS)
+add chain=forward src-address=192.168.89.0/24 dst-address=192.168.89.1 action=accept comment="allow hs clients to hotspot gateway"
+
+# 11.3 Allow DNS from clients to router (so DNS queries go to router)
+add chain=forward src-address=192.168.89.0/24 dst-port=53 protocol=udp action=accept comment="allow DNS to router"
+
+# 11.4 Allow DNS to external servers (if you want to let clients use 8.8.8.8 directly)
+add chain=forward src-address=192.168.89.0/24 dst-port=53 protocol=udp dst-address=8.8.8.8 action=accept comment="allow DNS to 8.8.8.8"
+
+# 11.5 Allow HTTP/HTTPS to walled-garden - NOTE: hotspot walled-garden handles domain allow; we also allow connections to router and DNS.
+# (We cannot reliably match domain names in raw firewall; hotspot walled-garden will permit the DSN+HTTP/HTTPS flows to those hosts.)
+# 11.6 BLOCK: drop all other forwarding from hotspot subnet to WAN - force login
+add chain=forward src-address=192.168.89.0/24 out-interface=ether1 action=drop comment="block hotspot clients to WAN until authenticated"
+
+# 11.7 Router protection - allow Winbox/API only from management net
+add chain=input dst-port=8291 protocol=tcp src-address=192.168.88.0/24 action=accept comment="winbox from mgmt net"
+add chain=input dst-port=8728 protocol=tcp src-address=192.168.88.0/24 action=accept comment="api from mgmt net"
+
+# 11.8 Accept related/established to input
+add chain=input connection-state=established,related action=accept
+
+# 11.9 Drop unwanted input from WAN
+add chain=input in-interface=ether1 action=drop comment="drop direct router input on WAN"
+
+# 12. Wireless basic settings (if wlan1 exists)
+/interface wireless
+set wlan1 disabled=no ssid="MyWiFi" mode=ap-bridge
+
+# 13. Final housekeeping: enable hotspot (already added) and show important info
+:log info "Hotspot setup completed. Management IP is 192.168.88.1. Hotspot gateway 192.168.89.1"
+/ip hotspot print
+/ip address print
+/ip service print
+# --- END: Automated Hotspot + Walled-Garden Setup Script ---
+```
+
+### Post-Installation Steps
+
+1. **Customize WiFi Settings**:
+   - Change the SSID from "MyWiFi" to your preferred network name
+   - Set up wireless security (WPA2) via Winbox
+
+2. **Remove Test Voucher**:
+   - Delete the TEST voucher (username: TEST, password: 1234) before going live
+
+3. **Customize User Profiles**:
+   - Adjust bandwidth limits (rate-limit) as needed
+   - Add more profiles for different package durations
+
+4. **Upload Captive Portal**:
+   - Use the captive portal generator in the admin panel
+   - Upload the generated HTML files to the router's hotspot directory
+
+5. **Verify Walled-Garden**:
+   - Before logging in, test that you can access `https://qtroispman.co.ke`
+   - Verify that other sites are blocked until login
+
+### Troubleshooting
+
+**Cannot access payment portal before login:**
+- Check walled-garden rules: `/ip hotspot walled-garden print`
+- Ensure DNS is working: `/ip dns print`
+- Verify firewall rules are not blocking: `/ip firewall filter print`
+
+**Clients cannot connect to hotspot:**
+- Check hotspot status: `/ip hotspot print`
+- Verify IP pool: `/ip pool print`
+- Check bridge configuration: `/interface bridge print`
+
+**Management access issues:**
+- Connect via LAN cable to ether2-4
+- Access Winbox at 192.168.88.1
+- Check service restrictions: `/ip service print`
+
+### Security Notes
+
+- API and Winbox are restricted to management network (192.168.88.0/24)
+- WAN input is blocked by default
+- Only authenticated users can access the internet
+- Walled-garden allows payment processing before authentication
+
+### Customization
+
+To add additional walled-garden domains (e.g., for other payment providers):
+```routeros
+/ip hotspot walled-garden
+add dst-host=yourdomain.com
+add dst-host=*.yourdomain.com
+```
+
+To modify bandwidth limits:
+```routeros
+/ip hotspot user profile
+set [find name=1hr] rate-limit=5M/5M
+```

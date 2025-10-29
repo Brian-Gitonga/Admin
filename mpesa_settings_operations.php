@@ -103,7 +103,7 @@ function getDefaultMpesaSettings() {
         'till_passkey' => '',
         'till_consumer_key' => '',
         'till_consumer_secret' => '',
-        'callback_url' => 'https://7d2fcfdeb690.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php'
+        'callback_url' => 'https://qtroispman.co.ke/admin//mpesa_callback.php'
     ];
 }
 
@@ -248,7 +248,7 @@ function getSystemMpesaApiCredentials() {
         'passkey' => 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919', // Replace with your actual passkey
         'consumer_key' => 'bAoiO0bYMLsAHDgzGSGVMnpSAxSUuCMEfWkrrAOK1MZJNAcA', // Replace with your actual consumer key
         'consumer_secret' => '2idZFLPp26Du8JdF9SB3nLpKrOJO67qDIkvICkkVl7OhADTQCb0Oga5wNgzu1xQx', // Replace with your actual consumer secret
-        'callback_url' => 'https://7d2fcfdeb690.ngrok-free.app/SAAS/Wifi%20Billiling%20system/Admin/mpesa_callback.php' // Replace with your actual callback URL
+        'callback_url' => 'https://qtroispman.co.ke/admin//mpesa_callback.php' // Replace with your actual callback URL
     ];
 }
 

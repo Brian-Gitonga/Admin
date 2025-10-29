@@ -6,9 +6,9 @@
 
 // Database configuration
 $servername = "localhost"; //online domain servername: localhost
-$username = "root"; //online domain username: qtroispm_billingsystem 
-$password = ""; //online domain password: wk39cShRYLJn9JZ57Bck
-$dbname = "billing_system"; //online domain dbname: qtroispm_billingsystem
+$username = "qtroispm_billingsystem"; //online domain username: qtroispm_billingsystem 
+$password = "wk39cShRYLJn9JZ57Bck"; //online domain password: wk39cShRYLJn9JZ57Bck
+$dbname = "qtroispm_billingsystem"; //online domain dbname: qtroispm_billingsystem
 
 // Create connection with error handling
 try {
