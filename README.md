@@ -1,3 +1,166 @@
+
+# Payment Flow - Quick Reference Guide
+
+## 🎯 Simple Overview
+
+When a customer clicks on a package, here's what happens:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    CUSTOMER CLICKS PACKAGE                      │
+└──────────────────────────────┬──────────────────────────────────┘
+                               ↓
+                    ┌──────────────────────┐
+                    │  Check Voucher       │
+                    │  Availability        │
+                    └──────────┬───────────┘
+                               ↓
+                    ┌──────────────────────┐
+                    │  Which Payment       │
+                    │  Gateway?            │
+                    └──────┬───────────────┘
+                           │
+        ┌──────────────────┴──────────────────┐
+        │                                     │
+        ↓                                     ↓
+┌───────────────┐                    ┌───────────────┐
+│    M-PESA     │                    │   PAYSTACK    │
+└───────┬───────┘                    └───────┬───────┘
+        │                                     │
+        ↓                                     ↓
+┌───────────────┐                    ┌───────────────┐
+│  STK Push     │                    │  Redirect to  │
+│  to Phone     │                    │  Paystack     │
+└───────┬───────┘                    └───────┬───────┘
+        │                                     │
+        ↓                                     ↓
+┌───────────────┐                    ┌───────────────┐
+│  Customer     │                    │  Customer     │
+│  Pays on      │                    │  Pays on      │
+│  Phone        │                    │  Paystack     │
+└───────┬───────┘                    └───────┬───────┘
+        │                                     │
+        │            ┌────────────┐           │
+        └───────────→│  Callback  │←──────────┘
+                     │  Received  │
+                     └──────┬─────┘
+                            ↓
+                     ┌──────────────┐
+                     │  Verify      │
+                     │  Payment     │
+                     └──────┬───────┘
+                            ↓
+                     ┌──────────────┐
+                     │  Auto Assign │
+                     │  Voucher     │
+                     └──────┬───────┘
+                            ↓
+                     ┌──────────────┐
+                     │  Send SMS    │
+                     │  to Customer │
+                     └──────┬───────┘
+                            ↓
+                     ┌──────────────┐
+                     │  Show Success│
+                     │  Page        │
+                     └──────────────┘
+```
+
+---
+
+## 📋 Detailed Steps
+
+### **1. Package Click** (`portal.php`)
+- Customer sees packages on portal
+- Clicks a package card
+- Modal opens showing package details and payment form
+
+### **2. Form Submission** (`portal.php`)
+- Customer enters phone number
+- Clicks "Pay Now"
+- System checks if vouchers are available
+
+### **3. Payment Processing**
+
+#### **For M-Pesa:**
+- `process_payment.php` → Sends STK push to customer's phone
+- Customer completes payment on phone
+- `mpesa_callback.php` → Receives payment confirmation
+
+#### **For Paystack:**
+- `process_paystack_payment.php` → Initializes payment
+- Customer redirected to Paystack checkout
+- Customer completes payment
+- `paystack_verify.php` → Verifies payment
+
+### **4. Voucher Assignment** (`auto_process_vouchers.php`)
+- After payment verified:
+  1. Find available voucher for package
+  2. Assign voucher to customer phone
+  3. Send SMS with voucher code
+
+### **5. Success**
+- Customer redirected to portal
+- Success message displayed
+- SMS sent with WiFi credentials
+
+---
+
+## 🔑 Key Functions
+
+| Function | File | Purpose |
+|----------|------|---------|
+| `showFreeTrialModal()` | `portal.php` | Handle free trial packages |
+| Payment form submission | `portal.php` | Validate and submit payment |
+| `check_voucher_availability.php` | - | Pre-payment voucher check |
+| `process_payment.php` | - | M-Pesa STK push |
+| `process_paystack_payment.php` | - | Paystack initialization |
+| `paystack_verify.php` | - | Verify Paystack payment |
+| `processSpecificTransaction()` | `auto_process_vouchers.php` | Auto-assign voucher |
+| `findAvailableVoucher()` | `fetch_umeskia_vouchers.php` | Find unused voucher |
+| `assignVoucherToCustomer()` | `fetch_umeskia_vouchers.php` | Assign voucher |
+| `sendVoucherSms()` | `fetch_umeskia_vouchers.php` | Send SMS |
+
+---
+
+## 🗄️ Database Flow
+
+```
+payment_transactions (Paystack)
+        ↓
+mpesa_transactions (Compatibility layer)
+        ↓
+vouchers (Find & Assign)
+        ↓
+SMS sent to customer
+```
+
+---
+
+## ⚠️ Important Points
+
+1. **Voucher availability is checked BEFORE payment**
+2. **Payment gateway is determined from `mpesa_settings` table**
+3. **Voucher assignment is AUTOMATIC after payment**
+4. **SMS is sent AUTOMATICALLY after voucher assignment**
+5. **Both M-Pesa and Paystack use same voucher system**
+
+---
+
+## 🐛 Common Issues to Check
+
+- ✅ Voucher availability check working?
+- ✅ Payment gateway detection correct?
+- ✅ Callback URLs correct for Paystack?
+- ✅ Transaction status updates correctly?
+- ✅ Voucher assignment happens automatically?
+- ✅ SMS sending configured correctly?
+- ✅ Error messages displayed to customer?
+
+---
+
+
+
 # WiFi Billing System - SaaS Hotspot Payment Gateway
 
 ## Overview
